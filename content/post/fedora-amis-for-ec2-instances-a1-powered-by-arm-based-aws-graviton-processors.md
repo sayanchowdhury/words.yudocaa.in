@@ -1,7 +1,6 @@
 +++
 authors = ["Sayan Chowdhury"]
 date = 2018-11-28T18:30:00Z
-draft = true
 excerpt = ""
 hero = "/images/013287f6780b3fad4f885d5b6026a3f5.jpg"
 timeToRead = 4
