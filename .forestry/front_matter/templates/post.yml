@@ -46,4 +46,5 @@ pages:
 - content/post/fedora-29-bangalore-release-party.md
 - content/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors.md
 - content/post/fedora-amis-gets-ena-support.md
+- content/post/force-git-to-use-git-instead-of-https.md
 - content/post/introducing-skiptheline.md
