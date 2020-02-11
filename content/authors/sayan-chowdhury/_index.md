@@ -1,15 +1,15 @@
 ---
 title: Sayan Chowdhury
-bio: |
-  Written by You. This is where your author bio lives. Share your work, your
-  joys and of course, your Twitter handle.
-avatar: /images/dennis-brotzky.jpg
+bio: Jack of all trades, master of a few. Here lies the thoughts, ideas, and inspiration
+  of a free elf. Also known as @yudocaa
+avatar: "/images/face.jpg"
 featured: true
 social:
-  - title: github
-    url: https://github.com/sayanchowdhury
-  - title: facebook
-    url: https://facebook.com/yudocaa
-  - title: twitter
-    url: https://twitter.com/yudocaa
+- title: github
+  url: https://github.com/sayanchowdhury
+- title: facebook
+  url: https://facebook.com/yudocaa
+- title: twitter
+  url: https://twitter.com/yudocaa
+
 ---
