@@ -42,3 +42,4 @@ fields:
   label: Authors
 pages:
 - content/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors.md
+- content/post/fedora-amis-gets-ena-support.md
