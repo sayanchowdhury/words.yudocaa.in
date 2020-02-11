@@ -1,7 +1,6 @@
 +++
 authors = ["Sayan Chowdhury"]
 date = 2018-10-12T18:30:00Z
-draft = true
 excerpt = ""
 hero = ""
 timeToRead = 1
