@@ -2,6 +2,7 @@
 authors = ["Sayan Chowdhury"]
 date = 2014-03-07T07:20:23Z
 description = ""
+hero = "/images/banner.png"
 link = "https://sayanchowdhury.dgplug.org/waartaa-applies-gsoc-2014"
 slug = "waartaa-applies-gsoc-2014"
 tags = ["gsoc", "irc", "waartaa", "fedora", "meteorjs", "planet"]
@@ -9,27 +10,15 @@ timeToRead = 5
 title = "Waartaa applies GSoC 2014"
 
 +++
-.. image:: ../galleries/banner-gsoc2014.png
-	:align: center
+We are elated to inform you that [Waartaa](https://www.waartaa.com/) has been accepted as a [project idea](https://fedoraproject.org/wiki/Summer_coding_ideas_for_2014#Waartaa) for [GSoC](https://www.google-melange.com/gsoc/homepage/google/gsoc2014) under [Fedora](https://fedoraproject.org/)'s umbrella.
 
-We are elated to inform you that [Waartaa](https://www.waartaa.com/) has been
-accepted as a [project
-idea](https://fedoraproject.org/wiki/Summer_coding_ideas_for_2014#Waartaa) for
-[GSoC](https://www.google-melange.com/gsoc/homepage/google/gsoc2014) under
-[Fedora](https://fedoraproject.org/)'s umbrella.
-
-For those who are new to Waartaa, Waartaa is an open source communication tool
-for teams and groups. It is built on top of IRC. Currently, Waartaa is an IRC
-    client as a service and it supports centralized logging, 24x7 idling,
-    notifications and unique identity to a user on IRC. The source code is
-    available at
-    [https://github.com/waartaa/waartaa](https://github.com/waartaa/waartaa) for you to download and hack on it.
+For those who are new to Waartaa, Waartaa is an open-source communication tool for teams and groups. It is built on top of IRC. Currently, Waartaa is an IRC client as a service and it supports centralized logging, 24x7 idling, notifications and unique identity to a user on IRC. The source code is available at [https://github.com/waartaa/waartaa](https://github.com/waartaa/waartaa) for you to download and hack on it.
 
 If you find Waartaa interesting and something that you need, please feel free to ping us at #waartaa on Freenode. If you are a student, you are most welcome to submit your project idea for GSoC 2014 to help make Waartaa awesome.
 
 ## Mission
 
-Our mission is to implement a one-stop open source communication and collaboration tool for teams and groups, built on top of open source technologies (IRC, WebRTC, etc.).
+Our mission is to implement a one-stop open-source communication and collaboration tool for teams and groups, built on top of open source technologies (IRC, WebRTC, etc.).
 
 ## Current Status
 
@@ -64,4 +53,4 @@ have also started to receive quite some
 * [https://github.com/waartaa/waartaa/issues](https://github.com/waartaa/waartaa/issues)
 * Mailing list: [waartaa@googlegroups.com](waartaa@googlegroups.com)
 
-*This is a re-post of* [https://www.waartaa.com/blog/waartaa-applies-for-gsoc-2014.html](https://www.waartaa.com/blog/waartaa-applies-for-gsoc-2014.html)
+_This is a re-post of_ [https://www.waartaa.com/blog/waartaa-applies-for-gsoc-2014.html](https://www.waartaa.com/blog/waartaa-applies-for-gsoc-2014.html)
