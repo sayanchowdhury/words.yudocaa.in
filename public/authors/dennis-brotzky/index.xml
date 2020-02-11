@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dennis Brotzky on Sayan Chowdhury</title>
+    <link>http://localhost:8080/authors/dennis-brotzky/</link>
+    <description>Recent content in Dennis Brotzky on Sayan Chowdhury</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:8080/authors/dennis-brotzky/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A story of why Forestry loves Hugo</title>
+      <link>http://localhost:8080/post/2017-04-27-building-hoppers-media-centre/</link>
+      <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8080/post/2017-04-27-building-hoppers-media-centre/</guid>
+      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
+    </item>
+    
+  </channel>
+</rss>

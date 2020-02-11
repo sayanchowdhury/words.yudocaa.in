@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sayan Chowdhury</title>
+    <link>http://localhost:8080/authors/sayan-chowdhury/</link>
+    <description>Recent content on Sayan Chowdhury</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Nov 2018 18:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:8080/authors/sayan-chowdhury/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fedora AMIs for EC2 Instances (A1) Powered by Arm-Based AWS Graviton Processors</title>
+      <link>http://localhost:8080/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</link>
+      <pubDate>Wed, 28 Nov 2018 18:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:8080/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</guid>
+      <description>AWS recently announced their new fleet of A1 EC2 instances which is powered by ARM at AWS re:Invent.
+Gladly, the Fedora Kernel Team (Laura Abbott, Justin Forbes and Jeremy Cline) and Peter Robinson had already everything in place. The only missing piece was to add the support to fedimg to create arm64 based AMIs.
+With the release of fedimg==2.4.0 (thanks to Patrick), the new AMIs were happily getting uploaded to AWS and with a slight delay, Fedora had the support for the arm64 along with the x86_64 AMIs.</description>
+    </item>
+    
+    <item>
+      <title>Introducing SkipTheLine</title>
+      <link>http://localhost:8080/post/introducing-skiptheline/</link>
+      <pubDate>Wed, 10 Oct 2018 18:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:8080/post/introducing-skiptheline/</guid>
+      <description>2013 The year I graduated from a third-tier college in Durgapur. I did not expect much from the college, mostly because of the poor placement record in the college.
+To get myself a job, I was primarily going through hasjob.co and any job opportunities that came through Bangpypers mailing list.
+Finally, I landed myself into an internship and later which turned into a full-time at HackerEarth was through the hasjob.co.</description>
+    </item>
+    
+    <item>
+      <title>Exit Vim in between Git operation</title>
+      <link>http://localhost:8080/post/exit-vim-in-between-git-operation/</link>
+      <pubDate>Sat, 08 Sep 2018 18:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:8080/post/exit-vim-in-between-git-operation/</guid>
+      <description>Long I have been procrastinating over this. Whenever I had to quit out of the Vim while doing git-rebase interactively I would be going over to a new terminal window, and perform git rebase --abort and then close the other window too.
+Today, I learned if you ever want to quit Vim either while committing or rebasing, just do :cq. This quits Vim with an error code, and Git will abort the action.</description>
+    </item>
+    
+    <item>
+      <title>Fedora AMIs gets ENA support</title>
+      <link>http://localhost:8080/post/fedora-amis-gets-ena-support/</link>
+      <pubDate>Thu, 24 May 2018 18:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:8080/post/fedora-amis-gets-ena-support/</guid>
+      <description>It’s been a while that Amazon introduced Elastic Network Adapter (ENA) Support to their cloud. Amazon EC2 provides enhanced networking capabilities to C5, C5 with instance storage, F1, G3, H1, I3, m4.16xlarge, M5, P2, P3, R4, and X1 instances through the Elastic Network Adapter (ENA).
+With the Fedora 28 release, the Fedora AMIs come with the ENA support.
+To check whether an AMI has the Enhanced Networking with ENA-Enabled, you can query the AWS EC2 API, using the AWS Command Line Interface.</description>
+    </item>
+    
+    <item>
+      <title>Vote for me in Trek Photographer of the month</title>
+      <link>http://localhost:8080/post/trek-photographer-dec-2016/</link>
+      <pubDate>Mon, 30 Jan 2017 11:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:8080/post/trek-photographer-dec-2016/</guid>
+      <description>I have been nominated for the Trek Photographer of the Month. I am grateful to the judges for nominating me. Appreciate if you vote for me. I&amp;rsquo;m up against some really tough competition :)</description>
+    </item>
+    
+    <item>
+      <title>Waartaa applies GSoC 2014</title>
+      <link>http://localhost:8080/post/waartaa-applies-gsoc-2014/</link>
+      <pubDate>Fri, 07 Mar 2014 07:20:23 +0000</pubDate>
+      
+      <guid>http://localhost:8080/post/waartaa-applies-gsoc-2014/</guid>
+      <description>We are elated to inform you that Waartaa has been accepted as a project idea for GSoC under Fedora&amp;lsquo;s umbrella.
+For those who are new to Waartaa, Waartaa is an open-source communication tool for teams and groups. It is built on top of IRC. Currently, Waartaa is an IRC client as a service and it supports centralized logging, 24x7 idling, notifications and unique identity to a user on IRC. The source code is available at https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
