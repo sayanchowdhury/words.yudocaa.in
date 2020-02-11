@@ -17,3 +17,5 @@ This creates an entry in your .gitconfig:
 
     [url "git@github.com:"]
     	insteadOf = https://github.com/
+
+Photo by [Yancy Min](https://unsplash.com/@yancymin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/git?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
