@@ -3,7 +3,7 @@ authors = ["Sayan Chowdhury"]
 date = 2018-05-24T18:30:00Z
 draft = true
 excerpt = ""
-hero = "/images/b17504bbafcb78b3523d429c3182b443.jpg"
+hero = "/images/c0ee2b4be7bb68c869c5ee8fbbe1fd6c.jpg"
 timeToRead = 2
 title = "Fedora AMIs gets ENA support"
 
