@@ -1,12 +1,13 @@
 +++
-title = "Waartaa applies GSoC 2014"
-slug = "waartaa-applies-gsoc-2014"
-date = "2014-03-07T12:50:23+05:30"
-tags = ["gsoc", "irc", "waartaa", "fedora", "meteorjs", "planet"]
-link = "https://sayanchowdhury.dgplug.org/waartaa-applies-gsoc-2014"
+date = 2014-03-07T07:20:23Z
 description = ""
-+++
+link = "https://sayanchowdhury.dgplug.org/waartaa-applies-gsoc-2014"
+slug = "waartaa-applies-gsoc-2014"
+tags = ["gsoc", "irc", "waartaa", "fedora", "meteorjs", "planet"]
+timeToRead = 5
+title = "Waartaa applies GSoC 2014"
 
++++
 .. image:: ../galleries/banner-gsoc2014.png
 	:align: center
 
