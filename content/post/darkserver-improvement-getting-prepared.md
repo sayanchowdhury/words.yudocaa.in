@@ -5,6 +5,7 @@ tags    = ["gsoc", "fedora"]
 date    = "2013-06-22T12:00:00+05:30"
 title   = "Darkserver Improvement: Getting Prepared"
 slug    = "darkserver-improvement-getting-prepared"
+timeToRead = 6
 +++
 
 The Google Summer of Code 2013 results was declared on 27th May 2013, in

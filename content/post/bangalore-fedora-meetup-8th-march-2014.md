@@ -4,6 +4,7 @@ slug    = "bangalore-fedora-meetup-8th-march-2014"
 date    = "2014-03-08T22:18:06+05:30"
 tags    = ["planet", "meetup", "fedora"]
 link    = "http://sayanchowdhury.dgplug.org/bangalore-fedora-meetup-8th-march-2014"
+timeToRead = 4
 description = ""
 +++
 
@@ -22,7 +23,7 @@ The discussion took place around the following agendas:
 
 ## Fedora Monthly Meetup
 
-We decided start off with a local Fedora meetup here in Bangalore every month to chalk out on how to 
+We decided start off with a local Fedora meetup here in Bangalore every month to chalk out on how to
 reach to a greater audience in and around city to evangelize on Fedora, FOSS and contributing back to
 the community.
 

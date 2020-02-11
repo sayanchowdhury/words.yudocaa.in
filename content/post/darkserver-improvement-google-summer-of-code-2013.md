@@ -5,6 +5,7 @@ tags = ["fedora", "gsoc"]
 date = "2013-06-18T12:00:00+05:30"
 title = "Darkserver Improvement: Google Summer of Code 2013"
 slug = "darkserver-improvement-google-summer-of-code-2013"
+timeToRead = 1
 +++
 
 .. image:: ../galleries/gsoc.jpg

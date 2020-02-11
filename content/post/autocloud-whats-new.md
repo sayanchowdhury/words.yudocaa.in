@@ -4,6 +4,7 @@ slug = "autocloud-whats-new"
 date = "2016-08-24T17:28:00+05:30"
 tags = ["autocloud", "fedora", "planet", "infra"]
 link = "https://sayanchowdhury.dgplug.org/posts/autocloud-whats-new"
+timeToRead = 3
 description = ""
 +++
 [Autocloud](https://apps.fedoraproject.org/autocloud/) was released during the Fedora 23 cycle as a part of the [Two Week
