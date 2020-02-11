@@ -53,6 +53,16 @@ Your reviewers go through the commits, and suggest changes to some files. The su
     </item>
     
     <item>
+      <title>Vim, Wish I knew this about you before!</title>
+      <link>http://localhost:8080/post/vim-wish-i-knew-this-about-you-before/</link>
+      <pubDate>Tue, 22 Jan 2019 18:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:8080/post/vim-wish-i-knew-this-about-you-before/</guid>
+      <description>Almost all my life since I have started working around open source projects I have been a Vim user. That does not mean that I did not look into other options. I&amp;rsquo;ve tried my hands on Emacs, Sublime Text, Visual Studio Code, Atom, et cetera. But, none of them pleased me like vim.
+2018, I started working on Golang, and vim had to adapt to my needs, but it did not quite succeed and I made my switch to neovim around the end of the year.</description>
+    </item>
+    
+    <item>
       <title>Fedora AMIs for EC2 Instances (A1) Powered by Arm-Based AWS Graviton Processors</title>
       <link>http://localhost:8080/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</link>
       <pubDate>Wed, 28 Nov 2018 18:30:00 +0000</pubDate>
