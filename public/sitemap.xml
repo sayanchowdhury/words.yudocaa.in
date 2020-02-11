@@ -28,6 +28,16 @@
   </url>
   
   <url>
+    <loc>http://localhost:8080/post/fedora-29-bangalore-release-party/</loc>
+    <lastmod>2018-11-22T18:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/post/d-in-go-get/</loc>
+    <lastmod>2018-10-12T18:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://localhost:8080/post/introducing-skiptheline/</loc>
     <lastmod>2018-10-10T18:30:00+00:00</lastmod>
   </url>
