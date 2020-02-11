@@ -171,13 +171,11 @@
     <article  id="articleContent" class="post-content" style="position:relative;">
         <p>I&rsquo;m an advocate of using SSH authentication and connecting to services like Github, Gitlab, and many others. I do make sure that the use the <code>git://</code> URL while cloning the repo but sometimes I do make mistake of using the <code>https://</code> instead. Only to later realise when git prompts me to enter my username to authenticate the SSH connection. This is when I have to manually reset my git remote URL.</p>
 <p>Today, I found a cleaner solution to this problem. I can use <code>insteadOf</code> to enforce the connection via SSH.</p>
-<pre><code>git config --global url.&quot;git@github.com:&quot;.insteadOf &quot;https://github.com/&quot;
-</code></pre>
-<p>This creates an entry in your .gitconfig:</p>
-<pre><code>[url &quot;git@github.com:&quot;]
-    insteadOf = https://github.com/
-</code></pre>
-<p>Photo by <a href="https://unsplash.com/@yancymin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Yancy Min</a> on <a href="https://unsplash.com/search/photos/git?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global url.<span style="color:#e6db74">&#34;git@github.com:&#34;</span>.insteadOf <span style="color:#e6db74">&#34;https://github.com/&#34;</span>
+</code></pre></div><p>This creates an entry in your .gitconfig:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">[url <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">git@github.com:</span><span style="color:#e6db74">&#34;</span>]
+    insteadOf <span style="color:#f92672">=</span> https:<span style="color:#f92672">/</span><span style="color:#f92672">/</span>github<span style="color:#f92672">.</span>com<span style="color:#f92672">/</span>
+</code></pre></div><p>Photo by <a href="https://unsplash.com/@yancymin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Yancy Min</a> on <a href="https://unsplash.com/search/photos/git?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
 
     </article>
 

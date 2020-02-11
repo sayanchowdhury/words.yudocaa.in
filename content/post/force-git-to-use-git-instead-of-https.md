@@ -11,11 +11,15 @@ I'm an advocate of using SSH authentication and connecting to services like Gith
 
 Today, I found a cleaner solution to this problem. I can use `insteadOf` to enforce the connection via SSH.
 
-    git config --global url."git@github.com:".insteadOf "https://github.com/"
+```bash
+git config --global url."git@github.com:".insteadOf "https://github.com/"
+```
 
 This creates an entry in your .gitconfig:
 
-    [url "git@github.com:"]
-    	insteadOf = https://github.com/
+```python
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+```
 
 Photo by [Yancy Min](https://unsplash.com/@yancymin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/git?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
