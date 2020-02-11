@@ -41,6 +41,7 @@ fields:
   default: []
   label: Authors
 pages:
+- content/post/d-in-go-get.md
 - content/post/exit-vim-in-between-git-operation.md
 - content/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors.md
 - content/post/fedora-amis-gets-ena-support.md
