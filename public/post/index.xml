@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Sayan Chowdhury</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Nov 2018 18:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 18:30:00 +0000</lastBuildDate>
     
 	<atom:link href="http://localhost:8080/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Force git to use git:// instead of https://</title>
+      <link>http://localhost:8080/post/force-git-to-use-git-instead-of-https/</link>
+      <pubDate>Sun, 28 Jul 2019 18:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:8080/post/force-git-to-use-git-instead-of-https/</guid>
+      <description>I&amp;rsquo;m an advocate of using SSH authentication and connecting to services like Github, Gitlab, and many others. I do make sure that the use the git:// URL while cloning the repo but sometimes I do make mistake of using the https:// instead. Only to later realise when git prompts me to enter my username to authenticate the SSH connection. This is when I have to manually reset my git remote URL.</description>
+    </item>
     
     <item>
       <title>Fedora AMIs for EC2 Instances (A1) Powered by Arm-Based AWS Graviton Processors</title>
@@ -20,6 +29,29 @@
       <description>AWS recently announced their new fleet of A1 EC2 instances which is powered by ARM at AWS re:Invent.
 Gladly, the Fedora Kernel Team (Laura Abbott, Justin Forbes and Jeremy Cline) and Peter Robinson had already everything in place. The only missing piece was to add the support to fedimg to create arm64 based AMIs.
 With the release of fedimg==2.4.0 (thanks to Patrick), the new AMIs were happily getting uploaded to AWS and with a slight delay, Fedora had the support for the arm64 along with the x86_64 AMIs.</description>
+    </item>
+    
+    <item>
+      <title>Fedora 29 Bangalore Release Party</title>
+      <link>http://localhost:8080/post/fedora-29-bangalore-release-party/</link>
+      <pubDate>Thu, 22 Nov 2018 18:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:8080/post/fedora-29-bangalore-release-party/</guid>
+      <description>23rd November 2018
+The Fedora community of Bangalore assembled at the Red Hat Bangalore office. The event was scheduled to start at 1300, but the lunch at the office postponed the event by 45 mins.
+Sumantro kicked off the event with a small introduction, following which Vipul gave an introduction of open source with a short choco-chip story.
+Sumantro back on stage after that talking about the &amp;ldquo;What&amp;rsquo;s coming next?&amp;quot;, from discussing about GNOME/Pantheon, to Python 2 deprecation, to Ansible, to IoT, to Modularity.</description>
+    </item>
+    
+    <item>
+      <title>-d in go get</title>
+      <link>http://localhost:8080/post/d-in-go-get/</link>
+      <pubDate>Fri, 12 Oct 2018 18:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:8080/post/d-in-go-get/</guid>
+      <description>Saturday, I am sitting at a Starbucks in Bangalore, trying my hands on a Golang project. I come across this argument -d in go get: The go CLI help says:
+ The -d flag instructs get to stop after downloading the packages; that is, it instructs get not to install the packages.
+ </description>
     </item>
     
     <item>
@@ -52,15 +84,6 @@ Today, I learned if you ever want to quit Vim either while committing or rebasin
       <description>It’s been a while that Amazon introduced Elastic Network Adapter (ENA) Support to their cloud. Amazon EC2 provides enhanced networking capabilities to C5, C5 with instance storage, F1, G3, H1, I3, m4.16xlarge, M5, P2, P3, R4, and X1 instances through the Elastic Network Adapter (ENA).
 With the Fedora 28 release, the Fedora AMIs come with the ENA support.
 To check whether an AMI has the Enhanced Networking with ENA-Enabled, you can query the AWS EC2 API, using the AWS Command Line Interface.</description>
-    </item>
-    
-    <item>
-      <title>A story of why Forestry loves Hugo</title>
-      <link>http://localhost:8080/post/2017-04-27-building-hoppers-media-centre/</link>
-      <pubDate>Thu, 27 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:8080/post/2017-04-27-building-hoppers-media-centre/</guid>
-      <description>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’ve been crafting digital experiences for the past ten years, having contributed to the growth of companies such as Hopper, Lightspeed, and Breather, among others. Throughout this journey, I’ve had the opportunity to meet the most talented designers, engineers, growth marketers, and build a world-class team to develop startups worldwide.</description>
     </item>
     
     <item>

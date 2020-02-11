@@ -4,26 +4,31 @@
   
   <url>
     <loc>http://localhost:8080/</loc>
-    <lastmod>2018-11-28T18:30:00+00:00</lastmod>
+    <lastmod>2019-07-28T18:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://localhost:8080/authors/</loc>
-    <lastmod>2018-11-28T18:30:00+00:00</lastmod>
+    <lastmod>2019-07-28T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</loc>
-    <lastmod>2018-11-28T18:30:00+00:00</lastmod>
+    <loc>http://localhost:8080/post/force-git-to-use-git-instead-of-https/</loc>
+    <lastmod>2019-07-28T18:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://localhost:8080/post/</loc>
-    <lastmod>2018-11-28T18:30:00+00:00</lastmod>
+    <lastmod>2019-07-28T18:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://localhost:8080/authors/sayan-chowdhury/</loc>
+    <lastmod>2019-07-28T18:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</loc>
     <lastmod>2018-11-28T18:30:00+00:00</lastmod>
   </url>
   

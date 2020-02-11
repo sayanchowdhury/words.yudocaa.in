@@ -24,33 +24,27 @@
 
 
 
-<title>Notes: GTD and Taskwarrior | Sayan Chowdhury</title>
-<meta name="description" content="The posts tagged with notes are stuffs that I learned over time from blogs, articles, trying out on my own. The posts will be updated whenever I learn something new on the topic. This post can be easily read anytime and anywhere. Also, they can be easily shared. Do comment/point out if something is wrong out there.
-Inspired by Julia Evans http://jvns.ca/ to write these posts.
- What is GTD?">
-<meta property="og:title" content="Notes: GTD and Taskwarrior | Sayan Chowdhury">
+<title>Force git to use git:// instead of https:// | Sayan Chowdhury</title>
+<meta name="description" content="I&rsquo;m an advocate of using SSH authentication and connecting to services like Github, Gitlab, and many others. I do make sure that the use the git:// URL while cloning the repo but sometimes I do make mistake of using the https:// instead. Only to later realise when git prompts me to enter my username to authenticate the SSH connection. This is when I have to manually reset my git remote URL.">
+<meta property="og:title" content="Force git to use git:// instead of https:// | Sayan Chowdhury">
 <meta property="og:site_name" content="Sayan Chowdhury">
-<meta property="og:description" content="The posts tagged with notes are stuffs that I learned over time from blogs, articles, trying out on my own. The posts will be updated whenever I learn something new on the topic. This post can be easily read anytime and anywhere. Also, they can be easily shared. Do comment/point out if something is wrong out there.
-Inspired by Julia Evans http://jvns.ca/ to write these posts.
- What is GTD?">
-<meta property="og:url" content="http://localhost:8080/post/notes/taskwarrior/">
+<meta property="og:description" content="I&rsquo;m an advocate of using SSH authentication and connecting to services like Github, Gitlab, and many others. I do make sure that the use the git:// URL while cloning the repo but sometimes I do make mistake of using the https:// instead. Only to later realise when git prompts me to enter my username to authenticate the SSH connection. This is when I have to manually reset my git remote URL.">
+<meta property="og:url" content="http://localhost:8080/post/force-git-to-use-git-instead-of-https/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content='http://localhost:8080/uploads/default.jpg'><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Notes: GTD and Taskwarrior | Sayan Chowdhury">
+<meta property="og:image" content='http://localhost:8080/images/yancy-min-842ofHC6MaI-unsplash.jpg'><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Force git to use git:// instead of https:// | Sayan Chowdhury">
 
-	<link rel="canonical" href="http://localhost:8080/post/notes/taskwarrior/">
+	<link rel="canonical" href="http://localhost:8080/post/force-git-to-use-git-instead-of-https/">
 
 
 	<meta name="twitter:site" content="@https://twitter.com/yudocaa">
 	<meta name="twitter:creator" content="@https://twitter.com/yudocaa">
 
-	<meta name="twitter:description" content="The posts tagged with notes are stuffs that I learned over time from blogs, articles, trying out on my own. The posts will be updated whenever I learn something new on the topic. This post can be easily read anytime and anywhere. Also, they can be easily shared. Do comment/point out if something is wrong out there.
-Inspired by Julia Evans http://jvns.ca/ to write these posts.
- What is GTD?">
-<meta name="twitter:image" content="http://localhost:8080/uploads/default.jpg">
-<meta property="article:published_time" content="2016-05-13T16:30:00&#43;05:30">
-	<meta property="article:updated_time" content="2016-05-13T16:30:00&#43;05:30">
+	<meta name="twitter:description" content="I&rsquo;m an advocate of using SSH authentication and connecting to services like Github, Gitlab, and many others. I do make sure that the use the git:// URL while cloning the repo but sometimes I do make mistake of using the https:// instead. Only to later realise when git prompts me to enter my username to authenticate the SSH connection. This is when I have to manually reset my git remote URL.">
+<meta name="twitter:image" content="http://localhost:8080/images/yancy-min-842ofHC6MaI-unsplash.jpg">
+<meta property="article:published_time" content="2019-07-28T18:30:00&#43;00:00">
+	<meta property="article:updated_time" content="2019-07-28T18:30:00&#43;00:00">
 
 
 
@@ -121,68 +115,38 @@ Inspired by Julia Evans http://jvns.ca/ to write these posts.
     <section id="articleHero" class="section narrow">
     <div class="article-hero">
         <header class="article-header">
-            <h1 class="article-hero-heading">Notes: GTD and Taskwarrior</h1>
+            <h1 class="article-hero-heading">Force git to use git:// instead of https://</h1>
             <div class="article-hero-subtitle">
                 <div class="article-meta">
                     
 
 
-    <div class="article-coauthors-container">
-        
-        <span id="collapsedCoauthors" class="article-coauthors-collapsed">
-            <div class="article-coauthors-list" style="width: 0px;">
+    
+            <a href="/authors/sayan-chowdhury/" class="article-author-link">
                 
-            </div>
-            <strong class="article-coauthors-name-container">
+                    <div class="article-author-avatar">
+                        <img src="/images/face.jpg" />
+                    </div>
                 
-            </strong>
-            <div class="article-coauthors-icon-container">
-                <svg
-width="17"
-height="17"
-viewBox="0 0 17 17"
-fill="none"
-xmlns="http://www.w3.org/2000/svg"
->
-    <path style="fill: var(--primary);"
-      d="M5.3209 8.86719L8.50026 12.0396L11.6796 8.86719L12.6563 9.84385L8.50026 13.9999L4.34424 9.84385L5.3209 8.86719Z"
-    />
-    <path style="fill: var(--primary);"
-      d="M11.6791 8.13281L8.49974 4.96039L5.32039 8.13281L4.34373 7.15615L8.49974 3.00013L12.6558 7.15615L11.6791 8.13281Z"
-    />
-</svg>
-            </div>
-        </span>
-
-        <ul id="uncollapsedCoauthors" class="article-coauthors-list-open hidden">
-            <div id="uncollapsedAction" class="article-icon-open-container">
-                <svg
-width="17"
-height="17"
-viewBox="0 0 17 17"
-fill="none"
-xmlns="http://www.w3.org/2000/svg"
->
-    <path style="fill: var(--primary);"
-      d="M11.6796 14L8.50023 10.8276L5.32088 14L4.34422 13.0233L8.50023 8.86732L12.6563 13.0233L11.6796 14Z"
-    />
-    <path style="fill: var(--primary);"
-      d="M5.32041 3L8.49977 6.17243L11.6791 3L12.6558 3.97666L8.49977 8.13268L4.34375 3.97666L5.32041 3Z"
-    />
-</svg>
-            </div>
-            
-        </ul>
-    </div>
+                
+                <strong>Sayan Chowdhury</strong>
+                
+                <span class="hide-on-mobile">,&nbsp;</span>
+            </a>
+    
 
 
 
 <script src="/js/collapseAuthors.js"></script>
-                    May 13, 2016
-                    • 4 min read
+                    July 28, 2019
+                    • 1 min read
                 </div>
             </div>
         </header>
+        
+        <div class="article-hero-image" id="ArticleImage__Hero">
+            <img src="/images/yancy-min-842ofHC6MaI-unsplash.jpg">
+        </div>
         
     </div>
 </section>
@@ -205,97 +169,15 @@ xmlns="http://www.w3.org/2000/svg"
 
 
     <article  id="articleContent" class="post-content" style="position:relative;">
-        <blockquote>
-<p>The posts tagged with notes are stuffs that I learned over
-time from blogs, articles, trying out on my own. The posts will be updated
-whenever I learn something new on the topic. This post can be easily read anytime and
-anywhere. Also, they can be easily shared. Do comment/point out if something
-is wrong out there.</p>
-<p>Inspired by Julia Evans <a href="http://jvns.ca/">http://jvns.ca/</a> to write these posts.</p>
-</blockquote>
-<h2 id="what-is-gtd">What is GTD?</h2>
-<p>GTD abbr for &ldquo;Getting Things Done&rdquo; &ndash; is a framework for organizing and
-tracking your tasks and projects. Its aim is to make you have 100% trust in a
-system for collecting tasks, ideas, and projects.</p>
-<p>The lists you have to maintain:</p>
-<ul>
-<li><code>In</code></li>
-<li><code>Next actions</code></li>
-<li><code>Waiting for</code></li>
-<li><code>Projects</code></li>
-<li><code>Some day/maybe</code></li>
-</ul>
-<h2 id="the-in-list">The <code>in</code> list</h2>
-<p>The <code>in</code> list is where you capture all your ideas whenever they occur to you.
-This can be anything and process is just emptying your brain and putting it
-into the <code>in</code> list.</p>
-<h4 id="processing-the-in-list">Processing the <code>in</code> list</h4>
-<p>The items in the list should processed one by one in the order they appear on
-your list.</p>
-<p>Ask <strong>is it actionable</strong> &ndash;&gt; if No, then throw it away if you don&rsquo;t need it
-anymore or move to &ldquo;some day/maybe list&rdquo; or <strong>incubate</strong> it &ndash;&gt; add it to
-<em>tickler file</em>.</p>
-<p>if Yes, Plan the next action that needs to be performed. Spend a little extra
-time planning how the things need to be executed (If the action takes less
-than two minutes to perform then just do it). If more than 2 minutes delegate
-to the <code>Next Actions</code> list or move to <code>Waiting for</code> list if it depends on
-something. <code>Next Actions</code> is probably the place where most of the things will
-land up.  If the open loop will take more than one action to close, the overall
-goal should also be noted on a <code>Projects</code> list.</p>
-<h2 id="the-next-actions-list">The <code>Next Actions</code> list</h2>
-<p>The <code>next actions</code> list contains the list of things that you plan to perform.
-This can also be said as <strong>as-soon-as-possible actions</strong>. Things which you will
-work on whenever free.</p>
-<h2 id="the-waiting-for-list">The <code>Waiting-for</code> list</h2>
-<p>The <code>Waiting-for</code> list contains the list of things that would be list of task
-you are waiting on somebodies action.</p>
-<h2 id="projects"><code>Projects</code></h2>
-<p>The <code>Projects</code> list contains the list of <code>next actions</code>. If anything that takes
-more that one <code>next actions</code> to complete can be combined into a project.
-Completing the tasks one by one takes one one step closer to completing the
-project.</p>
-<p>It&rsquo;s good to write down the goal of the project maybe as a description so that
-it helps in focusing on the goal.</p>
-<h2 id="contexts"><code>Contexts</code></h2>
-<p>The contexts are basically <code>tags</code> to actions. It is a common practice to add
-<code>@</code> when context is a location.</p>
-<p><code>Agenda Contexts</code> - Agenda context is setting an agenda for a certain type of
-work. For example for everday meeting you can add the agenda context to all the
-actions that needs to be discussed.
-<a href="http://gettingthingsdone.com/2011/01/the-agenda-effect/">Read</a></p>
-<h2 id="the-somedaymaybe-list">The <code>someday/maybe</code> list</h2>
-<p>Projects and Ideas which does not need immediate attention but surely needs
-attention when you have time goes into <code>someday/maybe</code> list. This list should
-be reviewed weekly along with the rest of the system during the weekly review.</p>
-<h2 id="calendar"><code>Calendar</code></h2>
-<p>The <code>calendar</code> is for doing things on a certain time and date.Only keep time
-sensitive activities in list so that it does not get diluted.</p>
-<h2 id="weekly-review"><code>Weekly Review</code></h2>
-<p>This is one of the critical factors for the success of the <code>GTD Framework</code>. The
-<code>weekly review</code> needs to be done once per week.</p>
-<ul>
-<li>Review each of the <code>next action</code>. Each project should have atleast one <code>next action</code>. Only keep the items which you can do in the coming week else move it
-to <code>someday/maybe</code> list. If you don’t think you will ever do it—remove it
-completely.</li>
-<li>Look through your someday/maybe list and see if some <code>projects/actions</code> should
-be moved to the list of current <code>projects/the next actions</code> list. If creating a
-new project on your projects list, make sure to figure out its next physical,
-visible action and put it on the next actions list as well.</li>
-</ul>
-<h2 id="trigger-list"><code>Trigger</code> List</h2>
-<p>Trigger List is a list of <code>keywords</code> which is useful to trigger thoughts/ideas
-floating around your head during brain dumps.
-<a href="https://hackmake.org/reference/gtd-trigger-list">Read</a></p>
-<h2 id="tools---read-and-review">Tools - <code>Read and Review</code></h2>
-<p>A <code>read/review</code> folder is a list of documents that you maintain to read.
-Whenever you have some minutes to kill you can refer to this list.</p>
-<h2 id="tools---tickler-file">Tools - <code>Tickler</code> file</h2>
-<p>If you need sometime on a specific date and time. Maintain this the <em>action
-item</em> will only pop up on that specific date and time.</p>
-<h2 id="references">References</h2>
-<ul>
-<li><a href="https://hamberg.no/gtd/">GTD in 15 minutes – A Pragmatic Guide to Getting Things Done</a></li>
-</ul>
+        <p>I&rsquo;m an advocate of using SSH authentication and connecting to services like Github, Gitlab, and many others. I do make sure that the use the <code>git://</code> URL while cloning the repo but sometimes I do make mistake of using the <code>https://</code> instead. Only to later realise when git prompts me to enter my username to authenticate the SSH connection. This is when I have to manually reset my git remote URL.</p>
+<p>Today, I found a cleaner solution to this problem. I can use <code>insteadOf</code> to enforce the connection via SSH.</p>
+<pre><code>git config --global url.&quot;git@github.com:&quot;.insteadOf &quot;https://github.com/&quot;
+</code></pre>
+<p>This creates an entry in your .gitconfig:</p>
+<pre><code>[url &quot;git@github.com:&quot;]
+    insteadOf = https://github.com/
+</code></pre>
+<p>Photo by <a href="https://unsplash.com/@yancymin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Yancy Min</a> on <a href="https://unsplash.com/search/photos/git?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
 
     </article>
 
@@ -321,41 +203,41 @@ item</em> will only pop up on that specific date and time.</p>
     <div class="next-articles-grid" numberOfArticles={numberOfArticles}>
         <div class="post-row">
             
-                <a href="/post/receiving-weechat-notifications-on-mobile-via-pushover/" class="article-link"
+                <a href="/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/" class="article-link"
                  id="article-link-bigger">
                     <div>
                         <div class="image-container">
-                            <img src="" class="article-image" />
+                            <img src="/images/013287f6780b3fad4f885d5b6026a3f5.jpg" class="article-image" />
                         </div>
                         <div>
                             <h2 class="article-title">
-                                Receiving Weechat Notifications on mobile via Pushover
+                                Fedora AMIs for EC2 Instances (A1) Powered by Arm-Based AWS Graviton Processors
                             </h2>
                             <p class="article-excerpt">
                                 
                             </p>
                             <div class="article-metadata">
-                                April 4, 2016 · 2 min read
+                                November 11, 2018 · 2 min read
                             </div>
                         </div>
                     </div>
                 </a>
             
-                <a href="/post/fossasia-2016-day-2/" class="article-link"
+                <a href="/post/fedora-29-bangalore-release-party/" class="article-link"
                 >
                     <div>
                         <div class="image-container">
-                            <img src="" class="article-image" />
+                            <img src="/images/fedora29-816x345.jpg" class="article-image" />
                         </div>
                         <div>
                             <h2 class="article-title">
-                                FOSSASIA 2016 - Day 2
+                                Fedora 29 Bangalore Release Party
                             </h2>
                             <p class="article-excerpt">
                                 
                             </p>
                             <div class="article-metadata">
-                                March 3, 2016 · 3 min read
+                                November 11, 2018 · 1 min read
                             </div>
                         </div>
                     </div>
