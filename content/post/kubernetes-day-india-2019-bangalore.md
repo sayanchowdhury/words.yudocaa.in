@@ -24,3 +24,7 @@ Liz Rice, took the stage after Dan and talked on permission in Kubernetes. She g
 I moved outside after the talk and was mostly talking with people at the booths. Red Hat had it's booth also, so I spend some time talking to people about Fedora CoreOS and Silverblue
 
 It was very nice to find the growing audience of Kubernetes, and I also happen to know about a couple of more interesting projects the community is building.
+
+{{< tweet 1109330561187893249 >}}
+
+Photo by [Cameron Venti](https://unsplash.com/photos/QtETdXXR7gs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/collections/3457050/cloud-containers-kubernetes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
