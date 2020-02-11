@@ -2,7 +2,7 @@
 authors = ["Sayan Chowdhury"]
 date = 2014-03-07T07:20:23Z
 description = ""
-hero = "/images/banner.png"
+hero = "/images/Google summer of code.webp"
 link = "https://sayanchowdhury.dgplug.org/waartaa-applies-gsoc-2014"
 slug = "waartaa-applies-gsoc-2014"
 tags = ["gsoc", "irc", "waartaa", "fedora", "meteorjs", "planet"]
