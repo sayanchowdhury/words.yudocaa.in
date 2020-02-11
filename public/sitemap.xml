@@ -28,6 +28,26 @@
   </url>
   
   <url>
+    <loc>http://localhost:8080/post/kubernetes-day-india-2019-bangalore/</loc>
+    <lastmod>2019-03-26T18:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/post/fossasia-2019/</loc>
+    <lastmod>2019-03-25T18:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/post/editing-git-commits-from-history/</loc>
+    <lastmod>2019-02-03T18:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:8080/post/vim-wish-i-knew-this-about-you-before/</loc>
+    <lastmod>2019-01-22T18:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://localhost:8080/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</loc>
     <lastmod>2018-11-28T18:30:00+00:00</lastmod>
   </url>

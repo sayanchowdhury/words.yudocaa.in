@@ -21,6 +21,38 @@
     </item>
     
     <item>
+      <title>Kubernetes Day India 2019, Bangalore</title>
+      <link>http://localhost:8080/post/kubernetes-day-india-2019-bangalore/</link>
+      <pubDate>Tue, 26 Mar 2019 18:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:8080/post/kubernetes-day-india-2019-bangalore/</guid>
+      <description>I returned to another conference with the jetlag of another conference, FOSSASIA but this conference was something I was very eagerly waiting to attend. Why? Well there are a couple of reasons, but the main reason for which I bought the ticket was to listen to Liz Rice in person.
+The other reason was to see and meet the growing community of Kubernetes in Bangalore.
+23rd March 2019, I woke up early morning and left along with Sayani, and Saptak to this place quite outside of Bangalore.</description>
+    </item>
+    
+    <item>
+      <title>FOSSASIA 2019</title>
+      <link>http://localhost:8080/post/fossasia-2019/</link>
+      <pubDate>Mon, 25 Mar 2019 18:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:8080/post/fossasia-2019/</guid>
+      <description>I was back to FOSSASIA this year after a gap of an year and nothing had changed other than the venue. The event had the same level of enthusiasm as before, though the crowd seemed to be less compared to the previous years.
+This FOSSASIA was more special for the participants, organizers and the volunteers because this was the 10th year of the event. Kudos, to the organizing team for doing it successfully for last 10 years!</description>
+    </item>
+    
+    <item>
+      <title>Editing Git commits from history</title>
+      <link>http://localhost:8080/post/editing-git-commits-from-history/</link>
+      <pubDate>Sun, 03 Feb 2019 18:30:00 +0000</pubDate>
+      
+      <guid>http://localhost:8080/post/editing-git-commits-from-history/</guid>
+      <description>Let&amp;rsquo;s say you&amp;rsquo;ve raised a Pull Request on GitHub with 3 commits as shown below.
+d46d2f8a (HEAD -&amp;gt; feature, devel/feature) Add Fedora system to handle the Fedora Cloud images f726b033 vendor: Add new dep github.com/ulikunitz/xz dbdbda67 Split release and pre-release to handle multiple systems  Here, d46d2f8a is the HEAD, followed by f726b033 and dbdbda67.
+Your reviewers go through the commits, and suggest changes to some files. The suggestions now need to be applied to the commit dbdbda67.</description>
+    </item>
+    
+    <item>
       <title>Fedora AMIs for EC2 Instances (A1) Powered by Arm-Based AWS Graviton Processors</title>
       <link>http://localhost:8080/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</link>
       <pubDate>Wed, 28 Nov 2018 18:30:00 +0000</pubDate>
