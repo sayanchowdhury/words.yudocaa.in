@@ -2,7 +2,7 @@
 authors = ["Sayan Chowdhury"]
 date = 2018-10-12T18:30:00Z
 excerpt = ""
-hero = ""
+hero = "/images/square-gopher.png"
 timeToRead = 1
 title = "-d in go get"
 
