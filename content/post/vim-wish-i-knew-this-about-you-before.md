@@ -1,8 +1,8 @@
 +++
-authors = []
+authors = ["Sayan Chowdhury"]
 date = 2019-01-22T18:30:00Z
 excerpt = ""
-hero = ""
+hero = "/images/Screenshot 2020-02-11 at 5.40.17 PM.png"
 timeToRead = 9
 title = "Vim, Wish I knew this about you before!"
 
