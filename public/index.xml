@@ -48,7 +48,7 @@ This FOSSASIA was more special for the participants, organizers and the voluntee
       
       <guid>http://localhost:8080/post/editing-git-commits-from-history/</guid>
       <description>Let&amp;rsquo;s say you&amp;rsquo;ve raised a Pull Request on GitHub with 3 commits as shown below.
-d46d2f8a (HEAD -&amp;gt; feature, devel/feature) Add Fedora system to handle the Fedora Cloud images f726b033 vendor: Add new dep github.com/ulikunitz/xz dbdbda67 Split release and pre-release to handle multiple systems  Here, d46d2f8a is the HEAD, followed by f726b033 and dbdbda67.
+d46d2f8a (HEAD -&amp;gt; feature, devel/feature) Add Fedora system to handle the Fedora Cloud images f726b033 vendor: Add new dep github.com/ulikunitz/xz dbdbda67 Split release and pre-release to handle multiple systems Here, d46d2f8a is the HEAD, followed by f726b033 and dbdbda67.
 Your reviewers go through the commits, and suggest changes to some files. The suggestions now need to be applied to the commit dbdbda67.</description>
     </item>
     
