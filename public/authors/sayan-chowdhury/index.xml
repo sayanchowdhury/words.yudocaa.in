@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sayan Chowdhury</title>
-    <link>http://localhost:8080/authors/sayan-chowdhury/</link>
-    <description>Recent content on Sayan Chowdhury</description>
+    <title>Sayan Chowdhury on Intellectual Web</title>
+    <link>https://words.yudocaa.in/authors/sayan-chowdhury/</link>
+    <description>Recent content in Sayan Chowdhury on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jul 2019 18:30:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:8080/authors/sayan-chowdhury/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://words.yudocaa.in/authors/sayan-chowdhury/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Force git to use git:// instead of https://</title>
-      <link>http://localhost:8080/post/force-git-to-use-git-instead-of-https/</link>
+      <link>https://words.yudocaa.in/post/force-git-to-use-git-instead-of-https/</link>
       <pubDate>Sun, 28 Jul 2019 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/force-git-to-use-git-instead-of-https/</guid>
+      <guid>https://words.yudocaa.in/post/force-git-to-use-git-instead-of-https/</guid>
       <description>I&amp;rsquo;m an advocate of using SSH authentication and connecting to services like Github, Gitlab, and many others. I do make sure that the use the git:// URL while cloning the repo but sometimes I do make mistake of using the https:// instead. Only to later realise when git prompts me to enter my username to authenticate the SSH connection. This is when I have to manually reset my git remote URL.</description>
     </item>
     
     <item>
       <title>Kubernetes Day India 2019, Bangalore</title>
-      <link>http://localhost:8080/post/kubernetes-day-india-2019-bangalore/</link>
+      <link>https://words.yudocaa.in/post/kubernetes-day-india-2019-bangalore/</link>
       <pubDate>Tue, 26 Mar 2019 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/kubernetes-day-india-2019-bangalore/</guid>
+      <guid>https://words.yudocaa.in/post/kubernetes-day-india-2019-bangalore/</guid>
       <description>I returned to another conference with the jetlag of another conference, FOSSASIA but this conference was something I was very eagerly waiting to attend. Why? Well there are a couple of reasons, but the main reason for which I bought the ticket was to listen to Liz Rice in person.
 The other reason was to see and meet the growing community of Kubernetes in Bangalore.
 23rd March 2019, I woke up early morning and left along with Sayani, and Saptak to this place quite outside of Bangalore.</description>
@@ -33,20 +33,20 @@ The other reason was to see and meet the growing community of Kubernetes in Bang
     
     <item>
       <title>FOSSASIA 2019</title>
-      <link>http://localhost:8080/post/fossasia-2019/</link>
+      <link>https://words.yudocaa.in/post/fossasia-2019/</link>
       <pubDate>Mon, 25 Mar 2019 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/fossasia-2019/</guid>
+      <guid>https://words.yudocaa.in/post/fossasia-2019/</guid>
       <description>I was back to FOSSASIA this year after a gap of an year and nothing had changed other than the venue. The event had the same level of enthusiasm as before, though the crowd seemed to be less compared to the previous years.
 This FOSSASIA was more special for the participants, organizers and the volunteers because this was the 10th year of the event. Kudos, to the organizing team for doing it successfully for last 10 years!</description>
     </item>
     
     <item>
       <title>Editing Git commits from history</title>
-      <link>http://localhost:8080/post/editing-git-commits-from-history/</link>
+      <link>https://words.yudocaa.in/post/editing-git-commits-from-history/</link>
       <pubDate>Sun, 03 Feb 2019 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/editing-git-commits-from-history/</guid>
+      <guid>https://words.yudocaa.in/post/editing-git-commits-from-history/</guid>
       <description>Let&amp;rsquo;s say you&amp;rsquo;ve raised a Pull Request on GitHub with 3 commits as shown below.
 d46d2f8a (HEAD -&amp;gt; feature, devel/feature) Add Fedora system to handle the Fedora Cloud images f726b033 vendor: Add new dep github.com/ulikunitz/xz dbdbda67 Split release and pre-release to handle multiple systems Here, d46d2f8a is the HEAD, followed by f726b033 and dbdbda67.
 Your reviewers go through the commits, and suggest changes to some files. The suggestions now need to be applied to the commit dbdbda67.</description>
@@ -54,20 +54,20 @@ Your reviewers go through the commits, and suggest changes to some files. The su
     
     <item>
       <title>Vim, Wish I knew this about you before!</title>
-      <link>http://localhost:8080/post/vim-wish-i-knew-this-about-you-before/</link>
+      <link>https://words.yudocaa.in/post/vim-wish-i-knew-this-about-you-before/</link>
       <pubDate>Tue, 22 Jan 2019 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/vim-wish-i-knew-this-about-you-before/</guid>
+      <guid>https://words.yudocaa.in/post/vim-wish-i-knew-this-about-you-before/</guid>
       <description>Almost all my life since I have started working around open source projects I have been a Vim user. That does not mean that I did not look into other options. I&amp;rsquo;ve tried my hands on Emacs, Sublime Text, Visual Studio Code, Atom, et cetera. But, none of them pleased me like vim.
 2018, I started working on Golang, and vim had to adapt to my needs, but it did not quite succeed and I made my switch to neovim around the end of the year.</description>
     </item>
     
     <item>
       <title>Fedora AMIs for EC2 Instances (A1) Powered by Arm-Based AWS Graviton Processors</title>
-      <link>http://localhost:8080/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</link>
+      <link>https://words.yudocaa.in/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</link>
       <pubDate>Wed, 28 Nov 2018 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</guid>
+      <guid>https://words.yudocaa.in/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</guid>
       <description>AWS recently announced their new fleet of A1 EC2 instances which is powered by ARM at AWS re:Invent.
 Gladly, the Fedora Kernel Team (Laura Abbott, Justin Forbes and Jeremy Cline) and Peter Robinson had already everything in place. The only missing piece was to add the support to fedimg to create arm64 based AMIs.
 With the release of fedimg==2.4.0 (thanks to Patrick), the new AMIs were happily getting uploaded to AWS and with a slight delay, Fedora had the support for the arm64 along with the x86_64 AMIs.</description>
@@ -75,10 +75,10 @@ With the release of fedimg==2.4.0 (thanks to Patrick), the new AMIs were happily
     
     <item>
       <title>Fedora 29 Bangalore Release Party</title>
-      <link>http://localhost:8080/post/fedora-29-bangalore-release-party/</link>
+      <link>https://words.yudocaa.in/post/fedora-29-bangalore-release-party/</link>
       <pubDate>Thu, 22 Nov 2018 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/fedora-29-bangalore-release-party/</guid>
+      <guid>https://words.yudocaa.in/post/fedora-29-bangalore-release-party/</guid>
       <description>23rd November 2018
 The Fedora community of Bangalore assembled at the Red Hat Bangalore office. The event was scheduled to start at 1300, but the lunch at the office postponed the event by 45 mins.
 Sumantro kicked off the event with a small introduction, following which Vipul gave an introduction of open source with a short choco-chip story.
@@ -87,10 +87,10 @@ Sumantro back on stage after that talking about the &amp;ldquo;What&amp;rsquo;s 
     
     <item>
       <title>-d in go get</title>
-      <link>http://localhost:8080/post/d-in-go-get/</link>
+      <link>https://words.yudocaa.in/post/d-in-go-get/</link>
       <pubDate>Fri, 12 Oct 2018 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/d-in-go-get/</guid>
+      <guid>https://words.yudocaa.in/post/d-in-go-get/</guid>
       <description>Saturday, I am sitting at a Starbucks in Bangalore, trying my hands on a Golang project. I come across this argument -d in go get: The go CLI help says:
  The -d flag instructs get to stop after downloading the packages; that is, it instructs get not to install the packages.
  </description>
@@ -98,10 +98,10 @@ Sumantro back on stage after that talking about the &amp;ldquo;What&amp;rsquo;s 
     
     <item>
       <title>Introducing SkipTheLine</title>
-      <link>http://localhost:8080/post/introducing-skiptheline/</link>
+      <link>https://words.yudocaa.in/post/introducing-skiptheline/</link>
       <pubDate>Wed, 10 Oct 2018 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/introducing-skiptheline/</guid>
+      <guid>https://words.yudocaa.in/post/introducing-skiptheline/</guid>
       <description>2013 The year I graduated from a third-tier college in Durgapur. I did not expect much from the college, mostly because of the poor placement record in the college.
 To get myself a job, I was primarily going through hasjob.co and any job opportunities that came through Bangpypers mailing list.
 Finally, I landed myself into an internship and later which turned into a full-time at HackerEarth was through the hasjob.co.</description>
@@ -109,20 +109,20 @@ Finally, I landed myself into an internship and later which turned into a full-t
     
     <item>
       <title>Exit Vim in between Git operation</title>
-      <link>http://localhost:8080/post/exit-vim-in-between-git-operation/</link>
+      <link>https://words.yudocaa.in/post/exit-vim-in-between-git-operation/</link>
       <pubDate>Sat, 08 Sep 2018 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/exit-vim-in-between-git-operation/</guid>
+      <guid>https://words.yudocaa.in/post/exit-vim-in-between-git-operation/</guid>
       <description>Long I have been procrastinating over this. Whenever I had to quit out of the Vim while doing git-rebase interactively I would be going over to a new terminal window, and perform git rebase --abort and then close the other window too.
 Today, I learned if you ever want to quit Vim either while committing or rebasing, just do :cq. This quits Vim with an error code, and Git will abort the action.</description>
     </item>
     
     <item>
       <title>Fedora AMIs gets ENA support</title>
-      <link>http://localhost:8080/post/fedora-amis-gets-ena-support/</link>
+      <link>https://words.yudocaa.in/post/fedora-amis-gets-ena-support/</link>
       <pubDate>Thu, 24 May 2018 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/fedora-amis-gets-ena-support/</guid>
+      <guid>https://words.yudocaa.in/post/fedora-amis-gets-ena-support/</guid>
       <description>It’s been a while that Amazon introduced Elastic Network Adapter (ENA) Support to their cloud. Amazon EC2 provides enhanced networking capabilities to C5, C5 with instance storage, F1, G3, H1, I3, m4.16xlarge, M5, P2, P3, R4, and X1 instances through the Elastic Network Adapter (ENA).
 With the Fedora 28 release, the Fedora AMIs come with the ENA support.
 To check whether an AMI has the Enhanced Networking with ENA-Enabled, you can query the AWS EC2 API, using the AWS Command Line Interface.</description>
@@ -130,19 +130,19 @@ To check whether an AMI has the Enhanced Networking with ENA-Enabled, you can qu
     
     <item>
       <title>Vote for me in Trek Photographer of the month</title>
-      <link>http://localhost:8080/post/trek-photographer-dec-2016/</link>
+      <link>https://words.yudocaa.in/post/trek-photographer-dec-2016/</link>
       <pubDate>Mon, 30 Jan 2017 11:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/trek-photographer-dec-2016/</guid>
+      <guid>https://words.yudocaa.in/post/trek-photographer-dec-2016/</guid>
       <description>I have been nominated for the Trek Photographer of the Month. I am grateful to the judges for nominating me. Appreciate if you vote for me. I&amp;rsquo;m up against some really tough competition :)</description>
     </item>
     
     <item>
       <title>Waartaa applies GSoC 2014</title>
-      <link>http://localhost:8080/post/waartaa-applies-gsoc-2014/</link>
+      <link>https://words.yudocaa.in/post/waartaa-applies-gsoc-2014/</link>
       <pubDate>Fri, 07 Mar 2014 07:20:23 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/waartaa-applies-gsoc-2014/</guid>
+      <guid>https://words.yudocaa.in/post/waartaa-applies-gsoc-2014/</guid>
       <description>We are elated to inform you that Waartaa has been accepted as a project idea for GSoC under Fedora&amp;lsquo;s umbrella.
 For those who are new to Waartaa, Waartaa is an open-source communication tool for teams and groups. It is built on top of IRC. Currently, Waartaa is an IRC client as a service and it supports centralized logging, 24x7 idling, notifications and unique identity to a user on IRC. The source code is available at https://github.</description>
     </item>

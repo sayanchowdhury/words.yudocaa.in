@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sayan Chowdhury</title>
-    <link>http://localhost:8080/</link>
-    <description>Recent content on Sayan Chowdhury</description>
+    <title>Intellectual Web</title>
+    <link>https://words.yudocaa.in/</link>
+    <description>Recent content on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jul 2019 18:30:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:8080/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://words.yudocaa.in/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Force git to use git:// instead of https://</title>
-      <link>http://localhost:8080/post/force-git-to-use-git-instead-of-https/</link>
+      <link>https://words.yudocaa.in/post/force-git-to-use-git-instead-of-https/</link>
       <pubDate>Sun, 28 Jul 2019 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/force-git-to-use-git-instead-of-https/</guid>
+      <guid>https://words.yudocaa.in/post/force-git-to-use-git-instead-of-https/</guid>
       <description>I&amp;rsquo;m an advocate of using SSH authentication and connecting to services like Github, Gitlab, and many others. I do make sure that the use the git:// URL while cloning the repo but sometimes I do make mistake of using the https:// instead. Only to later realise when git prompts me to enter my username to authenticate the SSH connection. This is when I have to manually reset my git remote URL.</description>
     </item>
     
     <item>
       <title>Kubernetes Day India 2019, Bangalore</title>
-      <link>http://localhost:8080/post/kubernetes-day-india-2019-bangalore/</link>
+      <link>https://words.yudocaa.in/post/kubernetes-day-india-2019-bangalore/</link>
       <pubDate>Tue, 26 Mar 2019 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/kubernetes-day-india-2019-bangalore/</guid>
+      <guid>https://words.yudocaa.in/post/kubernetes-day-india-2019-bangalore/</guid>
       <description>I returned to another conference with the jetlag of another conference, FOSSASIA but this conference was something I was very eagerly waiting to attend. Why? Well there are a couple of reasons, but the main reason for which I bought the ticket was to listen to Liz Rice in person.
 The other reason was to see and meet the growing community of Kubernetes in Bangalore.
 23rd March 2019, I woke up early morning and left along with Sayani, and Saptak to this place quite outside of Bangalore.</description>
@@ -33,20 +33,20 @@ The other reason was to see and meet the growing community of Kubernetes in Bang
     
     <item>
       <title>FOSSASIA 2019</title>
-      <link>http://localhost:8080/post/fossasia-2019/</link>
+      <link>https://words.yudocaa.in/post/fossasia-2019/</link>
       <pubDate>Mon, 25 Mar 2019 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/fossasia-2019/</guid>
+      <guid>https://words.yudocaa.in/post/fossasia-2019/</guid>
       <description>I was back to FOSSASIA this year after a gap of an year and nothing had changed other than the venue. The event had the same level of enthusiasm as before, though the crowd seemed to be less compared to the previous years.
 This FOSSASIA was more special for the participants, organizers and the volunteers because this was the 10th year of the event. Kudos, to the organizing team for doing it successfully for last 10 years!</description>
     </item>
     
     <item>
       <title>Editing Git commits from history</title>
-      <link>http://localhost:8080/post/editing-git-commits-from-history/</link>
+      <link>https://words.yudocaa.in/post/editing-git-commits-from-history/</link>
       <pubDate>Sun, 03 Feb 2019 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/editing-git-commits-from-history/</guid>
+      <guid>https://words.yudocaa.in/post/editing-git-commits-from-history/</guid>
       <description>Let&amp;rsquo;s say you&amp;rsquo;ve raised a Pull Request on GitHub with 3 commits as shown below.
 d46d2f8a (HEAD -&amp;gt; feature, devel/feature) Add Fedora system to handle the Fedora Cloud images f726b033 vendor: Add new dep github.com/ulikunitz/xz dbdbda67 Split release and pre-release to handle multiple systems Here, d46d2f8a is the HEAD, followed by f726b033 and dbdbda67.
 Your reviewers go through the commits, and suggest changes to some files. The suggestions now need to be applied to the commit dbdbda67.</description>
@@ -54,20 +54,20 @@ Your reviewers go through the commits, and suggest changes to some files. The su
     
     <item>
       <title>Vim, Wish I knew this about you before!</title>
-      <link>http://localhost:8080/post/vim-wish-i-knew-this-about-you-before/</link>
+      <link>https://words.yudocaa.in/post/vim-wish-i-knew-this-about-you-before/</link>
       <pubDate>Tue, 22 Jan 2019 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/vim-wish-i-knew-this-about-you-before/</guid>
+      <guid>https://words.yudocaa.in/post/vim-wish-i-knew-this-about-you-before/</guid>
       <description>Almost all my life since I have started working around open source projects I have been a Vim user. That does not mean that I did not look into other options. I&amp;rsquo;ve tried my hands on Emacs, Sublime Text, Visual Studio Code, Atom, et cetera. But, none of them pleased me like vim.
 2018, I started working on Golang, and vim had to adapt to my needs, but it did not quite succeed and I made my switch to neovim around the end of the year.</description>
     </item>
     
     <item>
       <title>Fedora AMIs for EC2 Instances (A1) Powered by Arm-Based AWS Graviton Processors</title>
-      <link>http://localhost:8080/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</link>
+      <link>https://words.yudocaa.in/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</link>
       <pubDate>Wed, 28 Nov 2018 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</guid>
+      <guid>https://words.yudocaa.in/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</guid>
       <description>AWS recently announced their new fleet of A1 EC2 instances which is powered by ARM at AWS re:Invent.
 Gladly, the Fedora Kernel Team (Laura Abbott, Justin Forbes and Jeremy Cline) and Peter Robinson had already everything in place. The only missing piece was to add the support to fedimg to create arm64 based AMIs.
 With the release of fedimg==2.4.0 (thanks to Patrick), the new AMIs were happily getting uploaded to AWS and with a slight delay, Fedora had the support for the arm64 along with the x86_64 AMIs.</description>
@@ -75,10 +75,10 @@ With the release of fedimg==2.4.0 (thanks to Patrick), the new AMIs were happily
     
     <item>
       <title>Fedora 29 Bangalore Release Party</title>
-      <link>http://localhost:8080/post/fedora-29-bangalore-release-party/</link>
+      <link>https://words.yudocaa.in/post/fedora-29-bangalore-release-party/</link>
       <pubDate>Thu, 22 Nov 2018 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/fedora-29-bangalore-release-party/</guid>
+      <guid>https://words.yudocaa.in/post/fedora-29-bangalore-release-party/</guid>
       <description>23rd November 2018
 The Fedora community of Bangalore assembled at the Red Hat Bangalore office. The event was scheduled to start at 1300, but the lunch at the office postponed the event by 45 mins.
 Sumantro kicked off the event with a small introduction, following which Vipul gave an introduction of open source with a short choco-chip story.
@@ -87,10 +87,10 @@ Sumantro back on stage after that talking about the &amp;ldquo;What&amp;rsquo;s 
     
     <item>
       <title>-d in go get</title>
-      <link>http://localhost:8080/post/d-in-go-get/</link>
+      <link>https://words.yudocaa.in/post/d-in-go-get/</link>
       <pubDate>Fri, 12 Oct 2018 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/d-in-go-get/</guid>
+      <guid>https://words.yudocaa.in/post/d-in-go-get/</guid>
       <description>Saturday, I am sitting at a Starbucks in Bangalore, trying my hands on a Golang project. I come across this argument -d in go get: The go CLI help says:
  The -d flag instructs get to stop after downloading the packages; that is, it instructs get not to install the packages.
  </description>
@@ -98,10 +98,10 @@ Sumantro back on stage after that talking about the &amp;ldquo;What&amp;rsquo;s 
     
     <item>
       <title>Introducing SkipTheLine</title>
-      <link>http://localhost:8080/post/introducing-skiptheline/</link>
+      <link>https://words.yudocaa.in/post/introducing-skiptheline/</link>
       <pubDate>Wed, 10 Oct 2018 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/introducing-skiptheline/</guid>
+      <guid>https://words.yudocaa.in/post/introducing-skiptheline/</guid>
       <description>2013 The year I graduated from a third-tier college in Durgapur. I did not expect much from the college, mostly because of the poor placement record in the college.
 To get myself a job, I was primarily going through hasjob.co and any job opportunities that came through Bangpypers mailing list.
 Finally, I landed myself into an internship and later which turned into a full-time at HackerEarth was through the hasjob.co.</description>
@@ -109,20 +109,20 @@ Finally, I landed myself into an internship and later which turned into a full-t
     
     <item>
       <title>Exit Vim in between Git operation</title>
-      <link>http://localhost:8080/post/exit-vim-in-between-git-operation/</link>
+      <link>https://words.yudocaa.in/post/exit-vim-in-between-git-operation/</link>
       <pubDate>Sat, 08 Sep 2018 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/exit-vim-in-between-git-operation/</guid>
+      <guid>https://words.yudocaa.in/post/exit-vim-in-between-git-operation/</guid>
       <description>Long I have been procrastinating over this. Whenever I had to quit out of the Vim while doing git-rebase interactively I would be going over to a new terminal window, and perform git rebase --abort and then close the other window too.
 Today, I learned if you ever want to quit Vim either while committing or rebasing, just do :cq. This quits Vim with an error code, and Git will abort the action.</description>
     </item>
     
     <item>
       <title>Fedora AMIs gets ENA support</title>
-      <link>http://localhost:8080/post/fedora-amis-gets-ena-support/</link>
+      <link>https://words.yudocaa.in/post/fedora-amis-gets-ena-support/</link>
       <pubDate>Thu, 24 May 2018 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/fedora-amis-gets-ena-support/</guid>
+      <guid>https://words.yudocaa.in/post/fedora-amis-gets-ena-support/</guid>
       <description>It’s been a while that Amazon introduced Elastic Network Adapter (ENA) Support to their cloud. Amazon EC2 provides enhanced networking capabilities to C5, C5 with instance storage, F1, G3, H1, I3, m4.16xlarge, M5, P2, P3, R4, and X1 instances through the Elastic Network Adapter (ENA).
 With the Fedora 28 release, the Fedora AMIs come with the ENA support.
 To check whether an AMI has the Enhanced Networking with ENA-Enabled, you can query the AWS EC2 API, using the AWS Command Line Interface.</description>
@@ -130,10 +130,10 @@ To check whether an AMI has the Enhanced Networking with ENA-Enabled, you can qu
     
     <item>
       <title>PyLadies Pune Meetup - February 2017</title>
-      <link>http://localhost:8080/post/pyladies-pune-meetup-feb-2017/</link>
+      <link>https://words.yudocaa.in/post/pyladies-pune-meetup-feb-2017/</link>
       <pubDate>Mon, 06 Feb 2017 20:30:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/pyladies-pune-meetup-feb-2017/</guid>
+      <guid>https://words.yudocaa.in/post/pyladies-pune-meetup-feb-2017/</guid>
       <description>The PyLadies Pune February Meetup was held on 6th Feb at reserved-bit. Kushal took a session on MicroPython on the MicroBit boards. Thanks to @ntoll for sending over the MicroBits for workshops.
 I reached down to the venue a bit late. On reaching the venue, Kushal told me that he forgot the boards at home and I went to his place to pick the MicroBits.
   Most of the participants were regular participants for the meetup so Kushal took a quick course on Python.</description>
@@ -141,10 +141,10 @@ I reached down to the venue a bit late. On reaching the venue, Kushal told me th
     
     <item>
       <title>Redesigning fedimg (Part 2): Communication with AWS</title>
-      <link>http://localhost:8080/post/redesigning-fedimg-part-ii/</link>
+      <link>https://words.yudocaa.in/post/redesigning-fedimg-part-ii/</link>
       <pubDate>Sat, 04 Feb 2017 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/redesigning-fedimg-part-ii/</guid>
+      <guid>https://words.yudocaa.in/post/redesigning-fedimg-part-ii/</guid>
       <description>In the previous post, I discussed what is fedimg and how it works currently. In this post, I plan to explain the issue in the current uploading process of the AMIs and how we plan to fix it.
 What&amp;rsquo;s the problem? fedimg boots an utility instance using the RHEL AMI configured for that region.
 The problem with this design is that while adding a new region we need to look for the appropriate RHEL AMI in the newer region first.</description>
@@ -152,10 +152,10 @@ The problem with this design is that while adding a new region we need to look f
     
     <item>
       <title>Basic Soldering Workshop at reserved-bit</title>
-      <link>http://localhost:8080/post/soldering-workshop-at-rb/</link>
+      <link>https://words.yudocaa.in/post/soldering-workshop-at-rb/</link>
       <pubDate>Wed, 01 Feb 2017 15:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/soldering-workshop-at-rb/</guid>
+      <guid>https://words.yudocaa.in/post/soldering-workshop-at-rb/</guid>
       <description>This weekend there will be a soldering workshop conducted at reserved-bit. The workshop is on 5th Feb 2017 from 10:00 - 13:00.
 The 3-hour workshop plans cover to the following topics
  Electricity basics &amp;amp; Ohm’s Law Electronics basics Circuit components What is a solder? More on soldering equipment Practice session Making your own circuit (Carry it home)  Turns out I bought the first ticket for the workshop. I had couple of failed attempts of learning to solder due to which I usually ended going to a electrical shop to get my circuits soldered.</description>
@@ -163,29 +163,29 @@ The 3-hour workshop plans cover to the following topics
     
     <item>
       <title>Redesigning the fedimg AMI creation process - Part 1</title>
-      <link>http://localhost:8080/post/redesigning-fedimg-part-i/</link>
+      <link>https://words.yudocaa.in/post/redesigning-fedimg-part-i/</link>
       <pubDate>Mon, 30 Jan 2017 20:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/redesigning-fedimg-part-i/</guid>
+      <guid>https://words.yudocaa.in/post/redesigning-fedimg-part-i/</guid>
       <description>What is fedimg? Fedimg is a Python-powered service that uploads the Fedora Cloud images on various Cloud providers. such as Amazon Web Services (AWS) .
 How does it currently work? Fedimg listens to fedmsg for nightly as well as the production compose builds messages. On receiving a new message, the FedimgConsumer triggers the upload process. fedimg uses fedfind to extract the metadata for the compose from where it get&amp;rsquo;s the URL for the compressed raw image files.</description>
     </item>
     
     <item>
       <title>Vote for me in Trek Photographer of the month</title>
-      <link>http://localhost:8080/post/trek-photographer-dec-2016/</link>
+      <link>https://words.yudocaa.in/post/trek-photographer-dec-2016/</link>
       <pubDate>Mon, 30 Jan 2017 11:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/trek-photographer-dec-2016/</guid>
+      <guid>https://words.yudocaa.in/post/trek-photographer-dec-2016/</guid>
       <description>I have been nominated for the Trek Photographer of the Month. I am grateful to the judges for nominating me. Appreciate if you vote for me. I&amp;rsquo;m up against some really tough competition :)</description>
     </item>
     
     <item>
       <title>PyCon India 2016</title>
-      <link>http://localhost:8080/post/pycon-india-2016/</link>
+      <link>https://words.yudocaa.in/post/pycon-india-2016/</link>
       <pubDate>Sat, 26 Nov 2016 15:10:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/pycon-india-2016/</guid>
+      <guid>https://words.yudocaa.in/post/pycon-india-2016/</guid>
       <description>PyCon India, this year was held at New Delhi at the JNU Convention Center.
 Dev Sprints During the Dev Sprint, Farhaan and Vivek were sprinting on Fedora Infrastructure projects primarily helping people contribute to Pagure.
 Other projects/orgs like SciPy, Red Hat team, FOSSAsia, Junction etc were also sprinting.
@@ -194,20 +194,20 @@ The Dev Sprint turned out to have a good participation and couple of PRs were se
     
     <item>
       <title>Autocloud: What&#39;s new?</title>
-      <link>http://localhost:8080/post/autocloud-whats-new/</link>
+      <link>https://words.yudocaa.in/post/autocloud-whats-new/</link>
       <pubDate>Wed, 24 Aug 2016 17:28:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/autocloud-whats-new/</guid>
+      <guid>https://words.yudocaa.in/post/autocloud-whats-new/</guid>
       <description>Autocloud was released during the Fedora 23 cycle as a part of the Two Week Atomic Process.
 Previously, it used to listen to fedmsg for successful Koji builds. Whenever, there is a new message the AutocloudConsumer queues these message for processing. The Autocloud job service then listens to the queue, downloads the images and runs the tests using Tunir. A more detailed post about it&amp;rsquo;s release can be read here.</description>
     </item>
     
     <item>
       <title>Fedora Meetup Pune August 2016</title>
-      <link>http://localhost:8080/post/fedora-meetup-august-2016/</link>
+      <link>https://words.yudocaa.in/post/fedora-meetup-august-2016/</link>
       <pubDate>Sat, 20 Aug 2016 21:52:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/fedora-meetup-august-2016/</guid>
+      <guid>https://words.yudocaa.in/post/fedora-meetup-august-2016/</guid>
       <description>Fedora Pune Meetup for the month of August 2016 happened today at our usual location. We had in total 12 people turning out for the meetup.
 The event started with introductions and we had two new comers joining us this time, Trishna and Prathamesh.
 This time the event was mostly foccused around re-writing the GNU C Library Manual using reStructuredText and Sphinx. This task was decided during the release event that we had last month.</description>
@@ -215,10 +215,10 @@ This time the event was mostly foccused around re-writing the GNU C Library Manu
     
     <item>
       <title>Flock 2016</title>
-      <link>http://localhost:8080/post/flock-2016/</link>
+      <link>https://words.yudocaa.in/post/flock-2016/</link>
       <pubDate>Sun, 14 Aug 2016 16:30:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/flock-2016/</guid>
+      <guid>https://words.yudocaa.in/post/flock-2016/</guid>
       <description>Flock 2016 was held in the beautiful city of Krakow, Poland from August 2nd - August 5th, 2016.
 Day -1 Reached Krakow tired. Spent most of the time sleeping.
 Day 0 A lot of attendees started coming in. Met with a lot of people IRL whom I generally talked over on IRC. In the afternoon, we went out for the city tour. Visiting the Oskar Schindler’s Enamel Factory was a place I always wanted to visit ever since I watched the movie Schindler’s List.</description>
@@ -226,20 +226,20 @@ Day 0 A lot of attendees started coming in. Met with a lot of people IRL whom I 
     
     <item>
       <title>Fedora 24 Release event</title>
-      <link>http://localhost:8080/post/fedora-24-release-event/</link>
+      <link>https://words.yudocaa.in/post/fedora-24-release-event/</link>
       <pubDate>Tue, 12 Jul 2016 14:09:43 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/fedora-24-release-event/</guid>
+      <guid>https://words.yudocaa.in/post/fedora-24-release-event/</guid>
       <description>On 9th July 2016, we had our Fedora 24 release party in Pune. The release party took place at my place. We saw a lot of familiar faces from our regular Fedora Meetup.
 Chandan Kumar started the event with explaining the new features in Fedora 24. People discussed on how things has changed in Fedora 24. Parag and Siddhesh talked on how it&amp;rsquo;s important to learn things and people chipped in with their ideas.</description>
     </item>
     
     <item>
       <title>Notes: GTD and Taskwarrior</title>
-      <link>http://localhost:8080/post/notes/taskwarrior/</link>
+      <link>https://words.yudocaa.in/post/notes/taskwarrior/</link>
       <pubDate>Fri, 13 May 2016 16:30:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/notes/taskwarrior/</guid>
+      <guid>https://words.yudocaa.in/post/notes/taskwarrior/</guid>
       <description>The posts tagged with notes are stuffs that I learned over time from blogs, articles, trying out on my own. The posts will be updated whenever I learn something new on the topic. This post can be easily read anytime and anywhere. Also, they can be easily shared. Do comment/point out if something is wrong out there.
 Inspired by Julia Evans http://jvns.ca/ to write these posts.
  What is GTD?</description>
@@ -247,40 +247,40 @@ Inspired by Julia Evans http://jvns.ca/ to write these posts.
     
     <item>
       <title>Receiving Weechat Notifications on mobile via Pushover</title>
-      <link>http://localhost:8080/post/receiving-weechat-notifications-on-mobile-via-pushover/</link>
+      <link>https://words.yudocaa.in/post/receiving-weechat-notifications-on-mobile-via-pushover/</link>
       <pubDate>Mon, 11 Apr 2016 11:44:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/receiving-weechat-notifications-on-mobile-via-pushover/</guid>
+      <guid>https://words.yudocaa.in/post/receiving-weechat-notifications-on-mobile-via-pushover/</guid>
       <description>I recently switched to use Weechat as my primary IRC client from X-Chat. I did a setup of Weechat on my Digital Ocean box.
 Weechat setup turned out to be super simple and out of the box. I am running Weechat within a tmux session. But the problem I was facing was due to poor internet connection (thanks to Airtel for this and this was my primary reason for switching to weechat from Xchat) I got disconnected from the DO box quite often.</description>
     </item>
     
     <item>
       <title>FOSSASIA 2016 - Day 2</title>
-      <link>http://localhost:8080/post/fossasia-2016-day-2/</link>
+      <link>https://words.yudocaa.in/post/fossasia-2016-day-2/</link>
       <pubDate>Wed, 23 Mar 2016 17:22:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/fossasia-2016-day-2/</guid>
+      <guid>https://words.yudocaa.in/post/fossasia-2016-day-2/</guid>
       <description>I left early for the venue as haseeb had the first talk of the day and I was volunteering for the Python track.
 The day started off with a talk by Stephanie Taylor on Introduction to GSoC, and GCI. She talked about the programs Google Summer of Code and Google Code In. She shared some statistics from the past years. The students of GCI last year completed more than 4k tasks, among them 1k+ was done by the students under FOSSASIA organization.</description>
     </item>
     
     <item>
       <title>FOSSASIA 2016 - Day 1</title>
-      <link>http://localhost:8080/post/fossasia-2016-day-1/</link>
+      <link>https://words.yudocaa.in/post/fossasia-2016-day-1/</link>
       <pubDate>Wed, 23 Mar 2016 17:01:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/fossasia-2016-day-1/</guid>
+      <guid>https://words.yudocaa.in/post/fossasia-2016-day-1/</guid>
       <description>FOSSASIA 2016, Asia&amp;rsquo;s premier conference on Free and Open Software was held at Science Center, Singapore.
 I arrived Singapore 18th morning, the same day the event was starting. Due to track issues, the metro was running late and I reached the venue around 1100 local time. I directly went to the auditorium where the event was happening. I had already missed the morning talks. It was Tea break when I reached.</description>
     </item>
     
     <item>
       <title>Fedimg: Course of Action</title>
-      <link>http://localhost:8080/post/fedimg-course-of-action/</link>
+      <link>https://words.yudocaa.in/post/fedimg-course-of-action/</link>
       <pubDate>Sat, 23 Jan 2016 11:48:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/fedimg-course-of-action/</guid>
+      <guid>https://words.yudocaa.in/post/fedimg-course-of-action/</guid>
       <description>Fedimg is a Python-powered service which is built to make Fedora-Cloud images available on popular cloud providers, such as Amazon Web Services (AWS). The plans are to support more cloud providers such as Rackspace, Google Compute Engine.
 Fedimg listens for the messages from Fedmsg for the Koji image builds.
 Plan of work
@@ -290,20 +290,20 @@ Storing the AMIs are costing us lot.</description>
     
     <item>
       <title>Fedora Meetup Pune - January 2016</title>
-      <link>http://localhost:8080/post/fedora-meetup-pune-january-2016/</link>
+      <link>https://words.yudocaa.in/post/fedora-meetup-pune-january-2016/</link>
       <pubDate>Sun, 17 Jan 2016 20:28:43 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/fedora-meetup-pune-january-2016/</guid>
+      <guid>https://words.yudocaa.in/post/fedora-meetup-pune-january-2016/</guid>
       <description>On 15th January 2016, we had our first Fedora meetup at Pune. The venue was earlier decided to be Red Hat office, Pune but due to unavailability of space the meetup was moved to my apartment.
 The meetup was scheduled to start around 14:30 IST but with people pouring in a bit late, we started the event at 15:00 IST. The turnout was good and much more than what we had expected with a total of 18 people turning out.</description>
     </item>
     
     <item>
       <title>Introducing Bugyou</title>
-      <link>http://localhost:8080/post/introducing-bugyou/</link>
+      <link>https://words.yudocaa.in/post/introducing-bugyou/</link>
       <pubDate>Thu, 07 Jan 2016 14:09:43 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/introducing-bugyou/</guid>
+      <guid>https://words.yudocaa.in/post/introducing-bugyou/</guid>
       <description>We developed Autocloud as a part of Fedora 23 release cycle as a part of Two week atomic image.
 Autocloud publishes the messages to fedmsg when the image is queued, running, success and failed.
 What is Bugyou? Bugyou files issues for failed tests from Autocloud. Bugyou is part of Fedora Project. It listens to Autocloud messages from fedmsg and files bug for images which have failed the tests. Bugyou keeps updating the status of the images in the bug and closes the issue once the tests are successful.</description>
@@ -311,30 +311,30 @@ What is Bugyou? Bugyou files issues for failed tests from Autocloud. Bugyou is p
     
     <item>
       <title>Four Weeks in Fedora</title>
-      <link>http://localhost:8080/post/four-weeks-in-fedora/</link>
+      <link>https://words.yudocaa.in/post/four-weeks-in-fedora/</link>
       <pubDate>Tue, 24 Nov 2015 08:24:43 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/four-weeks-in-fedora/</guid>
+      <guid>https://words.yudocaa.in/post/four-weeks-in-fedora/</guid>
       <description>26th of October 2015, I joined Red Hat as a part of the Fedora Engineering Team.
 I have been contributing to the Fedora for couple of years now starting from the contributing to askbot-devel while we were gearing up for the Ask Fedora release. This year in July, I along with kushal, rtnpro, praveenkumar started working on Autocloud, as a part of the Two-Week Atomic during the Fedora 23 cycle. So, I last couple of years of I have met and worked with a lot of people in the Fedora community.</description>
     </item>
     
     <item>
       <title>Leaving HackerEarth</title>
-      <link>http://localhost:8080/post/leaving-hackerearth/</link>
+      <link>https://words.yudocaa.in/post/leaving-hackerearth/</link>
       <pubDate>Mon, 12 Oct 2015 08:24:43 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/leaving-hackerearth/</guid>
+      <guid>https://words.yudocaa.in/post/leaving-hackerearth/</guid>
       <description>It&amp;rsquo;s very hard to write but I am leaving HackerEarth.
 2013 and internship My college days were coming to an end with placements all around. I was sure to join in a startup. One fine day, I saw a job posting on hasjob on 12th December 2012 that boldly said &amp;ldquo;HackerEarth is buidling its initial team - Python/Django enthusiast needed&amp;rdquo;. The idea made me apply to HackerEarth and after a few rounds of email with Sachin and Vivek.</description>
     </item>
     
     <item>
       <title>Fedora Meetup 2015</title>
-      <link>http://localhost:8080/post/fedora-meetup-2015/</link>
+      <link>https://words.yudocaa.in/post/fedora-meetup-2015/</link>
       <pubDate>Thu, 09 Jul 2015 22:48:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/fedora-meetup-2015/</guid>
+      <guid>https://words.yudocaa.in/post/fedora-meetup-2015/</guid>
       <description>Fedora July Meetup 2015 happened at Hasgeek office, Indiranagar on July 04, 2015 at 06:30 PM.
 Attendees:
  Sayan Chowdhury Ratnadeep Debnath Lalatendu Mohanty Nitish Bharadwaj Devyani Kota Praseetha KR Sharat MR  Topics discussed:
@@ -343,19 +343,19 @@ Attendees:
     
     <item>
       <title>FUDCon India 2015</title>
-      <link>http://localhost:8080/post/fudcon-india-2015/</link>
+      <link>https://words.yudocaa.in/post/fudcon-india-2015/</link>
       <pubDate>Thu, 09 Jul 2015 16:29:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/fudcon-india-2015/</guid>
+      <guid>https://words.yudocaa.in/post/fudcon-india-2015/</guid>
       <description>I spent the last weekend of June at FUDCon India. FUDCon is the Fedora Users and Developers Conference organized in different parts of the world. The last FUDCon APAC that happened in India was in 2011 which i could not attend because of my college. Being a Fedora user for 6 years now I always wanted to attend one FUDCon. FUDCon APAC this year was held at MIT College of Enginnering Pune.</description>
     </item>
     
     <item>
       <title>Fedora 21 Release Party, Bangalore</title>
-      <link>http://localhost:8080/post/fedora-21-release-party-bangalore/</link>
+      <link>https://words.yudocaa.in/post/fedora-21-release-party-bangalore/</link>
       <pubDate>Thu, 15 Jan 2015 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/fedora-21-release-party-bangalore/</guid>
+      <guid>https://words.yudocaa.in/post/fedora-21-release-party-bangalore/</guid>
       <description>The Fedora Project announced the release of Fedora 21 on December 09, 2014. To celebrate the release a [Fedora 21 release party] (https://fedoraproject.org/wiki/Release_Party_F21_Bangalore) was organized at Red Hat, Bangalore with the help of Archit and Humble.
 The event was scheduled to start at 10AM but people started coming in from 9:30AM itself. Around 40 people turned up among them a good number were college students.
 The release party finally started at 10:30AM by [Archit] (https://fedoraproject.</description>
@@ -363,30 +363,21 @@ The release party finally started at 10:30AM by [Archit] (https://fedoraproject.
     
     <item>
       <title>Migrate a running process into tmux</title>
-      <link>http://localhost:8080/post/migrate-a-running-process-into-tmux/</link>
+      <link>https://words.yudocaa.in/post/migrate-a-running-process-into-tmux/</link>
       <pubDate>Sat, 27 Dec 2014 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/migrate-a-running-process-into-tmux/</guid>
+      <guid>https://words.yudocaa.in/post/migrate-a-running-process-into-tmux/</guid>
       <description>Being a regular tmux user. Migrating a running process into tmux using reptyr comes handy.
 reptyr is a utility for taking an existing running program and attaching it to a new terminal. Started a long-running process over ssh, but have to leave and don&amp;rsquo;t want to interrupt it? Just start a screen, use reptyr to grab it, and then kill the ssh session and head on home.
 The package available in Fedora/Ubuntu repositories.</description>
     </item>
     
     <item>
-      <title>PyLadies Pune June 2017</title>
-      <link>http://localhost:8080/post/pyladies-pune-june-2017/</link>
-      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
-      
-      <guid>http://localhost:8080/post/pyladies-pune-june-2017/</guid>
-      <description>Hello World</description>
-    </item>
-    
-    <item>
       <title>Git Password Caching</title>
-      <link>http://localhost:8080/post/git-password-caching/</link>
+      <link>https://words.yudocaa.in/post/git-password-caching/</link>
       <pubDate>Tue, 10 Jun 2014 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/git-password-caching/</guid>
+      <guid>https://words.yudocaa.in/post/git-password-caching/</guid>
       <description>Bookmark for me.
 To use this option, you need to turn on the credential helper so that Git will save your password in memory for some time:
 $ git config --global credential.helper cache # Set git to use the credential memory cache By default Git will cache your password for 15 minutes. You can change this if you like.
@@ -395,10 +386,10 @@ git config --global credential.helper &#39;cache --timeout=3600&#39; # Set the c
     
     <item>
       <title>Bangalore Fedora Meetup, 8th March 2014</title>
-      <link>http://localhost:8080/post/bangalore-fedora-meetup-8th-march-2014/</link>
+      <link>https://words.yudocaa.in/post/bangalore-fedora-meetup-8th-march-2014/</link>
       <pubDate>Sat, 08 Mar 2014 22:18:06 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/bangalore-fedora-meetup-8th-march-2014/</guid>
+      <guid>https://words.yudocaa.in/post/bangalore-fedora-meetup-8th-march-2014/</guid>
       <description>After a long time, we had a Bangalore Fedora meetup(March 8, 2014) at Red Hat, Bangalore.
 The attendees for the event were:
  Anil Shah Varun Shastry Rejy M Cyriac Ratnadeep Debnath Sayan Chowdhury Sarup Banskota  The discussion took place around the following agendas:
@@ -407,20 +398,20 @@ Fedora Monthly Meetup We decided start off with a local Fedora meetup here in Ba
     
     <item>
       <title>Waartaa applies GSoC 2014</title>
-      <link>http://localhost:8080/post/waartaa-applies-gsoc-2014/</link>
+      <link>https://words.yudocaa.in/post/waartaa-applies-gsoc-2014/</link>
       <pubDate>Fri, 07 Mar 2014 07:20:23 +0000</pubDate>
       
-      <guid>http://localhost:8080/post/waartaa-applies-gsoc-2014/</guid>
+      <guid>https://words.yudocaa.in/post/waartaa-applies-gsoc-2014/</guid>
       <description>We are elated to inform you that Waartaa has been accepted as a project idea for GSoC under Fedora&amp;lsquo;s umbrella.
 For those who are new to Waartaa, Waartaa is an open-source communication tool for teams and groups. It is built on top of IRC. Currently, Waartaa is an IRC client as a service and it supports centralized logging, 24x7 idling, notifications and unique identity to a user on IRC. The source code is available at https://github.</description>
     </item>
     
     <item>
       <title>Mukti 2014</title>
-      <link>http://localhost:8080/post/mukti-2014/</link>
+      <link>https://words.yudocaa.in/post/mukti-2014/</link>
       <pubDate>Fri, 07 Mar 2014 01:45:03 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/mukti-2014/</guid>
+      <guid>https://words.yudocaa.in/post/mukti-2014/</guid>
       <description>Mukti 2014 is the annual national level technical symposium on Free and Open Source Software of the GNU/Linux Users’ Group NIT Durgapur held from 31st January - 2nd February 2014.
 I&amp;rsquo;ve been attending Mukti for last four years. Unlike, the previous years when i usually attended Mukti as a student participant, this year I attended Mukti as a guest speaker.
 Day 0 (30th January 2014) After a hectic travel from Bangalore to Durgapur via Kolkata.</description>
@@ -428,10 +419,10 @@ Day 0 (30th January 2014) After a hectic travel from Bangalore to Durgapur via K
     
     <item>
       <title>An open letter to Bloggers from Kolkata.</title>
-      <link>http://localhost:8080/post/an-open-letter-to-bloggers-from-kolkata/</link>
+      <link>https://words.yudocaa.in/post/an-open-letter-to-bloggers-from-kolkata/</link>
       <pubDate>Wed, 05 Mar 2014 00:31:43 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/an-open-letter-to-bloggers-from-kolkata/</guid>
+      <guid>https://words.yudocaa.in/post/an-open-letter-to-bloggers-from-kolkata/</guid>
       <description>On February 23, 2014 at 4:43pm, Anirban Saha made a post on Facebook
 Where are the Kolkata Bloggers? Like, seriously ?
 In August 8, 2009, Webreps organised Kolkata Bloggers Meet. That time I joined Webreps. In October 31, 2009, we organised the BCET Bloggers workshop in BCET. There BCREC and NITDgp also joined in. Have been active ever since then.
@@ -440,29 +431,29 @@ In 2014 - I hardly find any blogger visible and audible.</description>
     
     <item>
       <title>How to get started with Open Source</title>
-      <link>http://localhost:8080/post/how-to-get-started-with-open-source/</link>
+      <link>https://words.yudocaa.in/post/how-to-get-started-with-open-source/</link>
       <pubDate>Tue, 04 Mar 2014 00:30:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/how-to-get-started-with-open-source/</guid>
+      <guid>https://words.yudocaa.in/post/how-to-get-started-with-open-source/</guid>
       <description>I have been involved in Durgapur Linux User&amp;rsquo;s Group for around last five years. I have been contributing to various open source projects quite sometime. The primary reason on why I contribute to open source is the feeling, the enjoyment when you send a patch or a PR to a open source project. It makes you happy when millions of people use your few lines of code in day to day life.</description>
     </item>
     
     <item>
       <title>Mozilla Summit 2013</title>
-      <link>http://localhost:8080/post/mozilla-summit-2013/</link>
+      <link>https://words.yudocaa.in/post/mozilla-summit-2013/</link>
       <pubDate>Sat, 02 Nov 2013 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/mozilla-summit-2013/</guid>
+      <guid>https://words.yudocaa.in/post/mozilla-summit-2013/</guid>
       <description>I could not sleep the night i got the invitation mail from Mozilla to attend Mozilla Summit 2013. I was roaming around my college hostel waking up everybody from their sleep just to tell them that “I have been invited to Mozilla Summit 2013 at Santa Clara, CA”. I was really very excited as this was be my first international travel.
 Finally the month of October came. rtnpro and I left for bangalore airport early (all due to exitement).</description>
     </item>
     
     <item>
       <title>Darkserver Improvement: Pen Down</title>
-      <link>http://localhost:8080/post/darkserver-improvement-pen-down/</link>
+      <link>https://words.yudocaa.in/post/darkserver-improvement-pen-down/</link>
       <pubDate>Wed, 25 Sep 2013 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/darkserver-improvement-pen-down/</guid>
+      <guid>https://words.yudocaa.in/post/darkserver-improvement-pen-down/</guid>
       <description>Lot of things to do!
 Lot of things to do!
 Lot of things to do!
@@ -472,20 +463,20 @@ While in college, I had a fascination toward RPM packaging as most of my college
     
     <item>
       <title>PyCon India 2013</title>
-      <link>http://localhost:8080/post/pycon-india-2013/</link>
+      <link>https://words.yudocaa.in/post/pycon-india-2013/</link>
       <pubDate>Tue, 10 Sep 2013 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/pycon-india-2013/</guid>
+      <guid>https://words.yudocaa.in/post/pycon-india-2013/</guid>
       <description>Python Month I attended last year’s PyCon India, while in college and it was a great experience. After shifting to Bangalore this year, I thought why not volunteer Pycon India this year.
 I was a regular attendee to the Pycon India meetings held at the Goibibo office at M.G.Road. This year it was thought to celebrate the month of August Python Month as a part of PyCon this year. As a part of Python Month, volunteers would go to various college across the country to evangelize and teach python to college students.</description>
     </item>
     
     <item>
       <title>Darkserver Improvement: Web Dashboard</title>
-      <link>http://localhost:8080/post/darkserver-improvement-web-dashboard/</link>
+      <link>https://words.yudocaa.in/post/darkserver-improvement-web-dashboard/</link>
       <pubDate>Mon, 09 Sep 2013 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/darkserver-improvement-web-dashboard/</guid>
+      <guid>https://words.yudocaa.in/post/darkserver-improvement-web-dashboard/</guid>
       <description>There has been a lot of changes since I last posted my blog.
 Darkserver’s command line dashboard now supports the secondary architecture. You can easily shutdown the darkproducer of specifying which architecture to shutdown.
 .. code::
@@ -495,10 +486,10 @@ After a rigorous testing on my laptop, i pushed the code to the dev instance tha
     
     <item>
       <title>Darkserver Improvement</title>
-      <link>http://localhost:8080/post/darkserver-improvement/</link>
+      <link>https://words.yudocaa.in/post/darkserver-improvement/</link>
       <pubDate>Fri, 26 Jul 2013 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/darkserver-improvement/</guid>
+      <guid>https://words.yudocaa.in/post/darkserver-improvement/</guid>
       <description>I am currently doing some manual testing of my code, and it proved to be vital. It helped me figure out a lot of bugs. One of seemed weird to me in the beginning: The get here returned an error.
 .. code::
 Method Not Allowed This is an XML-RPC server. Only POST requests are accepted.  The project required a heavy amount of download, so my mentor gave me a dev instance to test out my code, all seemed to be fine, with the code properly working on local machine.</description>
@@ -506,48 +497,48 @@ Method Not Allowed This is an XML-RPC server. Only POST requests are accepted.  
     
     <item>
       <title>Darkserver Improvement: Week Two and Week Three</title>
-      <link>http://localhost:8080/post/darkserver-improvement-week-two-and-week-three/</link>
+      <link>https://words.yudocaa.in/post/darkserver-improvement-week-two-and-week-three/</link>
       <pubDate>Wed, 10 Jul 2013 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/darkserver-improvement-week-two-and-week-three/</guid>
+      <guid>https://words.yudocaa.in/post/darkserver-improvement-week-two-and-week-three/</guid>
       <description>It’s been two weeks since i last posted my report on Darkserver. I could not post week two update as I had been down with bad health(seasonal changes + Loo). With the week coming to an end and /me recovering from fever, i badly hurt my right wrist and that was end of it. I somehow manage to move myself to a new city, Bengaluru. The week passed as a trauma for me :’(</description>
     </item>
     
     <item>
       <title>Google Summer of Code 2013: Welcome Kit</title>
-      <link>http://localhost:8080/post/google-summer-of-code-2013-welcome-kit/</link>
+      <link>https://words.yudocaa.in/post/google-summer-of-code-2013-welcome-kit/</link>
       <pubDate>Tue, 25 Jun 2013 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/google-summer-of-code-2013-welcome-kit/</guid>
+      <guid>https://words.yudocaa.in/post/google-summer-of-code-2013-welcome-kit/</guid>
       <description>Today, I got my GSoC welcome Kit. YaY!</description>
     </item>
     
     <item>
       <title>Darkserver Improvement: Week One</title>
-      <link>http://localhost:8080/post/darkserver-improvement-week-one/</link>
+      <link>https://words.yudocaa.in/post/darkserver-improvement-week-one/</link>
       <pubDate>Mon, 24 Jun 2013 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/darkserver-improvement-week-one/</guid>
+      <guid>https://words.yudocaa.in/post/darkserver-improvement-week-one/</guid>
       <description>The ‘Google Summer of Code’ code period began on June 17 and it’s already one week into it. Prior to the beginning of the coding period, I went into the depths of the darkserver codebase. In the current version of Darkserver, the link present in the libimporter are hardlinks and it is pretty well visible on Github
 So, I removed the urls and the values from the libimporter and made it configurable via config files.</description>
     </item>
     
     <item>
       <title>Darkserver Improvement: Random Scribblings</title>
-      <link>http://localhost:8080/post/darkserver-improvement-random-scribblings/</link>
+      <link>https://words.yudocaa.in/post/darkserver-improvement-random-scribblings/</link>
       <pubDate>Sun, 23 Jun 2013 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/darkserver-improvement-random-scribblings/</guid>
+      <guid>https://words.yudocaa.in/post/darkserver-improvement-random-scribblings/</guid>
       <description>It was worth trying to sit down with pen and paper and sketch out the compete workflow of Darkserver. I got the idea to try out this stuff from Vivek’s blogpost. Though, I could not get hold of a board but A4 did the job for me and it is really proving out to be helpful.
 .. slides: ../galleries/random_scribblings.JPG ../galleries/random_scribblings2.JPG</description>
     </item>
     
     <item>
       <title>Darkserver Improvement: Getting Prepared</title>
-      <link>http://localhost:8080/post/darkserver-improvement-getting-prepared/</link>
+      <link>https://words.yudocaa.in/post/darkserver-improvement-getting-prepared/</link>
       <pubDate>Sat, 22 Jun 2013 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/darkserver-improvement-getting-prepared/</guid>
+      <guid>https://words.yudocaa.in/post/darkserver-improvement-getting-prepared/</guid>
       <description>The Google Summer of Code 2013 results was declared on 27th May 2013, in between my semester exam so i had no time to devote until the end of my semester exams and /me returning back to my home.
 With the beginning of the 2nd week of June, I started to hack around with the project, Darkserver. The project is available on GitHub.
 That week was pretty much a reading week rather than coding week as I had to go through all kinds of documentation.</description>
@@ -555,10 +546,10 @@ That week was pretty much a reading week rather than coding week as I had to go 
     
     <item>
       <title>Darkserver Improvement: Google Summer of Code 2013</title>
-      <link>http://localhost:8080/post/darkserver-improvement-google-summer-of-code-2013/</link>
+      <link>https://words.yudocaa.in/post/darkserver-improvement-google-summer-of-code-2013/</link>
       <pubDate>Tue, 18 Jun 2013 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/darkserver-improvement-google-summer-of-code-2013/</guid>
+      <guid>https://words.yudocaa.in/post/darkserver-improvement-google-summer-of-code-2013/</guid>
       <description>.. image:: ../galleries/gsoc.jpg :align: center
 It’s better later than never. It’s been two week since the Google Summer of Code 2013 results were announced and I am glad to say that I got selected this year.
 I will be working on Darkserver Improvement under Fedora. One can see a draft of my proposal here. My mentor is Kushal Das and i am really helpful for helping me out in the whole process both in code and application.</description>
@@ -566,10 +557,10 @@ I will be working on Darkserver Improvement under Fedora. One can see a draft of
     
     <item>
       <title>Never Do it for Free</title>
-      <link>http://localhost:8080/post/never-do-it-for-free/</link>
+      <link>https://words.yudocaa.in/post/never-do-it-for-free/</link>
       <pubDate>Sat, 08 Jun 2013 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/never-do-it-for-free/</guid>
+      <guid>https://words.yudocaa.in/post/never-do-it-for-free/</guid>
       <description>This was legendary quote given by “The Joker” in the movie The Dark Knight.
 I was never a fan of this quote, until, I realized “The Joker” parted the right message, not for all cases but Yes this quote does hold true for certain instances.
 Choose your students wisely. :P</description>
@@ -577,20 +568,20 @@ Choose your students wisely. :P</description>
     
     <item>
       <title>dgplug Summer Training 2013</title>
-      <link>http://localhost:8080/post/dgplug-summer-training-2013/</link>
+      <link>https://words.yudocaa.in/post/dgplug-summer-training-2013/</link>
       <pubDate>Wed, 24 Apr 2013 12:00:00 +0530</pubDate>
       
-      <guid>http://localhost:8080/post/dgplug-summer-training-2013/</guid>
+      <guid>https://words.yudocaa.in/post/dgplug-summer-training-2013/</guid>
       <description>The time has come again this year for the dgplug summer training.
 The summer training is conducted each year during the month of June. Though, we cannot call June as the summer season but end of June is a suitable time for most of the Indian students. During this summer training, a number of upstream developers give talk on various open-source technologies. This guides the student on how to contribute back to open source.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://localhost:8080/about/</link>
+      <link>https://words.yudocaa.in/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/about/</guid>
+      <guid>https://words.yudocaa.in/about/</guid>
       <description>Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui.
 Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
 Nulla vitae elit libero, a pharetra augue.</description>

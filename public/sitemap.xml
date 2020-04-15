@@ -3,297 +3,292 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:8080/</loc>
+    <loc>https://words.yudocaa.in/</loc>
     <lastmod>2019-07-28T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/authors/</loc>
+    <loc>https://words.yudocaa.in/authors/</loc>
     <lastmod>2019-07-28T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/force-git-to-use-git-instead-of-https/</loc>
+    <loc>https://words.yudocaa.in/post/force-git-to-use-git-instead-of-https/</loc>
     <lastmod>2019-07-28T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/</loc>
+    <loc>https://words.yudocaa.in/post/</loc>
     <lastmod>2019-07-28T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/authors/sayan-chowdhury/</loc>
+    <loc>https://words.yudocaa.in/authors/sayan-chowdhury/</loc>
     <lastmod>2019-07-28T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/kubernetes-day-india-2019-bangalore/</loc>
+    <loc>https://words.yudocaa.in/post/kubernetes-day-india-2019-bangalore/</loc>
     <lastmod>2019-03-26T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/fossasia-2019/</loc>
+    <loc>https://words.yudocaa.in/post/fossasia-2019/</loc>
     <lastmod>2019-03-25T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/editing-git-commits-from-history/</loc>
+    <loc>https://words.yudocaa.in/post/editing-git-commits-from-history/</loc>
     <lastmod>2019-02-03T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/vim-wish-i-knew-this-about-you-before/</loc>
+    <loc>https://words.yudocaa.in/post/vim-wish-i-knew-this-about-you-before/</loc>
     <lastmod>2019-01-22T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</loc>
+    <loc>https://words.yudocaa.in/post/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</loc>
     <lastmod>2018-11-28T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/fedora-29-bangalore-release-party/</loc>
+    <loc>https://words.yudocaa.in/post/fedora-29-bangalore-release-party/</loc>
     <lastmod>2018-11-22T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/d-in-go-get/</loc>
+    <loc>https://words.yudocaa.in/post/d-in-go-get/</loc>
     <lastmod>2018-10-12T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/introducing-skiptheline/</loc>
+    <loc>https://words.yudocaa.in/post/introducing-skiptheline/</loc>
     <lastmod>2018-10-10T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/exit-vim-in-between-git-operation/</loc>
+    <loc>https://words.yudocaa.in/post/exit-vim-in-between-git-operation/</loc>
     <lastmod>2018-09-08T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/fedora-amis-gets-ena-support/</loc>
+    <loc>https://words.yudocaa.in/post/fedora-amis-gets-ena-support/</loc>
     <lastmod>2018-05-24T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/pyladies-pune-meetup-feb-2017/</loc>
+    <loc>https://words.yudocaa.in/post/pyladies-pune-meetup-feb-2017/</loc>
     <lastmod>2017-02-06T20:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/redesigning-fedimg-part-ii/</loc>
+    <loc>https://words.yudocaa.in/post/redesigning-fedimg-part-ii/</loc>
     <lastmod>2017-02-04T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/soldering-workshop-at-rb/</loc>
+    <loc>https://words.yudocaa.in/post/soldering-workshop-at-rb/</loc>
     <lastmod>2017-02-01T15:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/redesigning-fedimg-part-i/</loc>
+    <loc>https://words.yudocaa.in/post/redesigning-fedimg-part-i/</loc>
     <lastmod>2017-01-30T20:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/trek-photographer-dec-2016/</loc>
+    <loc>https://words.yudocaa.in/post/trek-photographer-dec-2016/</loc>
     <lastmod>2017-01-30T11:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/pycon-india-2016/</loc>
+    <loc>https://words.yudocaa.in/post/pycon-india-2016/</loc>
     <lastmod>2016-11-26T15:10:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/autocloud-whats-new/</loc>
+    <loc>https://words.yudocaa.in/post/autocloud-whats-new/</loc>
     <lastmod>2016-08-24T17:28:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/fedora-meetup-august-2016/</loc>
+    <loc>https://words.yudocaa.in/post/fedora-meetup-august-2016/</loc>
     <lastmod>2016-08-20T21:52:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/flock-2016/</loc>
+    <loc>https://words.yudocaa.in/post/flock-2016/</loc>
     <lastmod>2016-08-14T16:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/fedora-24-release-event/</loc>
+    <loc>https://words.yudocaa.in/post/fedora-24-release-event/</loc>
     <lastmod>2016-07-12T14:09:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/notes/taskwarrior/</loc>
+    <loc>https://words.yudocaa.in/post/notes/taskwarrior/</loc>
     <lastmod>2016-05-13T16:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/receiving-weechat-notifications-on-mobile-via-pushover/</loc>
+    <loc>https://words.yudocaa.in/post/receiving-weechat-notifications-on-mobile-via-pushover/</loc>
     <lastmod>2016-04-11T11:44:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/fossasia-2016-day-2/</loc>
+    <loc>https://words.yudocaa.in/post/fossasia-2016-day-2/</loc>
     <lastmod>2016-03-23T17:22:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/fossasia-2016-day-1/</loc>
+    <loc>https://words.yudocaa.in/post/fossasia-2016-day-1/</loc>
     <lastmod>2016-03-23T17:01:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/fedimg-course-of-action/</loc>
+    <loc>https://words.yudocaa.in/post/fedimg-course-of-action/</loc>
     <lastmod>2016-01-23T11:48:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/fedora-meetup-pune-january-2016/</loc>
+    <loc>https://words.yudocaa.in/post/fedora-meetup-pune-january-2016/</loc>
     <lastmod>2016-01-17T20:28:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/introducing-bugyou/</loc>
+    <loc>https://words.yudocaa.in/post/introducing-bugyou/</loc>
     <lastmod>2016-01-07T14:09:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/four-weeks-in-fedora/</loc>
+    <loc>https://words.yudocaa.in/post/four-weeks-in-fedora/</loc>
     <lastmod>2015-11-24T08:24:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/leaving-hackerearth/</loc>
+    <loc>https://words.yudocaa.in/post/leaving-hackerearth/</loc>
     <lastmod>2015-10-12T08:24:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/fedora-meetup-2015/</loc>
+    <loc>https://words.yudocaa.in/post/fedora-meetup-2015/</loc>
     <lastmod>2015-07-09T22:48:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/fudcon-india-2015/</loc>
+    <loc>https://words.yudocaa.in/post/fudcon-india-2015/</loc>
     <lastmod>2015-07-09T16:29:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/fedora-21-release-party-bangalore/</loc>
+    <loc>https://words.yudocaa.in/post/fedora-21-release-party-bangalore/</loc>
     <lastmod>2015-01-15T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/migrate-a-running-process-into-tmux/</loc>
+    <loc>https://words.yudocaa.in/post/migrate-a-running-process-into-tmux/</loc>
     <lastmod>2014-12-27T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/pyladies-pune-june-2017/</loc>
-    <lastmod>2014-07-11T10:54:24+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:8080/post/git-password-caching/</loc>
+    <loc>https://words.yudocaa.in/post/git-password-caching/</loc>
     <lastmod>2014-06-10T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/bangalore-fedora-meetup-8th-march-2014/</loc>
+    <loc>https://words.yudocaa.in/post/bangalore-fedora-meetup-8th-march-2014/</loc>
     <lastmod>2014-03-08T22:18:06+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/waartaa-applies-gsoc-2014/</loc>
+    <loc>https://words.yudocaa.in/post/waartaa-applies-gsoc-2014/</loc>
     <lastmod>2014-03-07T07:20:23+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/mukti-2014/</loc>
+    <loc>https://words.yudocaa.in/post/mukti-2014/</loc>
     <lastmod>2014-03-07T01:45:03+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/an-open-letter-to-bloggers-from-kolkata/</loc>
+    <loc>https://words.yudocaa.in/post/an-open-letter-to-bloggers-from-kolkata/</loc>
     <lastmod>2014-03-05T00:31:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/how-to-get-started-with-open-source/</loc>
+    <loc>https://words.yudocaa.in/post/how-to-get-started-with-open-source/</loc>
     <lastmod>2014-03-04T00:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/mozilla-summit-2013/</loc>
+    <loc>https://words.yudocaa.in/post/mozilla-summit-2013/</loc>
     <lastmod>2013-11-02T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/darkserver-improvement-pen-down/</loc>
+    <loc>https://words.yudocaa.in/post/darkserver-improvement-pen-down/</loc>
     <lastmod>2013-09-25T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/pycon-india-2013/</loc>
+    <loc>https://words.yudocaa.in/post/pycon-india-2013/</loc>
     <lastmod>2013-09-10T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/darkserver-improvement-web-dashboard/</loc>
+    <loc>https://words.yudocaa.in/post/darkserver-improvement-web-dashboard/</loc>
     <lastmod>2013-09-09T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/darkserver-improvement/</loc>
+    <loc>https://words.yudocaa.in/post/darkserver-improvement/</loc>
     <lastmod>2013-07-26T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/darkserver-improvement-week-two-and-week-three/</loc>
+    <loc>https://words.yudocaa.in/post/darkserver-improvement-week-two-and-week-three/</loc>
     <lastmod>2013-07-10T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/google-summer-of-code-2013-welcome-kit/</loc>
+    <loc>https://words.yudocaa.in/post/google-summer-of-code-2013-welcome-kit/</loc>
     <lastmod>2013-06-25T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/darkserver-improvement-week-one/</loc>
+    <loc>https://words.yudocaa.in/post/darkserver-improvement-week-one/</loc>
     <lastmod>2013-06-24T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/darkserver-improvement-random-scribblings/</loc>
+    <loc>https://words.yudocaa.in/post/darkserver-improvement-random-scribblings/</loc>
     <lastmod>2013-06-23T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/darkserver-improvement-getting-prepared/</loc>
+    <loc>https://words.yudocaa.in/post/darkserver-improvement-getting-prepared/</loc>
     <lastmod>2013-06-22T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/darkserver-improvement-google-summer-of-code-2013/</loc>
+    <loc>https://words.yudocaa.in/post/darkserver-improvement-google-summer-of-code-2013/</loc>
     <lastmod>2013-06-18T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/never-do-it-for-free/</loc>
+    <loc>https://words.yudocaa.in/post/never-do-it-for-free/</loc>
     <lastmod>2013-06-08T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/post/dgplug-summer-training-2013/</loc>
+    <loc>https://words.yudocaa.in/post/dgplug-summer-training-2013/</loc>
     <lastmod>2013-04-24T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:8080/about/</loc>
+    <loc>https://words.yudocaa.in/about/</loc>
   </url>
   
 </urlset>
