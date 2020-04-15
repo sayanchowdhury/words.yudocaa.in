@@ -7,6 +7,8 @@ timeToRead = 12
 title = "FOSSASIA 2019"
 
 +++
+{{<figure src="/images/33515884798_e9124d822a_c.jpg">}}
+
 I was back to FOSSASIA this year after a gap of an year and nothing had changed other than the venue. The event had the same level of enthusiasm as before, though the crowd seemed to be less compared to the previous years.
 
 This FOSSASIA was more special for the participants, organizers and the volunteers because this was the 10th year of the event. Kudos, to the organizing team for doing it successfully for last 10 years!
@@ -36,7 +38,5 @@ Apart from the talk, I was reached out by a lot of people to know if Silverblue 
 I also happened to visit the Singapore Hackerspace which is one of the places I love to visit. On second visit we met a enthusiastic group of hackers and makers who are out on travelling South East Asia.
 
 To end, I really had a good time at Singapore and FOSSASIA. I met a lot of people whom I did not meet for years, built connections to meet them in the future, and learnt quite a lot of things. And, I also happened to learn some really nice soldering technique at the very end.
-
-_À bientôt_
 
 [Cover image](https://www.flickr.com/photos/comprock/33515884798/in/album-72157706003799061/) by Michael Cannon (CC BY-SA 2.0)

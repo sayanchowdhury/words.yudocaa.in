@@ -1,10 +1,10 @@
 baseURL: "https://words.yudocaa.in"
 languageCode: "en-us"
-title: "Sayan Chowdhury"
+title: "Intellectual Web"
 pygmentsstyle: 'monokai'
 
 # Theme settings
-theme: novela
+theme: slim
 paginate: 6
 social:
   twitter: "#"

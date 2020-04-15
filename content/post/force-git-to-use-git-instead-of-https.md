@@ -3,6 +3,7 @@ authors = ["Sayan Chowdhury"]
 date = 2019-07-28T18:30:00Z
 excerpt = ""
 hero = "/images/yancy-min-842ofHC6MaI-unsplash.jpg"
+heroCredits = "Photo by [Yancy Min](https://unsplash.com/@yancymin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/git?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 timeToRead = 5
 title = "Force git to use git:// instead of https://"
 
@@ -22,4 +23,3 @@ This creates an entry in your .gitconfig:
     insteadOf = https://github.com/
 ```
 
-Photo by [Yancy Min](https://unsplash.com/@yancymin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/search/photos/git?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)

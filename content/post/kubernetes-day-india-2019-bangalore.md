@@ -3,6 +3,7 @@ authors = ["Sayan Chowdhury"]
 date = 2019-03-26T18:30:00Z
 excerpt = ""
 hero = "/images/1*-swzvRF6SY2wHJQnv7ghVg.jpeg"
+heroCredits = "Photo by [Cameron Venti](https://unsplash.com/photos/QtETdXXR7gs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/collections/3457050/cloud-containers-kubernetes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 timeToRead = 8
 title = "Kubernetes Day India 2019, Bangalore"
 
@@ -27,4 +28,3 @@ It was very nice to find the growing audience of Kubernetes, and I also happen t
 
 {{< tweet 1109330561187893249 >}}
 
-Photo by [Cameron Venti](https://unsplash.com/photos/QtETdXXR7gs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/collections/3457050/cloud-containers-kubernetes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
