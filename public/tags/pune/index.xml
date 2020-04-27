@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pune on Intellectual Web</title>
+    <link>https://words.yudocaa.in/tags/pune/</link>
+    <description>Recent content in pune on Intellectual Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Feb 2017 20:30:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://words.yudocaa.in/tags/pune/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PyLadies Pune Meetup - February 2017</title>
+      <link>https://words.yudocaa.in/journal/pyladies-pune-meetup-feb-2017/</link>
+      <pubDate>Mon, 06 Feb 2017 20:30:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/pyladies-pune-meetup-feb-2017/</guid>
+      <description>The PyLadies Pune February Meetup was held on 6th Feb at reserved-bit. Kushal took a session on MicroPython on the MicroBit boards. Thanks to @ntoll for sending over the MicroBits for workshops.
+I reached down to the venue a bit late. On reaching the venue, Kushal told me that he forgot the boards at home and I went to his place to pick the MicroBits.
+  Most of the participants were regular participants for the meetup so Kushal took a quick course on Python.</description>
+    </item>
+    
+    <item>
+      <title>Fedora 24 Release event</title>
+      <link>https://words.yudocaa.in/journal/fedora-24-release-event/</link>
+      <pubDate>Tue, 12 Jul 2016 14:09:43 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/fedora-24-release-event/</guid>
+      <description>On 9th July 2016, we had our Fedora 24 release party in Pune. The release party took place at my place. We saw a lot of familiar faces from our regular Fedora Meetup.
+Chandan Kumar started the event with explaining the new features in Fedora 24. People discussed on how things has changed in Fedora 24. Parag and Siddhesh talked on how it&amp;rsquo;s important to learn things and people chipped in with their ideas.</description>
+    </item>
+    
+    <item>
+      <title>Fedora Meetup Pune - January 2016</title>
+      <link>https://words.yudocaa.in/journal/fedora-meetup-pune-january-2016/</link>
+      <pubDate>Sun, 17 Jan 2016 20:28:43 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/fedora-meetup-pune-january-2016/</guid>
+      <description>On 15th January 2016, we had our first Fedora meetup at Pune. The venue was earlier decided to be Red Hat office, Pune but due to unavailability of space the meetup was moved to my apartment.
+The meetup was scheduled to start around 14:30 IST but with people pouring in a bit late, we started the event at 15:00 IST. The turnout was good and much more than what we had expected with a total of 18 people turning out.</description>
+    </item>
+    
+    <item>
+      <title>FUDCon India 2015</title>
+      <link>https://words.yudocaa.in/journal/fudcon-india-2015/</link>
+      <pubDate>Thu, 09 Jul 2015 16:29:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/fudcon-india-2015/</guid>
+      <description>I spent the last weekend of June at FUDCon India. FUDCon is the Fedora Users and Developers Conference organized in different parts of the world. The last FUDCon APAC that happened in India was in 2011 which i could not attend because of my college. Being a Fedora user for 6 years now I always wanted to attend one FUDCon. FUDCon APAC this year was held at MIT College of Enginnering Pune.</description>
+    </item>
+    
+  </channel>
+</rss>

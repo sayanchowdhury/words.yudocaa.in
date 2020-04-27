@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?port=8080&mindelay=10&v=2" data-no-instant defer></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Fedimg: Course of Action &middot; Intellectual Web </title>
+
+
+<link rel="stylesheet" href="http://localhost:8080/css/slim.css">
+<link rel="stylesheet" href="http://localhost:8080/css/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Intellectual Web" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="http://localhost:8080/">Intellectual Web</a></h1>
+  <p class="site-tagline"></p>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+    <ul class="nav-list">
+      
+      <li><a href="https://github.com/sayanchowdhury">Github</a></li>
+      <li><a href="https://twitter.com/yudocaa">Twitter</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+    <div class="content">
+      <div class="post">
+        <h2 class="post-title"><a href="http://localhost:8080/blogs/fedimg-course-of-action/">Fedimg: Course of Action</a></h2>
+        <div class="post-content">
+          <p><a href="https://github.com/fedora-infra/fedimg">Fedimg</a> is a Python-powered service which is built to make Fedora-Cloud images
+available on popular cloud providers, such as Amazon Web Services (AWS). The
+plans are to support more cloud providers such as Rackspace, Google Compute
+Engine.</p>
+<p>Fedimg listens for the messages from <a href="http://www.fedmsg.com/en/latest/">Fedmsg</a>
+for the <a href="http://koji.fedoraproject.org/koji/">Koji</a> image builds.</p>
+<p>Plan of work</p>
+<ul>
+<li>
+<p>Add scripts to remove old AMIs we have uploaded
+(<a href="https://github.com/fedora-infra/fedimg/issues/37">https://github.com/fedora-infra/fedimg/issues/37</a>)</p>
+<p>Storing the AMIs are costing us lot. So the Cloud WG has decided to delete
+the older AMIs. The deletion criteria would be</p>
+<ul>
+<li>Delete the pre-release AMIs after the final release</li>
+<li>Delete the nightly build AMIs after 5 days of build</li>
+</ul>
+</li>
+<li>
+<p>Reorganize the way we upload images to AWS
+(<a href="https://github.com/fedora-infra/fedimg/issues/42">https://github.com/fedora-infra/fedimg/issues/42</a>)</p>
+<p>Currently fedimg boots up an instance, and downloads the image to volume and
+then takes the snapshot to create the AMI.</p>
+<p><a href="http://blog.devzero.com/">gholms</a> suggested that instead we can use euca2ools and using the command
+<code>euca-import-volume</code> we can directly create a volume out of the image. Then
+take the snapshot and create the AMI.</p>
+</li>
+<li>
+<p>Add generic re-try logic to all of fedimg&rsquo;s operations
+(<a href="https://github.com/fedora-infra/fedimg/issues/34">https://github.com/fedora-infra/fedimg/issues/34</a>)</p>
+<p>Currently, the upload method for the EC2 Service is a big chunk of code.
+My plan is to break code like these into different chunks and add a retry
+decorator to it. The decorator will handle things like delay, number of times
+to run etc.</p>
+</li>
+<li>
+<p>Get autocloud to do the testing on AMIs
+(<a href="https://github.com/fedora-infra/fedimg/issues/43">https://github.com/fedora-infra/fedimg/issues/43</a>)</p>
+<p>Currently, Tunir has the feature to test the AMIs but it&rsquo;s in the
+development branch and before starting off with this issue we need to work on
+autocloud too in between to integrate the feature to test AMIs.</p>
+</li>
+<li>
+<p>Generate a work report at the end of a job
+(<a href="https://github.com/fedora-infra/fedimg/issues/26">https://github.com/fedora-infra/fedimg/issues/26</a>)</p>
+<p>This is an easy-fix to add to add standard logging and can be completed with
+the other tasks in progress.</p>
+</li>
+<li>
+<p>Add secondary cloud providers
+(<a href="https://github.com/fedora-infra/fedimg/issues/10">https://github.com/fedora-infra/fedimg/issues/10</a>)</p>
+<p>This issue is blocked on legal stuff. So, as I work on other issues I will be
+checking the status for this ticket and can swap some low-priority issue with
+this and write up the service which is clear to go.</p>
+</li>
+</ul>
+<h2 id="interested">Interested?</h2>
+<p>If you are interested to help out you can ping on IRC in #fedora-apps on
+Freenode.</p>
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <ul>
+    <li><a href="/about">About</a></li>
+    <li><a href="/tags">Tags</a></li>
+     <li><a href="https://twitter.com/yudocaa">Twitter</a></li>
+     <li><a href="https://facebook.com/yudocaa">Facebook</a></li>
+     <li><a href="https://twitter.com/sayanchowdhury">Github</a></li>
+  </ul>
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. © Sayan Chowdhury, 2020</p>
+</footer>
+
+  </div>
+  <script src="http://localhost:8080/js/slim.js"></script>
+  
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?port=8080&mindelay=10&v=2" data-no-instant defer></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Exit Vim in between Git operation &middot; Intellectual Web </title>
+
+
+<link rel="stylesheet" href="http://localhost:8080/css/slim.css">
+<link rel="stylesheet" href="http://localhost:8080/css/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Intellectual Web" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="http://localhost:8080/">Intellectual Web</a></h1>
+  <p class="site-tagline"></p>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+    <ul class="nav-list">
+      
+      <li><a href="https://github.com/sayanchowdhury">Github</a></li>
+      <li><a href="https://twitter.com/yudocaa">Twitter</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+    <div class="content">
+      <div class="post">
+        <h2 class="post-title"><a href="http://localhost:8080/blog/exit-vim-in-between-git-operation/">Exit Vim in between Git operation</a></h2>
+        <div class="post-content">
+          <p>Long I have been procrastinating over this. Whenever I had to quit out of the Vim while doing git-rebase interactively I would be going over to a new terminal window, and perform <code>git rebase --abort</code> and then close the other window too.</p>
+<p>Today, I learned if you ever want to quit Vim either while committing or rebasing, just do <code>:cq</code>. This quits Vim with an error code, and Git will abort the action.</p>
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <ul>
+    <li><a href="/about">About</a></li>
+    <li><a href="/tags">Tags</a></li>
+     <li><a href="https://twitter.com/yudocaa">Twitter</a></li>
+     <li><a href="https://facebook.com/yudocaa">Facebook</a></li>
+     <li><a href="https://twitter.com/sayanchowdhury">Github</a></li>
+  </ul>
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. © Sayan Chowdhury, 2020</p>
+</footer>
+
+  </div>
+  <script src="http://localhost:8080/js/slim.js"></script>
+  
+
+</body>
+
+</html>

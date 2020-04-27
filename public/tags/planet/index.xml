@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>planet on Intellectual Web</title>
+    <link>https://words.yudocaa.in/tags/planet/</link>
+    <description>Recent content in planet on Intellectual Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Feb 2017 20:30:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://words.yudocaa.in/tags/planet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PyLadies Pune Meetup - February 2017</title>
+      <link>https://words.yudocaa.in/journal/pyladies-pune-meetup-feb-2017/</link>
+      <pubDate>Mon, 06 Feb 2017 20:30:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/pyladies-pune-meetup-feb-2017/</guid>
+      <description>The PyLadies Pune February Meetup was held on 6th Feb at reserved-bit. Kushal took a session on MicroPython on the MicroBit boards. Thanks to @ntoll for sending over the MicroBits for workshops.
+I reached down to the venue a bit late. On reaching the venue, Kushal told me that he forgot the boards at home and I went to his place to pick the MicroBits.
+  Most of the participants were regular participants for the meetup so Kushal took a quick course on Python.</description>
+    </item>
+    
+    <item>
+      <title>Redesigning fedimg (Part 2): Communication with AWS</title>
+      <link>https://words.yudocaa.in/blog/redesigning-fedimg-part-ii/</link>
+      <pubDate>Sat, 04 Feb 2017 12:00:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/blog/redesigning-fedimg-part-ii/</guid>
+      <description>In the previous post, I discussed what is fedimg and how it works currently. In this post, I plan to explain the issue in the current uploading process of the AMIs and how we plan to fix it.
+What&amp;rsquo;s the problem? fedimg boots an utility instance using the RHEL AMI configured for that region.
+The problem with this design is that while adding a new region we need to look for the appropriate RHEL AMI in the newer region first.</description>
+    </item>
+    
+    <item>
+      <title>Basic Soldering Workshop at reserved-bit</title>
+      <link>https://words.yudocaa.in/blog/soldering-workshop-at-rb/</link>
+      <pubDate>Wed, 01 Feb 2017 15:00:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/blog/soldering-workshop-at-rb/</guid>
+      <description>This weekend there will be a soldering workshop conducted at reserved-bit. The workshop is on 5th Feb 2017 from 10:00 - 13:00.
+The 3-hour workshop plans cover to the following topics
+ Electricity basics &amp;amp; Ohm’s Law Electronics basics Circuit components What is a solder? More on soldering equipment Practice session Making your own circuit (Carry it home)  Turns out I bought the first ticket for the workshop. I had couple of failed attempts of learning to solder due to which I usually ended going to a electrical shop to get my circuits soldered.</description>
+    </item>
+    
+    <item>
+      <title>Redesigning the fedimg AMI creation process - Part 1</title>
+      <link>https://words.yudocaa.in/blog/redesigning-fedimg-part-i/</link>
+      <pubDate>Mon, 30 Jan 2017 20:00:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/blog/redesigning-fedimg-part-i/</guid>
+      <description>What is fedimg? Fedimg is a Python-powered service that uploads the Fedora Cloud images on various Cloud providers. such as Amazon Web Services (AWS) .
+How does it currently work? Fedimg listens to fedmsg for nightly as well as the production compose builds messages. On receiving a new message, the FedimgConsumer triggers the upload process. fedimg uses fedfind to extract the metadata for the compose from where it get&amp;rsquo;s the URL for the compressed raw image files.</description>
+    </item>
+    
+    <item>
+      <title>Vote for me in Trek Photographer of the month</title>
+      <link>https://words.yudocaa.in/journal/trek-photographer-dec-2016/</link>
+      <pubDate>Mon, 30 Jan 2017 11:00:00 +0000</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/trek-photographer-dec-2016/</guid>
+      <description>I have been nominated for the Trek Photographer of the Month. I am grateful to the judges for nominating me. Appreciate if you vote for me. I&amp;rsquo;m up against some really tough competition :)</description>
+    </item>
+    
+    <item>
+      <title>PyCon India 2016</title>
+      <link>https://words.yudocaa.in/journal/pycon-india-2016/</link>
+      <pubDate>Sat, 26 Nov 2016 15:10:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/pycon-india-2016/</guid>
+      <description>PyCon India, this year was held at New Delhi at the JNU Convention Center.
+Dev Sprints During the Dev Sprint, Farhaan and Vivek were sprinting on Fedora Infrastructure projects primarily helping people contribute to Pagure.
+Other projects/orgs like SciPy, Red Hat team, FOSSAsia, Junction etc were also sprinting.
+The Dev Sprint turned out to have a good participation and couple of PRs were sent out by the participations. More than that, it’s more about participants getting to know about on how to contribute.</description>
+    </item>
+    
+    <item>
+      <title>Autocloud: What&#39;s new?</title>
+      <link>https://words.yudocaa.in/blog/autocloud-whats-new/</link>
+      <pubDate>Wed, 24 Aug 2016 17:28:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/blog/autocloud-whats-new/</guid>
+      <description>Autocloud was released during the Fedora 23 cycle as a part of the Two Week Atomic Process.
+Previously, it used to listen to fedmsg for successful Koji builds. Whenever, there is a new message the AutocloudConsumer queues these message for processing. The Autocloud job service then listens to the queue, downloads the images and runs the tests using Tunir. A more detailed post about it&amp;rsquo;s release can be read here.</description>
+    </item>
+    
+    <item>
+      <title>Fedora Meetup Pune August 2016</title>
+      <link>https://words.yudocaa.in/journal/fedora-meetup-august-2016/</link>
+      <pubDate>Sat, 20 Aug 2016 21:52:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/fedora-meetup-august-2016/</guid>
+      <description>Fedora Pune Meetup for the month of August 2016 happened today at our usual location. We had in total 12 people turning out for the meetup.
+The event started with introductions and we had two new comers joining us this time, Trishna and Prathamesh.
+This time the event was mostly foccused around re-writing the GNU C Library Manual using reStructuredText and Sphinx. This task was decided during the release event that we had last month.</description>
+    </item>
+    
+    <item>
+      <title>Flock 2016</title>
+      <link>https://words.yudocaa.in/journal/flock-2016/</link>
+      <pubDate>Sun, 14 Aug 2016 16:30:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/flock-2016/</guid>
+      <description>Flock 2016 was held in the beautiful city of Krakow, Poland from August 2nd - August 5th, 2016.
+Day -1 Reached Krakow tired. Spent most of the time sleeping.
+Day 0 A lot of attendees started coming in. Met with a lot of people IRL whom I generally talked over on IRC. In the afternoon, we went out for the city tour. Visiting the Oskar Schindler’s Enamel Factory was a place I always wanted to visit ever since I watched the movie Schindler’s List.</description>
+    </item>
+    
+    <item>
+      <title>Receiving Weechat Notifications on mobile via Pushover</title>
+      <link>https://words.yudocaa.in/blog/receiving-weechat-notifications-on-mobile-via-pushover/</link>
+      <pubDate>Mon, 11 Apr 2016 11:44:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/blog/receiving-weechat-notifications-on-mobile-via-pushover/</guid>
+      <description>I recently switched to use Weechat as my primary IRC client from X-Chat. I did a setup of Weechat on my Digital Ocean box.
+Weechat setup turned out to be super simple and out of the box. I am running Weechat within a tmux session. But the problem I was facing was due to poor internet connection (thanks to Airtel for this and this was my primary reason for switching to weechat from Xchat) I got disconnected from the DO box quite often.</description>
+    </item>
+    
+    <item>
+      <title>FOSSASIA 2016 - Day 2</title>
+      <link>https://words.yudocaa.in/journal/fossasia-2016-day-2/</link>
+      <pubDate>Wed, 23 Mar 2016 17:22:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/fossasia-2016-day-2/</guid>
+      <description>I left early for the venue as haseeb had the first talk of the day and I was volunteering for the Python track.
+The day started off with a talk by Stephanie Taylor on Introduction to GSoC, and GCI. She talked about the programs Google Summer of Code and Google Code In. She shared some statistics from the past years. The students of GCI last year completed more than 4k tasks, among them 1k+ was done by the students under FOSSASIA organization.</description>
+    </item>
+    
+    <item>
+      <title>FOSSASIA 2016 - Day 1</title>
+      <link>https://words.yudocaa.in/journal/fossasia-2016-day-1/</link>
+      <pubDate>Wed, 23 Mar 2016 17:01:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/fossasia-2016-day-1/</guid>
+      <description>FOSSASIA 2016, Asia&amp;rsquo;s premier conference on Free and Open Software was held at Science Center, Singapore.
+I arrived Singapore 18th morning, the same day the event was starting. Due to track issues, the metro was running late and I reached the venue around 1100 local time. I directly went to the auditorium where the event was happening. I had already missed the morning talks. It was Tea break when I reached.</description>
+    </item>
+    
+    <item>
+      <title>Fedimg: Course of Action</title>
+      <link>https://words.yudocaa.in/journal/fedimg-course-of-action/</link>
+      <pubDate>Sat, 23 Jan 2016 11:48:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/fedimg-course-of-action/</guid>
+      <description>Fedimg is a Python-powered service which is built to make Fedora-Cloud images available on popular cloud providers, such as Amazon Web Services (AWS). The plans are to support more cloud providers such as Rackspace, Google Compute Engine.
+Fedimg listens for the messages from Fedmsg for the Koji image builds.
+Plan of work
+  Add scripts to remove old AMIs we have uploaded (https://github.com/fedora-infra/fedimg/issues/37)
+Storing the AMIs are costing us lot.</description>
+    </item>
+    
+    <item>
+      <title>Fedora Meetup Pune - January 2016</title>
+      <link>https://words.yudocaa.in/journal/fedora-meetup-pune-january-2016/</link>
+      <pubDate>Sun, 17 Jan 2016 20:28:43 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/fedora-meetup-pune-january-2016/</guid>
+      <description>On 15th January 2016, we had our first Fedora meetup at Pune. The venue was earlier decided to be Red Hat office, Pune but due to unavailability of space the meetup was moved to my apartment.
+The meetup was scheduled to start around 14:30 IST but with people pouring in a bit late, we started the event at 15:00 IST. The turnout was good and much more than what we had expected with a total of 18 people turning out.</description>
+    </item>
+    
+    <item>
+      <title>Introducing Bugyou</title>
+      <link>https://words.yudocaa.in/blog/introducing-bugyou/</link>
+      <pubDate>Thu, 07 Jan 2016 14:09:43 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/blog/introducing-bugyou/</guid>
+      <description>We developed Autocloud as a part of Fedora 23 release cycle as a part of Two week atomic image.
+Autocloud publishes the messages to fedmsg when the image is queued, running, success and failed.
+What is Bugyou? Bugyou files issues for failed tests from Autocloud. Bugyou is part of Fedora Project. It listens to Autocloud messages from fedmsg and files bug for images which have failed the tests. Bugyou keeps updating the status of the images in the bug and closes the issue once the tests are successful.</description>
+    </item>
+    
+    <item>
+      <title>Four Weeks in Fedora</title>
+      <link>https://words.yudocaa.in/journal/four-weeks-in-fedora/</link>
+      <pubDate>Tue, 24 Nov 2015 08:24:43 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/four-weeks-in-fedora/</guid>
+      <description>26th of October 2015, I joined Red Hat as a part of the Fedora Engineering Team.
+I have been contributing to the Fedora for couple of years now starting from the contributing to askbot-devel while we were gearing up for the Ask Fedora release. This year in July, I along with kushal, rtnpro, praveenkumar started working on Autocloud, as a part of the Two-Week Atomic during the Fedora 23 cycle. So, I last couple of years of I have met and worked with a lot of people in the Fedora community.</description>
+    </item>
+    
+    <item>
+      <title>Leaving HackerEarth</title>
+      <link>https://words.yudocaa.in/journal/leaving-hackerearth/</link>
+      <pubDate>Mon, 12 Oct 2015 08:24:43 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/leaving-hackerearth/</guid>
+      <description>It&amp;rsquo;s very hard to write but I am leaving HackerEarth.
+2013 and internship My college days were coming to an end with placements all around. I was sure to join in a startup. One fine day, I saw a job posting on hasjob on 12th December 2012 that boldly said &amp;ldquo;HackerEarth is buidling its initial team - Python/Django enthusiast needed&amp;rdquo;. The idea made me apply to HackerEarth and after a few rounds of email with Sachin and Vivek.</description>
+    </item>
+    
+    <item>
+      <title>Fedora Meetup 2015</title>
+      <link>https://words.yudocaa.in/journal/fedora-meetup-2015/</link>
+      <pubDate>Thu, 09 Jul 2015 22:48:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/fedora-meetup-2015/</guid>
+      <description>Fedora July Meetup 2015 happened at Hasgeek office, Indiranagar on July 04, 2015 at 06:30 PM.
+Attendees:
+ Sayan Chowdhury Ratnadeep Debnath Lalatendu Mohanty Nitish Bharadwaj Devyani Kota Praseetha KR Sharat MR  Topics discussed:
+ Introduction to Fedora and what&amp;rsquo;s new in Fedora 22 Reproduce Bugs on Vagrant(libvrt) and identify missing features Introduction to RPM Packaging Fedora Hubs  It&amp;rsquo;s good to know more and more people are turning up for the meetup.</description>
+    </item>
+    
+    <item>
+      <title>FUDCon India 2015</title>
+      <link>https://words.yudocaa.in/journal/fudcon-india-2015/</link>
+      <pubDate>Thu, 09 Jul 2015 16:29:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/fudcon-india-2015/</guid>
+      <description>I spent the last weekend of June at FUDCon India. FUDCon is the Fedora Users and Developers Conference organized in different parts of the world. The last FUDCon APAC that happened in India was in 2011 which i could not attend because of my college. Being a Fedora user for 6 years now I always wanted to attend one FUDCon. FUDCon APAC this year was held at MIT College of Enginnering Pune.</description>
+    </item>
+    
+    <item>
+      <title>Fedora 21 Release Party, Bangalore</title>
+      <link>https://words.yudocaa.in/journal/fedora-21-release-party-bangalore/</link>
+      <pubDate>Thu, 15 Jan 2015 12:00:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/fedora-21-release-party-bangalore/</guid>
+      <description>The Fedora Project announced the release of Fedora 21 on December 09, 2014. To celebrate the release a [Fedora 21 release party] (https://fedoraproject.org/wiki/Release_Party_F21_Bangalore) was organized at Red Hat, Bangalore with the help of Archit and Humble.
+The event was scheduled to start at 10AM but people started coming in from 9:30AM itself. Around 40 people turned up among them a good number were college students.
+The release party finally started at 10:30AM by [Archit] (https://fedoraproject.</description>
+    </item>
+    
+    <item>
+      <title>Migrate a running process into tmux</title>
+      <link>https://words.yudocaa.in/blog/migrate-a-running-process-into-tmux/</link>
+      <pubDate>Sat, 27 Dec 2014 12:00:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/blog/migrate-a-running-process-into-tmux/</guid>
+      <description>Being a regular tmux user. Migrating a running process into tmux using reptyr comes handy.
+reptyr is a utility for taking an existing running program and attaching it to a new terminal. Started a long-running process over ssh, but have to leave and don&amp;rsquo;t want to interrupt it? Just start a screen, use reptyr to grab it, and then kill the ssh session and head on home.
+The package available in Fedora/Ubuntu repositories.</description>
+    </item>
+    
+    <item>
+      <title>Bangalore Fedora Meetup, 8th March 2014</title>
+      <link>https://words.yudocaa.in/journal/bangalore-fedora-meetup-8th-march-2014/</link>
+      <pubDate>Sat, 08 Mar 2014 22:18:06 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/bangalore-fedora-meetup-8th-march-2014/</guid>
+      <description>After a long time, we had a Bangalore Fedora meetup(March 8, 2014) at Red Hat, Bangalore.
+The attendees for the event were:
+ Anil Shah Varun Shastry Rejy M Cyriac Ratnadeep Debnath Sayan Chowdhury Sarup Banskota  The discussion took place around the following agendas:
+Fedora Monthly Meetup We decided start off with a local Fedora meetup here in Bangalore every month to chalk out on how to reach to a greater audience in and around city to evangelize on Fedora, FOSS and contributing back to the community.</description>
+    </item>
+    
+    <item>
+      <title>Waartaa applies GSoC 2014</title>
+      <link>https://words.yudocaa.in/journal/waartaa-applies-gsoc-2014/</link>
+      <pubDate>Fri, 07 Mar 2014 07:20:23 +0000</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/waartaa-applies-gsoc-2014/</guid>
+      <description>We are elated to inform you that Waartaa has been accepted as a project idea for GSoC under Fedora&amp;lsquo;s umbrella.
+For those who are new to Waartaa, Waartaa is an open-source communication tool for teams and groups. It is built on top of IRC. Currently, Waartaa is an IRC client as a service and it supports centralized logging, 24x7 idling, notifications and unique identity to a user on IRC. The source code is available at https://github.</description>
+    </item>
+    
+    <item>
+      <title>Mukti 2014</title>
+      <link>https://words.yudocaa.in/journal/mukti-2014/</link>
+      <pubDate>Fri, 07 Mar 2014 01:45:03 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/mukti-2014/</guid>
+      <description>Mukti 2014 is the annual national level technical symposium on Free and Open Source Software of the GNU/Linux Users’ Group NIT Durgapur held from 31st January - 2nd February 2014.
+I&amp;rsquo;ve been attending Mukti for last four years. Unlike, the previous years when i usually attended Mukti as a student participant, this year I attended Mukti as a guest speaker.
+Day 0 (30th January 2014) After a hectic travel from Bangalore to Durgapur via Kolkata.</description>
+    </item>
+    
+    <item>
+      <title>How to get started with Open Source</title>
+      <link>https://words.yudocaa.in/blog/how-to-get-started-with-open-source/</link>
+      <pubDate>Tue, 04 Mar 2014 00:30:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/blog/how-to-get-started-with-open-source/</guid>
+      <description>I have been involved in Durgapur Linux User&amp;rsquo;s Group for around last five years. I have been contributing to various open source projects quite sometime. The primary reason on why I contribute to open source is the feeling, the enjoyment when you send a patch or a PR to a open source project. It makes you happy when millions of people use your few lines of code in day to day life.</description>
+    </item>
+    
+  </channel>
+</rss>

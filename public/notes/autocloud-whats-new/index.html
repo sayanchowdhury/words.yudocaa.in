@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?port=8080&mindelay=10&v=2" data-no-instant defer></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Autocloud: What&#39;s new? &middot; Intellectual Web </title>
+
+
+<link rel="stylesheet" href="http://localhost:8080/css/slim.css">
+<link rel="stylesheet" href="http://localhost:8080/css/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Intellectual Web" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="http://localhost:8080/">Intellectual Web</a></h1>
+  <p class="site-tagline"></p>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+    <ul class="nav-list">
+       
+	  <li class="spacer">&ac;</li>
+  
+    </ul>
+  </div>
+</div>
+    <div class="content">
+      <div class="post">
+        <h2 class="post-title"><a href="http://localhost:8080/notes/autocloud-whats-new/">Autocloud: What&#39;s new?</a></h2>
+        <div class="post-content">
+          <p><a href="https://apps.fedoraproject.org/autocloud/">Autocloud</a> was released during the Fedora 23 cycle as a part of the <a href="https://fedoraproject.org/wiki/Changes/Two_Week_Atomic">Two Week
+Atomic Process</a>.</p>
+<p>Previously, it used to listen to fedmsg for successful Koji builds. Whenever,
+there is a new message the AutocloudConsumer queues these message for
+processing. The Autocloud job service then listens to the queue, downloads the
+images and runs the tests using Tunir. A more detailed post about it&rsquo;s release
+can be read <a href="https://kushaldas.in/posts/introducing-autocloud.html">here</a>.</p>
+<p>During the Fedora 24 cycle things changed. There was a change on how the Fedora
+composes are built. Thanks to adamw for writing a detailed <a href="https://www.happyassassin.net/2016/02/15/pungi-4-the-new-generation-of-the-fedora-compose-tools-and-what-it-means-for-qa/">blogpost</a> on what, why and how things
+changed.</p>
+<p>With this change now autocloud listens to the compose builds over the fedmsg.
+The topic being &ldquo;<a href="apps.fedoraproject.org/datagrepper/raw?topic=org.fedoraproject.prod.pungi.compose.status.change">org.fedoraproject.prod.pungi.compose.status.change</a>&quot;. It checks
+for the messages with the status FINISHED and FINISHED_INCOMPLETE.</p>
+<p>After the filtration, it gets the Cloud Images built during that particular
+compose using a tool called fedfind. The job here is parse the metadata of
+the compose and getting the Cloud Images. These images are then queued into both libvirt and vbox boxes. The Autocloud job service then downloads the images and run the tests using
+Tunir.</p>
+<h3 id="changes-in-the-autocloud-fedmsg-messages">Changes in the Autocloud fedmsg messages.</h3>
+<p>Earlier the messages with the following topics were sent</p>
+<ul>
+<li><a href="https://fedora-fedmsg.readthedocs.io/en/latest/topics.html#autocloud-image-queued">autolcoud.image.queued</a> - When the images are queued for testing</li>
+<li><a href="https://fedora-fedmsg.readthedocs.io/en/latest/topics.html#autocloud-image-running">autocloud.image.running</a> - When the tests for the images are running</li>
+<li><a href="https://fedora-fedmsg.readthedocs.io/en/latest/topics.html#autocloud-image-success">autocloud.image.success</a> - When the tests for the images passes.</li>
+<li><a href="https://fedora-fedmsg.readthedocs.io/en/latest/topics.html#autocloud-image-failed">autocloud.image.failed</a> - When the tests for the images failed</li>
+</ul>
+<p>Now along with the fedmsg message for the status of the image test. Autocloud also
+sends messages for the status of a particular compose.</p>
+<ul>
+<li><a href="https://fedora-fedmsg.readthedocs.io/en/latest/topics.html#autocloud-compose-queued">autocloud.compose.queued</a> - When the composes is in queued state</li>
+<li><a href="https://fedora-fedmsg.readthedocs.io/en/latest/topics.html#autocloud-compose-running">autocloud.compose.running</a> - When the images for the composes are in testing
+phase</li>
+<li><a href="https://fedora-fedmsg.readthedocs.io/en/latest/topics.html#autocloud-compose-complete">autocloud.compose.complete</a> - When running the test for the images for a
+compose finishes and contains the aggregate result for the tests</li>
+</ul>
+<p>The <code>compose_id</code> field was added to the <code>autocloud.image.*</code> messages</p>
+<h3 id="changes-in-the-ui">Changes in the UI</h3>
+<ul>
+<li>A <a href="https://apps.fedoraproject.org/autocloud/compose">page</a> was added to list all the composes. It gives an overview of the
+composes like if it&rsquo;s still running, number of tests passed, etc</li>
+<li>The <a href="https://apps.fedoraproject.org/autocloud/jobs">jobs page</a> lists all the tests data as earlier. We added filtering to the
+page so filter the jobs based on various params</li>
+<li>You need to agree that the <a href="https://apps.fedoraproject.org/autocloud/jobs/458/output">jobs output page</a> looks better than before. Now, rather the showing a big dump of text the output now is properly formatted. You can now reference each line separately.</li>
+</ul>
+<p>Right now, we are planning to work on testing the images uploaded via fedimg in Autocloud. If the project looks interesting and you are planning to contribute? Ping us on #fedora-apps on Freenode.</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+  
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. This theme—Slim—is open sourced on <a href="https://github.com/zhe/hugo-theme-slim">Github</a>.</p>
+  
+</div>
+
+  </div>
+  <script src="http://localhost:8080/js/slim.js"></script>
+  
+
+</body>
+
+</html>

@@ -1,11 +1,11 @@
-baseURL: "https://words.yudocaa.in"
+BaseURL: "https://words.yudocaa.in/"
 languageCode: "en-us"
 title: "Intellectual Web"
 pygmentsstyle: 'monokai'
 
 # Theme settings
 theme: slim
-paginate: 6
+paginate: 1000
 social:
   twitter: "#"
   github: "#"
@@ -13,5 +13,9 @@ social:
   linkedin: "#"
   dribbble: "#"
   youtube: "#"
-taxonomies:
-  author: authors
+params:
+  Subtitle: ""
+  mainSections: ["blog"]
+  GithubID: "sayanchowdhury"
+  TwitterID: "yudocaa"
+  FacebookID: "yudocaa"

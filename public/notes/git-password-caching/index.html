@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Git Password Caching &middot; Intellectual Web </title>
+
+
+<link rel="stylesheet" href="https://words.yudocaa.in/css/slim.css">
+<link rel="stylesheet" href="https://words.yudocaa.in/css/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Intellectual Web" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="https://words.yudocaa.in/">Intellectual Web</a></h1>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+  </div>
+  <ul class="nav-list">
+    <li><a href="/journal">Journal</a></li>
+    <li><a href="/notes">Notes</a></li>
+    <li><a href="/blog">Blogs</a></li>
+  </ul>
+</div>
+
+    <div class="content">
+      <div class="post">
+        <h2 class="post-title"><a href="https://words.yudocaa.in/notes/git-password-caching/">Git Password Caching</a></h2>
+        <div class="post-content">
+          <p>Bookmark for me.</p>
+<p>To use this option, you need to turn on the credential helper so that
+Git will save your password in memory for some time:</p>
+<pre><code class="language-{.sourceCode" data-lang="{.sourceCode">$ git config --global credential.helper cache
+# Set git to use the credential memory cache
+</code></pre><p>By default Git will cache your password for 15 minutes. You can change
+this if you like.</p>
+<pre><code class="language-{.sourceCode" data-lang="{.sourceCode">git config --global credential.helper 'cache --timeout=3600'
+# Set the cache to timeout after 1 hour (setting is in seconds)
+</code></pre><p>Ref:
+<a href="https://help.github.com/articles/set-up-git#password-caching"><a href="https://help.github.com/articles/set-up-git#password-caching">https://help.github.com/articles/set-up-git#password-caching</a></a></p>
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <ul>
+    <li><a href="/about">About</a></li>
+    <li><a href="/tags">Tags</a></li>
+     <li><a href="https://twitter.com/yudocaa">Twitter</a></li>
+     <li><a href="https://facebook.com/yudocaa">Facebook</a></li>
+     <li><a href="https://twitter.com/sayanchowdhury">Github</a></li>
+  </ul>
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. © Sayan Chowdhury, 2020</p>
+</footer>
+
+  </div>
+  <script src="https://words.yudocaa.in/js/slim.js"></script>
+  
+
+</body>
+
+</html>

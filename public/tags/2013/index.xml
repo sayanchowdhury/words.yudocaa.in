@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2013 on Intellectual Web</title>
+    <link>https://words.yudocaa.in/tags/2013/</link>
+    <description>Recent content in 2013 on Intellectual Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 02 Nov 2013 12:00:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://words.yudocaa.in/tags/2013/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mozilla Summit 2013</title>
+      <link>https://words.yudocaa.in/journal/mozilla-summit-2013/</link>
+      <pubDate>Sat, 02 Nov 2013 12:00:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/mozilla-summit-2013/</guid>
+      <description>I could not sleep the night i got the invitation mail from Mozilla to attend Mozilla Summit 2013. I was roaming around my college hostel waking up everybody from their sleep just to tell them that “I have been invited to Mozilla Summit 2013 at Santa Clara, CA”. I was really very excited as this was be my first international travel.
+Finally the month of October came. rtnpro and I left for bangalore airport early (all due to exitement).</description>
+    </item>
+    
+    <item>
+      <title>PyCon India 2013</title>
+      <link>https://words.yudocaa.in/journal/pycon-india-2013/</link>
+      <pubDate>Tue, 10 Sep 2013 12:00:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/pycon-india-2013/</guid>
+      <description>Python Month I attended last year’s PyCon India, while in college and it was a great experience. After shifting to Bangalore this year, I thought why not volunteer Pycon India this year.
+I was a regular attendee to the Pycon India meetings held at the Goibibo office at M.G.Road. This year it was thought to celebrate the month of August Python Month as a part of PyCon this year. As a part of Python Month, volunteers would go to various college across the country to evangelize and teach python to college students.</description>
+    </item>
+    
+  </channel>
+</rss>

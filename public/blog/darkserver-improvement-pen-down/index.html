@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Darkserver Improvement: Pen Down &middot; Intellectual Web </title>
+
+
+<link rel="stylesheet" href="https://words.yudocaa.in/css/slim.css">
+<link rel="stylesheet" href="https://words.yudocaa.in/css/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Intellectual Web" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="https://words.yudocaa.in/">Intellectual Web</a></h1>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+  </div>
+  <ul class="nav-list">
+    <li><a href="/journal">Journal</a></li>
+    <li><a href="/notes">Notes</a></li>
+    <li><a href="/blog">Blogs</a></li>
+  </ul>
+</div>
+
+    <div class="content">
+      <div class="post">
+        <h2 class="post-title"><a href="https://words.yudocaa.in/blog/darkserver-improvement-pen-down/">Darkserver Improvement: Pen Down</a></h2>
+        <div class="post-content">
+          <p>Lot of things to do!</p>
+<p>Lot of things to do!</p>
+<p>Lot of things to do!</p>
+<p>This was continuously revovlving around my head for last 2 weeks. I had to
+deploy the work i had done on staging instance and test it. But wait! I had
+never written a setup.py before, never made a RPM package before.</p>
+<p>While in college, I had a fascination toward RPM packaging as most of my
+college seniors had created a RPM package sometime or other. During Mukti
+2011, I had attended a RPM packaging workshop by Rahul Sundaram(mether), so i had the idea of how to package a RPM.</p>
+<p>But well before that i had to write a setup script for darkserver. Though the basic setup.py did not take much time, but i got stuck when it came to
+include staticfiles in setup.py. After a lot of googling and seraching, the
+result was null. So i asked in #python IRC channel, when Ned Batchelder
+helped me out. Finally, I got a link to package a Django app titled-
+Packaging a Django resuable app</p>
+<p>After completing writing setup.py, I started working on building RPM
+packaging. Here are some links:</p>
+<ul>
+<li><a href="https://fedoraproject.org/wiki/Packaging:Guidelines?rd=Packaging/Guidelines">Packaging:Guidlines</a></li>
+<li><a href="http://fedoraproject.org/wiki/How_to_create_an_RPM_package">How to create an RPM package</a></li>
+<li><a href="http://fedoraproject.org/wiki/Packaging:Python">Packaging:Python</a></li>
+</ul>
+<p>After completing rpm packaging, it’s time for koji scratch build. And i did it
+but while installing it in the staging instance, something happened. I had
+used target as rawhide instead of dist-6E-epel while koji scratch build.
+Nevermind, I repeated the steps and voilà, i successfully perform a fresh
+install of the package and everything was working properly.:)</p>
+<p>And, with that Google Summer of Code came to an End.</p>
+<p>.. image:: ../galleries/the-end.jpg
+:width: 90%
+:align: center</p>
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <ul>
+    <li><a href="/about">About</a></li>
+    <li><a href="/tags">Tags</a></li>
+     <li><a href="https://twitter.com/yudocaa">Twitter</a></li>
+     <li><a href="https://facebook.com/yudocaa">Facebook</a></li>
+     <li><a href="https://twitter.com/sayanchowdhury">Github</a></li>
+  </ul>
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. © Sayan Chowdhury, 2020</p>
+</footer>
+
+  </div>
+  <script src="https://words.yudocaa.in/js/slim.js"></script>
+  
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?port=8080&mindelay=10&v=2" data-no-instant defer></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Migrate a running process into tmux &middot; Intellectual Web </title>
+
+
+<link rel="stylesheet" href="http://localhost:8080/css/slim.css">
+<link rel="stylesheet" href="http://localhost:8080/css/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Intellectual Web" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="http://localhost:8080/">Intellectual Web</a></h1>
+  <p class="site-tagline"></p>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+    <ul class="nav-list">
+      
+      <li><a href="https://github.com/sayanchowdhury">Github</a></li>
+      <li><a href="https://twitter.com/yudocaa">Twitter</a></li>
+      
+    </ul>
+  </div>
+</div>
+
+    <div class="content">
+      <div class="post">
+        <h2 class="post-title"><a href="http://localhost:8080/blogs/migrate-a-running-process-into-tmux/">Migrate a running process into tmux</a></h2>
+        <div class="post-content">
+          <p>Being a regular tmux user. Migrating a running process into tmux using
+reptyr comes handy.</p>
+<p><a href="https://github.com/nelhage/reptyr">reptyr</a> is a utility for taking an
+existing running program and attaching it to a new terminal. Started a
+long-running process over ssh, but have to leave and don&rsquo;t want to
+interrupt it? Just start a screen, use reptyr to grab it, and then kill
+the ssh session and head on home.</p>
+<p>The package available in Fedora/Ubuntu repositories.</p>
+<pre><code class="language-{.sourceCode" data-lang="{.sourceCode">% sudo yum install -y reptyr        # For Fedora users
+% sudo apt-get install -y reptyr    # For Ubuntu users
+</code></pre><p>The steps to migrate a process is</p>
+<ul>
+<li>Sending the current foreground job to the background using CTRL-Z.</li>
+<li>List all the background jobs using <strong>jobs -l</strong>. This will get you
+the PID</li>
+</ul>
+<pre><code class="language-{.sourceCode" data-lang="{.sourceCode">% jobs -l
+[1]  + 16189 suspended  vim foobar.rst
+</code></pre><p>Here the PID is 16189</p>
+<ul>
+<li>Start a new tmux or screen session. I will be using tmux</li>
+</ul>
+<pre><code class="language-{.sourceCode" data-lang="{.sourceCode">% tmux
+</code></pre><ul>
+<li>Reattach the background process using</li>
+</ul>
+<pre><code class="language-{.sourceCode" data-lang="{.sourceCode">% reptyr 16189
+</code></pre><p>If this error appears</p>
+<pre><code class="language-{.sourceCode" data-lang="{.sourceCode">Unable to attach to pid 16189: Operation not permitted
+The kernel denied permission while attaching
+</code></pre><p>Then type in the following command as root.</p>
+<pre><code class="language-{.sourceCode" data-lang="{.sourceCode">% echo 0 &gt; /proc/sys/kernel/yama/ptrace_scope
+</code></pre><p>These are commands are compatible with screen also</p>
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <ul>
+    <li><a href="/about">About</a></li>
+    <li><a href="/tags">Tags</a></li>
+     <li><a href="https://twitter.com/yudocaa">Twitter</a></li>
+     <li><a href="https://facebook.com/yudocaa">Facebook</a></li>
+     <li><a href="https://twitter.com/sayanchowdhury">Github</a></li>
+  </ul>
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. © Sayan Chowdhury, 2020</p>
+</footer>
+
+  </div>
+  <script src="http://localhost:8080/js/slim.js"></script>
+  
+
+</body>
+
+</html>

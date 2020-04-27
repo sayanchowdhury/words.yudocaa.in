@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>january on Intellectual Web</title>
+    <link>https://words.yudocaa.in/tags/january/</link>
+    <description>Recent content in january on Intellectual Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 17 Jan 2016 20:28:43 +0530</lastBuildDate>
+    
+	<atom:link href="https://words.yudocaa.in/tags/january/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fedora Meetup Pune - January 2016</title>
+      <link>https://words.yudocaa.in/journal/fedora-meetup-pune-january-2016/</link>
+      <pubDate>Sun, 17 Jan 2016 20:28:43 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/fedora-meetup-pune-january-2016/</guid>
+      <description>On 15th January 2016, we had our first Fedora meetup at Pune. The venue was earlier decided to be Red Hat office, Pune but due to unavailability of space the meetup was moved to my apartment.
+The meetup was scheduled to start around 14:30 IST but with people pouring in a bit late, we started the event at 15:00 IST. The turnout was good and much more than what we had expected with a total of 18 people turning out.</description>
+    </item>
+    
+  </channel>
+</rss>

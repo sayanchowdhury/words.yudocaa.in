@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notes on Intellectual Web</title>
+    <link>https://words.yudocaa.in/tags/notes/</link>
+    <description>Recent content in notes on Intellectual Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 May 2016 16:30:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://words.yudocaa.in/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Notes: GTD and Taskwarrior</title>
+      <link>https://words.yudocaa.in/notes/taskwarrior/</link>
+      <pubDate>Fri, 13 May 2016 16:30:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/notes/taskwarrior/</guid>
+      <description>The posts tagged with notes are stuffs that I learned over time from blogs, articles, trying out on my own. The posts will be updated whenever I learn something new on the topic. This post can be easily read anytime and anywhere. Also, they can be easily shared. Do comment/point out if something is wrong out there.
+Inspired by Julia Evans http://jvns.ca/ to write these posts.
+ What is GTD?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2017 on Intellectual Web</title>
+    <link>http://localhost:8080/tags/2017/</link>
+    <description>Recent content in 2017 on Intellectual Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Jul 2014 10:54:24 +0200</lastBuildDate>
+    
+	<atom:link href="http://localhost:8080/tags/2017/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PyLadies Pune June 2017</title>
+      <link>http://localhost:8080/journal/pyladies-pune-june-2017/</link>
+      <pubDate>Fri, 11 Jul 2014 10:54:24 +0200</pubDate>
+      
+      <guid>http://localhost:8080/journal/pyladies-pune-june-2017/</guid>
+      <description>Hello World</description>
+    </item>
+    
+  </channel>
+</rss>

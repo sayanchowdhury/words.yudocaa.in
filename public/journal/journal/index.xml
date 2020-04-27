@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>journal on Intellectual Web</title>
+    <link>http://localhost:8080/journal/journal/</link>
+    <description>Recent content in journal on Intellectual Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Mar 2014 00:31:43 +0530</lastBuildDate>
+    
+	<atom:link href="http://localhost:8080/journal/journal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An open letter to Bloggers from Kolkata.</title>
+      <link>http://localhost:8080/journal/an-open-letter-to-bloggers-from-kolkata/</link>
+      <pubDate>Wed, 05 Mar 2014 00:31:43 +0530</pubDate>
+      
+      <guid>http://localhost:8080/journal/an-open-letter-to-bloggers-from-kolkata/</guid>
+      <description>On February 23, 2014 at 4:43pm, Anirban Saha made a post on Facebook
+Where are the Kolkata Bloggers? Like, seriously ?
+In August 8, 2009, Webreps organised Kolkata Bloggers Meet. That time I joined Webreps. In October 31, 2009, we organised the BCET Bloggers workshop in BCET. There BCREC and NITDgp also joined in. Have been active ever since then.
+In 2014 - I hardly find any blogger visible and audible.</description>
+    </item>
+    
+  </channel>
+</rss>

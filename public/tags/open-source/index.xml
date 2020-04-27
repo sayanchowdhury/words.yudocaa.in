@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>open source on Intellectual Web</title>
+    <link>https://words.yudocaa.in/tags/open-source/</link>
+    <description>Recent content in open source on Intellectual Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Mar 2014 01:45:03 +0530</lastBuildDate>
+    
+	<atom:link href="https://words.yudocaa.in/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mukti 2014</title>
+      <link>https://words.yudocaa.in/journal/mukti-2014/</link>
+      <pubDate>Fri, 07 Mar 2014 01:45:03 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/mukti-2014/</guid>
+      <description>Mukti 2014 is the annual national level technical symposium on Free and Open Source Software of the GNU/Linux Users’ Group NIT Durgapur held from 31st January - 2nd February 2014.
+I&amp;rsquo;ve been attending Mukti for last four years. Unlike, the previous years when i usually attended Mukti as a student participant, this year I attended Mukti as a guest speaker.
+Day 0 (30th January 2014) After a hectic travel from Bangalore to Durgapur via Kolkata.</description>
+    </item>
+    
+    <item>
+      <title>How to get started with Open Source</title>
+      <link>https://words.yudocaa.in/blog/how-to-get-started-with-open-source/</link>
+      <pubDate>Tue, 04 Mar 2014 00:30:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/blog/how-to-get-started-with-open-source/</guid>
+      <description>I have been involved in Durgapur Linux User&amp;rsquo;s Group for around last five years. I have been contributing to various open source projects quite sometime. The primary reason on why I contribute to open source is the feeling, the enjoyment when you send a patch or a PR to a open source project. It makes you happy when millions of people use your few lines of code in day to day life.</description>
+    </item>
+    
+  </channel>
+</rss>

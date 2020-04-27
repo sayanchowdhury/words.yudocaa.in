@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>event on Intellectual Web</title>
+    <link>https://words.yudocaa.in/tags/event/</link>
+    <description>Recent content in event on Intellectual Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Nov 2016 15:10:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://words.yudocaa.in/tags/event/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PyCon India 2016</title>
+      <link>https://words.yudocaa.in/journal/pycon-india-2016/</link>
+      <pubDate>Sat, 26 Nov 2016 15:10:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/journal/pycon-india-2016/</guid>
+      <description>PyCon India, this year was held at New Delhi at the JNU Convention Center.
+Dev Sprints During the Dev Sprint, Farhaan and Vivek were sprinting on Fedora Infrastructure projects primarily helping people contribute to Pagure.
+Other projects/orgs like SciPy, Red Hat team, FOSSAsia, Junction etc were also sprinting.
+The Dev Sprint turned out to have a good participation and couple of PRs were sent out by the participations. More than that, it’s more about participants getting to know about on how to contribute.</description>
+    </item>
+    
+  </channel>
+</rss>
