@@ -2,7 +2,7 @@
 title = "git config"
 slug = "git-config"
 authors = ["Sayan Chowdhury"]
-date = 2020-05-03T18:30:00Z
+date = 2020-05-02T18:30:00Z
 tags = ["git", "series"]
 +++
 

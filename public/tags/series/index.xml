@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>series on Intellectual Web</title>
-    <link>http://localhost:8080/tags/series/</link>
+    <link>https://words.yudocaa.in/tags/series/</link>
     <description>Recent content in series on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 May 2020 18:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2020 18:30:00 +0000</lastBuildDate>
     
-	<atom:link href="http://localhost:8080/tags/series/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://words.yudocaa.in/tags/series/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>git config</title>
-      <link>http://localhost:8080/blog/git-config/</link>
-      <pubDate>Sun, 03 May 2020 18:30:00 +0000</pubDate>
+      <link>https://words.yudocaa.in/blog/git-config/</link>
+      <pubDate>Sat, 02 May 2020 18:30:00 +0000</pubDate>
       
-      <guid>http://localhost:8080/blog/git-config/</guid>
+      <guid>https://words.yudocaa.in/blog/git-config/</guid>
       <description>Git comes with this handy tool that let&amp;rsquo;s you manage your Git configuration with ease.
 Configuration Levels   --local
 (Default) Local configuration values are stored and managed at the repository level. The values are stored in a file found in the repo&amp;rsquo;s .git directory: .git/config

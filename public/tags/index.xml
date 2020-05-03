@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Feb 2017 20:30:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2020 18:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://words.yudocaa.in/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>git</title>
+      <link>https://words.yudocaa.in/tags/git/</link>
+      <pubDate>Sat, 02 May 2020 18:30:00 +0000</pubDate>
+      
+      <guid>https://words.yudocaa.in/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>series</title>
+      <link>https://words.yudocaa.in/tags/series/</link>
+      <pubDate>Sat, 02 May 2020 18:30:00 +0000</pubDate>
+      
+      <guid>https://words.yudocaa.in/tags/series/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2016</title>
@@ -431,15 +449,6 @@
       <pubDate>Tue, 10 Jun 2014 12:00:00 +0530</pubDate>
       
       <guid>https://words.yudocaa.in/tags/2014/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://words.yudocaa.in/tags/git/</link>
-      <pubDate>Tue, 10 Jun 2014 12:00:00 +0530</pubDate>
-      
-      <guid>https://words.yudocaa.in/tags/git/</guid>
       <description></description>
     </item>
     
