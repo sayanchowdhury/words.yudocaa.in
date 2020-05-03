@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head><script src="/livereload.js?port=8080&mindelay=10&v=2" data-no-instant defer></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> git config &middot; Intellectual Web </title>
+
+
+<link rel="stylesheet" href="http://localhost:8080/css/slim.css">
+<link rel="stylesheet" href="http://localhost:8080/css/highlight.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Code+Pro' rel='stylesheet' type='text/css'>
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<link href="" rel="alternate" type="application/rss+xml" title="Intellectual Web" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+  <h1 class="site-title"><a href="http://localhost:8080/">Intellectual Web</a></h1>
+  <div class="nav">
+    <a class="nav-btn" href="#">
+      <span class="ci ci-burger"></span>
+    </a>
+  </div>
+  <ul class="nav-list">
+    <li><a href="/journal">Journal</a></li>
+    <li><a href="/notes">Notes</a></li>
+    <li><a href="/blog">Blogs</a></li>
+  </ul>
+</div>
+
+    <div class="content">
+      <div class="post">
+        <h2 class="post-title"><a href="http://localhost:8080/blog/git-config/">git config</a></h2>
+        <div class="post-content">
+          <p>Git comes with this handy tool that let&rsquo;s you manage your Git configuration with ease.</p>
+<h2 id="configuration-levels">Configuration Levels</h2>
+<ul>
+<li>
+<p><code>--local</code></p>
+<p><em><strong>(Default)</strong></em> Local configuration values are stored and managed at the repository level.
+The values are stored in a file found in the repo&rsquo;s <code>.git</code> directory: <code>.git/config</code></p>
+<p>If you are planning to set some configuration only to be used by the specific repo you
+are in, then go ahead with using <code>--local</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --local user.email <span style="color:#e6db74">&#34;sayan@mycompany.io&#34;</span>
+</code></pre></div></li>
+<li>
+<p><code>--global</code></p>
+<p>Global configuration is one level above Local. These configuration are user-specific and
+managed through the <code>.gitconfig</code> file in user&rsquo;s home directory: <code>~/.gitconfig</code></p>
+<p>If you want your configuration to reflect to all your repo&rsquo;s in the system, then go ahead
+with using <code>--global</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global user.email <span style="color:#e6db74">&#34;sayan@emailprovider.io&#34;</span>
+</code></pre></div></li>
+<li>
+<p><code>--system</code></p>
+<p>System-level configuration applies to every user on the system, which means if none of the
+the local or the global values overrides the system level Git configuration value will be
+used. These configurations are true for all the repos&rsquo; in the system and is managed through
+the <code>/etc/gitconfig</code> file.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --system user.email <span style="color:#e6db74">&#34;infra@mywebsite.io&#34;</span>
+</code></pre></div></li>
+</ul>
+<h3 id="listing-all-the-configurations">Listing all the configurations</h3>
+<ul>
+<li>
+<p>To see all the configuration values, use the command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --list
+</code></pre></div></li>
+<li>
+<p>It can get quite messy when you have configuration values coming from multiple sources. To see
+the origin of the value as well add <code>--show-origin</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --list --show-origin
+</code></pre></div></li>
+</ul>
+<hr>
+<h2 id="your-identity">Your Identity</h2>
+<p>The first chore the you always need to do after setting up Git is setting up your user name and
+email address. This is required because Git attaches this piece of information to ever changeset that
+you create in Git, known as Git commit.</p>
+<p>Which level of configuration should we use? Because the details are user specific in most cases, the
+optimum answer is <code>--global</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global user.name <span style="color:#e6db74">&#34;Sayan Chowdhury&#34;</span>
+git config --global user.name <span style="color:#e6db74">&#34;sayan@emailprovider.io&#34;</span>
+</code></pre></div><p>Let&rsquo;s verify this in the global settings file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat ~/.gitconfig
+<span style="color:#f92672">[</span>user<span style="color:#f92672">]</span>
+    name <span style="color:#f92672">=</span> Sayan Chowdhury
+	email <span style="color:#f92672">=</span> sayan@emailprovider.io
+</code></pre></div>
+<aside class="admonition note">
+	<div class="note-icon">
+	</div>
+	
+	
+	<div class="admonition-content"><p>What are the other alternative will you use to verify?</p>
+</div>
+</aside>
+
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <ul>
+    <li><a href="/about">About</a></li>
+    <li><a href="/tags">Tags</a></li>
+     <li><a href="https://twitter.com/yudocaa">Twitter</a></li>
+     <li><a href="https://facebook.com/yudocaa">Facebook</a></li>
+     <li><a href="https://twitter.com/sayanchowdhury">Github</a></li>
+  </ul>
+  <p>Powered by <a href="https://gohugo.io">Hugo</a>. © Sayan Chowdhury, 2020</p>
+</footer>
+
+  </div>
+  <script src="http://localhost:8080/js/slim.js"></script>
+  
+
+</body>
+
+</html>

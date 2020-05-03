@@ -71,7 +71,6 @@ a {
     text-decoration: underline; }
 
 em {
-  text-emphasis-style: circle;
   text-emphasis-position: under; }
 
 code {
@@ -358,6 +357,21 @@ button:active, .btn:active {
 
 .post-content {
   margin: 2rem 0; }
+
+.admonition {
+  border-left-width: 8px;
+  border-left-style: solid;
+  position: relative;
+  border-color: #30cb05;
+  display: block;
+  background: #bdf7d7; }
+  .admonition p {
+    padding: 1rem;
+    font-weight: 501;
+    font-size: large; }
+
+li p:first-child {
+  margin-bottom: 0.50rem; }
 
 /* styling for tags on homepage */
 .post-tags {
