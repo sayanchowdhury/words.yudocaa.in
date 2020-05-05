@@ -86,3 +86,50 @@ $ cat ~/.gitconfig
 {{% note %}}
 What are the other alternative will you use to verify?
 {{% /note %}}
+
+---
+
+## Your Editor
+
+`Git` invokes the editor for a lot of command for example while doing a commit,
+or rebasing your commits. When you type these commands it's fire up the editor
+infront of you. Now, each of us has their own choice of editor so vim gives you
+option to configure which editor you would like to use.
+
+I'm a vim user, thus for me the command would be:
+
+```bash
+git config --global core.editor "vim"
+```
+---
+
+## Colors in Git
+
+Coming soon
+
+---
+
+## Merge and diff tools
+
+Coming soon
+
+---
+
+## Git configurations you might find useful
+
+More details on the following config coming soon
+
+- `alias`
+- `commit.template`
+- `core.excludesfile`
+- `gpg.program`
+- `help.autocorrect`
+- `http.cookiefile`
+- `push.current`
+- `user.signingkey`
+
+--
+
+{{% note %}}
+To more on git config, read `man git-config`
+{{% /note %}}
