@@ -2,10 +2,8 @@
 title: About
 ---
 
-Etiam porta sem malesuada magna mollis euismod. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui.
+I am Sayan Chowdhury. I come from a small-town in India, Jamshedpur, moved to Bangalore around in 2013. In the day, I'm a software engineer working remotely from my cozy little room. I currently work as a Linux Software Engineer at Kinvolk. I've dabbled with multiple computer science islands in the past, from building desktop apps, to web, to infrastructure, to now landed in the kernel land. I've also been part of various open source communities around Python, Fedora, Kubernetes, Mozilla, etc. I like to talk about {Python, Containers, Golang, Infrastructure, Cloud, Fedora, Community, Open Source}
 
-Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+/me also likes {Artist, Bouldering, Trek, Coffee, Rubiks Cube, Photography, Anime, Programmer, Swimming, Movies, Boardgames} <<- this is what happens in remote, when you learn that you need a life outside computers :)
 
-Nulla vitae elit libero, a pharetra augue. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+A perfect example of jack of all trades, master of None.
