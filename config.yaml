@@ -6,13 +6,6 @@ pygmentsstyle: 'monokai'
 # Theme settings
 theme: slim
 paginate: 1000
-social:
-  twitter: "#"
-  github: "#"
-  instagram: "#"
-  linkedin: "#"
-  dribbble: "#"
-  youtube: "#"
 params:
   Subtitle: ""
   mainSections: ["blog"]
