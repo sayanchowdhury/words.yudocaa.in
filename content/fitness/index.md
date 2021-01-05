@@ -5,7 +5,7 @@ excerpt = ""
 title = "Hope"
 +++
 
-A thread to lose weight, and see a healthier as I me. This is inspired from closely following
+A thread to lose weight, and see a healthier version of me, v2021.6?. This is inspired from closely following
 [Priyanka](https://priyankasaggu11929.github.io/fitness.html) and [Jason](https://cb.janusworx.com/notice/A0SCk8KhBHOfqEOURU)
 
 In the ending months of 2020, I started with regularly doing a form of excercise be
