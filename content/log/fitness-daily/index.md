@@ -17,6 +17,15 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 07, 2021
+
+```
+- cw: 81.1
+```
+Not good, weight increased again. Probably because hitting drinking 3L water everyday.
+Though did my set of Freeletics yesterday, and 5 kms of walk. I might need to
+move my towards the wee hours in morning.
+
 ### January 06, 2021
 
 ```
