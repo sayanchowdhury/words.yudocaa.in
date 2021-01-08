@@ -17,6 +17,16 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 08, 2021
+
+```
+- cw: 80.60
+```
+Chill day. Gave body some time to recover from the Freeletics excercise. I am
+also trying out biphasic sleep, so left in the afternoon hours. Went for a walk
+in the evening and covered 6 kms with a pace of 10:45 /km. Another thing I tried
+was ending the day with drinking cold water instead of hot.
+
 ### January 07, 2021
 
 ```
