@@ -20,6 +20,14 @@ Ok, lets start.
 ### January 08, 2021
 
 ```
+- cw: 80.30
+```
+Completed Freeletics in the morning on empty stomach. It was HARD! Then completed
+walking 6.15 kms in the evening with a decent pace of 10:41 min/km.
+
+### January 08, 2021
+
+```
 - cw: 80.60
 ```
 Chill day. Gave body some time to recover from the Freeletics excercise. I am

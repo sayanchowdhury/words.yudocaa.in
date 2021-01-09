@@ -25,8 +25,8 @@ The log will be updated weekly with the latest first. Incase you want to start f
 Ok, lets start.
 
 ```
-- hw: 80.70 kgs (05/01/2021)
-- sw: 80.70 kgs (05/01/2021)
+- hw: 81.55 kgs (04/01/2021)
+- sw: 81.55 kgs (04/01/2021)
 ```
 
 ### January 11, 2021
