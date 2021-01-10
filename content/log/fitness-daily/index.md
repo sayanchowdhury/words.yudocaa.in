@@ -17,7 +17,19 @@ To explain the jargons:
 
 Ok, lets start.
 
-### January 08, 2021
+### January 10, 2021
+
+```
+- cw: 80.60
+```
+
+I hit 5 kms walk broken into various smaller walks, because I was out and managed
+to squeeze in some walk. Also, had a late dinner with carbs. Weekends might me a
+nightmare so I need to come up with plans to keep maintaining my routine.
+
+Tomorrow we complete 1 week of tracking. 12 more to go. 🤞
+
+### January 09, 2021
 
 ```
 - cw: 80.30
