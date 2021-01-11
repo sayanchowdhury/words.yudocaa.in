@@ -5,7 +5,7 @@ excerpt = ""
 title = "Hope - Journal"
 +++
 
-This is accompanied with [Hope](/log/fitness/)
+This is accompanied with [Hope](/fitness/)
 
 This is to maintain a daily journal of the efforts. This is to be seen from bottom
 to top.
@@ -16,6 +16,15 @@ To explain the jargons:
 - gw: goal weight
 
 Ok, lets start.
+
+### January 10, 2021
+
+```
+- cw: 80.05
+```
+
+First week of tracking completes. Completed a set of Freeleticss first thing in
+the morning and ended the day with 3.52 kms with a pace of 11:02 min/km.
 
 ### January 10, 2021
 

@@ -32,9 +32,14 @@ Ok, lets start.
 ### January 11, 2021
 
 ```
+- cw: 80.05 kgs (11/01/2021)
+
 - gw1: 78 kgs
 - gw2: 75 kgs
 - gw3: 73 kgs
 - gw4: 70 kgs
 - gw5: 67 kgs
 ```
+
+A good week. I'm down by 1.5 kgs, but since this is just the first week I'm not
+getting my expectations high. Hope to have a good second week.
