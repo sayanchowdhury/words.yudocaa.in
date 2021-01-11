@@ -17,7 +17,7 @@ To explain the jargons:
 
 Ok, lets start.
 
-### January 10, 2021
+### January 11, 2021
 
 ```
 - cw: 80.05
