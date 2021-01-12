@@ -17,6 +17,15 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 12, 2021
+
+```
+- cw: 79.95
+```
+
+Yesterday walked in two sets of 3.6 kms and 3.13 kms. The former in the morning
+and the later in the evening. Today is the dreaded day of freeletics.
+
 ### January 11, 2021
 
 ```
