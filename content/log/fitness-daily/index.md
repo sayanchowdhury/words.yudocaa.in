@@ -17,6 +17,15 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 13, 2021
+
+```
+- cw: 79.45
+```
+
+Planned Freeletics, but was down with fever so skipped Freeletics. Though, had
+an hour long meeint at night during which I did a walk covering 5.15 kms.
+
 ### January 12, 2021
 
 ```
