@@ -17,6 +17,16 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 14, 2021
+
+```
+- cw: 79.45
+```
+
+Zero gain, Zero loss. Sickness continues. Walked 6kms in an hour, though first
+time I had to take 3-4 breaks in between. Also, felt more tired than the general.
+
+
 ### January 13, 2021
 
 ```
@@ -24,7 +34,7 @@ Ok, lets start.
 ```
 
 Planned Freeletics, but was down with fever so skipped Freeletics. Though, had
-an hour long meeint at night during which I did a walk covering 5.15 kms.
+an hour long meeting at night during which I did a walk covering 5.15 kms.
 
 ### January 12, 2021
 
