@@ -17,6 +17,16 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 15, 2021
+
+```
+- cw: 78.80
+```
+
+Another sick day. Could not do Freeletics again. Hopefully to resume it on Friday.
+Felt better by dinner so went on a walk and did a 6 kms in an hour. Good thing I
+clocked 9.x min/km pace bunch of times yesterday
+
 ### January 14, 2021
 
 ```
