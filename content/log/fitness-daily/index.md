@@ -17,6 +17,18 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 16, 2021
+
+```
+- cw: 78.70
+```
+
+Back doing Freeletics again. Yesterday was a killer day, maybe it was scheduled to
+be the first of the week. Also, I added wall, and pullup bar as equipment and
+Freeletics listened. The coach added a couple of pullup exercises. Later, walked
+3.5 kms at a slow pace of ~12 min/km.
+
+
 ### January 15, 2021
 
 ```
