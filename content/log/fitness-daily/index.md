@@ -17,6 +17,15 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 17, 2021
+
+```
+- cw: 79.10
+```
+
+Sick again, maybe did not recover. Seems like body needs rest. I though did 3.5
+kms walk.
+
 ### January 16, 2021
 
 ```
