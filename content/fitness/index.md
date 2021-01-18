@@ -22,6 +22,8 @@ To explain the jargons:
 
 The log will be updated weekly with the latest first. Incase you want to start from the beginning, [jump here](#january-11-2021)
 
+For daily updates, check the [daily fitness log](/log/fitness-daily)
+
 Ok, lets start.
 
 ```
