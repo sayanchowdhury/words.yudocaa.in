@@ -29,6 +29,24 @@ Ok, lets start.
 - sw: 81.55 kgs (04/01/2021)
 ```
 
+### January 18, 2021
+
+```
+- cw: 79.30 kgs (18/01/2021)
+
+- gw1: 78 kgs
+- gw2: 75 kgs
+- gw3: 73 kgs
+- gw4: 70 kgs
+- gw5: 67 kgs
+```
+
+A mixed week. I was sick, but continued to exercise on a couple of days. I was
+dropping fast, to 78.70 kgs on Friday, so pulled to brakes and gave some time
+to the body to recover from fever as well as the fatigue from exercises. I'm
+not looking to drop fast in a unhealthy manner. Treated myself with a cheat day
+on Sunday. Third week! Here I come!
+
 ### January 11, 2021
 
 ```
