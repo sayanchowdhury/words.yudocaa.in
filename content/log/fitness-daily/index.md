@@ -20,6 +20,19 @@ Ok, lets start.
 ### January 17, 2021
 
 ```
+- cw: 79.30
+```
+
+Feeling tried about the whole day of cleaning, so gave myself some rest. Also,
+treated the day as a cheat day after 2 weeks which I feel is apt. Keeping habits
+up and running in this freezing cold is very difficult. I'm a lazy person at
+heart :)
+
+Second week of tracking comes to a closure. 11 more to go.
+
+### January 17, 2021
+
+```
 - cw: 79.10
 ```
 
