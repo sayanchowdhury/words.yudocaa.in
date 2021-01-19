@@ -17,6 +17,18 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 19, 2021
+
+```
+- cw: 79.05
+```
+
+Freeletics, a light one. Started with the diet that dietician suggested. The diet
+is not really fancy but more focused with the same things I love to have at home.
+
+Also, started the day quite early and went for a morning walk rather than at night
+Trying to switch gears so that at night it's mostly a stroll.
+
 ### January 18, 2021
 
 ```
