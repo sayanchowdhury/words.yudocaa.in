@@ -17,6 +17,16 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 20, 2021
+
+```
+- cw: 78.1
+```
+
+Started the morning with 5.13 kms walk, approximately 7000 steps and then ending
+with day with 2.81 kms walk, with another 3500 steps. A total of ~12000 steps.
+Still fighting with diet, bulk cooking will surely come handy in the long run.
+
 ### January 19, 2021
 
 ```
