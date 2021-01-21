@@ -17,6 +17,18 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 21, 2021
+
+```
+- cw: 77.75
+```
+Yay! Hit my first goal weight. But I'm dropping quick, not really healthy. I need
+to intake more food given the exercise I'm doing. Did complete 5 kms, under
+45 mins. I really need try to get the exercise by evening, and not at midnight.
+
+I've probably woken up bunch of people with my loud thumping noise while walking.
+Blame my shoe, not me. :)
+
 ### January 20, 2021
 
 ```
