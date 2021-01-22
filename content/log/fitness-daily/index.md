@@ -17,6 +17,16 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 22, 2021
+
+```
+- cw: 77.65
+```
+
+A regular day, walked 6 kms at peak night, I really need to change my timings.
+Bring back when I walked in evening, for this I need to start the day early, and
+finish early.
+
 ### January 21, 2021
 
 ```
