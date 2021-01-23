@@ -17,6 +17,15 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 23, 2021
+
+```
+- cw: 77.70
+```
+
+No exercise. I've dropped a lot this week. I need to gain some by eating healthy.
+Another week coming to an end. Need to pick up Freeletics again from next week.
+
 ### January 22, 2021
 
 ```
