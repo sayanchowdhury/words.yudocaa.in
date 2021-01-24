@@ -17,6 +17,16 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 24, 2021
+
+```
+- cw: 78.25
+```
+
+Walked a 10k last night, and also completed the 100 kms challenge for the month.
+Pretty good number to start off January 2021. Guilty of having sumptuous meal as
+well which explains the rise in weight.
+
 ### January 23, 2021
 
 ```
