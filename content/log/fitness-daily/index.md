@@ -17,6 +17,15 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 25, 2021
+
+```
+- cw: 78.15
+```
+
+Another day of no exercise, mostly to maintain weight. I would need to find a way
+to eat better and also lot and not skip exercise.
+
 ### January 24, 2021
 
 ```
