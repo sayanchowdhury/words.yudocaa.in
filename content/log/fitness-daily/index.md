@@ -17,6 +17,14 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 26, 2021
+
+```
+- cw: 78.40
+```
+
+No exercise again because we had a feast at our house but tomorrow for sure
+
 ### January 25, 2021
 
 ```
