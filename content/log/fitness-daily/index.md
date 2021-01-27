@@ -17,6 +17,16 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 27, 2021
+
+```
+- cw: 77.95
+```
+
+Back to exercise again with clocking 11k steps, and the good news is
+I walked 6 kms in 56 mins. That's a good timing. VO2 Max went up a bit.
+
+
 ### January 26, 2021
 
 ```
