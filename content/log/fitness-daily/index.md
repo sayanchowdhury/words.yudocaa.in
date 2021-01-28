@@ -17,6 +17,16 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 28, 2021
+
+```
+- cw: 77.20
+```
+
+Casual walk last night, talking with Chandan, Anirudha and Ritesh about PyCon
+India. 6 kms in 1h 3m, did not even realize. Smooth!
+But! But! But! The weight drop is too high. Increase trend tomorrow maybe
+
 ### January 27, 2021
 
 ```
