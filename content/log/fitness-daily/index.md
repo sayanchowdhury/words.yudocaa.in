@@ -17,7 +17,24 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 29, 2021
+
+```
+- cw: 77.20
+```
+
+Went to market and walked around 4 kms and later 6 kms as usual at night, but the
+weight remained the same. So good :)
+
 ### January 28, 2021
+
+```
+- cw: 77.20
+```
+
+Casual walk last night, talking with Chandan, Anirudha and Ritesh about PyCon
+India. 6 kms in 1h 3m, did not even realize. Smooth!
+But! But! But! The weight drop is too high. Increase trend tomorrow maybe
 
 ```
 - cw: 77.20
