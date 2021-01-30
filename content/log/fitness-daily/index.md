@@ -17,6 +17,15 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 30, 2021
+
+```
+- cw: 77.50
+```
+
+Life needed some celebrations and rest :) I passed the CKA exams. Pretty much
+was a tiring week with CKA last minute prep and talk prep. Both went well.
+
 ### January 29, 2021
 
 ```
