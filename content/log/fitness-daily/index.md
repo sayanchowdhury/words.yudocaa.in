@@ -17,6 +17,17 @@ To explain the jargons:
 
 Ok, lets start.
 
+### January 31, 2021
+
+```
+- cw: 77.85
+```
+
+Another chill day, loads of house chores completed. Temple visits. Ended the day
+having Dosa, Paneer Butter Masala, and quite some number of Tandoori Roti. Frankly
+I was quite scared that the weight will go overboard and it did, ~80.5 kgs was when
+I checked at night. Gladly it came down at the time when I check my weight
+
 ### January 30, 2021
 
 ```
