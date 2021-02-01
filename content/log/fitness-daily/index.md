@@ -17,6 +17,17 @@ To explain the jargons:
 
 Ok, lets start.
 
+### February 01, 2021
+
+```
+- cw: 77.35
+```
+
+4 weeks of tracking. Last night, back to controlled and healthy diet. I don't
+dislike papaya anymore. That's some good news. Also, ended the day walking 5 kms
+at a good average pace. Yesterday, marked the completion of January Walking challenge
+on Strava. 130 kms it is.
+
 ### January 31, 2021
 
 ```
