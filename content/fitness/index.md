@@ -46,7 +46,7 @@ Milestone! Milestone! Milestone!.
 
 - Achieved first goal weight of 78 kgs
 - Completed January Walking Challenge with 130 kms
-- Body down to 28
+- Body age down to 28
 - And 4 weeks of tracking daily.
 - Some technical, cleared CKA.
 

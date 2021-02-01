@@ -6,11 +6,7 @@
     <description>Recent content in bookmark on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Dec 2014 12:00:00 +0530</lastBuildDate>
-    
-	<atom:link href="https://words.yudocaa.in/tags/bookmark/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 27 Dec 2014 12:00:00 +0530</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/bookmark/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrate a running process into tmux</title>
       <link>https://words.yudocaa.in/blog/migrate-a-running-process-into-tmux/</link>

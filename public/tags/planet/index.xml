@@ -6,11 +6,7 @@
     <description>Recent content in planet on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Feb 2017 20:30:00 +0530</lastBuildDate>
-    
-	<atom:link href="https://words.yudocaa.in/tags/planet/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 06 Feb 2017 20:30:00 +0530</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/planet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PyLadies Pune Meetup - February 2017</title>
       <link>https://words.yudocaa.in/journal/pyladies-pune-meetup-feb-2017/</link>
@@ -252,7 +248,7 @@ Fedora Monthly Meetup We decided start off with a local Fedora meetup here in Ba
       <pubDate>Fri, 07 Mar 2014 07:20:23 +0000</pubDate>
       
       <guid>https://words.yudocaa.in/journal/waartaa-applies-gsoc-2014/</guid>
-      <description>We are elated to inform you that Waartaa has been accepted as a project idea for GSoC under Fedora&amp;lsquo;s umbrella.
+      <description>We are elated to inform you that Waartaa has been accepted as a project idea for GSoC under Fedora&amp;rsquo;s umbrella.
 For those who are new to Waartaa, Waartaa is an open-source communication tool for teams and groups. It is built on top of IRC. Currently, Waartaa is an IRC client as a service and it supports centralized logging, 24x7 idling, notifications and unique identity to a user on IRC. The source code is available at https://github.</description>
     </item>
     

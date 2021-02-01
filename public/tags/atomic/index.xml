@@ -6,11 +6,7 @@
     <description>Recent content in atomic on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Feb 2017 12:00:00 +0530</lastBuildDate>
-    
-	<atom:link href="https://words.yudocaa.in/tags/atomic/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 04 Feb 2017 12:00:00 +0530</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/atomic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Redesigning fedimg (Part 2): Communication with AWS</title>
       <link>https://words.yudocaa.in/blog/redesigning-fedimg-part-ii/</link>

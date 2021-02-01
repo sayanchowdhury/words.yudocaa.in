@@ -6,11 +6,7 @@
     <description>Recent content in notification on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Apr 2016 11:44:00 +0530</lastBuildDate>
-    
-	<atom:link href="https://words.yudocaa.in/tags/notification/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 11 Apr 2016 11:44:00 +0530</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/notification/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Receiving Weechat Notifications on mobile via Pushover</title>
       <link>https://words.yudocaa.in/blog/receiving-weechat-notifications-on-mobile-via-pushover/</link>

@@ -6,11 +6,7 @@
     <description>Recent content in hackerspace on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Feb 2017 15:00:00 +0530</lastBuildDate>
-    
-	<atom:link href="https://words.yudocaa.in/tags/hackerspace/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 01 Feb 2017 15:00:00 +0530</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/hackerspace/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basic Soldering Workshop at reserved-bit</title>
       <link>https://words.yudocaa.in/blog/soldering-workshop-at-rb/</link>

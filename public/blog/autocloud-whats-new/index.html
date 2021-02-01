@@ -50,7 +50,7 @@ can be read <a href="https://kushaldas.in/posts/introducing-autocloud.html">here
 composes are built. Thanks to adamw for writing a detailed <a href="https://www.happyassassin.net/2016/02/15/pungi-4-the-new-generation-of-the-fedora-compose-tools-and-what-it-means-for-qa/">blogpost</a> on what, why and how things
 changed.</p>
 <p>With this change now autocloud listens to the compose builds over the fedmsg.
-The topic being &ldquo;<a href="apps.fedoraproject.org/datagrepper/raw?topic=org.fedoraproject.prod.pungi.compose.status.change">org.fedoraproject.prod.pungi.compose.status.change</a>&quot;. It checks
+The topic being &ldquo;<a href="apps.fedoraproject.org/datagrepper/raw?topic=org.fedoraproject.prod.pungi.compose.status.change">org.fedoraproject.prod.pungi.compose.status.change</a>&rdquo;. It checks
 for the messages with the status FINISHED and FINISHED_INCOMPLETE.</p>
 <p>After the filtration, it gets the Cloud Images built during that particular
 compose using a tool called fedfind. The job here is parse the metadata of

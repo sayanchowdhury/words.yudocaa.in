@@ -3,19 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://words.yudocaa.in/journal/</loc>
-    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
+    <loc>https://words.yudocaa.in/fitness/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://words.yudocaa.in/</loc>
-    <lastmod>2020-05-02T18:30:00+00:00</lastmod>
+    <lastmod>2021-01-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/</loc>
-    <lastmod>2020-05-02T18:30:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://words.yudocaa.in/log/fitness-daily/</loc>
+    <lastmod>2021-01-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -75,11 +74,6 @@
   
   <url>
     <loc>https://words.yudocaa.in/notes/d-in-go-get/</loc>
-    <lastmod>2018-10-12T18:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://words.yudocaa.in/notes/</loc>
     <lastmod>2018-10-12T18:30:00+00:00</lastmod>
   </url>
   
@@ -214,11 +208,6 @@
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/india/</loc>
-    <lastmod>2017-01-30T11:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://words.yudocaa.in/tags/indiahikes/</loc>
     <lastmod>2017-01-30T11:00:00+00:00</lastmod>
   </url>
@@ -230,6 +219,11 @@
   
   <url>
     <loc>https://words.yudocaa.in/tags/event/</loc>
+    <lastmod>2016-11-26T15:10:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://words.yudocaa.in/tags/india/</loc>
     <lastmod>2016-11-26T15:10:00+05:30</lastmod>
   </url>
   
@@ -665,14 +659,6 @@
   
   <url>
     <loc>https://words.yudocaa.in/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://words.yudocaa.in/authors/</loc>
-  </url>
-  
-  <url>
-    <loc>https://words.yudocaa.in/authors/sayan-chowdhury/</loc>
   </url>
   
 </urlset>

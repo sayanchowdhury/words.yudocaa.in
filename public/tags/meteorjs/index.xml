@@ -6,18 +6,14 @@
     <description>Recent content in meteorjs on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Mar 2014 07:20:23 +0000</lastBuildDate>
-    
-	<atom:link href="https://words.yudocaa.in/tags/meteorjs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 07 Mar 2014 07:20:23 +0000</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/meteorjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Waartaa applies GSoC 2014</title>
       <link>https://words.yudocaa.in/journal/waartaa-applies-gsoc-2014/</link>
       <pubDate>Fri, 07 Mar 2014 07:20:23 +0000</pubDate>
       
       <guid>https://words.yudocaa.in/journal/waartaa-applies-gsoc-2014/</guid>
-      <description>We are elated to inform you that Waartaa has been accepted as a project idea for GSoC under Fedora&amp;lsquo;s umbrella.
+      <description>We are elated to inform you that Waartaa has been accepted as a project idea for GSoC under Fedora&amp;rsquo;s umbrella.
 For those who are new to Waartaa, Waartaa is an open-source communication tool for teams and groups. It is built on top of IRC. Currently, Waartaa is an IRC client as a service and it supports centralized logging, 24x7 idling, notifications and unique identity to a user on IRC. The source code is available at https://github.</description>
     </item>
     

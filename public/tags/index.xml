@@ -6,11 +6,7 @@
     <description>Recent content in Tags on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2020 18:30:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://words.yudocaa.in/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 02 May 2020 18:30:00 +0000</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>git</title>
       <link>https://words.yudocaa.in/tags/git/</link>
@@ -183,15 +179,6 @@
     </item>
     
     <item>
-      <title>india</title>
-      <link>https://words.yudocaa.in/tags/india/</link>
-      <pubDate>Mon, 30 Jan 2017 11:00:00 +0000</pubDate>
-      
-      <guid>https://words.yudocaa.in/tags/india/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>indiahikes</title>
       <link>https://words.yudocaa.in/tags/indiahikes/</link>
       <pubDate>Mon, 30 Jan 2017 11:00:00 +0000</pubDate>
@@ -206,6 +193,15 @@
       <pubDate>Sat, 26 Nov 2016 15:10:00 +0530</pubDate>
       
       <guid>https://words.yudocaa.in/tags/event/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>india</title>
+      <link>https://words.yudocaa.in/tags/india/</link>
+      <pubDate>Sat, 26 Nov 2016 15:10:00 +0530</pubDate>
+      
+      <guid>https://words.yudocaa.in/tags/india/</guid>
       <description></description>
     </item>
     

@@ -6,10 +6,29 @@
     <description>Recent content on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2020 18:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://words.yudocaa.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hope</title>
+      <link>https://words.yudocaa.in/fitness/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://words.yudocaa.in/fitness/</guid>
+      <description>A thread to lose weight, and see a healthier version of me, v2021.6?. This is inspired from closely following Priyanka and Jason
+In the ending months of 2020, I started with regularly doing a form of excercise be it skipping, walking, or HIIT. This has helped me lower the rest heartbeat which had increased to a high of &amp;gt;95. Now, after 3 months it&amp;rsquo;s down to staying in the 70 range.</description>
+    </item>
     
-	<atom:link href="https://words.yudocaa.in/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>Hope - Journal</title>
+      <link>https://words.yudocaa.in/log/fitness-daily/</link>
+      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://words.yudocaa.in/log/fitness-daily/</guid>
+      <description>This is accompanied with Hope
+This is to maintain a daily journal of the efforts. This is to be seen from bottom to top.
+To explain the jargons:
+ cw: current weight gw: goal weight  Ok, lets start.
+February 01, 2021 - cw: 77.35 4 weeks of tracking. Last night, back to controlled and healthy diet. I don&amp;rsquo;t dislike papaya anymore. That&amp;rsquo;s some good news. Also, ended the day walking 5 kms at a good average pace.</description>
+    </item>
     
     <item>
       <title>git config</title>
@@ -94,7 +113,7 @@ With the release of fedimg==2.4.0 (thanks to Patrick), the new AMIs were happily
       <description>23rd November 2018
 The Fedora community of Bangalore assembled at the Red Hat Bangalore office. The event was scheduled to start at 1300, but the lunch at the office postponed the event by 45 mins.
 Sumantro kicked off the event with a small introduction, following which Vipul gave an introduction of open source with a short choco-chip story.
-Sumantro back on stage after that talking about the &amp;ldquo;What&amp;rsquo;s coming next?&amp;quot;, from discussing about GNOME/Pantheon, to Python 2 deprecation, to Ansible, to IoT, to Modularity.</description>
+Sumantro back on stage after that talking about the &amp;ldquo;What&amp;rsquo;s coming next?&amp;rdquo;, from discussing about GNOME/Pantheon, to Python 2 deprecation, to Ansible, to IoT, to Modularity.</description>
     </item>
     
     <item>
@@ -414,7 +433,7 @@ Fedora Monthly Meetup We decided start off with a local Fedora meetup here in Ba
       <pubDate>Fri, 07 Mar 2014 07:20:23 +0000</pubDate>
       
       <guid>https://words.yudocaa.in/journal/waartaa-applies-gsoc-2014/</guid>
-      <description>We are elated to inform you that Waartaa has been accepted as a project idea for GSoC under Fedora&amp;lsquo;s umbrella.
+      <description>We are elated to inform you that Waartaa has been accepted as a project idea for GSoC under Fedora&amp;rsquo;s umbrella.
 For those who are new to Waartaa, Waartaa is an open-source communication tool for teams and groups. It is built on top of IRC. Currently, Waartaa is an IRC client as a service and it supports centralized logging, 24x7 idling, notifications and unique identity to a user on IRC. The source code is available at https://github.</description>
     </item>
     
