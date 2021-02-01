@@ -31,9 +31,33 @@ Ok, lets start.
 - sw: 81.55 kgs (04/01/2021)
 ```
 
+### February 01, 2021
+```
+- cw: 77.35 kgs (01/02/2021)
+
+- gw1: 78 kgs ✔️
+- gw2: 75 kgs
+- gw3: 73 kgs
+- gw4: 70 kgs
+- gw5: 67 kgs
+```
+
+Milestone! Milestone! Milestone!.
+
+- Achieved first goal weight of 78 kgs
+- Completed January Walking Challenge with 130 kms
+- Body down to 28
+- And 4 weeks of tracking daily.
+- Some technical, cleared CKA.
+
+*pats on the back*
+
+Let's see what awaits next month but as it is said, every small milestones needs
+celebrations! :') Super happy
+
 ### January 25, 2021
 ```
-- cw: 78.15 kgs (18/01/2021)
+- cw: 78.15 kgs (25/01/2021)
 
 - gw1: 78 kgs
 - gw2: 75 kgs
