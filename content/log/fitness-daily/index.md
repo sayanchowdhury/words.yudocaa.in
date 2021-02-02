@@ -17,6 +17,19 @@ To explain the jargons:
 
 Ok, lets start.
 
+### February 02, 2021
+
+```
+- cw: 77.20
+```
+
+The journey of the next 4 weeks begin. Starting of the day with 5 mins Pranayam.
+I did head out for a walk, but no log as I did not charge my phone or watch.
+But counting from the rounds around the society it was around 4 kms. I also realized
+I've made a habit to listen while walking. I would count this as not good because
+I felt walking as a chore yesterday. Therefore, will deliberately leave the phone
+behind from now on.
+
 ### February 01, 2021
 
 ```
