@@ -16,6 +16,41 @@ To explain the jargons:
 - gw: goal weight
 
 Ok, lets start.
+### February 09, 2021
+```
+cw: 78.55
+```
+Now, it's time to start exercise again. Walked 6kms, and got tired twice. Maybe
+it is because of the fact that I've been bit out of schedule for the last couple
+of days. Now that all the parties are over. I'm back.
+
+### February 08, 2021
+```
+cw: 78.70
+```
+
+### February 07, 2021
+```
+cw: 77.85
+```
+
+### February 06, 2021
+
+No log as was out for a trip
+
+### February 05, 2021
+
+No log as was out for a trip
+
+### February 04, 2021
+
+No log as was out for a trip
+
+### February 03, 2021
+
+```
+- cw: 77.00
+```
 
 ### February 02, 2021
 
