@@ -31,6 +31,26 @@ Ok, lets start.
 - sw: 81.55 kgs (04/01/2021)
 ```
 
+### February 08, 2021
+```
+- cw: 78.70 kgs (08/02/2021)
+
+- gw1: 78 kgs
+- gw2: 75 kgs
+- gw3: 73 kgs
+- gw4: 70 kgs
+- gw5: 67 kgs
+```
+
+First increase in the weekly log. Could not help this week. I though I could
+manage, and almost did, I was at 77ish on Sunday. I ended up having a invitation
+on Sunday at I was bombarded with food.
+
+4 days of this week was us partying, so this is kind of acceptable.
+
+Let's see what the next week holds for me.
+
+
 ### February 01, 2021
 ```
 - cw: 77.35 kgs (01/02/2021)

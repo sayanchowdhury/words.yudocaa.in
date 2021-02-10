@@ -16,6 +16,19 @@ To explain the jargons:
 - gw: goal weight
 
 Ok, lets start.
+
+### February 10, 2021
+```
+cw: 77.75
+```
+Yesterday was fun, 13 glasses of water i.e. 3.25L. I would need to continue this
+for next couple of days, and slowly progressing to 16 glasses. Not really sure
+how will this be even possible.
+
+Walked 6kms, and did not tire myself at all. The water might have done the trick.
+Completed 6.21kms in exactly an hour.
+
+
 ### February 09, 2021
 ```
 cw: 78.55
