@@ -17,6 +17,18 @@ To explain the jargons:
 
 Ok, lets start.
 
+### February 11, 2021
+```
+cw: 77.20
+```
+Another day, Another walk.
+
+I was on a call yesterday and funny enough I did not realize I walked 7.14 kms in
+70 mins. The last km was a bit slow.
+
+On the water tracking I'm easily losing track of the water I have in the evening
+hours. Hit 10 yesterday.
+
 ### February 10, 2021
 ```
 cw: 77.75
