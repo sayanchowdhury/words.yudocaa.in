@@ -17,6 +17,16 @@ To explain the jargons:
 
 Ok, lets start.
 
+### February 12, 2021
+```
+cw: 77.00
+```
+
+Back to where I was a week back, so basically, a week of party pushed my progress
+by a week.
+
+Last night I was 3.5 kms with my mother, so at a slower pace than usual.
+
 ### February 11, 2021
 ```
 cw: 77.20
