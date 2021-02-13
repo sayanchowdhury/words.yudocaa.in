@@ -17,6 +17,15 @@ To explain the jargons:
 
 Ok, lets start.
 
+### February 13, 2021
+```
+cw: 76.85
+```
+
+I went for another 6 kms walk, though Strava might show less only because I
+paused in between while tying the laces, and forgot to restart. I realized
+after a round or two.
+
 ### February 12, 2021
 ```
 cw: 77.00
