@@ -17,6 +17,18 @@ To explain the jargons:
 
 Ok, lets start.
 
+### February 14, 2021
+```
+cw: 76.80
+```
+
+An unconventional walk today, though I completed 6 kms again. I went for getting
+some electrical items, and to a nursery to fetch some items for plants. I thought
+I can walk the route back. The whole route ended up 6 kms :)
+
+Why the small drop? Maybe this can be attributed to the first time I had dinner
+after walk, and maybe the Ghee litti as well.
+
 ### February 13, 2021
 ```
 cw: 76.85
