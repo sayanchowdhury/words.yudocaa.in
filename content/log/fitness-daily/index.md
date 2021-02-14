@@ -29,6 +29,8 @@ I can walk the route back. The whole route ended up 6 kms :)
 Why the small drop? Maybe this can be attributed to the first time I had dinner
 after walk, and maybe the Ghee litti as well.
 
+Update: I just realized tomorrow, I will be logging the update for 6 weeks. Wow!
+
 ### February 13, 2021
 ```
 cw: 76.85
