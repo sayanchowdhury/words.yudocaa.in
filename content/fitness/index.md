@@ -31,6 +31,38 @@ Ok, lets start.
 - sw: 81.55 kgs (04/01/2021)
 ```
 
+### February 22, 2021
+```
+- cw: 76.85 kgs (15/02/2021)
+
+- gw1: 78 kgs ✔️
+- gw2: 75 kgs
+- gw3: 73 kgs
+- gw4: 70 kgs
+- gw5: 67 kgs
+```
+
+Nope, Nope! Pretty tough week. I was forcing myself to do things, though I did
+hit 8 kms walk in between. My vO2 max went down. I'm planning to change a couple
+of things, you can see more in the future logs.
+
+But I'm happy because this is the first time I've hit 76ish since the beginning.
+Last week of the month. Hope to enter 75 bracket.
+
+### February 15, 2021
+```
+- cw: 77.70 kgs (15/02/2021)
+
+- gw1: 78 kgs ✔️
+- gw2: 75 kgs
+- gw3: 73 kgs
+- gw4: 70 kgs
+- gw5: 67 kgs
+```
+
+A late update on (22/02/2021). The week was good, but since it's a late update
+I don't recall anything.
+
 ### February 08, 2021
 ```
 - cw: 78.70 kgs (08/02/2021)

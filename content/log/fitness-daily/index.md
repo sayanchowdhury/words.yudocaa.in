@@ -17,6 +17,66 @@ To explain the jargons:
 
 Ok, lets start.
 
+### February 15, 2021
+```
+cw: 76.85
+```
+
+Phew, last week was pretty tough, from all aspects but nevermind, past is past.
+I made sure I tried to walk and do sets of freeletics. I craved for food, left
+and right and I did eat.
+
+But Sunday I felt better, lot better. Did a 6 kms walk, even though the first
+two km laps were bad. I made sure I keep the momentum up, and peaked at 8:10 /km
+which I think is pretty good. Overall, ended the day completing 6km in 59:30 mins.
+
+On the podcast side, I listened to some history on Binary, Bits & Bytes :)
+
+Oh! Another good news to share, I did a Toe to Bar, which was impossible for me
+all my life. Happy to have done that. The form was not perfect, but doing that
+tells the core is building :)
+
+Though this is a weight loss log, I will from now on also log 10 pullups I plan
+to do everyday.
+
+### February 21, 2021
+
+No log as the weighing scale battery went kaput
+
+### February 20, 2021
+```
+cw: 76.50
+```
+
+### February 19, 2021
+```
+cw: 77.15
+```
+
+### February 18, 2021
+```
+cw: 76.85
+```
+### February 17, 2021
+```
+cw: 77.30
+```
+
+### February 16, 2021
+```
+cw: 76.85
+```
+
+### February 15, 2021
+```
+cw: 77.70
+```
+
+### February 15, 2021
+```
+cw: 77.70
+```
+
 ### February 14, 2021
 ```
 cw: 76.80
