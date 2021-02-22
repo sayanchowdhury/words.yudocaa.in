@@ -19,7 +19,7 @@ Ok, lets start.
 
 ### February 15, 2021
 ```
-cw: 76.85
+cw: 76.60
 ```
 
 Phew, last week was pretty tough, from all aspects but nevermind, past is past.

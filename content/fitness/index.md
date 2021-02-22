@@ -33,7 +33,7 @@ Ok, lets start.
 
 ### February 22, 2021
 ```
-- cw: 76.85 kgs (15/02/2021)
+- cw: 76.60 kgs (22/02/2021)
 
 - gw1: 78 kgs ✔️
 - gw2: 75 kgs
