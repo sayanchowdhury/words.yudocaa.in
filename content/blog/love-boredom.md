@@ -9,7 +9,7 @@ title = "Love Boredom"
 I was talking to Jason today, discussing aspects of life and building habits.
 
 Last week was pretty rough, devoid of motivation to maintain my habits.  To which he said to me, "to fall in love with boredom"
-and passed me a copule post from James Clear.
+and passed me a couple of blog post from James Clear.
 
 - [How to Fall in Love With Boredom and Unlock Your Mental Toughness](https://jamesclear.com/in-love-with-boredom)
 - [How to Stay Focused When You Get Bored Working Toward Your Goals](https://jamesclear.com/stay-focused)
