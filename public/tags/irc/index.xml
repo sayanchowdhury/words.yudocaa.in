@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>irc on Intellectual Web</title>
-    <link>https://words.yudocaa.in/tags/irc/</link>
+    <link>https://stg.words.yudocaa.in/tags/irc/</link>
     <description>Recent content in irc on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 11 Apr 2016 11:44:00 +0530</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/irc/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Apr 2016 11:44:00 +0530</lastBuildDate><atom:link href="https://stg.words.yudocaa.in/tags/irc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Receiving Weechat Notifications on mobile via Pushover</title>
-      <link>https://words.yudocaa.in/blog/receiving-weechat-notifications-on-mobile-via-pushover/</link>
+      <link>https://stg.words.yudocaa.in/blog/receiving-weechat-notifications-on-mobile-via-pushover/</link>
       <pubDate>Mon, 11 Apr 2016 11:44:00 +0530</pubDate>
       
-      <guid>https://words.yudocaa.in/blog/receiving-weechat-notifications-on-mobile-via-pushover/</guid>
+      <guid>https://stg.words.yudocaa.in/blog/receiving-weechat-notifications-on-mobile-via-pushover/</guid>
       <description>I recently switched to use Weechat as my primary IRC client from X-Chat. I did a setup of Weechat on my Digital Ocean box.
 Weechat setup turned out to be super simple and out of the box. I am running Weechat within a tmux session. But the problem I was facing was due to poor internet connection (thanks to Airtel for this and this was my primary reason for switching to weechat from Xchat) I got disconnected from the DO box quite often.</description>
     </item>
     
     <item>
       <title>Waartaa applies GSoC 2014</title>
-      <link>https://words.yudocaa.in/journal/waartaa-applies-gsoc-2014/</link>
+      <link>https://stg.words.yudocaa.in/journal/waartaa-applies-gsoc-2014/</link>
       <pubDate>Fri, 07 Mar 2014 07:20:23 +0000</pubDate>
       
-      <guid>https://words.yudocaa.in/journal/waartaa-applies-gsoc-2014/</guid>
+      <guid>https://stg.words.yudocaa.in/journal/waartaa-applies-gsoc-2014/</guid>
       <description>We are elated to inform you that Waartaa has been accepted as a project idea for GSoC under Fedora&amp;rsquo;s umbrella.
 For those who are new to Waartaa, Waartaa is an open-source communication tool for teams and groups. It is built on top of IRC. Currently, Waartaa is an IRC client as a service and it supports centralized logging, 24x7 idling, notifications and unique identity to a user on IRC. The source code is available at https://github.</description>
     </item>

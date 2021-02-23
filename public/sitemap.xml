@@ -3,667 +3,686 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://words.yudocaa.in/</loc>
+    <loc>https://stg.words.yudocaa.in/</loc>
     <lastmod>2021-02-21T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/love-boredom/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/</loc>
     <lastmod>2021-02-21T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/fitness/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/love-boredom/</loc>
+    <lastmod>2021-02-21T18:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stg.words.yudocaa.in/fitness/</loc>
     <lastmod>2021-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/log/fitness-daily/</loc>
+    <loc>https://stg.words.yudocaa.in/log/</loc>
+    <lastmod>2021-01-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://stg.words.yudocaa.in/log/fitness-daily/</loc>
     <lastmod>2021-01-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/git/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/git/</loc>
     <lastmod>2020-05-02T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/git-config/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/git-config/</loc>
     <lastmod>2020-05-02T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/series/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/series/</loc>
     <lastmod>2020-05-02T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/</loc>
     <lastmod>2020-05-02T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/force-git-to-use-git-instead-of-https/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/force-git-to-use-git-instead-of-https/</loc>
     <lastmod>2019-07-28T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/kubernetes-day-india-2019-bangalore/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/</loc>
     <lastmod>2019-03-26T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/fossasia-2019/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/kubernetes-day-india-2019-bangalore/</loc>
+    <lastmod>2019-03-26T18:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stg.words.yudocaa.in/journal/fossasia-2019/</loc>
     <lastmod>2019-03-25T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/editing-git-commits-from-history/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/editing-git-commits-from-history/</loc>
     <lastmod>2019-02-03T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/vim-wish-i-knew-this-about-you-before/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/vim-wish-i-knew-this-about-you-before/</loc>
     <lastmod>2019-01-22T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/fedora-amis-for-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/</loc>
     <lastmod>2018-11-28T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/fedora-29-bangalore-release-party/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/fedora-29-bangalore-release-party/</loc>
     <lastmod>2018-11-22T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/notes/d-in-go-get/</loc>
+    <loc>https://stg.words.yudocaa.in/notes/d-in-go-get/</loc>
     <lastmod>2018-10-12T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/introducing-skiptheline/</loc>
+    <loc>https://stg.words.yudocaa.in/notes/</loc>
+    <lastmod>2018-10-12T18:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://stg.words.yudocaa.in/journal/introducing-skiptheline/</loc>
     <lastmod>2018-10-10T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/notes/exit-vim-in-between-git-operation/</loc>
+    <loc>https://stg.words.yudocaa.in/notes/exit-vim-in-between-git-operation/</loc>
     <lastmod>2018-09-08T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/categories/asset-management/</loc>
-    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://words.yudocaa.in/categories/</loc>
-    <lastmod>2018-07-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://words.yudocaa.in/blog/fedora-amis-gets-ena-support/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/fedora-amis-gets-ena-support/</loc>
     <lastmod>2018-05-24T18:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/2016/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/2016/</loc>
     <lastmod>2017-02-06T20:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/meetup/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/meetup/</loc>
     <lastmod>2017-02-06T20:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/planet/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/planet/</loc>
     <lastmod>2017-02-06T20:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/pune/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/pune/</loc>
     <lastmod>2017-02-06T20:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/pyladies/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/pyladies/</loc>
     <lastmod>2017-02-06T20:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/pyladies-pune-meetup-feb-2017/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/pyladies-pune-meetup-feb-2017/</loc>
     <lastmod>2017-02-06T20:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/python/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/python/</loc>
     <lastmod>2017-02-06T20:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/atomic/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/atomic/</loc>
     <lastmod>2017-02-04T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/cloud/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/cloud/</loc>
     <lastmod>2017-02-04T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/fedimg/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/fedimg/</loc>
     <lastmod>2017-02-04T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/fedora/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/fedora/</loc>
     <lastmod>2017-02-04T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/libcloud/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/libcloud/</loc>
     <lastmod>2017-02-04T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/redesigning-fedimg-part-ii/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/redesigning-fedimg-part-ii/</loc>
     <lastmod>2017-02-04T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/soldering-workshop-at-rb/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/soldering-workshop-at-rb/</loc>
     <lastmod>2017-02-01T15:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/hackerspace/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/hackerspace/</loc>
     <lastmod>2017-02-01T15:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/reserved-bit/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/reserved-bit/</loc>
     <lastmod>2017-02-01T15:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/soldering/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/soldering/</loc>
     <lastmod>2017-02-01T15:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/workshop/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/workshop/</loc>
     <lastmod>2017-02-01T15:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/redesigning-fedimg-part-i/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/redesigning-fedimg-part-i/</loc>
     <lastmod>2017-01-30T20:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/hiking/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/hiking/</loc>
     <lastmod>2017-01-30T11:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/himalaya/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/himalaya/</loc>
     <lastmod>2017-01-30T11:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/indiahikes/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/indiahikes/</loc>
     <lastmod>2017-01-30T11:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/trek-photographer-dec-2016/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/trek-photographer-dec-2016/</loc>
     <lastmod>2017-01-30T11:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/event/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/event/</loc>
     <lastmod>2016-11-26T15:10:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/india/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/india/</loc>
     <lastmod>2016-11-26T15:10:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/pycon/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/pycon/</loc>
     <lastmod>2016-11-26T15:10:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/pycon-india-2016/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/pycon-india-2016/</loc>
     <lastmod>2016-11-26T15:10:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/autocloud/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/autocloud/</loc>
     <lastmod>2016-08-24T17:28:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/autocloud-whats-new/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/autocloud-whats-new/</loc>
     <lastmod>2016-08-24T17:28:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/infra/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/infra/</loc>
     <lastmod>2016-08-24T17:28:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/fedora-meetup-august-2016/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/fedora-meetup-august-2016/</loc>
     <lastmod>2016-08-20T21:52:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/flock/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/flock/</loc>
     <lastmod>2016-08-14T16:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/flock-2016/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/flock-2016/</loc>
     <lastmod>2016-08-14T16:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/flocktofedora/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/flocktofedora/</loc>
     <lastmod>2016-08-14T16:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/krakow/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/krakow/</loc>
     <lastmod>2016-08-14T16:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/poland/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/poland/</loc>
     <lastmod>2016-08-14T16:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/24/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/24/</loc>
     <lastmod>2016-07-12T14:09:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/fedora-24-release-event/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/fedora-24-release-event/</loc>
     <lastmod>2016-07-12T14:09:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/notes/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/notes/</loc>
     <lastmod>2016-05-13T16:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/notes/taskwarrior/</loc>
+    <loc>https://stg.words.yudocaa.in/notes/taskwarrior/</loc>
     <lastmod>2016-05-13T16:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/taskwarrior/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/taskwarrior/</loc>
     <lastmod>2016-05-13T16:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/irc/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/irc/</loc>
     <lastmod>2016-04-11T11:44:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/notification/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/notification/</loc>
     <lastmod>2016-04-11T11:44:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/pushover/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/pushover/</loc>
     <lastmod>2016-04-11T11:44:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/receiving-weechat-notifications-on-mobile-via-pushover/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/receiving-weechat-notifications-on-mobile-via-pushover/</loc>
     <lastmod>2016-04-11T11:44:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/weechat/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/weechat/</loc>
     <lastmod>2016-04-11T11:44:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/fossasia/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/fossasia/</loc>
     <lastmod>2016-03-23T17:22:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/fossasia-2016-day-2/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/fossasia-2016-day-2/</loc>
     <lastmod>2016-03-23T17:22:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/fossasia-2016-day-1/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/fossasia-2016-day-1/</loc>
     <lastmod>2016-03-23T17:01:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/fedimg-course-of-action/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/fedimg-course-of-action/</loc>
     <lastmod>2016-01-23T11:48:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/fedora-meetup-pune-january-2016/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/fedora-meetup-pune-january-2016/</loc>
     <lastmod>2016-01-17T20:28:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/january/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/january/</loc>
     <lastmod>2016-01-17T20:28:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/bugyou/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/bugyou/</loc>
     <lastmod>2016-01-07T14:09:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/introducing-bugyou/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/introducing-bugyou/</loc>
     <lastmod>2016-01-07T14:09:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/four-weeks-in-fedora/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/four-weeks-in-fedora/</loc>
     <lastmod>2015-11-24T08:24:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/hackerearth/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/hackerearth/</loc>
     <lastmod>2015-10-12T08:24:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/leaving-hackerearth/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/leaving-hackerearth/</loc>
     <lastmod>2015-10-12T08:24:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/fedora-meetup-2015/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/fedora-meetup-2015/</loc>
     <lastmod>2015-07-09T22:48:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/july/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/july/</loc>
     <lastmod>2015-07-09T22:48:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/fudcon/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/fudcon/</loc>
     <lastmod>2015-07-09T16:29:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/fudcon-india-2015/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/fudcon-india-2015/</loc>
     <lastmod>2015-07-09T16:29:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/21/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/21/</loc>
     <lastmod>2015-01-15T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/bangalore/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/bangalore/</loc>
     <lastmod>2015-01-15T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/fedora-21-release-party-bangalore/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/fedora-21-release-party-bangalore/</loc>
     <lastmod>2015-01-15T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/bookmark/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/bookmark/</loc>
     <lastmod>2014-12-27T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/migrate-a-running-process-into-tmux/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/migrate-a-running-process-into-tmux/</loc>
     <lastmod>2014-12-27T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/reptyr/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/reptyr/</loc>
     <lastmod>2014-12-27T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/screen/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/screen/</loc>
     <lastmod>2014-12-27T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/tmux/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/tmux/</loc>
     <lastmod>2014-12-27T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/2014/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/2014/</loc>
     <lastmod>2014-06-10T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/notes/git-password-caching/</loc>
+    <loc>https://stg.words.yudocaa.in/notes/git-password-caching/</loc>
     <lastmod>2014-06-10T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/github/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/github/</loc>
     <lastmod>2014-06-10T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/bangalore-fedora-meetup-8th-march-2014/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/bangalore-fedora-meetup-8th-march-2014/</loc>
     <lastmod>2014-03-08T22:18:06+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/gsoc/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/gsoc/</loc>
     <lastmod>2014-03-07T07:20:23+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/meteorjs/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/meteorjs/</loc>
     <lastmod>2014-03-07T07:20:23+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/waartaa/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/waartaa/</loc>
     <lastmod>2014-03-07T07:20:23+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/waartaa-applies-gsoc-2014/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/waartaa-applies-gsoc-2014/</loc>
     <lastmod>2014-03-07T07:20:23+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/dgplug/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/dgplug/</loc>
     <lastmod>2014-03-07T01:45:03+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/flask/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/flask/</loc>
     <lastmod>2014-03-07T01:45:03+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/mukti/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/mukti/</loc>
     <lastmod>2014-03-07T01:45:03+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/mukti-2014/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/mukti-2014/</loc>
     <lastmod>2014-03-07T01:45:03+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/nit/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/nit/</loc>
     <lastmod>2014-03-07T01:45:03+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/nitdgplug/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/nitdgplug/</loc>
     <lastmod>2014-03-07T01:45:03+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/open-source/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/open-source/</loc>
     <lastmod>2014-03-07T01:45:03+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/an-open-letter-to-bloggers-from-kolkata/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/an-open-letter-to-bloggers-from-kolkata/</loc>
     <lastmod>2014-03-05T00:31:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/bloggers/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/bloggers/</loc>
     <lastmod>2014-03-05T00:31:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/kolkata/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/kolkata/</loc>
     <lastmod>2014-03-05T00:31:43+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/django/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/django/</loc>
     <lastmod>2014-03-04T00:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/how-to-get-started-with-open-source/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/how-to-get-started-with-open-source/</loc>
     <lastmod>2014-03-04T00:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/kde/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/kde/</loc>
     <lastmod>2014-03-04T00:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/mediawiki/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/mediawiki/</loc>
     <lastmod>2014-03-04T00:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/mozilla/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/mozilla/</loc>
     <lastmod>2014-03-04T00:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/openstack/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/openstack/</loc>
     <lastmod>2014-03-04T00:30:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/2013/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/2013/</loc>
     <lastmod>2013-11-02T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/mozilla-summit-2013/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/mozilla-summit-2013/</loc>
     <lastmod>2013-11-02T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/mozsummit/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/mozsummit/</loc>
     <lastmod>2013-11-02T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/summit/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/summit/</loc>
     <lastmod>2013-11-02T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/darkserver/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/darkserver/</loc>
     <lastmod>2013-09-25T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/darkserver-improvement-pen-down/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/darkserver-improvement-pen-down/</loc>
     <lastmod>2013-09-25T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/pycon-india-2013/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/pycon-india-2013/</loc>
     <lastmod>2013-09-10T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/darkserver-improvement-web-dashboard/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/darkserver-improvement-web-dashboard/</loc>
     <lastmod>2013-09-09T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/darkserver-improvement/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/darkserver-improvement/</loc>
     <lastmod>2013-07-26T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/darkserver-improvement-week-two-and-week-three/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/darkserver-improvement-week-two-and-week-three/</loc>
     <lastmod>2013-07-10T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/google-summer-of-code-2013-welcome-kit/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/google-summer-of-code-2013-welcome-kit/</loc>
     <lastmod>2013-06-25T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/darkserver-improvement-week-one/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/darkserver-improvement-week-one/</loc>
     <lastmod>2013-06-24T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/darkserver-improvement-random-scribblings/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/darkserver-improvement-random-scribblings/</loc>
     <lastmod>2013-06-23T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/darkserver-improvement-getting-prepared/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/darkserver-improvement-getting-prepared/</loc>
     <lastmod>2013-06-22T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/blog/darkserver-improvement-google-summer-of-code-2013/</loc>
+    <loc>https://stg.words.yudocaa.in/blog/darkserver-improvement-google-summer-of-code-2013/</loc>
     <lastmod>2013-06-18T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/never-do-it-for-free/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/never-do-it-for-free/</loc>
     <lastmod>2013-06-08T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/tags/quote/</loc>
+    <loc>https://stg.words.yudocaa.in/tags/quote/</loc>
     <lastmod>2013-06-08T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/journal/dgplug-summer-training-2013/</loc>
+    <loc>https://stg.words.yudocaa.in/journal/dgplug-summer-training-2013/</loc>
     <lastmod>2013-04-24T12:00:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://words.yudocaa.in/about/</loc>
+    <loc>https://stg.words.yudocaa.in/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://stg.words.yudocaa.in/authors/</loc>
+  </url>
+  
+  <url>
+    <loc>https://stg.words.yudocaa.in/authors/sayan-chowdhury/</loc>
   </url>
   
 </urlset>

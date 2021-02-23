@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on Intellectual Web</title>
-    <link>https://words.yudocaa.in/tags/git/</link>
+    <link>https://stg.words.yudocaa.in/tags/git/</link>
     <description>Recent content in git on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 02 May 2020 18:30:00 +0000</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 02 May 2020 18:30:00 +0000</lastBuildDate><atom:link href="https://stg.words.yudocaa.in/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>git config</title>
-      <link>https://words.yudocaa.in/blog/git-config/</link>
+      <link>https://stg.words.yudocaa.in/blog/git-config/</link>
       <pubDate>Sat, 02 May 2020 18:30:00 +0000</pubDate>
       
-      <guid>https://words.yudocaa.in/blog/git-config/</guid>
+      <guid>https://stg.words.yudocaa.in/blog/git-config/</guid>
       <description>Git comes with this handy tool that let&amp;rsquo;s you manage your Git configuration with ease.
 Configuration Levels   --local
 (Default) Local configuration values are stored and managed at the repository level. The values are stored in a file found in the repo&amp;rsquo;s .git directory: .git/config
@@ -21,10 +21,10 @@ If you are planning to set some configuration only to be used by the specific re
     
     <item>
       <title>Git Password Caching</title>
-      <link>https://words.yudocaa.in/notes/git-password-caching/</link>
+      <link>https://stg.words.yudocaa.in/notes/git-password-caching/</link>
       <pubDate>Tue, 10 Jun 2014 12:00:00 +0530</pubDate>
       
-      <guid>https://words.yudocaa.in/notes/git-password-caching/</guid>
+      <guid>https://stg.words.yudocaa.in/notes/git-password-caching/</guid>
       <description>Bookmark for me.
 To use this option, you need to turn on the credential helper so that Git will save your password in memory for some time:
 $ git config --global credential.helper cache # Set git to use the credential memory cache By default Git will cache your password for 15 minutes. You can change this if you like.

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>screen on Intellectual Web</title>
-    <link>https://words.yudocaa.in/tags/screen/</link>
+    <link>https://stg.words.yudocaa.in/tags/screen/</link>
     <description>Recent content in screen on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 27 Dec 2014 12:00:00 +0530</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/screen/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 27 Dec 2014 12:00:00 +0530</lastBuildDate><atom:link href="https://stg.words.yudocaa.in/tags/screen/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrate a running process into tmux</title>
-      <link>https://words.yudocaa.in/blog/migrate-a-running-process-into-tmux/</link>
+      <link>https://stg.words.yudocaa.in/blog/migrate-a-running-process-into-tmux/</link>
       <pubDate>Sat, 27 Dec 2014 12:00:00 +0530</pubDate>
       
-      <guid>https://words.yudocaa.in/blog/migrate-a-running-process-into-tmux/</guid>
+      <guid>https://stg.words.yudocaa.in/blog/migrate-a-running-process-into-tmux/</guid>
       <description>Being a regular tmux user. Migrating a running process into tmux using reptyr comes handy.
 reptyr is a utility for taking an existing running program and attaching it to a new terminal. Started a long-running process over ssh, but have to leave and don&amp;rsquo;t want to interrupt it? Just start a screen, use reptyr to grab it, and then kill the ssh session and head on home.
 The package available in Fedora/Ubuntu repositories.</description>

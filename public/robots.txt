@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://stg.words.yudocaa.in/sitemap.xml

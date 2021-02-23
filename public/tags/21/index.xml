@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>21 on Intellectual Web</title>
-    <link>https://words.yudocaa.in/tags/21/</link>
+    <link>https://stg.words.yudocaa.in/tags/21/</link>
     <description>Recent content in 21 on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 15 Jan 2015 12:00:00 +0530</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/21/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 15 Jan 2015 12:00:00 +0530</lastBuildDate><atom:link href="https://stg.words.yudocaa.in/tags/21/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fedora 21 Release Party, Bangalore</title>
-      <link>https://words.yudocaa.in/journal/fedora-21-release-party-bangalore/</link>
+      <link>https://stg.words.yudocaa.in/journal/fedora-21-release-party-bangalore/</link>
       <pubDate>Thu, 15 Jan 2015 12:00:00 +0530</pubDate>
       
-      <guid>https://words.yudocaa.in/journal/fedora-21-release-party-bangalore/</guid>
+      <guid>https://stg.words.yudocaa.in/journal/fedora-21-release-party-bangalore/</guid>
       <description>The Fedora Project announced the release of Fedora 21 on December 09, 2014. To celebrate the release a [Fedora 21 release party] (https://fedoraproject.org/wiki/Release_Party_F21_Bangalore) was organized at Red Hat, Bangalore with the help of Archit and Humble.
 The event was scheduled to start at 10AM but people started coming in from 9:30AM itself. Around 40 people turned up among them a good number were college students.
 The release party finally started at 10:30AM by [Archit] (https://fedoraproject.</description>

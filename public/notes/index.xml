@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notes on Intellectual Web</title>
+    <link>https://stg.words.yudocaa.in/notes/</link>
+    <description>Recent content in Notes on Intellectual Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 12 Oct 2018 18:30:00 +0000</lastBuildDate><atom:link href="https://stg.words.yudocaa.in/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>-d in go get</title>
+      <link>https://stg.words.yudocaa.in/notes/d-in-go-get/</link>
+      <pubDate>Fri, 12 Oct 2018 18:30:00 +0000</pubDate>
+      
+      <guid>https://stg.words.yudocaa.in/notes/d-in-go-get/</guid>
+      <description>Saturday, I am sitting at a Starbucks in Bangalore, trying my hands on a Golang project. I come across this argument -d in go get: The go CLI help says:
+ The -d flag instructs get to stop after downloading the packages; that is, it instructs get not to install the packages.
+ </description>
+    </item>
+    
+    <item>
+      <title>Exit Vim in between Git operation</title>
+      <link>https://stg.words.yudocaa.in/notes/exit-vim-in-between-git-operation/</link>
+      <pubDate>Sat, 08 Sep 2018 18:30:00 +0000</pubDate>
+      
+      <guid>https://stg.words.yudocaa.in/notes/exit-vim-in-between-git-operation/</guid>
+      <description>Long I have been procrastinating over this. Whenever I had to quit out of the Vim while doing git-rebase interactively I would be going over to a new terminal window, and perform git rebase --abort and then close the other window too.
+Today, I learned if you ever want to quit Vim either while committing or rebasing, just do :cq. This quits Vim with an error code, and Git will abort the action.</description>
+    </item>
+    
+    <item>
+      <title>Notes: GTD and Taskwarrior</title>
+      <link>https://stg.words.yudocaa.in/notes/taskwarrior/</link>
+      <pubDate>Fri, 13 May 2016 16:30:00 +0530</pubDate>
+      
+      <guid>https://stg.words.yudocaa.in/notes/taskwarrior/</guid>
+      <description>The posts tagged with notes are stuffs that I learned over time from blogs, articles, trying out on my own. The posts will be updated whenever I learn something new on the topic. This post can be easily read anytime and anywhere. Also, they can be easily shared. Do comment/point out if something is wrong out there.
+Inspired by Julia Evans http://jvns.ca/ to write these posts.
+ What is GTD?</description>
+    </item>
+    
+    <item>
+      <title>Git Password Caching</title>
+      <link>https://stg.words.yudocaa.in/notes/git-password-caching/</link>
+      <pubDate>Tue, 10 Jun 2014 12:00:00 +0530</pubDate>
+      
+      <guid>https://stg.words.yudocaa.in/notes/git-password-caching/</guid>
+      <description>Bookmark for me.
+To use this option, you need to turn on the credential helper so that Git will save your password in memory for some time:
+$ git config --global credential.helper cache # Set git to use the credential memory cache By default Git will cache your password for 15 minutes. You can change this if you like.
+git config --global credential.helper &#39;cache --timeout=3600&#39; # Set the cache to timeout after 1 hour (setting is in seconds) Ref: https://help.</description>
+    </item>
+    
+  </channel>
+</rss>

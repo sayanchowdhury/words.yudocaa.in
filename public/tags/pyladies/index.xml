@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pyladies on Intellectual Web</title>
-    <link>https://words.yudocaa.in/tags/pyladies/</link>
+    <link>https://stg.words.yudocaa.in/tags/pyladies/</link>
     <description>Recent content in pyladies on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 06 Feb 2017 20:30:00 +0530</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/pyladies/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 06 Feb 2017 20:30:00 +0530</lastBuildDate><atom:link href="https://stg.words.yudocaa.in/tags/pyladies/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PyLadies Pune Meetup - February 2017</title>
-      <link>https://words.yudocaa.in/journal/pyladies-pune-meetup-feb-2017/</link>
+      <link>https://stg.words.yudocaa.in/journal/pyladies-pune-meetup-feb-2017/</link>
       <pubDate>Mon, 06 Feb 2017 20:30:00 +0530</pubDate>
       
-      <guid>https://words.yudocaa.in/journal/pyladies-pune-meetup-feb-2017/</guid>
+      <guid>https://stg.words.yudocaa.in/journal/pyladies-pune-meetup-feb-2017/</guid>
       <description>The PyLadies Pune February Meetup was held on 6th Feb at reserved-bit. Kushal took a session on MicroPython on the MicroBit boards. Thanks to @ntoll for sending over the MicroBits for workshops.
 I reached down to the venue a bit late. On reaching the venue, Kushal told me that he forgot the boards at home and I went to his place to pick the MicroBits.
   Most of the participants were regular participants for the meetup so Kushal took a quick course on Python.</description>
