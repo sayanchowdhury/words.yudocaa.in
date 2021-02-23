@@ -4,6 +4,7 @@ slug = "git-config"
 authors = ["Sayan Chowdhury"]
 date = 2020-05-02T18:30:00Z
 tags = ["git", "series"]
+toc = true
 +++
 
 Git comes with this handy tool that let's you manage your Git configuration with ease.

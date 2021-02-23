@@ -6701,3 +6701,13 @@ div.subtitle.tags {
 .highlight pre {
   margin: 0;
 }
+
+.nav-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-footer li {
+  padding: 0 2em 2em 2em;
+  font-size: 125%
+}

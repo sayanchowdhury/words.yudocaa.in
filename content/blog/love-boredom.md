@@ -1,10 +1,10 @@
-+++
-authors = ["Sayan Chowdhury"]
-date = 2021-02-21T18:30:00Z
-excerpt = ""
-timeToRead = 1
-title = "Love Boredom"
-+++
+---
+author: "Sayan Chowdhury"
+date: 2021-02-21T18:30:00Z
+linktitle: Love Boredom
+title: Love Boredom
+weight: 10
+---
 
 I was talking to Jason today, discussing aspects of life and building habits.
 

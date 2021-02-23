@@ -121,23 +121,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <section class="section">
 
     <div class="container">
 
-        <a href="/blog"><h2 class="areatitle">Blog</h2></a>
+        <h2 class="areatitle">Notes</h2>
+        <br>
+        <br>
 
         
         
@@ -155,7 +145,7 @@
                     <h2 class="subtitle is-6">
                         
                         
-                            February 21, 2021 | 18:30
+                            October 12, 2018 | 18:30
                         
                     </h2>
                 
@@ -163,18 +153,108 @@
 
                 
                 <h1 class="title">
-                    <a href="https://stg.words.yudocaa.in/blog/love-boredom/">Love Boredom</a>
+                    <a href="https://stg.words.yudocaa.in/notes/d-in-go-get/">-d in go get</a>
                 </h1>
 
                 <div class="content">
+
                     
+                    Saturday, I am sitting at a Starbucks in Bangalore, trying my hands on a Golang project. I come across this argument -d in go get: The go CLI help says:
+ The -d flag instructs get to stop after downloading the packages; that is, it instructs get not to install the packages.
+ 
+
                     
-                    I was talking to Jason today, discussing aspects of life and building habits.
-Last week was pretty rough, devoid of motivation to maintain my habits. To which he said to me, &ldquo;to fall in love with boredom&rdquo; and passed me a couple of blog post from James Clear.
- How to Fall in Love With Boredom and Unlock Your Mental Toughness How to Stay Focused When You Get Bored Working Toward Your Goals Lessons on Success and Deliberate Practice from Mozart, Picasso, and Kobe Bryant  The first blog was one I could relate to in an instant.
+                    <a class="button is-link" href="https://stg.words.yudocaa.in/notes/d-in-go-get/" style="height:28px">Read more</a>
+
+                </div>
+
+            </article>
+
+        
+        
+
+            <article>
+
                 
+                <div class="subtitle tags is-6 is-pulled-right">
                     
-                    <a class="button is-link" href="https://stg.words.yudocaa.in/blog/love-boredom/" style="height:28px">Read more</a>
+                  </div>
+
+                
+                
+                    <h2 class="subtitle is-6">
+                        
+                        
+                            September 8, 2018 | 18:30
+                        
+                    </h2>
+                
+
+
+                
+                <h1 class="title">
+                    <a href="https://stg.words.yudocaa.in/notes/exit-vim-in-between-git-operation/">Exit Vim in between Git operation</a>
+                </h1>
+
+                <div class="content">
+
+                    
+                    Long I have been procrastinating over this. Whenever I had to quit out of the Vim while doing git-rebase interactively I would be going over to a new terminal window, and perform git rebase --abort and then close the other window too.
+Today, I learned if you ever want to quit Vim either while committing or rebasing, just do :cq. This quits Vim with an error code, and Git will abort the action.
+
+                    
+                    <a class="button is-link" href="https://stg.words.yudocaa.in/notes/exit-vim-in-between-git-operation/" style="height:28px">Read more</a>
+
+                </div>
+
+            </article>
+
+        
+        
+
+            <article>
+
+                
+                <div class="subtitle tags is-6 is-pulled-right">
+                    
+                    
+<a class="subtitle is-6" href="/tags/taskwarrior/">#taskwarrior</a>
+
+
+
+  
+  | <a class="subtitle is-6" href="/tags/notes/">#notes</a>
+  
+
+
+                    
+                  </div>
+
+                
+                
+                    <h2 class="subtitle is-6">
+                        
+                        
+                            May 13, 2016 | 16:30
+                        
+                    </h2>
+                
+
+
+                
+                <h1 class="title">
+                    <a href="https://stg.words.yudocaa.in/notes/taskwarrior/">Notes: GTD and Taskwarrior</a>
+                </h1>
+
+                <div class="content">
+
+                    
+                    The posts tagged with notes are stuffs that I learned over time from blogs, articles, trying out on my own. The posts will be updated whenever I learn something new on the topic. This post can be easily read anytime and anywhere. Also, they can be easily shared. Do comment/point out if something is wrong out there.
+Inspired by Julia Evans http://jvns.ca/ to write these posts.
+ What is GTD?
+
+                    
+                    <a class="button is-link" href="https://stg.words.yudocaa.in/notes/taskwarrior/" style="height:28px">Read more</a>
 
                 </div>
 
@@ -194,7 +274,9 @@ Last week was pretty rough, devoid of motivation to maintain my habits. To which
 
 
   
-  | <a class="subtitle is-6" href="/tags/series/">#series</a>
+  | <a class="subtitle is-6" href="/tags/github/">#github</a>
+  
+  | <a class="subtitle is-6" href="/tags/2014/">#2014</a>
   
 
 
@@ -206,7 +288,7 @@ Last week was pretty rough, devoid of motivation to maintain my habits. To which
                     <h2 class="subtitle is-6">
                         
                         
-                            May 2, 2020 | 18:30
+                            June 10, 2014 | 12:00
                         
                     </h2>
                 
@@ -214,136 +296,19 @@ Last week was pretty rough, devoid of motivation to maintain my habits. To which
 
                 
                 <h1 class="title">
-                    <a href="https://stg.words.yudocaa.in/blog/git-config/">git config</a>
+                    <a href="https://stg.words.yudocaa.in/notes/git-password-caching/">Git Password Caching</a>
                 </h1>
 
                 <div class="content">
+
                     
+                    Bookmark for me.
+To use this option, you need to turn on the credential helper so that Git will save your password in memory for some time:
+$ git config --global credential.helper cache # Set git to use the credential memory cache By default Git will cache your password for 15 minutes. You can change this if you like.
+git config --global credential.helper 'cache --timeout=3600' # Set the cache to timeout after 1 hour (setting is in seconds) Ref: https://help.
+
                     
-                    Git comes with this handy tool that let&rsquo;s you manage your Git configuration with ease.
-Configuration Levels   --local
-(Default) Local configuration values are stored and managed at the repository level. The values are stored in a file found in the repo&rsquo;s .git directory: .git/config
-If you are planning to set some configuration only to be used by the specific repo you are in, then go ahead with using --local.
-                
-                    
-                    <a class="button is-link" href="https://stg.words.yudocaa.in/blog/git-config/" style="height:28px">Read more</a>
-
-                </div>
-
-            </article>
-
-        
-        
-
-            <article>
-
-                
-                <div class="subtitle tags is-6 is-pulled-right">
-                    
-                  </div>
-
-                
-                
-                    <h2 class="subtitle is-6">
-                        
-                        
-                            July 28, 2019 | 18:30
-                        
-                    </h2>
-                
-
-
-                
-                <h1 class="title">
-                    <a href="https://stg.words.yudocaa.in/blog/force-git-to-use-git-instead-of-https/">Force git to use git:// instead of https://</a>
-                </h1>
-
-                <div class="content">
-                    
-                    
-                    I&rsquo;m an advocate of using SSH authentication and connecting to services like Github, Gitlab, and many others. I do make sure that the use the git:// URL while cloning the repo but sometimes I do make mistake of using the https:// instead. Only to later realise when git prompts me to enter my username to authenticate the SSH connection. This is when I have to manually reset my git remote URL.
-                
-                    
-                    <a class="button is-link" href="https://stg.words.yudocaa.in/blog/force-git-to-use-git-instead-of-https/" style="height:28px">Read more</a>
-
-                </div>
-
-            </article>
-
-        
-        
-
-            <article>
-
-                
-                <div class="subtitle tags is-6 is-pulled-right">
-                    
-                  </div>
-
-                
-                
-                    <h2 class="subtitle is-6">
-                        
-                        
-                            February 3, 2019 | 18:30
-                        
-                    </h2>
-                
-
-
-                
-                <h1 class="title">
-                    <a href="https://stg.words.yudocaa.in/blog/editing-git-commits-from-history/">Editing Git commits from history</a>
-                </h1>
-
-                <div class="content">
-                    
-                    
-                    Let&rsquo;s say you&rsquo;ve raised a Pull Request on GitHub with 3 commits as shown below.
-d46d2f8a (HEAD -&gt; feature, devel/feature) Add Fedora system to handle the Fedora Cloud images f726b033 vendor: Add new dep github.com/ulikunitz/xz dbdbda67 Split release and pre-release to handle multiple systems Here, d46d2f8a is the HEAD, followed by f726b033 and dbdbda67.
-Your reviewers go through the commits, and suggest changes to some files. The suggestions now need to be applied to the commit dbdbda67.
-                
-                    
-                    <a class="button is-link" href="https://stg.words.yudocaa.in/blog/editing-git-commits-from-history/" style="height:28px">Read more</a>
-
-                </div>
-
-            </article>
-
-        
-        
-
-            <article>
-
-                
-                <div class="subtitle tags is-6 is-pulled-right">
-                    
-                  </div>
-
-                
-                
-                    <h2 class="subtitle is-6">
-                        
-                        
-                            January 22, 2019 | 18:30
-                        
-                    </h2>
-                
-
-
-                
-                <h1 class="title">
-                    <a href="https://stg.words.yudocaa.in/blog/vim-wish-i-knew-this-about-you-before/">Vim, Wish I knew this about you before!</a>
-                </h1>
-
-                <div class="content">
-                    
-                    
-                    Almost all my life since I have started working around open source projects I have been a Vim user. That does not mean that I did not look into other options. I&rsquo;ve tried my hands on Emacs, Sublime Text, Visual Studio Code, Atom, et cetera. But, none of them pleased me like vim.
-2018, I started working on Golang, and vim had to adapt to my needs, but it did not quite succeed and I made my switch to neovim around the end of the year.
-                
-                    
-                    <a class="button is-link" href="https://stg.words.yudocaa.in/blog/vim-wish-i-knew-this-about-you-before/" style="height:28px">Read more</a>
+                    <a class="button is-link" href="https://stg.words.yudocaa.in/notes/git-password-caching/" style="height:28px">Read more</a>
 
                 </div>
 
@@ -354,9 +319,6 @@ Your reviewers go through the commits, and suggest changes to some files. The su
 
     </div>
 </section>
-
-
-
 
 
 
@@ -371,19 +333,6 @@ Your reviewers go through the commits, and suggest changes to some files. The su
       <div class="level-right is-marginless">
         <div class="level-item">
           
-          <a class="button" href="/notes/page/2/">
-            Older
-            <span class="icon is-small is-marginless">
-              
-
-<svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    <polyline points="14 6 20 12 14 18"/>
-    
-  </svg>
-            </span>
-          </a>
-          
         </div>
       </div>
     </nav>
@@ -395,6 +344,11 @@ Your reviewers go through the commits, and suggest changes to some files. The su
 
 <section class="section">
   <div class="container has-text-centered">
+    <ul class="nav-footer">
+       <li><a href="/blog">Blog</a></li>
+       <li><a href="/journal">Journal</a></li>
+       <li><a href="/notes">Notes</a></li>
+    </ul>
     <p>© <a href="https://github.com/sayanchowdhury">Sayan Chowdhury</a> 2021</p>
     
       <p>Powered by <a href="https://gohugo.io/">Hugo</a> &amp; <a href="https://github.com/pavel-pi/kiss-em">Kiss'Em</a>.</p>
@@ -404,3 +358,4 @@ Your reviewers go through the commits, and suggest changes to some files. The su
 
 </body>
 </html>
+

@@ -27,7 +27,7 @@ defaultContentLanguage = "en"
     weight = 1
 
 [params.microblog]
-number = 2
+number = 3
 
 [params.rss]
 enable = true
@@ -53,5 +53,3 @@ platforms = ["about", "email", "github", "twitter", "xing", "rss"]
 
 [taxonomies]
 tag ="tags"
-
-
