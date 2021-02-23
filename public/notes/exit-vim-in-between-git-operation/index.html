@@ -145,6 +145,13 @@
 <div class="content">
 
     
+    <aside class="table-of-contents">
+      <h2> Table of Contents </h2>
+      <nav id="TableOfContents"></nav>
+    </aside>
+    
+
+    
     <p>Long I have been procrastinating over this. Whenever I had to quit out of the Vim while doing git-rebase interactively I would be going over to a new terminal window, and perform <code>git rebase --abort</code> and then close the other window too.</p>
 <p>Today, I learned if you ever want to quit Vim either while committing or rebasing, just do <code>:cq</code>. This quits Vim with an error code, and Git will abort the action.</p>
 

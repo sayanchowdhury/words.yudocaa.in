@@ -13,6 +13,7 @@ hr {
   padding: 0;
 }
 
+
 a,
 button,
 input[type="button"],
@@ -87,6 +88,11 @@ summary {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
 }
+
+aside.table-of-contents {
+  margin: 1em 0 3em 0;
+}
+
 
 abbr,
 address,
@@ -6424,7 +6430,7 @@ a.panel-block:hover {
 .section-highlight {
   background-color: #EFF2F8;
   padding: 40px 20px;
-  
+
 
 }
 .section-highlight .title{

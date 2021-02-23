@@ -145,6 +145,13 @@
 <div class="content">
 
     
+    <aside class="table-of-contents">
+      <h2> Table of Contents </h2>
+      <nav id="TableOfContents"></nav>
+    </aside>
+    
+
+    
     <p>I&rsquo;m an advocate of using SSH authentication and connecting to services like Github, Gitlab, and many others. I do make sure that the use the <code>git://</code> URL while cloning the repo but sometimes I do make mistake of using the <code>https://</code> instead. Only to later realise when git prompts me to enter my username to authenticate the SSH connection. This is when I have to manually reset my git remote URL.</p>
 <p>Today, I found a cleaner solution to this problem. I can use <code>insteadOf</code> to enforce the connection via SSH.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git config --global url.<span style="color:#e6db74">&#34;git@github.com:&#34;</span>.insteadOf <span style="color:#e6db74">&#34;https://github.com/&#34;</span>
