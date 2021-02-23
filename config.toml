@@ -29,9 +29,6 @@ defaultContentLanguage = "en"
 [params.microblog]
 number = 2
 
-[params.assets]
-customCSS = ["css/custom.css"]
-
 [params.rss]
 enable = true
 includeContent = true
@@ -41,7 +38,7 @@ authorEmail = "namoskar@yudocaa.in"
 [params.info]
 poweredby = true
 related = true
-copyright = "© <a href=\"https://github.com/sayanchowdhury\">Sayan Chowdhury</a> 2020"
+copyright = "© <a href=\"https://github.com/sayanchowdhury\">Sayan Chowdhury</a> 2021"
 
 [params.social]
 about = "about"
