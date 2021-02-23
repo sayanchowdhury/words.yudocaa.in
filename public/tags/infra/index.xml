@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>infra on Intellectual Web</title>
-    <link>https://stg.words.yudocaa.in/tags/infra/</link>
+    <link>https://words.yudocaa.in/tags/infra/</link>
     <description>Recent content in infra on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Aug 2016 17:28:00 +0530</lastBuildDate><atom:link href="https://stg.words.yudocaa.in/tags/infra/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Aug 2016 17:28:00 +0530</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/infra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Autocloud: What&#39;s new?</title>
-      <link>https://stg.words.yudocaa.in/blog/autocloud-whats-new/</link>
+      <link>https://words.yudocaa.in/blog/autocloud-whats-new/</link>
       <pubDate>Wed, 24 Aug 2016 17:28:00 +0530</pubDate>
       
-      <guid>https://stg.words.yudocaa.in/blog/autocloud-whats-new/</guid>
+      <guid>https://words.yudocaa.in/blog/autocloud-whats-new/</guid>
       <description>Autocloud was released during the Fedora 23 cycle as a part of the Two Week Atomic Process.
 Previously, it used to listen to fedmsg for successful Koji builds. Whenever, there is a new message the AutocloudConsumer queues these message for processing. The Autocloud job service then listens to the queue, downloads the images and runs the tests using Tunir. A more detailed post about it&amp;rsquo;s release can be read here.</description>
     </item>

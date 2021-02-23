@@ -14,7 +14,7 @@
   #TwitterID: "yudocaa"
   #FacebookID: "yudocaa"
 
-baseurl = "https://stg.words.yudocaa.in"
+baseurl = "https://words.yudocaa.in"
 languageCode = "en"
 theme = "kiss-em"
 Paginate = 5 # Number of posts per page

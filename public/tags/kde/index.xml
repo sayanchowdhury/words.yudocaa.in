@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kde on Intellectual Web</title>
-    <link>https://stg.words.yudocaa.in/tags/kde/</link>
+    <link>https://words.yudocaa.in/tags/kde/</link>
     <description>Recent content in kde on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Mar 2014 00:30:00 +0530</lastBuildDate><atom:link href="https://stg.words.yudocaa.in/tags/kde/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Mar 2014 00:30:00 +0530</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/kde/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to get started with Open Source</title>
-      <link>https://stg.words.yudocaa.in/blog/how-to-get-started-with-open-source/</link>
+      <link>https://words.yudocaa.in/blog/how-to-get-started-with-open-source/</link>
       <pubDate>Tue, 04 Mar 2014 00:30:00 +0530</pubDate>
       
-      <guid>https://stg.words.yudocaa.in/blog/how-to-get-started-with-open-source/</guid>
+      <guid>https://words.yudocaa.in/blog/how-to-get-started-with-open-source/</guid>
       <description>I have been involved in Durgapur Linux User&amp;rsquo;s Group for around last five years. I have been contributing to various open source projects quite sometime. The primary reason on why I contribute to open source is the feeling, the enjoyment when you send a patch or a PR to a open source project. It makes you happy when millions of people use your few lines of code in day to day life.</description>
     </item>
     

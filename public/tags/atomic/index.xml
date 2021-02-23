@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>atomic on Intellectual Web</title>
-    <link>https://stg.words.yudocaa.in/tags/atomic/</link>
+    <link>https://words.yudocaa.in/tags/atomic/</link>
     <description>Recent content in atomic on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Feb 2017 12:00:00 +0530</lastBuildDate><atom:link href="https://stg.words.yudocaa.in/tags/atomic/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 04 Feb 2017 12:00:00 +0530</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/atomic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Redesigning fedimg (Part 2): Communication with AWS</title>
-      <link>https://stg.words.yudocaa.in/blog/redesigning-fedimg-part-ii/</link>
+      <link>https://words.yudocaa.in/blog/redesigning-fedimg-part-ii/</link>
       <pubDate>Sat, 04 Feb 2017 12:00:00 +0530</pubDate>
       
-      <guid>https://stg.words.yudocaa.in/blog/redesigning-fedimg-part-ii/</guid>
+      <guid>https://words.yudocaa.in/blog/redesigning-fedimg-part-ii/</guid>
       <description>In the previous post, I discussed what is fedimg and how it works currently. In this post, I plan to explain the issue in the current uploading process of the AMIs and how we plan to fix it.
 What&amp;rsquo;s the problem? fedimg boots an utility instance using the RHEL AMI configured for that region.
 The problem with this design is that while adding a new region we need to look for the appropriate RHEL AMI in the newer region first.</description>
@@ -20,10 +20,10 @@ The problem with this design is that while adding a new region we need to look f
     
     <item>
       <title>Redesigning the fedimg AMI creation process - Part 1</title>
-      <link>https://stg.words.yudocaa.in/blog/redesigning-fedimg-part-i/</link>
+      <link>https://words.yudocaa.in/blog/redesigning-fedimg-part-i/</link>
       <pubDate>Mon, 30 Jan 2017 20:00:00 +0530</pubDate>
       
-      <guid>https://stg.words.yudocaa.in/blog/redesigning-fedimg-part-i/</guid>
+      <guid>https://words.yudocaa.in/blog/redesigning-fedimg-part-i/</guid>
       <description>What is fedimg? Fedimg is a Python-powered service that uploads the Fedora Cloud images on various Cloud providers. such as Amazon Web Services (AWS) .
 How does it currently work? Fedimg listens to fedmsg for nightly as well as the production compose builds messages. On receiving a new message, the FedimgConsumer triggers the upload process. fedimg uses fedfind to extract the metadata for the compose from where it get&amp;rsquo;s the URL for the compressed raw image files.</description>
     </item>

@@ -16,7 +16,7 @@
         </title>
         
         
-            <link href="https://stg.words.yudocaa.in/index.xml" rel="alternate" type="application/rss+xml" title="Intellectual Web" />
+            <link href="https://words.yudocaa.in/index.xml" rel="alternate" type="application/rss+xml" title="Intellectual Web" />
         
 
         
@@ -33,7 +33,7 @@
   <div class="container">
     <nav id="nav-main" class="nav">
       <div id="nav-name" class="nav-left">
-        <a id="nav-anchor" class="nav-item" href="https://stg.words.yudocaa.in">
+        <a id="nav-anchor" class="nav-item" href="https://words.yudocaa.in">
           <h1 id="nav-heading" class="title is-4">Intellectual Web</h1>
         </a>
       </div>
@@ -150,13 +150,13 @@
         February 4, 2017 | 12:00
     
       </h2>
-      <h1 class="title"><a href="https://stg.words.yudocaa.in/blog/redesigning-fedimg-part-ii/">Redesigning fedimg (Part 2): Communication with AWS</a></h1>
+      <h1 class="title"><a href="https://words.yudocaa.in/blog/redesigning-fedimg-part-ii/">Redesigning fedimg (Part 2): Communication with AWS</a></h1>
       <div class="content">
         In the previous post, I discussed what is fedimg and how it works currently. In this post, I plan to explain the issue in the current uploading process of the AMIs and how we plan to fix it.
 What&rsquo;s the problem? fedimg boots an utility instance using the RHEL AMI configured for that region.
 The problem with this design is that while adding a new region we need to look for the appropriate RHEL AMI in the newer region first.
         
-        <a class="button is-link" href="https://stg.words.yudocaa.in/blog/redesigning-fedimg-part-ii/" style="height:28px">
+        <a class="button is-link" href="https://words.yudocaa.in/blog/redesigning-fedimg-part-ii/" style="height:28px">
           Read more
         </a>
         
@@ -194,12 +194,12 @@ The problem with this design is that while adding a new region we need to look f
         January 30, 2017 | 20:00
     
       </h2>
-      <h1 class="title"><a href="https://stg.words.yudocaa.in/blog/redesigning-fedimg-part-i/">Redesigning the fedimg AMI creation process - Part 1</a></h1>
+      <h1 class="title"><a href="https://words.yudocaa.in/blog/redesigning-fedimg-part-i/">Redesigning the fedimg AMI creation process - Part 1</a></h1>
       <div class="content">
         What is fedimg? Fedimg is a Python-powered service that uploads the Fedora Cloud images on various Cloud providers. such as Amazon Web Services (AWS) .
 How does it currently work? Fedimg listens to fedmsg for nightly as well as the production compose builds messages. On receiving a new message, the FedimgConsumer triggers the upload process. fedimg uses fedfind to extract the metadata for the compose from where it get&rsquo;s the URL for the compressed raw image files.
         
-        <a class="button is-link" href="https://stg.words.yudocaa.in/blog/redesigning-fedimg-part-i/" style="height:28px">
+        <a class="button is-link" href="https://words.yudocaa.in/blog/redesigning-fedimg-part-i/" style="height:28px">
           Read more
         </a>
         
@@ -229,7 +229,7 @@ How does it currently work? Fedimg listens to fedmsg for nightly as well as the 
         January 23, 2016 | 11:48
     
       </h2>
-      <h1 class="title"><a href="https://stg.words.yudocaa.in/journal/fedimg-course-of-action/">Fedimg: Course of Action</a></h1>
+      <h1 class="title"><a href="https://words.yudocaa.in/journal/fedimg-course-of-action/">Fedimg: Course of Action</a></h1>
       <div class="content">
         Fedimg is a Python-powered service which is built to make Fedora-Cloud images available on popular cloud providers, such as Amazon Web Services (AWS). The plans are to support more cloud providers such as Rackspace, Google Compute Engine.
 Fedimg listens for the messages from Fedmsg for the Koji image builds.
@@ -237,7 +237,7 @@ Plan of work
   Add scripts to remove old AMIs we have uploaded (https://github.com/fedora-infra/fedimg/issues/37)
 Storing the AMIs are costing us lot.
         
-        <a class="button is-link" href="https://stg.words.yudocaa.in/journal/fedimg-course-of-action/" style="height:28px">
+        <a class="button is-link" href="https://words.yudocaa.in/journal/fedimg-course-of-action/" style="height:28px">
           Read more
         </a>
         

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bugyou on Intellectual Web</title>
-    <link>https://stg.words.yudocaa.in/tags/bugyou/</link>
+    <link>https://words.yudocaa.in/tags/bugyou/</link>
     <description>Recent content in bugyou on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Jan 2016 14:09:43 +0530</lastBuildDate><atom:link href="https://stg.words.yudocaa.in/tags/bugyou/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jan 2016 14:09:43 +0530</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/bugyou/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducing Bugyou</title>
-      <link>https://stg.words.yudocaa.in/blog/introducing-bugyou/</link>
+      <link>https://words.yudocaa.in/blog/introducing-bugyou/</link>
       <pubDate>Thu, 07 Jan 2016 14:09:43 +0530</pubDate>
       
-      <guid>https://stg.words.yudocaa.in/blog/introducing-bugyou/</guid>
+      <guid>https://words.yudocaa.in/blog/introducing-bugyou/</guid>
       <description>We developed Autocloud as a part of Fedora 23 release cycle as a part of Two week atomic image.
 Autocloud publishes the messages to fedmsg when the image is queued, running, success and failed.
 What is Bugyou? Bugyou files issues for failed tests from Autocloud. Bugyou is part of Fedora Project. It listens to Autocloud messages from fedmsg and files bug for images which have failed the tests. Bugyou keeps updating the status of the images in the bug and closes the issue once the tests are successful.</description>
@@ -20,10 +20,10 @@ What is Bugyou? Bugyou files issues for failed tests from Autocloud. Bugyou is p
     
     <item>
       <title>Four Weeks in Fedora</title>
-      <link>https://stg.words.yudocaa.in/journal/four-weeks-in-fedora/</link>
+      <link>https://words.yudocaa.in/journal/four-weeks-in-fedora/</link>
       <pubDate>Tue, 24 Nov 2015 08:24:43 +0530</pubDate>
       
-      <guid>https://stg.words.yudocaa.in/journal/four-weeks-in-fedora/</guid>
+      <guid>https://words.yudocaa.in/journal/four-weeks-in-fedora/</guid>
       <description>26th of October 2015, I joined Red Hat as a part of the Fedora Engineering Team.
 I have been contributing to the Fedora for couple of years now starting from the contributing to askbot-devel while we were gearing up for the Ask Fedora release. This year in July, I along with kushal, rtnpro, praveenkumar started working on Autocloud, as a part of the Two-Week Atomic during the Fedora 23 cycle. So, I last couple of years of I have met and worked with a lot of people in the Fedora community.</description>
     </item>

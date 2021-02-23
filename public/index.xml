@@ -1,22 +1,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Intellectual Web</title>
-    <link>https://stg.words.yudocaa.in/</link>
+    <link>https://words.yudocaa.in/</link>
     <description>Recent content on Intellectual Web</description>
     <generator>Hugo - gohugo.io</generator>
     <language>en</language>
     <contact>namoskar@yudocaa.in</contact>
     <copyright>© <a href="https://github.com/sayanchowdhury">Sayan Chowdhury</a> 2021</copyright>
     
-        <atom:link href="https://stg.words.yudocaa.in/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://words.yudocaa.in/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blogs</title>
-      <link>https://stg.words.yudocaa.in/blog/</link>
+      <link>https://words.yudocaa.in/blog/</link>
       <pubDate>Sun, 21 Feb 2021 18:30:00 +0000</pubDate>
       <author>Sayan Chowdhury </author>
-      <guid>https://stg.words.yudocaa.in/blog/</guid>
+      <guid>https://words.yudocaa.in/blog/</guid>
       <description></description>
       
       <content></content>
@@ -25,10 +25,10 @@
     
     <item>
       <title>Hope</title>
-      <link>https://stg.words.yudocaa.in/fitness/</link>
+      <link>https://words.yudocaa.in/fitness/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       <author>Sayan Chowdhury </author>
-      <guid>https://stg.words.yudocaa.in/fitness/</guid>
+      <guid>https://words.yudocaa.in/fitness/</guid>
       <description></description>
       
       <content>&lt;p&gt;A thread to lose weight, and see a healthier version of me, v2021.6?. This is inspired from closely following
@@ -45,7 +45,7 @@ Somedays even staying in the 65-70 range.&lt;/p&gt;
 &lt;li&gt;gw: goal weight&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The log will be updated weekly with the latest first. Incase you want to start from the beginning, &lt;a href=&#34;#january-11-2021&#34;&gt;jump here&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;For daily updates, check the &lt;a href=&#34;https://stg.words.yudocaa.in/log/fitness-daily&#34;&gt;daily fitness log&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For daily updates, check the &lt;a href=&#34;https://words.yudocaa.in/log/fitness-daily&#34;&gt;daily fitness log&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ok, lets start.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;- hw: 81.55 kgs (04/01/2021)
 - sw: 81.55 kgs (04/01/2021)
@@ -149,10 +149,10 @@ getting my expectations high. Hope to have a good second week.&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://stg.words.yudocaa.in/log/</link>
+      <link>https://words.yudocaa.in/log/</link>
       <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
       <author>Sayan Chowdhury </author>
-      <guid>https://stg.words.yudocaa.in/log/</guid>
+      <guid>https://words.yudocaa.in/log/</guid>
       <description></description>
       
       <content></content>
@@ -161,10 +161,10 @@ getting my expectations high. Hope to have a good second week.&lt;/p&gt;
     
     <item>
       <title>Journals</title>
-      <link>https://stg.words.yudocaa.in/journal/</link>
+      <link>https://words.yudocaa.in/journal/</link>
       <pubDate>Tue, 26 Mar 2019 18:30:00 +0000</pubDate>
       <author>Sayan Chowdhury </author>
-      <guid>https://stg.words.yudocaa.in/journal/</guid>
+      <guid>https://words.yudocaa.in/journal/</guid>
       <description></description>
       
       <content></content>
@@ -173,10 +173,10 @@ getting my expectations high. Hope to have a good second week.&lt;/p&gt;
     
     <item>
       <title>Notes</title>
-      <link>https://stg.words.yudocaa.in/notes/</link>
+      <link>https://words.yudocaa.in/notes/</link>
       <pubDate>Fri, 12 Oct 2018 18:30:00 +0000</pubDate>
       <author>Sayan Chowdhury </author>
-      <guid>https://stg.words.yudocaa.in/notes/</guid>
+      <guid>https://words.yudocaa.in/notes/</guid>
       <description></description>
       
       <content></content>
@@ -185,10 +185,10 @@ getting my expectations high. Hope to have a good second week.&lt;/p&gt;
     
     <item>
       <title>About</title>
-      <link>https://stg.words.yudocaa.in/about/</link>
+      <link>https://words.yudocaa.in/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Sayan Chowdhury </author>
-      <guid>https://stg.words.yudocaa.in/about/</guid>
+      <guid>https://words.yudocaa.in/about/</guid>
       <description></description>
       
       <content>&lt;p&gt;I am Sayan Chowdhury. I come from a small-town in India, Jamshedpur, moved to Bangalore around in 2013. In the day, I&amp;rsquo;m a software engineer working remotely from my cozy little room. I currently work as a Linux Software Engineer at Kinvolk. I&amp;rsquo;ve dabbled with multiple computer science islands in the past, from building desktop apps, to web, to infrastructure, to now landed in the kernel land. I&amp;rsquo;ve also been part of various open source communities around Python, Fedora, Kubernetes, Mozilla, etc. I like to talk about {Python, Containers, Golang, Infrastructure, Cloud, Fedora, Community, Open Source}&lt;/p&gt;
@@ -200,10 +200,10 @@ getting my expectations high. Hope to have a good second week.&lt;/p&gt;
     
     <item>
       <title>Authors</title>
-      <link>https://stg.words.yudocaa.in/authors/</link>
+      <link>https://words.yudocaa.in/authors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Sayan Chowdhury </author>
-      <guid>https://stg.words.yudocaa.in/authors/</guid>
+      <guid>https://words.yudocaa.in/authors/</guid>
       <description></description>
       
       <content></content>

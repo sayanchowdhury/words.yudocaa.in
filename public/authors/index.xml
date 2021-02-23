@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Intellectual Web</title>
-    <link>https://stg.words.yudocaa.in/authors/</link>
+    <link>https://words.yudocaa.in/authors/</link>
     <description>Recent content in Authors on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://stg.words.yudocaa.in/authors/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://words.yudocaa.in/authors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

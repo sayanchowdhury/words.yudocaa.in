@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>pycon on Intellectual Web</title>
-    <link>https://stg.words.yudocaa.in/tags/pycon/</link>
+    <link>https://words.yudocaa.in/tags/pycon/</link>
     <description>Recent content in pycon on Intellectual Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 26 Nov 2016 15:10:00 +0530</lastBuildDate><atom:link href="https://stg.words.yudocaa.in/tags/pycon/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Nov 2016 15:10:00 +0530</lastBuildDate><atom:link href="https://words.yudocaa.in/tags/pycon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PyCon India 2016</title>
-      <link>https://stg.words.yudocaa.in/journal/pycon-india-2016/</link>
+      <link>https://words.yudocaa.in/journal/pycon-india-2016/</link>
       <pubDate>Sat, 26 Nov 2016 15:10:00 +0530</pubDate>
       
-      <guid>https://stg.words.yudocaa.in/journal/pycon-india-2016/</guid>
+      <guid>https://words.yudocaa.in/journal/pycon-india-2016/</guid>
       <description>PyCon India, this year was held at New Delhi at the JNU Convention Center.
 Dev Sprints During the Dev Sprint, Farhaan and Vivek were sprinting on Fedora Infrastructure projects primarily helping people contribute to Pagure.
 Other projects/orgs like SciPy, Red Hat team, FOSSAsia, Junction etc were also sprinting.
@@ -21,10 +21,10 @@ The Dev Sprint turned out to have a good participation and couple of PRs were se
     
     <item>
       <title>PyCon India 2013</title>
-      <link>https://stg.words.yudocaa.in/journal/pycon-india-2013/</link>
+      <link>https://words.yudocaa.in/journal/pycon-india-2013/</link>
       <pubDate>Tue, 10 Sep 2013 12:00:00 +0530</pubDate>
       
-      <guid>https://stg.words.yudocaa.in/journal/pycon-india-2013/</guid>
+      <guid>https://words.yudocaa.in/journal/pycon-india-2013/</guid>
       <description>Python Month I attended last year’s PyCon India, while in college and it was a great experience. After shifting to Bangalore this year, I thought why not volunteer Pycon India this year.
 I was a regular attendee to the Pycon India meetings held at the Goibibo office at M.G.Road. This year it was thought to celebrate the month of August Python Month as a part of PyCon this year. As a part of Python Month, volunteers would go to various college across the country to evangelize and teach python to college students.</description>
     </item>
