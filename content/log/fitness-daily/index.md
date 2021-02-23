@@ -17,7 +17,19 @@ To explain the jargons:
 
 Ok, lets start.
 
-### February 15, 2021
+### February 23, 2021
+```
+cw: 76.15
+pulls: 0
+```
+
+A good day. 6 kms walk in two sets. Why? I met a friend on the way and talked to him
+for a while. Other than that increased the glasses of water I drink in a day by
+1, need to hold onto that. Every increase is tough, as you need to be consistent.
+
+I added a new pulls value, to track number pull ups I do. Plan is 10.
+
+### February 22, 2021
 ```
 cw: 76.60
 ```
