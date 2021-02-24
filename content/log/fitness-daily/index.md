@@ -17,15 +17,39 @@ To explain the jargons:
 
 Ok, lets start.
 
+### February 24, 2021
+```
+cw: 75.60
+pulls: 10
+```
+
+I went on a walk, while walking I realized even though Garmin shows 87 kms
+covered in last 4 weeks, a couple of days were from January so I probably need
+to walk a bit more to cross a 100. Turns out, I needed to walk 34 kms in order
+to cross the number. So, I'm planning to walk a extra km i.e 7km for the next
+few days.
+
+I waslk 7 kms yesterday, sweated like hell. The avg pace was good with even a
+lap in under 9/km.
+
+Also, while doing all this I realized February is perfect rectangular month.
+Nice.  Even though it's kind of once in 10 years occurence I did not notice it
+before. The next one is in 2027.
+
+On the pulls side, I easily did 8, and struggled to do 2. This is with proper
+posture.
+
+
 ### February 23, 2021
 ```
 cw: 76.15
 pulls: 0
 ```
 
-A good day. 6 kms walk in two sets. Why? I met a friend on the way and talked to him
-for a while. Other than that increased the glasses of water I drink in a day by
-1, need to hold onto that. Every increase is tough, as you need to be consistent.
+A good day. 6 kms walk in two sets. Why? I met a friend on the way and talked
+to him for a while. Other than that increased the glasses of water I drink in a
+day by 1, need to hold onto that. Every increase is tough, as you need to be
+consistent.
 
 I added a new pulls value, to track number pull ups I do. Plan is 10.
 
@@ -39,8 +63,9 @@ I made sure I tried to walk and do sets of freeletics. I craved for food, left
 and right and I did eat.
 
 But Sunday I felt better, lot better. Did a 6 kms walk, even though the first
-two km laps were bad. I made sure I keep the momentum up, and peaked at 8:10 /km
-which I think is pretty good. Overall, ended the day completing 6km in 59:30 mins.
+two km laps were bad. I made sure I keep the momentum up, and peaked at 8:10
+/km which I think is pretty good. Overall, ended the day completing 6km in
+59:30 mins.
 
 On the podcast side, I listened to some history on Binary, Bits & Bytes :)
 
