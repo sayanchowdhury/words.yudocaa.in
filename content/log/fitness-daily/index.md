@@ -17,6 +17,18 @@ To explain the jargons:
 
 Ok, lets start.
 
+### February 25, 2021
+```
+cw: 75.45
+pulls: 0
+```
+
+I forgot to do the pullups!
+
+In terms of walk I did a good pace with 7kms in 1:09:00 hrs. No books on Audible,
+rather some Indie songs Spotify and did not even feel those 7kms. Wow!
+
+
 ### February 24, 2021
 ```
 cw: 75.60
