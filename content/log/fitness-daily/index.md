@@ -17,6 +17,21 @@ To explain the jargons:
 
 Ok, lets start.
 
+### February 26, 2021
+```
+cw: 75.45
+pulls: 0
+```
+
+I was not having a good day, feeling nauseous through out the day. Eating was
+tough as well. I really don't know what happened.
+
+I still went out for a walk and slowly walked the distance. Watch batter got over
+but it was around 1:15 and I was still at 5.80ish.
+
+I rate the day 2/5
+
+
 ### February 25, 2021
 ```
 cw: 75.45
