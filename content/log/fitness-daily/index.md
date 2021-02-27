@@ -17,6 +17,18 @@ To explain the jargons:
 
 Ok, lets start.
 
+### February 27, 2021
+```
+cw: 75.80
+pulls: 0
+```
+
+Friday! We went out to the club had food like anything, I mean I was gulping food
+like I used to in my college days, and I did not see much of a jump in the weight.
+This is good because I can say that the metabolism is on the rise.
+
+I did not go out for a walk.
+
 ### February 26, 2021
 ```
 cw: 75.45
