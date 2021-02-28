@@ -17,6 +17,27 @@ To explain the jargons:
 
 Ok, lets start.
 
+### February 28, 2021
+```
+cw: 75.35
+pulls: 0
+```
+
+A long walk.
+
+I walked 8.24 kms yesterday in about 1:28:04. The best pace was at 8:28 min/km,
+whereas the average floated at around 10:41 min/km.
+
+This was because I kept the pace slow in the beginning hoping to do 12 kms, but
+also I did not complete my daily water intake so after I increased the pace after
+the 3rd km the body was gasping at 8 km.
+
+I knew I had a long road ahead next day so the best decision was to stop, as I
+won't have much recovery time to my side.
+
+And tomorrow, We would be completing 8th Week of tracking. Let's see how much
+I end up at tomorrow.
+
 ### February 27, 2021
 ```
 cw: 75.80
