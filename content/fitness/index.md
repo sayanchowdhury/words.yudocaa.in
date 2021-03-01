@@ -31,6 +31,41 @@ Ok, lets start.
 - sw: 81.55 kgs (04/01/2021)
 ```
 
+### March 1, 2021
+```
+- cw: 75.15 kgs (01/03/2021)
+
+- gw1: 78 kgs ✔️
+- gw2: 75 kgs
+- gw3: 73 kgs
+- gw4: 70 kgs
+- gw5: 67 kgs
+```
+
+We are at another milestone! 8th week of tracking daily and weekly. There were
+a lot of ups and downs. But this time it feels like Jan was soooo long back, and
+I started so long back. Feels like ages.
+
+I completed 100kms walk this month and bunch of challenges on Connect (Badges! for win)
+
+Some other thoughts, I bought two tshirts few months back which were tight as hell.
+The t-shirts were pricey and I was not sure if I was doing the right decision.
+
+Yesterday, I wore the tshirts and they were a beautiful fit. These small things
+really make you happy and helps attaining the "Love for Boredom".
+
+Today I feel like Goals are overrated, Journeys are underrated. There should be
+perfect balance between them.
+
+
+*pats on the back again*
+
+Let's see what awaits next month but as I said last month, every small milestones needs
+celebrations! :')
+
+March here I come. You are going to be tough!
+
+
 ### February 22, 2021
 ```
 - cw: 76.60 kgs (22/02/2021)
