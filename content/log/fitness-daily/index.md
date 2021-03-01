@@ -17,6 +17,26 @@ To explain the jargons:
 
 Ok, lets start.
 
+### March 1, 2021
+```
+cw: 75.15
+pulls: 0
+```
+
+We had a outing today, so I woke and completed the sets of exercise in the morning.
+5.18 kms with a avg pace of 9.23 min/km and the best pace being 7.36 min/km.
+
+- Completed the bunch of challenges on Connect.
+- Completed the Strava walking challenge
+
+Yesterday, I was out but for the first time I controlled my eating habits and just
+did not gulp what I ate. Once a week, it's fine but not twice.
+
+And with February coming to an end, I'm down by 6.4 kgs from beginning and lost
+2.2 kgs in the last month. Scale says all the vitals are Average now.
+
+Body fat down to 20.8%. Long way to go but still better than high.
+
 ### February 28, 2021
 ```
 cw: 75.35
