@@ -17,6 +17,14 @@ To explain the jargons:
 
 Ok, lets start.
 
+### March 2, 2021
+```
+cw: 75.20
+pulls: 0
+```
+
+Some rest as I would be starting with harder Freeletics. Pray!
+
 ### March 1, 2021
 ```
 cw: 75.15
