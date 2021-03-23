@@ -20,6 +20,11 @@ To explain the jargons:
 - cw: current weight
 - gw: goal weight
 
+- hf: highest fat %
+- sf: starting fat %
+- cf: current fat %
+- gf: goal fat %
+
 The log will be updated weekly with the latest first. Incase you want to start from the beginning, [jump here](#january-11-2021)
 
 For daily updates, check the [daily fitness log](/log/fitness-daily)
@@ -30,6 +35,36 @@ Ok, lets start.
 - hw: 81.55 kgs (04/01/2021)
 - sw: 81.55 kgs (04/01/2021)
 ```
+
+```
+- hf: 24
+- sw: 20.2
+```
+
+### March 23, 2021
+```
+- cw: 74.20 kgs (23/03/2021)
+
+- gw1: 78 kgs ✔️
+- gw2: 75 kgs ✔️
+- gw3: 73 kgs
+- gw4: 70 kgs
+```
+
+```
+- cw: 20.2 (23/03/2021)
+- gf1: 20
+- gf2: 19
+- gf3: 18
+- gf4: 17
+- gf5: 16
+- gf6: 15
+```
+
+Update after a long time. March was mostly keeping the weight constant. I dropped
+only a kilo over the month, which was deliberately. The next step would be to drop
+the fat percentage so I'm planning to track the same.
+
 
 ### March 1, 2021
 ```

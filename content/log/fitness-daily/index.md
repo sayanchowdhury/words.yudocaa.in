@@ -17,6 +17,115 @@ To explain the jargons:
 
 Ok, lets start.
 
+### March 23, 2021
+```
+cw: 74.20
+```
+
+An uneventful day. Since it was a rest day, I went on a short walk as suggested
+by the Freeletics blog.
+
+### March 22, 2021
+```
+cw: 74.35
+```
+
+I've changed the plan in Freeletics. I've come to realize that the goal weight might
+not be very suitable for me. I'm planning to re-adjust my goal weight, the lowest,
+I'll go is 70, the aim now would be to losing more fat and get in a better shape.
+
+### March 21, 2021
+```
+cw: 74.35
+```
+
+### March 20, 2021
+```
+cw: 74.75
+```
+
+### March 19, 2021
+```
+cw: 74.75
+```
+
+### March 18, 2021
+
+No log for the day
+
+### March 17, 2021
+```
+cw: 75.00
+```
+
+### March 16, 2021
+```
+cw: 75.55
+```
+
+### March 15, 2021
+```
+cw: 75.05
+```
+
+### March 14, 2021
+```
+cw: 75.00
+```
+
+### March 13, 2021
+```
+cw: 75.25
+```
+
+### March 12, 2021
+```
+cw: 75.40
+```
+
+### March 11, 2021
+```
+cw: 75.60
+```
+
+### March 10, 2021
+```
+cw: 75.15
+pulls: 0
+```
+
+### March 9, 2021
+```
+cw: 75.90
+```
+
+### March 8, 2021
+
+No log for the day
+
+### March 7, 2021
+
+No log for the day
+
+### March 6, 2021
+```
+cw: 75.55
+```
+
+### March 5, 2021
+```
+cw: 76.25
+```
+
+### March 4, 2021
+```
+cw: 77.10
+```
+
+### March 3, 2021
+
+No log for the day
+
 ### March 2, 2021
 ```
 cw: 75.20

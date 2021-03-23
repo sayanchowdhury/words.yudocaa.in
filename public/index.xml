@@ -39,17 +39,56 @@ increased to a high of &amp;gt;95. Now, after 3 months it&amp;rsquo;s down to st
 Somedays even staying in the 65-70 range.&lt;/p&gt;
 &lt;p&gt;To explain the jargons:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;hw: highest weight&lt;/li&gt;
-&lt;li&gt;sw: starting weight&lt;/li&gt;
-&lt;li&gt;cw: current weight&lt;/li&gt;
-&lt;li&gt;gw: goal weight&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;hw: highest weight&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;sw: starting weight&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cw: current weight&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;gw: goal weight&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;hf: highest fat %&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;sf: starting fat %&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;cf: current fat %&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;gf: goal fat %&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The log will be updated weekly with the latest first. Incase you want to start from the beginning, &lt;a href=&#34;#january-11-2021&#34;&gt;jump here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;For daily updates, check the &lt;a href=&#34;https://words.yudocaa.in/log/fitness-daily&#34;&gt;daily fitness log&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Ok, lets start.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;- hw: 81.55 kgs (04/01/2021)
 - sw: 81.55 kgs (04/01/2021)
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;march-1-2021&#34;&gt;March 1, 2021&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;- hf: 24
+- sw: 20.2
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;march-23-2021&#34;&gt;March 23, 2021&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;- cw: 74.20 kgs (23/03/2021)
+
+- gw1: 78 kgs ✔️
+- gw2: 75 kgs ✔️
+- gw3: 73 kgs
+- gw4: 70 kgs
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;- cw: 20.2 (23/03/2021)
+- gf1: 20
+- gf2: 19
+- gf3: 18
+- gf4: 17
+- gf5: 16
+- gf6: 15
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Update after a long time. March was mostly keeping the weight constant. I dropped
+only a kilo over the month, which was deliberately. The next step would be to drop
+the fat percentage so I&amp;rsquo;m planning to track the same.&lt;/p&gt;
+&lt;h3 id=&#34;march-1-2021&#34;&gt;March 1, 2021&lt;/h3&gt;
 &lt;pre&gt;&lt;code&gt;- cw: 75.15 kgs (01/03/2021)
 
 - gw1: 78 kgs ✔️
