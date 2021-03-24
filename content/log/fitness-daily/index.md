@@ -17,6 +17,15 @@ To explain the jargons:
 
 Ok, lets start.
 
+### March 24, 2021
+```
+cw: 73.9
+```
+
+A day of Freeletics. I really need to get my bicycle crunches right without
+hurting my neck. The first set I did it as wrong as it could be. The later ones
+were better. Hopefully it gets better. What I loved? Jump Squats.
+
 ### March 23, 2021
 ```
 cw: 74.20
