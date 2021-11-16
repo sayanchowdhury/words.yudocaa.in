@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intellectual Web</title>
+    <link>https://words.yudocaa.in/hope/</link>
+    <description>Recent content on Intellectual Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://words.yudocaa.in/hope/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hope - 30 Days of Read</title>
+      <link>https://words.yudocaa.in/hope/30-days-of-read-i/</link>
+      <pubDate>Tue, 16 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://words.yudocaa.in/hope/30-days-of-read-i/</guid>
+      <description>The aim here is to read through the book and build the habit to spend some time to read through technical books everyday.
+I&amp;rsquo;ll upload the notes from everyday, and after the finish of the chapter accumulate the notes into one.
+November 16, 2021 pages: ~7 Notes
+I read through the introduction section of the Linux Device Driver book.
+ Introduced on how device drivers are more about mechanism than policy.</description>
+    </item>
+    
+    <item>
+      <title>Hope - Sleep</title>
+      <link>https://words.yudocaa.in/hope/30-days-of-sleep/</link>
+      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://words.yudocaa.in/hope/30-days-of-sleep/</guid>
+      <description>- st: sleep time - wt: wake time Ok, lets start.
+November 16, 2021 - st: 22:42 - wt: 08:09 </description>
+    </item>
+    
+  </channel>
+</rss>
