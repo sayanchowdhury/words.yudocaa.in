@@ -84,9 +84,7 @@ $ cat ~/.gitconfig
 	email = sayan@emailprovider.io
 ```
 
-{{% note %}}
-What are the other alternative will you use to verify?
-{{% /note %}}
+> What are the other alternative will you use to verify?
 
 ---
 
@@ -131,6 +129,4 @@ More details on the following config coming soon
 
 --
 
-{{% note %}}
-To more on git config, read `man git-config`
-{{% /note %}}
+> To more on git config, read `man git-config`
