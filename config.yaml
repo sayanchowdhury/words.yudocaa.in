@@ -118,7 +118,7 @@ params:
          keys: ["title", "permalink", "summary", "content"]
 
     editPost:
-        URL: "https://github.com/sayanchowdhury/words.yudocaa.in/tree/main/content"
+        URL: "https://github.com/sayanchowdhury/words.yudocaa.in/tree/paper/content"
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
 
