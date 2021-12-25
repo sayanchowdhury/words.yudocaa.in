@@ -6,13 +6,15 @@ date: '2021-02-21'
 description: >-
   Why learning to love Boredom is important?
 images:
-- images/2021-12-25-flatcar-raspberry-pi.jpg
+- images/2021-02-21-love-boredom.jpg
 slug: love-boredom
 tags:
 - self
 - lifeos
 title: Love Boredom
 ---
+
+{{< figure src="/images/2021-02-21-love-boredom.jpg" alt="Lazy & Bored" position="center" >}}
 
 I was talking to Jason today, discussing aspects of life and building habits.
 
