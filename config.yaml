@@ -67,6 +67,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowToc: true
+    ShowFullTextinRSS: true
     comments: true
     images:
     - /images/2021-12-24-man-at-the-library.jpg
