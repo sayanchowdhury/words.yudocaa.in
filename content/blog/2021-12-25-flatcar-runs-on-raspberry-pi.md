@@ -214,7 +214,7 @@ Let's move ahead with the final steps.
 ```bash
 efipartition=$(lsblk /dev/sda -oLABEL,PATH | awk '$1 == "EFI-SYSTEM" {print $2}')
 mkdir /tmp/efipartition
-sudo mount /dev/sda /tmp/efipartition
+sudo mount ${efipartition} /tmp/efipartition
 pushd /tmp/efipartition
 version=$(curl --silent "https://api.github.com/repos/pftf/RPi4/releases/latest" | jq -r .tag_name)
 sudo curl -LO https://github.com/pftf/RPi4/releases/download/${version}/RPi4_UEFI_Firmware_${version}.zip
