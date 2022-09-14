@@ -47,3 +47,20 @@ also trying to get into a schedule so I just walked for 30mins and then came bac
 home. I'm overall happy with yesterday.
 
 I drank 3.75L of water, so I'm almost there to my target.
+
+### September 14, 2022
+
+```
+- cw: 79.4 kgs
+```
+Got a bit better on my daily schedule. I'm starting to timebox, though it's hard
+because my sleeping schedule is messed up so I plan to start my day at 7AM but
+I end up waking up between 8AM-9AM. I'm happy that I'm able to hit 50-60% of the
+targeted goals.
+
+On the exercise side, I could not go out for a walk so I ended up walking on the
+treadmill. I also got the scooter fixed so I can go to the gym now. The walk was
+a 30mins was with speed of 6.5 at an incline of 5. It was tiring, the legs were aching
+but I hope this would get better over time
+
+Water I again drank 3.75L by the end of the day.
