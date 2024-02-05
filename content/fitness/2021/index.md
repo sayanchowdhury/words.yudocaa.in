@@ -2,7 +2,7 @@
 authors = ["Sayan Chowdhury"]
 date = 2021-01-05T00:00:00Z
 excerpt = ""
-title = "Hope"
+title = "2021 - Hope"
 +++
 
 A thread to lose weight, and see a healthier version of me, v2021.6?. This is inspired from closely following

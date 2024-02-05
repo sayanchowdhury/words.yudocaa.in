@@ -31,7 +31,7 @@ Perfectly timed! I had a Raspberry Pi 4 lying around and had just ordered a few 
 
 ---
 
-> ⚠️ WARNING ⚠️  
+> ⚠️ WARNING ⚠️
 > The UEFI firmware used in this guide is an [_UNOFFICIAL_ firmware](https://rpi4-uefi.dev/faq/#Is_this_an_official_Raspberry_Pi_Foundation_project). There is a possibility of damage caused due to the usage of this firmware.
 > The author of this article would not be liable for any damage caused. Please follow this article at your own risk.
 
