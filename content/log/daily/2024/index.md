@@ -17,6 +17,23 @@ To explain the jargons:
 
 Ok, lets start.
 
+### February 06, 2024
+
+```
+- cw: 84.8 kgs
+```
+
+Comparatively, it's been a good day. It's been pure motivation at the moment, need
+to turn it around in consistency. I did not get to walk, but I've just started to
+track everything. Went to meet friends in the evening that rocked the schedule a bit.
+
+```
+- Food Habits: 3/5
+- Water (320ml cup): 6
+- Exercise: None
+- Sleep Habit: 3/5
+```
+
 ### February 05, 2024
 
 ```
