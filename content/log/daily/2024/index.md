@@ -17,6 +17,24 @@ To explain the jargons:
 
 Ok, lets start.
 
+### February 07, 2024
+
+```
+- cw: 83.9 kgs
+```
+
+An okay day of focus, too much out of pure motivation rather than will. I drank
+good enough water, but I need to drink more. Afternoon went for a workout session,
+which was moderate but scope of improvement. Food habits okay, as still trying to
+get into the regime.
+
+```
+- Food Habits: 3/5
+- Water (320ml cup): 8
+- Exercise: 2/5
+- Sleep Habit: 3/5
+```
+
 ### February 06, 2024
 
 ```
