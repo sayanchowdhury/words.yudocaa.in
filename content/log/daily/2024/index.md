@@ -17,6 +17,31 @@ To explain the jargons:
 
 Ok, lets start.
 
+
+### February 12, 2024
+
+```
+- cw: 83.0 kgs
+```
+
+### February 11, 2024
+
+```
+- cw: 83.0 kgs
+```
+
+### February 10, 2024
+
+```
+- cw: 83.5 kgs
+```
+
+### February 09, 2024
+
+```
+- cw: 83.6 kgs
+```
+
 ### February 08, 2024
 
 ```

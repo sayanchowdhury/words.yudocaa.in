@@ -29,6 +29,24 @@ Ok, lets start.
 - sw: 85.9 kgs (05/02/2024)
 ```
 
+### February 12, 2024
+
+```
+- cw: 83.9 kgs (12/02/2024)
+
+- gw0: 81 kgs
+- gw1: 78 kgs
+- gw2: 75 kgs
+- gw3: 73 kgs
+- gw4: 70 kgs
+```
+
+Good first week of tracking, I tried to eat healthy, workout and move. I failed
+bunch of times but I kept moved ahead and looking to the next day. Starting few
+days the drop was quite huge. Maybe water weight from the past days, but then it
+stabilized at 83.7 kgs, so all the drop of after that is what I lost. First, goal
+weight is still a bit far hopefully in next 2-3 weeks.
+
 ### February 05, 2024
 
 ```
