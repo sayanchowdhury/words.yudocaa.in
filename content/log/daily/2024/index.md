@@ -20,7 +20,7 @@ Ok, lets start.
 ### February 12, 2024
 
 ```
-- cw: 83.0 kgs
+- cw: 82.6 kgs
 ```
 
 Set on routine, I went to workout, and worked on functional movements with Yugal.
@@ -28,7 +28,8 @@ I was able to do 5 pushups, and 20 knee pushups. Slowly building up the energy.
 Sleep was also proper, hit a 80+ mark, and was well rested.
 Onto the second week of tracking.
 
-Food was still on track. I need to eat food on time.
+Food was still on track. I need to eat food on time. Also need to get a good diet
+plan and track macros.
 
 Habit Tracking
 ```
