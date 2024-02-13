@@ -17,12 +17,27 @@ To explain the jargons:
 
 Ok, lets start.
 
-
 ### February 12, 2024
 
 ```
 - cw: 83.0 kgs
 ```
+
+Set on routine, I went to workout, and worked on functional movements with Yugal.
+I was able to do 5 pushups, and 20 knee pushups. Slowly building up the energy.
+Sleep was also proper, hit a 80+ mark, and was well rested.
+Onto the second week of tracking.
+
+Food was still on track. I need to eat food on time.
+
+Habit Tracking
+```
+- Food Habits: 2.5/5
+- Water (320ml cup): 3.5L
+- Exercise: 3/5
+- Sleep Habit: 3.5/5
+```
+
 
 ### February 11, 2024
 
@@ -33,16 +48,22 @@ Ok, lets start.
 ### February 10, 2024
 
 ```
-- cw: 83.5 kgs
+- cw: 83.0 kgs
 ```
 
 ### February 09, 2024
 
 ```
-- cw: 83.6 kgs
+- cw: 83.5 kgs
 ```
 
 ### February 08, 2024
+
+```
+- cw: 83.6 kgs
+```
+
+### February 07, 2024
 
 ```
 - cw: 83.7 kgs
@@ -76,7 +97,7 @@ Habit Tracking
 - Sleep Habit: 2/5
 ```
 
-### February 07, 2024
+### February 06, 2024
 
 ```
 - cw: 83.9 kgs
@@ -95,7 +116,7 @@ Habit Tracking
 - Sleep Habit: 3/5
 ```
 
-### February 06, 2024
+### February 05, 2024
 
 ```
 - cw: 84.8 kgs
@@ -113,7 +134,7 @@ Habit Tracking
 - Sleep Habit: 3/5
 ```
 
-### February 05, 2024
+### February 04, 2024
 
 ```
 - cw: 85.9 kgs
