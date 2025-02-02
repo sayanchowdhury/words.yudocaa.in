@@ -52,6 +52,12 @@ outputs:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "Scribbles of a Computer Programmer"
+    rssExcludeSections:
+      - fitness
+      - hope
+      - journal
+      - log
+      - notes
     author:
     - Sayan Chowdhury
     # author: ["Me", "You"] # multiple authors
