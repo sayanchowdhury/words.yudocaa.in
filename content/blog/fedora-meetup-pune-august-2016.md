@@ -30,5 +30,5 @@ can be seen [here](http://glibcdocs.readthedocs.io/en/latest/)
 If you are planning to contribute, ping /me (sayan) or kushal in #dgplug
 channel on Freenode.
 
-{{< tweet 766974120303038464 >}}
+{{< x id="766974120303038464" user="yudocaa" >}}
 

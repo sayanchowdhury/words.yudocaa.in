@@ -26,5 +26,5 @@ I moved outside after the talk and was mostly talking with people at the booths.
 
 It was very nice to find the growing audience of Kubernetes, and I also happen to know about a couple of more interesting projects the community is building.
 
-{{< tweet 1109330561187893249 >}}
+{{< x user="yudocaa"  id="1109330561187893249" >}}
 

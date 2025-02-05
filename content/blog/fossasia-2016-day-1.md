@@ -20,7 +20,7 @@ by Cat Allman's talk about the Science and Open Source Program at
 Google. I also attended the talk on _The Other Nefertiti_ by Jan Nikolai
 Nelles.
 
-{{< tweet 710682034910404609 >}}
+{{< x id="710682034910404609" user="yudocaa" >}}
 
 After lunch, I returned back as I did not sleep for 2 nights and was having a
 bad headache. I badly needed some sleep and get ready for next day talks.

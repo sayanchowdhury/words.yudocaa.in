@@ -1,6 +1,7 @@
 baseURL: "https://words.yudocaa.in"
 title: ""
-paginate: 5
+pagination:
+  pagerSize: 5
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -21,6 +22,7 @@ permalinks:
 languages:
     en:
         languageName: "English"
+        languageCode: "en-US"
         weight: 1
         menu:
             main:

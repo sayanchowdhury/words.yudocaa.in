@@ -6,4 +6,4 @@
 	url = git@github.com:sayanchowdhury/hugo-theme-slim.git
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
-	url = https://github.com/adityatelange/hugo-PaperMod.git
+	url = git@github.com:sayanchowdhury/hugo-PaperMod.git
