@@ -2,7 +2,7 @@
 author: Sayan Chowdhury
 categories:
 - Blog Posts
-date: '2025-01-08'
+date: '2025-02-05'
 description: >-
   KubeCon+CloudNativeCon India 2024 event report
 images:
