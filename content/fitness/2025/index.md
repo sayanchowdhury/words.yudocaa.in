@@ -30,7 +30,7 @@ Ok, lets start.
 ```
 
 
-### February 05, 2025
+### February 04, 2025
 
 ```
 - cw: 86.65 kgs (04/02/2025)
@@ -47,4 +47,3 @@ Hello 2025!
 
 I could probably just repeat what I said in 2024, but it's just feels so sad.
 Not a good year at all. Let's gather strength to get better this year.
-

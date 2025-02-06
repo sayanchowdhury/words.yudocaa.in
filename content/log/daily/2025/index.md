@@ -20,13 +20,17 @@ Ok, lets start.
 ### February 06, 2025
 
 ```
-- cw: 83.9 kgs
+- cw: 85.80 kgs
 ```
 
+Another day, accompanied with good songs. I went to workout in the morning, but
+could not train with Jackson as because I had to stop at 10. I tried something new
+i.e. push heavy but lesser number of reps. This was in order to finish variations
+within the stipulated time.
 
-```
-- Water: 8
-```
+Evening was also good. A total of 6.14 kms walk with a pace of 9.26/km. I drank about
+9 glasses of water.
+
 
 ### February 05, 2025
 
