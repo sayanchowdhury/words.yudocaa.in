@@ -19,10 +19,19 @@ Ok, lets start.
 
 ```
 - hw: 85.8 kgs (01/03/2026)
-- sw: 85.9 kgs (01/03/2026)
+- sw: 85.8 kgs (01/03/2026)
 ```
 
-### March 01, 2026
+### March 03, 2026
+```
+- cw: 85.5 kgs
+```
+
+Completed a workout yesterday, focussing on upper body hypertrophy, ending with
+a light 10 mins rowing indoor. Later came back home, to walk around 5kms in a okay
+pace.
+
+### March 02, 2026
 
 ```
 - cw: 85.8 kgs
