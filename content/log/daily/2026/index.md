@@ -22,6 +22,14 @@ Ok, lets start.
 - sw: 85.8 kgs (01/03/2026)
 ```
 
+### March 04, 2026
+```
+- cw: 85.3 kgs
+```
+
+A light training day with mobility. Ended the day with a light walking in the campus
+
+
 ### March 03, 2026
 ```
 - cw: 85.5 kgs
