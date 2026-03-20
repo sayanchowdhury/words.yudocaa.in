@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lower B Warm-up — Posterior Focus</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fff; color: #3d3d3a; padding: 20px 16px; max-width: 820px; margin: 0 auto; }
+
+  .page-title { font-size: 20px; font-weight: 500; color: #2C2C2A; margin-bottom: 4px; }
+  .page-sub { font-size: 12px; color: #6B6B68; margin-bottom: 20px; }
+
+  .phase-card { border: 0.5px solid #D3D1C7; border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+  .phase-hdr { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 0.5px solid #D3D1C7; }
+  .phase-num { width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; flex-shrink: 0; }
+  .phase-title { font-size: 13px; font-weight: 500; color: #2C2C2A; flex: 1; }
+  .phase-time { font-size: 11px; color: #6B6B68; }
+  .phase-badge { font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 500; flex-shrink: 0; }
+
+  .ex-tbl { width: 100%; border-collapse: collapse; }
+  .ex-tbl td { padding: 7px 14px; font-size: 12px; vertical-align: top; }
+  .ex-tbl tr + tr td { border-top: 0.5px solid #E8E7E3; }
+  .ex-name { font-weight: 500; color: #2C2C2A; width: 30%; }
+  .ex-reps { font-weight: 500; width: 18%; }
+  .ex-why { color: #6B6B68; width: 52%; font-size: 11px; }
+  .tbl-hdr td { background: #F8F7F4; font-size: 10px; font-weight: 500; color: #6B6B68; text-transform: uppercase; letter-spacing: 0.04em; padding: 4px 14px; }
+
+  .ramp-card { border: 0.5px solid #D3D1C7; border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+  .ramp-hdr { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 0.5px solid #D3D1C7; }
+
+  .ramp-tbl { width: 100%; border-collapse: collapse; }
+  .ramp-tbl td { padding: 7px 14px; font-size: 12px; vertical-align: middle; }
+  .ramp-tbl tr + tr td { border-top: 0.5px solid #E8E7E3; }
+  .ramp-ex { font-weight: 500; color: #2C2C2A; width: 28%; }
+  .ramp-set { width: 10%; }
+  .ramp-load { font-weight: 500; width: 20%; }
+  .ramp-reps { width: 12%; color: #6B6B68; }
+  .ramp-note { color: #6B6B68; font-size: 11px; }
+
+  .pill { font-size: 10px; padding: 1px 7px; border-radius: 10px; font-weight: 500; white-space: nowrap; display: inline-block; }
+  .pill-wu  { background: #F1EFE8; color: #444441; }
+  .pill-ramp{ background: #FAEEDA; color: #633806; }
+  .pill-key { background: #E1F5EE; color: #085041; }
+  .pill-hip { background: #FAEEDA; color: #633806; }
+  .pill-ham { background: #EEEDFE; color: #3C3489; }
+  .pill-lb  { background: #FAECE7; color: #712B13; }
+
+  .timeline { display: flex; gap: 0; margin-bottom: 18px; border: 0.5px solid #D3D1C7; border-radius: 12px; overflow: hidden; }
+  .tl-block { flex: 1; padding: 8px 6px; text-align: center; border-right: 0.5px solid #D3D1C7; }
+  .tl-block:last-child { border-right: none; }
+  .tl-num { font-size: 10px; font-weight: 500; color: #6B6B68; margin-bottom: 3px; }
+  .tl-name { font-size: 10px; font-weight: 500; line-height: 1.4; }
+  .tl-time { font-size: 9px; color: #888780; margin-top: 2px; }
+
+  .total-bar { background: #F1EFE8; border-radius: 8px; padding: 9px 14px; display: flex; justify-content: space-between; align-items: center; margin-top: 4px; margin-bottom: 14px; }
+  .note-box { border-radius: 0 8px 8px 0; padding: 10px 14px; font-size: 11px; color: #6B6B68; line-height: 1.7; border-left: 3px solid #378ADD; background: #F8F7F4; margin-bottom: 10px; }
+  .warn-box { border-radius: 0 8px 8px 0; padding: 10px 14px; font-size: 11px; color: #712B13; line-height: 1.7; border-left: 3px solid #993C1D; background: #FAECE7; margin-bottom: 10px; }
+
+  @media(max-width:520px){
+    .ex-why { display: none; }
+    .ex-name { width: 48%; }
+    .ex-reps { width: 28%; }
+    .timeline { flex-wrap: wrap; }
+    .tl-block { min-width: 33%; border-bottom: 0.5px solid #D3D1C7; }
+  }
+</style>
+</head>
+<body>
+
+<p class="page-title">Lower B warm-up — posterior focus</p>
+<p class="page-sub">Friday evening · prepares hamstrings, glutes, lower back + hip hinge pattern before RDL and hip thrusts</p>
+
+<!-- Timeline overview -->
+<div class="timeline">
+  <div class="tl-block" style="background:#E6F1FB22">
+    <div class="tl-num">Phase 1</div>
+    <div class="tl-name" style="color:#0C447C">Raise temp</div>
+    <div class="tl-time">5 min</div>
+  </div>
+  <div class="tl-block" style="background:#FAEEDA22">
+    <div class="tl-num">Phase 2</div>
+    <div class="tl-name" style="color:#633806">Hip hinge drill</div>
+    <div class="tl-time">3 min</div>
+  </div>
+  <div class="tl-block" style="background:#EEEDFE22">
+    <div class="tl-num">Phase 3</div>
+    <div class="tl-name" style="color:#3C3489">Hamstring prep</div>
+    <div class="tl-time">3 min</div>
+  </div>
+  <div class="tl-block" style="background:#E1F5EE22">
+    <div class="tl-num">Phase 4</div>
+    <div class="tl-name" style="color:#085041">Glute activation</div>
+    <div class="tl-time">3 min</div>
+  </div>
+  <div class="tl-block" style="background:#FAECE722">
+    <div class="tl-num">Phase 5</div>
+    <div class="tl-name" style="color:#712B13">Lumbar prep</div>
+    <div class="tl-time">2 min</div>
+  </div>
+  <div class="tl-block" style="background:#FAEEDA22">
+    <div class="tl-num">Phase 6</div>
+    <div class="tl-name" style="color:#633806">RDL ramp-up</div>
+    <div class="tl-time">5 min</div>
+  </div>
+</div>
+
+<!-- Phase 1 -->
+<div class="phase-card">
+  <div class="phase-hdr" style="background:#E6F1FB22">
+    <div class="phase-num" style="background:#E6F1FB;color:#0C447C">1</div>
+    <span class="phase-title">Raise temperature</span>
+    <span class="phase-time">5 min</span>
+    <span class="phase-badge" style="background:#E6F1FB;color:#0C447C">always first</span>
+  </div>
+  <table class="ex-tbl">
+    <tr class="tbl-hdr"><td>Exercise</td><td>Duration</td><td>Why</td></tr>
+    <tr>
+      <td class="ex-name">Bike or brisk walk</td>
+      <td class="ex-reps" style="color:#0C447C">5 min</td>
+      <td class="ex-why">Raises core temp, loosens posterior chain — cold hamstrings under load is the fastest route to a strain</td>
+    </tr>
+  </table>
+</div>
+
+<!-- Phase 2 -->
+<div class="phase-card">
+  <div class="phase-hdr" style="background:#FAEEDA22">
+    <div class="phase-num" style="background:#FAEEDA;color:#633806">2</div>
+    <span class="phase-title">Hip hinge pattern drill</span>
+    <span class="phase-time">3 min</span>
+    <span class="phase-badge" style="background:#FAEEDA;color:#633806">RDL prep</span>
+  </div>
+  <table class="ex-tbl">
+    <tr class="tbl-hdr"><td>Exercise</td><td>Reps / sets</td><td>Why</td></tr>
+    <tr>
+      <td class="ex-name">Bodyweight good mornings</td>
+      <td class="ex-reps" style="color:#633806">2 x 12</td>
+      <td class="ex-why">Teaches the hip hinge under zero load — exactly the pattern RDL uses. Hands behind head, soft knees, push hips back</td>
+    </tr>
+    <tr>
+      <td class="ex-name">Hip hinge with wall touch</td>
+      <td class="ex-reps" style="color:#633806">10 reps</td>
+      <td class="ex-why">Stand 30cm from wall, hinge back until glutes touch — trains the exact movement arc of RDL without bar</td>
+    </tr>
+  </table>
+</div>
+
+<!-- Phase 3 -->
+<div class="phase-card">
+  <div class="phase-hdr" style="background:#EEEDFE22">
+    <div class="phase-num" style="background:#EEEDFE;color:#3C3489">3</div>
+    <span class="phase-title">Hamstring prep</span>
+    <span class="phase-time">3 min</span>
+    <span class="phase-badge" style="background:#EEEDFE;color:#3C3489">priority region</span>
+  </div>
+  <table class="ex-tbl">
+    <tr class="tbl-hdr"><td>Exercise</td><td>Reps / sets</td><td>Why</td></tr>
+    <tr>
+      <td class="ex-name">Leg swings — forward/back</td>
+      <td class="ex-reps" style="color:#3C3489">12 each leg</td>
+      <td class="ex-why">Dynamic hamstring lengthening — mimics the eccentric load of RDL without any static hold. Do not force range</td>
+    </tr>
+    <tr>
+      <td class="ex-name">Standing hamstring reach</td>
+      <td class="ex-reps" style="color:#3C3489">8 each leg</td>
+      <td class="ex-why">Single leg, hinge forward and reach toes — loads hamstring through full range dynamically</td>
+    </tr>
+    <tr>
+      <td class="ex-name">Lying hamstring curl (no weight)</td>
+      <td class="ex-reps" style="color:#3C3489">2 x 10</td>
+      <td class="ex-why">Wakes up the biceps femoris before loaded curls — zero weight, just feel the contraction at the top</td>
+    </tr>
+  </table>
+</div>
+
+<!-- Phase 4 -->
+<div class="phase-card">
+  <div class="phase-hdr" style="background:#E1F5EE22">
+    <div class="phase-num" style="background:#E1F5EE;color:#085041">4</div>
+    <span class="phase-title">Glute activation</span>
+    <span class="phase-time">3 min</span>
+    <span class="phase-badge" style="background:#E1F5EE;color:#085041">hip thrust prep</span>
+  </div>
+  <table class="ex-tbl">
+    <tr class="tbl-hdr"><td>Exercise</td><td>Reps / sets</td><td>Why</td></tr>
+    <tr>
+      <td class="ex-name">Glute bridges (bodyweight)</td>
+      <td class="ex-reps" style="color:#085041">2 x 15</td>
+      <td class="ex-why">After a day of sitting, glutes are neurologically suppressed — this wakes them up before hip thrusts. Pause 2 sec at top</td>
+    </tr>
+    <tr>
+      <td class="ex-name">Clamshells (lying)</td>
+      <td class="ex-reps" style="color:#085041">12 each side</td>
+      <td class="ex-why">Fires glute medius — often underactive. Takes 90 seconds and makes a real difference to hip stability under load</td>
+    </tr>
+  </table>
+</div>
+
+<!-- Phase 5 -->
+<div class="phase-card">
+  <div class="phase-hdr" style="background:#FAECE722">
+    <div class="phase-num" style="background:#FAECE7;color:#712B13">5</div>
+    <span class="phase-title">Lumbar prep</span>
+    <span class="phase-time">2 min</span>
+    <span class="phase-badge" style="background:#FAECE7;color:#712B13">RDL protection</span>
+  </div>
+  <table class="ex-tbl">
+    <tr class="tbl-hdr"><td>Exercise</td><td>Reps / sets</td><td>Why</td></tr>
+    <tr>
+      <td class="ex-name">Cat-cow</td>
+      <td class="ex-reps" style="color:#712B13">10 slow reps</td>
+      <td class="ex-why">Warms the lumbar spine before it's loaded under an RDL. Non-negotiable on Lower B — takes 60 seconds</td>
+    </tr>
+    <tr>
+      <td class="ex-name">Bird-dog</td>
+      <td class="ex-reps" style="color:#712B13">2 x 8 each</td>
+      <td class="ex-why">Activates deep lumbar stabilisers (multifidus) — these are the muscles that protect your lower back during heavy RDL</td>
+    </tr>
+  </table>
+</div>
+
+<!-- Phase 6 -->
+<div class="phase-card">
+  <div class="phase-hdr" style="background:#FAEEDA22">
+    <div class="phase-num" style="background:#FAEEDA;color:#633806">6</div>
+    <span class="phase-title">Barbell ramp-up sets — RDL</span>
+    <span class="phase-time">5 min</span>
+    <span class="phase-badge" style="background:#FAEEDA;color:#633806">nervous system prime</span>
+  </div>
+  <table class="ramp-tbl">
+    <tr class="tbl-hdr"><td>Exercise</td><td>Set</td><td>Load</td><td>Reps</td><td>Notes</td></tr>
+    <tr>
+      <td class="ramp-ex">Romanian deadlift</td>
+      <td class="ramp-set"><span class="pill pill-wu">1</span></td>
+      <td class="ramp-load">Empty bar</td>
+      <td class="ramp-reps">10 reps</td>
+      <td class="ramp-note">Feel the hinge — bar drags down thighs, soft knees</td>
+    </tr>
+    <tr>
+      <td class="ramp-ex"></td>
+      <td class="ramp-set"><span class="pill pill-wu">2</span></td>
+      <td class="ramp-load">40–50% work wt</td>
+      <td class="ramp-reps">6 reps</td>
+      <td class="ramp-note">Slow — feel hamstring stretch at bottom</td>
+    </tr>
+    <tr>
+      <td class="ramp-ex"></td>
+      <td class="ramp-set"><span class="pill pill-ramp">3</span></td>
+      <td class="ramp-load">70% work wt</td>
+      <td class="ramp-reps">4 reps</td>
+      <td class="ramp-note">Bar must stay in contact with legs throughout</td>
+    </tr>
+    <tr>
+      <td class="ramp-ex"></td>
+      <td class="ramp-set"><span class="pill pill-key">4</span></td>
+      <td class="ramp-load">Working weight</td>
+      <td class="ramp-reps">Working sets</td>
+      <td class="ramp-note">Now go into your 4 x 6–8 working sets</td>
+    </tr>
+  </table>
+</div>
+
+<div class="total-bar">
+  <span style="font-size:12px;color:#6B6B68">Total warm-up</span>
+  <span style="font-size:15px;font-weight:500;color:#2C2C2A">~21 min</span>
+</div>
+
+<div class="warn-box">
+  <strong>Lower B specific caution:</strong> Never skip the hip hinge drill (Phase 2) before RDL. Going straight from the bike to a loaded RDL is the single most common cause of lower back tweaks in this type of session. The bodyweight good mornings and wall touch drill take 3 minutes and make a significant difference to how the bar path feels on your first working set.
+</div>
+
+<div class="note-box">
+  <strong>Session order after warm-up:</strong> RDL first (4×6–8) while freshest → hip thrusts (4×8–10) → hamstring curls (3×12, 3 sec eccentric) → sumo squats (3×10) → single leg calf raises (3×15). Do not swap RDL and hip thrusts — RDL demands the most from your lower back stabilisers and should always be done when your nervous system is sharpest.
+</div>
+
+<!-- Morning reminder -->
+<div class="phase-card" style="margin-top:4px">
+  <div class="phase-hdr" style="background:#FAEEDA22">
+    <div class="phase-num" style="background:#FAEEDA;color:#633806">AM</div>
+    <span class="phase-title">Morning mobility — do this before work</span>
+    <span class="phase-time">~38 min</span>
+    <span class="phase-badge" style="background:#FAEEDA;color:#633806">Friday morning</span>
+  </div>
+  <table class="ex-tbl">
+    <tr class="tbl-hdr"><td>Region</td><td>Duration</td><td>Why it matters for Lower B</td></tr>
+    <tr>
+      <td class="ex-name">Hip mobility</td>
+      <td class="ex-reps" style="color:#633806">10 min</td>
+      <td class="ex-why">Daily anchor — 90/90, Cossack squats, hip CARs open up the hip joint hours before loading</td>
+    </tr>
+    <tr>
+      <td class="ex-name">Hip flexor mobility</td>
+      <td class="ex-reps" style="color:#633806">10 min</td>
+      <td class="ex-why">Daily anchor — tight hip flexors limit glute activation during hip thrusts. Couch stretch is key</td>
+    </tr>
+    <tr>
+      <td class="ex-name">Lumbar spine</td>
+      <td class="ex-reps" style="color:#712B13">3 min</td>
+      <td class="ex-why">Knee-to-chest, supine twist, child's pose — decompress before the RDL compresses it later</td>
+    </tr>
+    <tr>
+      <td class="ex-name">Ankles</td>
+      <td class="ex-reps" style="color:#085041">3 min</td>
+      <td class="ex-why">Ankle dorsiflexion directly affects how your heels stay down during sumo squats</td>
+    </tr>
+    <tr>
+      <td class="ex-name">Knees</td>
+      <td class="ex-reps" style="color:#3C3489">2 min</td>
+      <td class="ex-why">Knee circles + terminal extensions prep the joint before sumo squats and leg curl</td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete Fitness Plan</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fff; color: #3d3d3a; padding: 24px 20px; max-width: 920px; margin: 0 auto; }
+  h1 { font-size: 22px; font-weight: 500; color: #2C2C2A; margin-bottom: 4px; }
+  .subtitle { font-size: 13px; color: #6B6B68; margin-bottom: 20px; }
+
+  .tab-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+  .tab { padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 500; cursor: pointer; border: 0.5px solid #D3D1C7; background: transparent; color: #6B6B68; transition: all .15s; }
+  .tab.active { background: #E6F1FB; color: #0C447C; border-color: transparent; }
+  .panel { display: none; }
+  .panel.visible { display: block; }
+
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px,1fr)); gap: 8px; margin-bottom: 16px; }
+  .stat { background: #F1EFE8; border-radius: 8px; padding: 10px 12px; }
+  .stat-lbl { font-size: 11px; color: #6B6B68; margin-bottom: 3px; }
+  .stat-val { font-size: 20px; font-weight: 500; color: #2C2C2A; }
+  .stat-unit { font-size: 12px; color: #6B6B68; }
+
+  .week-grid { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 5px; margin-bottom: 14px; }
+  .day-card { border: 0.5px solid #D3D1C7; border-radius: 8px; overflow: hidden; }
+  .day-head { font-size: 10px; font-weight: 500; padding: 4px 6px; background: #F1EFE8; color: #6B6B68; border-bottom: 0.5px solid #D3D1C7; }
+  .day-body { padding: 5px 6px; min-height: 90px; }
+  .day-pill { display: inline-block; font-size: 9px; font-weight: 500; padding: 1px 5px; border-radius: 8px; margin-bottom: 3px; }
+  .day-title { font-size: 11px; font-weight: 500; line-height: 1.4; }
+  .day-sub { font-size: 9px; color: #6B6B68; margin-top: 2px; line-height: 1.4; }
+
+  .block { border: 0.5px solid #D3D1C7; border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+  .block-hdr { display: flex; align-items: center; gap: 8px; padding: 9px 12px; border-bottom: 0.5px solid #D3D1C7; }
+  .block-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .block-title { font-size: 13px; font-weight: 500; color: #2C2C2A; flex: 1; }
+  .block-meta { font-size: 11px; color: #6B6B68; }
+  .block-badge { font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 500; }
+  .ex-tbl { width: 100%; border-collapse: collapse; }
+  .ex-tbl td { padding: 6px 12px; font-size: 12px; vertical-align: top; }
+  .ex-tbl tr + tr td { border-top: 0.5px solid #E8E7E3; }
+  .ex-nm { font-weight: 500; color: #2C2C2A; width: 40%; }
+  .ex-det { color: #6B6B68; width: 42%; }
+  .ex-vol { color: #6B6B68; width: 18%; text-align: right; white-space: nowrap; font-size: 11px; }
+
+  .meal-card { border: 0.5px solid #D3D1C7; border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+  .meal-hdr { padding: 9px 14px; border-bottom: 0.5px solid #D3D1C7; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .meal-time { font-size: 13px; font-weight: 500; color: #2C2C2A; flex: 1; }
+  .meal-cals { font-size: 11px; color: #6B6B68; }
+  .meal-macros { font-size: 10px; padding: 2px 8px; border-radius: 20px; font-weight: 500; }
+  .meal-body { padding: 8px 14px; }
+  .food-row { display: flex; gap: 6px; align-items: baseline; padding: 4px 0; border-top: 0.5px solid #E8E7E3; }
+  .food-row:first-child { border-top: none; }
+  .food-name { font-size: 12px; font-weight: 500; color: #2C2C2A; flex: 1; }
+  .food-amt { font-size: 11px; color: #6B6B68; white-space: nowrap; }
+  .food-p { font-size: 10px; padding: 1px 6px; border-radius: 10px; background: #E1F5EE; color: #085041; white-space: nowrap; }
+
+  .macro-bar-wrap { margin-bottom: 14px; }
+  .macro-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .macro-lbl { font-size: 12px; font-weight: 500; color: #2C2C2A; width: 80px; }
+  .macro-bar-bg { flex: 1; height: 10px; background: #F1EFE8; border-radius: 5px; overflow: hidden; }
+  .macro-bar-fill { height: 100%; border-radius: 5px; }
+  .macro-val { font-size: 12px; color: #6B6B68; width: 80px; text-align: right; }
+
+  .note-box { background: #F1EFE8; border-radius: 0 8px 8px 0; padding: 10px 14px; font-size: 12px; color: #6B6B68; line-height: 1.6; border-left: 3px solid #378ADD; margin-top: 10px; }
+  .section-lbl { font-size: 10px; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; color: #6B6B68; margin-bottom: 8px; margin-top: 14px; }
+  .section-lbl:first-child { margin-top: 0; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media(max-width:500px) { .two-col { grid-template-columns: 1fr; } .week-grid { grid-template-columns: repeat(4,minmax(0,1fr)); } }
+</style>
+</head>
+<body>
+
+<h1>Complete Fitness Plan</h1>
+<p class="subtitle">85 kg · 180 cm · Desk job · Intermediate · Build muscle + get lean · Bengaluru</p>
+
+<div class="tab-row">
+  <button class="tab active" onclick="showTab('week')">Weekly plan</button>
+  <button class="tab" onclick="showTab('training')">Training detail</button>
+  <button class="tab" onclick="showTab('diet')">Diet + nutrition</button>
+  <button class="tab" onclick="showTab('numbers')">Your numbers</button>
+</div>
+
+<!-- WEEK VIEW -->
+<div class="panel visible" id="panel-week">
+  <div class="section-lbl">Your week at a glance</div>
+  <div class="week-grid">
+    <div class="day-card">
+      <div class="day-head">Mon</div>
+      <div class="day-body" style="background:#E6F1FB18">
+        <div class="day-pill" style="background:#E6F1FB;color:#0C447C">Strength</div>
+        <div class="day-title" style="color:#0C447C">Upper A</div>
+        <div class="day-sub">Push focus · evening</div>
+        <div style="margin-top:4px"><div class="day-pill" style="background:#FAEEDA;color:#633806">Mobility</div></div>
+        <div class="day-sub">Shoulders · wrists · thoracic · morning</div>
+        <div style="margin-top:4px"><div class="day-pill" style="background:#E1F5EE;color:#085041">Walk</div></div>
+        <div class="day-sub">30 min</div>
+      </div>
+    </div>
+    <div class="day-card">
+      <div class="day-head">Tue</div>
+      <div class="day-body" style="background:#FAEEDA18">
+        <div class="day-pill" style="background:#E6F1FB;color:#0C447C">Strength</div>
+        <div class="day-title" style="color:#0C447C">Lower A</div>
+        <div class="day-sub">Quad focus · evening</div>
+        <div style="margin-top:4px"><div class="day-pill" style="background:#FAEEDA;color:#633806">Mobility</div></div>
+        <div class="day-sub">Hips · knees · ankles · lumbar · morning</div>
+        <div style="margin-top:4px"><div class="day-pill" style="background:#E1F5EE;color:#085041">Walk</div></div>
+        <div class="day-sub">30 min</div>
+      </div>
+    </div>
+    <div class="day-card">
+      <div class="day-head">Wed</div>
+      <div class="day-body" style="background:#FCEBEB18">
+        <div class="day-pill" style="background:#FAEEDA;color:#633806">Mobility</div>
+        <div class="day-title" style="color:#633806">Full upper</div>
+        <div class="day-sub">Neck · shoulders · thoracic · wrists</div>
+        <div style="margin-top:4px"><div class="day-pill" style="background:#FCEBEB;color:#791F1F">Cardio</div></div>
+        <div class="day-sub">Skipping or stairs · 20–30 min</div>
+        <div style="margin-top:4px"><div class="day-pill" style="background:#E1F5EE;color:#085041">Walk</div></div>
+        <div class="day-sub">30 min</div>
+      </div>
+    </div>
+    <div class="day-card">
+      <div class="day-head">Thu</div>
+      <div class="day-body" style="background:#E6F1FB18">
+        <div class="day-pill" style="background:#E6F1FB;color:#0C447C">Strength</div>
+        <div class="day-title" style="color:#0C447C">Upper B</div>
+        <div class="day-sub">Pull focus · evening</div>
+        <div style="margin-top:4px"><div class="day-pill" style="background:#FAEEDA;color:#633806">Mobility</div></div>
+        <div class="day-sub">Thoracic · neck · lumbar · morning</div>
+        <div style="margin-top:4px"><div class="day-pill" style="background:#E1F5EE;color:#085041">Walk</div></div>
+        <div class="day-sub">30 min</div>
+      </div>
+    </div>
+    <div class="day-card">
+      <div class="day-head">Fri</div>
+      <div class="day-body" style="background:#FAEEDA18">
+        <div class="day-pill" style="background:#E6F1FB;color:#0C447C">Strength</div>
+        <div class="day-title" style="color:#0C447C">Lower B</div>
+        <div class="day-sub">Posterior focus · evening</div>
+        <div style="margin-top:4px"><div class="day-pill" style="background:#FAEEDA;color:#633806">Mobility</div></div>
+        <div class="day-sub">Hips · hip flexors · ankles · morning</div>
+        <div style="margin-top:4px"><div class="day-pill" style="background:#E1F5EE;color:#085041">Walk</div></div>
+        <div class="day-sub">30 min</div>
+      </div>
+    </div>
+    <div class="day-card">
+      <div class="day-head">Sat</div>
+      <div class="day-body" style="background:#FCEBEB18">
+        <div class="day-pill" style="background:#FCEBEB;color:#791F1F">Cardio</div>
+        <div class="day-title" style="color:#791F1F">Running</div>
+        <div class="day-sub">20–30 min easy pace</div>
+        <div style="margin-top:4px"><div class="day-pill" style="background:#FAEEDA;color:#633806">Mobility</div></div>
+        <div class="day-sub">Full body · long session · morning</div>
+        <div style="margin-top:4px"><div class="day-pill" style="background:#E1F5EE;color:#085041">Walk</div></div>
+        <div class="day-sub">30 min</div>
+      </div>
+    </div>
+    <div class="day-card">
+      <div class="day-head">Sun</div>
+      <div class="day-body" style="background:#F1EFE818">
+        <div class="day-pill" style="background:#F1EFE8;color:#444441">Rest</div>
+        <div class="day-title" style="color:#444441">Full rest</div>
+        <div class="day-sub">Light stretching only</div>
+        <div style="margin-top:4px"><div class="day-pill" style="background:#E1F5EE;color:#085041">Walk</div></div>
+        <div class="day-sub">30 min easy</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-lbl">Daily time breakdown</div>
+  <div class="two-col">
+    <div class="block">
+      <div class="block-hdr" style="background:#FAEEDA44">
+        <div class="block-dot" style="background:#BA7517"></div>
+        <span class="block-title">Morning (1 hr)</span>
+        <span class="block-badge" style="background:#FAEEDA;color:#633806">6–8 AM</span>
+      </div>
+      <table class="ex-tbl"><tbody>
+        <tr><td class="ex-nm">Mobility session</td><td class="ex-det">Region paired to that day's strength</td><td class="ex-vol">30–40 min</td></tr>
+        <tr><td class="ex-nm">Walk</td><td class="ex-det">Brisk, fasted if possible</td><td class="ex-vol">20–30 min</td></tr>
+      </tbody></table>
+    </div>
+    <div class="block">
+      <div class="block-hdr" style="background:#E6F1FB44">
+        <div class="block-dot" style="background:#185FA5"></div>
+        <span class="block-title">Evening (1 hr)</span>
+        <span class="block-badge" style="background:#E6F1FB;color:#0C447C">5–7 PM</span>
+      </div>
+      <table class="ex-tbl"><tbody>
+        <tr><td class="ex-nm">Warm-up + activation</td><td class="ex-det">Dynamic only, no static holds</td><td class="ex-vol">10 min</td></tr>
+        <tr><td class="ex-nm">Strength workout</td><td class="ex-det">4–5 exercises, working sets</td><td class="ex-vol">45–50 min</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+  <div class="note-box">Cardio days (Wed + Sat) replace the evening strength session. The walk every day keeps your NEAT high — critical for body recomposition at a desk job.</div>
+</div>
+
+<!-- TRAINING DETAIL -->
+<div class="panel" id="panel-training">
+  <div class="section-lbl">Strength sessions</div>
+
+  <div class="block">
+    <div class="block-hdr" style="background:#E6F1FB44">
+      <div class="block-dot" style="background:#185FA5"></div>
+      <span class="block-title">Upper A — push focus (Mon)</span>
+      <span class="block-meta">45–50 min</span>
+      <span class="block-badge" style="background:#E6F1FB;color:#0C447C">chest · shoulders · triceps</span>
+    </div>
+    <table class="ex-tbl"><tbody>
+      <tr><td class="ex-nm">Barbell bench press</td><td class="ex-det">Primary compound</td><td class="ex-vol">4×6–8</td></tr>
+      <tr><td class="ex-nm">Overhead press</td><td class="ex-det">Seated or standing</td><td class="ex-vol">3×8–10</td></tr>
+      <tr><td class="ex-nm">Incline dumbbell press</td><td class="ex-det">Upper chest emphasis</td><td class="ex-vol">3×10–12</td></tr>
+      <tr><td class="ex-nm">Lateral raises</td><td class="ex-det">Light, controlled, no swinging</td><td class="ex-vol">3×15</td></tr>
+      <tr><td class="ex-nm">Tricep pushdowns</td><td class="ex-det">Cable or band</td><td class="ex-vol">3×12</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="block">
+    <div class="block-hdr" style="background:#FAEEDA44">
+      <div class="block-dot" style="background:#BA7517"></div>
+      <span class="block-title">Lower A — quad focus (Tue)</span>
+      <span class="block-meta">45–50 min</span>
+      <span class="block-badge" style="background:#FAEEDA;color:#633806">quads · glutes · adductors</span>
+    </div>
+    <table class="ex-tbl"><tbody>
+      <tr><td class="ex-nm">Barbell squats</td><td class="ex-det">Primary compound</td><td class="ex-vol">4×5–6</td></tr>
+      <tr><td class="ex-nm">Hip thrusts</td><td class="ex-det">Barbell or smith machine</td><td class="ex-vol">3×10</td></tr>
+      <tr><td class="ex-nm">Sumo squats</td><td class="ex-det">Adductor + glute emphasis</td><td class="ex-vol">3×10–12</td></tr>
+      <tr><td class="ex-nm">Leg extensions</td><td class="ex-det">Quad finisher, slow eccentric</td><td class="ex-vol">3×12</td></tr>
+      <tr><td class="ex-nm">Single leg calf raises</td><td class="ex-det">Full range, pause at bottom</td><td class="ex-vol">3×15</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="block">
+    <div class="block-hdr" style="background:#E1F5EE44">
+      <div class="block-dot" style="background:#0F6E56"></div>
+      <span class="block-title">Upper B — pull focus (Thu)</span>
+      <span class="block-meta">45–50 min</span>
+      <span class="block-badge" style="background:#E1F5EE;color:#085041">back · biceps · rear delts</span>
+    </div>
+    <table class="ex-tbl"><tbody>
+      <tr><td class="ex-nm">Pull-ups or lat pulldown</td><td class="ex-det">Full range, controlled descent</td><td class="ex-vol">4×6–8</td></tr>
+      <tr><td class="ex-nm">Barbell rows</td><td class="ex-det">Hinge, chest to bar</td><td class="ex-vol">4×8</td></tr>
+      <tr><td class="ex-nm">Cable rows</td><td class="ex-det">Mid back emphasis</td><td class="ex-vol">3×10–12</td></tr>
+      <tr><td class="ex-nm">Face pulls</td><td class="ex-det">Rear delt + rotator cuff health</td><td class="ex-vol">3×15</td></tr>
+      <tr><td class="ex-nm">Bicep curls</td><td class="ex-det">Alternating dumbbell</td><td class="ex-vol">3×12</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="block">
+    <div class="block-hdr" style="background:#FAEEDA44">
+      <div class="block-dot" style="background:#BA7517"></div>
+      <span class="block-title">Lower B — posterior focus (Fri)</span>
+      <span class="block-meta">45–50 min</span>
+      <span class="block-badge" style="background:#FAEEDA;color:#633806">hamstrings · glutes · lower back</span>
+    </div>
+    <table class="ex-tbl"><tbody>
+      <tr><td class="ex-nm">Romanian deadlift</td><td class="ex-det">Hip hinge, bar close to legs</td><td class="ex-vol">4×6–8</td></tr>
+      <tr><td class="ex-nm">Hip thrusts</td><td class="ex-det">Heavier than Lower A</td><td class="ex-vol">4×8–10</td></tr>
+      <tr><td class="ex-nm">Hamstring curls</td><td class="ex-det">Slow eccentric — 3 sec down</td><td class="ex-vol">3×12</td></tr>
+      <tr><td class="ex-nm">Sumo squats</td><td class="ex-det">Adductor + glute tie-in</td><td class="ex-vol">3×10</td></tr>
+      <tr><td class="ex-nm">Single leg calf raises</td><td class="ex-det">Weighted if possible</td><td class="ex-vol">3×15</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="section-lbl">Cardio sessions</div>
+  <div class="two-col">
+    <div class="block">
+      <div class="block-hdr" style="background:#FCEBEB44">
+        <div class="block-dot" style="background:#A32D2D"></div>
+        <span class="block-title">Wed — skipping or stairs</span>
+        <span class="block-badge" style="background:#FCEBEB;color:#791F1F">HIIT</span>
+      </div>
+      <table class="ex-tbl"><tbody>
+        <tr><td class="ex-nm">Warm-up skip</td><td class="ex-det">Easy pace</td><td class="ex-vol">3 min</td></tr>
+        <tr><td class="ex-nm">40 sec on / 20 sec off</td><td class="ex-det">Hard effort — 8 rounds</td><td class="ex-vol">8 min</td></tr>
+        <tr><td class="ex-nm">Active recovery</td><td class="ex-det">Walk or light skip</td><td class="ex-vol">3 min</td></tr>
+        <tr><td class="ex-nm">Repeat circuit</td><td class="ex-det">Second block if energy allows</td><td class="ex-vol">8 min</td></tr>
+      </tbody></table>
+    </div>
+    <div class="block">
+      <div class="block-hdr" style="background:#FCEBEB44">
+        <div class="block-dot" style="background:#A32D2D"></div>
+        <span class="block-title">Sat — easy run</span>
+        <span class="block-badge" style="background:#FCEBEB;color:#791F1F">Zone 2</span>
+      </div>
+      <table class="ex-tbl"><tbody>
+        <tr><td class="ex-nm">Easy jog</td><td class="ex-det">Conversational pace</td><td class="ex-vol">20–30 min</td></tr>
+        <tr><td class="ex-nm">Target heart rate</td><td class="ex-det">130–145 BPM fat burning zone</td><td class="ex-vol">throughout</td></tr>
+        <tr><td class="ex-nm">Cool down walk</td><td class="ex-det">Last 5 min drop to walk</td><td class="ex-vol">5 min</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+</div>
+
+<!-- DIET -->
+<div class="panel" id="panel-diet">
+  <div class="section-lbl">Daily targets — training days</div>
+  <div class="stat-grid">
+    <div class="stat"><div class="stat-lbl">Calories</div><div class="stat-val">2,400<span class="stat-unit"> kcal</span></div></div>
+    <div class="stat"><div class="stat-lbl">Protein</div><div class="stat-val">170<span class="stat-unit"> g</span></div></div>
+    <div class="stat"><div class="stat-lbl">Carbs</div><div class="stat-val">250<span class="stat-unit"> g</span></div></div>
+    <div class="stat"><div class="stat-lbl">Fats</div><div class="stat-val">75<span class="stat-unit"> g</span></div></div>
+  </div>
+
+  <div class="section-lbl">Daily targets — rest days</div>
+  <div class="stat-grid">
+    <div class="stat"><div class="stat-lbl">Calories</div><div class="stat-val">2,000<span class="stat-unit"> kcal</span></div></div>
+    <div class="stat"><div class="stat-lbl">Protein</div><div class="stat-val">170<span class="stat-unit"> g</span></div></div>
+    <div class="stat"><div class="stat-lbl">Carbs</div><div class="stat-val">175<span class="stat-unit"> g</span></div></div>
+    <div class="stat"><div class="stat-lbl">Fats</div><div class="stat-val">65<span class="stat-unit"> g</span></div></div>
+  </div>
+
+  <div class="section-lbl">Macro split — training day</div>
+  <div class="macro-bar-wrap">
+    <div class="macro-row"><span class="macro-lbl">Protein</span><div class="macro-bar-bg"><div class="macro-bar-fill" style="width:28%;background:#185FA5"></div></div><span class="macro-val">170 g · 28%</span></div>
+    <div class="macro-row"><span class="macro-lbl">Carbs</span><div class="macro-bar-bg"><div class="macro-bar-fill" style="width:42%;background:#BA7517"></div></div><span class="macro-val">250 g · 42%</span></div>
+    <div class="macro-row"><span class="macro-lbl">Fats</span><div class="macro-bar-bg"><div class="macro-bar-fill" style="width:30%;background:#0F6E56"></div></div><span class="macro-val">75 g · 30%</span></div>
+  </div>
+
+  <div class="section-lbl">Sample meal plan — training day</div>
+
+  <div class="meal-card">
+    <div class="meal-hdr" style="background:#FAEEDA44"><span class="meal-time">Breakfast · 7 AM</span><span class="meal-cals">~620 kcal</span><span class="meal-macros" style="background:#E1F5EE;color:#085041">32g protein</span></div>
+    <div class="meal-body">
+      <div class="food-row"><span class="food-name">Oats (50g) + milk (250ml) + whey (1 scoop)</span><span class="food-amt">~470 kcal</span><span class="food-p">32g P</span></div>
+      <div class="food-row"><span class="food-name">2 small bananas + 6–7 berries</span><span class="food-amt">~100 kcal</span><span class="food-p">1g P</span></div>
+      <div class="food-row"><span class="food-name">2 tsp chia seeds (soaked overnight)</span><span class="food-amt">~50 kcal</span><span class="food-p">2g P</span></div>
+    </div>
+  </div>
+
+  <div class="meal-card">
+    <div class="meal-hdr" style="background:#FAEEDA44"><span class="meal-time">Lunch · 1 PM</span><span class="meal-cals">~650 kcal</span><span class="meal-macros" style="background:#E1F5EE;color:#085041">45g protein</span></div>
+    <div class="meal-body">
+      <div class="food-row"><span class="food-name">Chicken / fish / paneer (150–200g)</span><span class="food-amt">~330 kcal</span><span class="food-p">40g P</span></div>
+      <div class="food-row"><span class="food-name">Rice (3/4 cup cooked)</span><span class="food-amt">~200 kcal</span><span class="food-p">4g P</span></div>
+      <div class="food-row"><span class="food-name">Buttermilk (25–30g curd + water + jeera)</span><span class="food-amt">~30 kcal</span><span class="food-p">2g P</span></div>
+    </div>
+  </div>
+
+  <div class="meal-card">
+    <div class="meal-hdr" style="background:#E6F1FB44"><span class="meal-time">Pre-workout · 4:30 PM</span><span class="meal-cals">~200 kcal</span><span class="meal-macros" style="background:#E1F5EE;color:#085041">24g protein</span></div>
+    <div class="meal-body">
+      <div class="food-row"><span class="food-name">Whey shake (1 scoop in water)</span><span class="food-amt">~120 kcal</span><span class="food-p">24g P</span></div>
+      <div class="food-row"><span class="food-name">2 dates</span><span class="food-amt">~80 kcal</span><span class="food-p">—</span></div>
+    </div>
+  </div>
+
+  <div class="meal-card">
+    <div class="meal-hdr" style="background:#EEEDFE44"><span class="meal-time">Dinner · 8 PM (post-workout)</span><span class="meal-cals">~350 kcal</span><span class="meal-macros" style="background:#E1F5EE;color:#085041">30g protein</span></div>
+    <div class="meal-body">
+      <div class="food-row"><span class="food-name">Chicken (120g) or paneer (100g) — prepped</span><span class="food-amt">~250 kcal</span><span class="food-p">28–30g P</span></div>
+      <div class="food-row"><span class="food-name">Steamed / stir-fried vegetables</span><span class="food-amt">~80 kcal</span><span class="food-p">—</span></div>
+      <div class="food-row"><span class="food-name">1/2 tsp ghee</span><span class="food-amt">~20 kcal</span><span class="food-p">—</span></div>
+    </div>
+  </div>
+
+  <div class="note-box">Protein stays the same on rest days — only carbs drop. Drink 3–3.5 L water daily. If you can only hit one target, always hit protein first.</div>
+</div>
+
+<!-- NUMBERS -->
+<div class="panel" id="panel-numbers">
+  <div class="section-lbl">Your stats</div>
+  <div class="stat-grid">
+    <div class="stat"><div class="stat-lbl">Weight</div><div class="stat-val">85<span class="stat-unit"> kg</span></div></div>
+    <div class="stat"><div class="stat-lbl">Height</div><div class="stat-val">180<span class="stat-unit"> cm</span></div></div>
+    <div class="stat"><div class="stat-lbl">BMI</div><div class="stat-val">26.2</div></div>
+    <div class="stat"><div class="stat-lbl">BMR</div><div class="stat-val">1,920<span class="stat-unit"> kcal</span></div></div>
+  </div>
+
+  <div class="section-lbl">How your calories were calculated</div>
+  <div class="block">
+    <div class="block-hdr"><div class="block-dot" style="background:#185FA5"></div><span class="block-title">Mifflin-St Jeor formula</span></div>
+    <table class="ex-tbl"><tbody>
+      <tr><td class="ex-nm">BMR</td><td class="ex-det">10×85 + 6.25×180 − 5×30 + 5</td><td class="ex-vol">1,920 kcal</td></tr>
+      <tr><td class="ex-nm">Activity multiplier</td><td class="ex-det">Desk job + moderate training = 1.55</td><td class="ex-vol">×1.55</td></tr>
+      <tr><td class="ex-nm">TDEE</td><td class="ex-det">Estimated calories to maintain weight</td><td class="ex-vol">2,976 kcal</td></tr>
+      <tr><td class="ex-nm">Training day target</td><td class="ex-det">~20% deficit from TDEE</td><td class="ex-vol">2,400 kcal</td></tr>
+      <tr><td class="ex-nm">Rest day target</td><td class="ex-det">~33% deficit — lower carbs only</td><td class="ex-vol">2,000 kcal</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="section-lbl">Protein target logic</div>
+  <div class="block">
+    <div class="block-hdr"><div class="block-dot" style="background:#0F6E56"></div><span class="block-title">2 g per kg bodyweight</span></div>
+    <table class="ex-tbl"><tbody>
+      <tr><td class="ex-nm">Minimum for muscle retention</td><td class="ex-det">1.6 g/kg = 136 g/day</td><td class="ex-vol">136 g</td></tr>
+      <tr><td class="ex-nm">Optimal for recomposition</td><td class="ex-det">2.0 g/kg = 170 g/day</td><td class="ex-vol">170 g</td></tr>
+      <tr><td class="ex-nm">Your target</td><td class="ex-det">Supports muscle gain in deficit</td><td class="ex-vol">170 g/day</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="section-lbl">Expected progress timeline</div>
+  <div class="block">
+    <div class="block-hdr"><div class="block-dot" style="background:#BA7517"></div><span class="block-title">Realistic benchmarks</span></div>
+    <table class="ex-tbl"><tbody>
+      <tr><td class="ex-nm">Month 1</td><td class="ex-det">Neuromuscular adaptation — strength goes up fast</td><td class="ex-vol">−1 to −2 kg</td></tr>
+      <tr><td class="ex-nm">Month 2–3</td><td class="ex-det">Visible muscle definition begins, waist narrows</td><td class="ex-vol">−2 to −3 kg</td></tr>
+      <tr><td class="ex-nm">Month 4–6</td><td class="ex-det">Clear recomposition — leaner but same or heavier</td><td class="ex-vol">−3 to −5 kg fat</td></tr>
+      <tr><td class="ex-nm">Key signal</td><td class="ex-det">Trust measurements + mirror over scale weight</td><td class="ex-vol">photos monthly</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="note-box">If losing more than 1 kg/week, add 200 kcal. If not losing after 3 weeks, drop 150 kcal from rest days first. Adjust after every 3-week block.</div>
+</div>
+
+<script>
+function showTab(id) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('visible'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('panel-' + id).classList.add('visible');
+  const tabs = ['week','training','diet','numbers'];
+  document.querySelectorAll('.tab')[tabs.indexOf(id)].classList.add('active');
+}
+</script>
+</body>
+</html>
