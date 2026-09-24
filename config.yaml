@@ -29,17 +29,17 @@ languages:
         weight: 1
         menu:
             main:
-                - name: /tutorials
-                  url: /tutorials/
+                - name: /writings
+                  url: /writings/
                   weight: 1
+                - name: /notes
+                  url: /notes/
+                  weight: 2
                 - name: /talks
                   url: /talks/
-                  weight: 2
-                - name: /topics
-                  url: /topics/
                   weight: 3
-                - name: /archive
-                  url: /archives/
+                - name: /books
+                  url: /books/
                   weight: 4
                 - name: /about
                   url: /about/
@@ -47,9 +47,6 @@ languages:
                 - name: /search
                   url: /search/
                   weight: 10
-                #- name: Categories
-                  #url: /categories/
-                  #weight: 10
 
 outputs:
     home:
@@ -103,12 +100,6 @@ params:
             - name: Tags
               url: tags
 
-    homeInfoParams:
-        Title: "Intellectual Web"
-        Content: >
-          Container internals, immutable Linux, and Kubernetes release engineering.
-          Notes from a Flatcar Container Linux maintainer and Kubernetes SIG Release shadow.
-
     socialIcons:
         #- name: KoFi
           #url: "https://ko-fi.com/yudocaa"
@@ -143,9 +134,7 @@ params:
         appendFilePath: true # to append file path to Edit link
 
     label:
-         text: "Home"
-         icon: icon.png
-         iconHeight: 35
+         text: "/"
 
     # analytics:
     #     google:

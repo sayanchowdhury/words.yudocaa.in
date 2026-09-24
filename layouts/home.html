@@ -1,0 +1,99 @@
+{{- define "main" }}
+{{- $p := .Params }}
+{{- $books := hugo.Data.books | default slice }}
+{{- $talks := slice }}
+{{- range hugo.Data.speaking }}{{ $y := .year }}{{ range .talks }}{{ $talks = $talks | append (merge . (dict "year" $y)) }}{{ end }}{{ end }}
+{{- $writing := where (where site.RegularPages "Section" "in" site.Params.mainSections) "Draft" false }}
+{{- $notes := (where site.RegularPages "Section" "notes").ByLastmod.Reverse }}
+
+<div class="home">
+    <header class="home__intro">
+      <h1 class="home__name">{{ .Title }}</h1>
+      <p class="home__tagline">{{ $p.tagline }}</p>
+    </header>
+
+    {{- with $p.bio }}
+    <section class="home__bio tabs tabs--bio" aria-label="Bio" data-group="bio">
+      <div class="home__bio-head">
+        <h2 class="home__label">Bio</h2>
+        <div class="tabs__list" role="tablist" hidden>
+          <button type="button" role="tab" id="bio-tab-0" aria-controls="bio-panel-0" aria-selected="true" tabindex="0" data-label="Human">Human</button>
+          <button type="button" role="tab" id="bio-tab-1" aria-controls="bio-panel-1" aria-selected="false" tabindex="-1" data-label="C-3PO">C-3PO</button>
+        </div>
+      </div>
+      <div class="tabs__panel" role="tabpanel" id="bio-panel-0" aria-labelledby="bio-tab-0">
+        <p class="tabs__fallback-label">Human</p>
+        {{ .human | markdownify | emojify }}
+      </div>
+      <div class="tabs__panel" role="tabpanel" id="bio-panel-1" aria-labelledby="bio-tab-1">
+        <p class="tabs__fallback-label">C-3PO</p>
+        {{ .c3po | markdownify }}
+      </div>
+      <p class="home__social">
+        {{- range $i, $s := site.Params.socialIcons }}{{ if $i }}<span aria-hidden="true"> · </span>{{ end }}<a href="{{ $s.url | absURL }}"{{ if hasPrefix $s.url "http" }} rel="me"{{ end }}>{{ $s.name | lower }}</a>{{ end -}}
+      </p>
+    </section>
+    {{- end }}
+
+  <aside class="home__aside" aria-label="Explore by topic">
+    {{ partial "site/topic_explorer.html" (dict "books" $books) }}
+  </aside>
+
+  <div class="home__rest">
+    <section class="home__section" aria-labelledby="h-writing">
+      <h2 class="home__label" id="h-writing">Writing</h2>
+      <ul class="ledger">
+        {{- range first 6 $writing }}
+        <li><a href="{{ .RelPermalink }}"><span class="ledger__title">{{ .Title }}</span><span class="ledger__meta">{{ if eq .Section "tutorials" }}Tutorial · {{ end }}{{ .Date.Format "Jan 2006" }}</span></a></li>
+        {{- end }}
+      </ul>
+      <a class="home__more" href="{{ "writings/" | relURL }}">All {{ len $writing }} pieces of writing</a>
+    </section>
+
+    {{- with $talks }}
+    <section class="home__section" aria-labelledby="h-talks">
+      <h2 class="home__label" id="h-talks">Talks</h2>
+      <ul class="ledger">
+        {{- range first 4 . }}
+        {{- $href := "" }}{{ with .links }}{{ $href = (index . 0).url }}{{ end }}
+        <li>
+          {{- if $href }}<a href="{{ $href }}">{{ else }}<span class="ledger__row">{{ end -}}
+          <span class="ledger__title">{{ .title }}<span class="ledger__sub">{{ .event }}</span></span>
+          <span class="ledger__meta">{{ .year }}</span>
+          {{- if $href }}</a>{{ else }}</span>{{ end -}}
+        </li>
+        {{- end }}
+      </ul>
+      <a class="home__more" href="{{ "talks/" | relURL }}">All {{ len . }} talks and event notes</a>
+    </section>
+    {{- end }}
+
+    {{- with $notes }}
+    <section class="home__section" aria-labelledby="h-notes">
+      <h2 class="home__label" id="h-notes">Notes</h2>
+      <p class="home__hint">Short, always-unfinished notes. Some grow into writing.</p>
+      <ul class="ledger">
+        {{- range first 5 . }}
+        <li><a href="{{ .RelPermalink }}"><span class="ledger__title">{{ partial "site/stage.html" . }}{{ .Title }}</span><span class="ledger__meta">{{ .Lastmod.Format "Jan 2006" }}</span></a></li>
+        {{- end }}
+      </ul>
+      <a class="home__more" href="{{ "notes/" | relURL }}">All notes</a>
+    </section>
+    {{- end }}
+
+    {{- with $books }}
+    <section class="home__section" aria-labelledby="h-shelf">
+      <h2 class="home__label" id="h-shelf">On the shelf</h2>
+      <div class="shelf shelf--mini">
+        <div class="shelf__row">
+          {{- range first 12 . }}
+          {{ partial "site/spine.html" (dict "book" . "href" (printf "%s#%s" ("books/" | relURL) (.title | urlize))) }}
+          {{- end }}
+        </div>
+      </div>
+      <a class="home__more" href="{{ "books/" | relURL }}">The bookshelf</a>
+    </section>
+    {{- end }}
+  </div>
+</div>
+{{- end }}

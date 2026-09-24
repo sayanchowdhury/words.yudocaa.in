@@ -30,6 +30,7 @@
     </div>
     {{- end }}
     {{- partial "explainer/topics.html" . }}
+    {{- if eq .Section "notes" }}<p class="note-status">{{ partial "site/stage.html" . }}{{ with .Params.stage }}{{ . | humanize }} · {{ end }}last tended {{ .Lastmod.Format "January 2, 2006" }}</p>{{ end }}
   </header>
   {{- partial "explainer/tutorial_meta.html" . }}
   {{- partial "explainer/series.html" (dict "page" . "where" "top") }}
@@ -49,6 +50,7 @@
 
   {{- partial "extend_post_content.html" . }}
 
+  {{- partial "site/garden_links.html" . }}
   {{- partial "explainer/series.html" (dict "page" . "where" "bottom") }}
 
   <footer class="post-footer">

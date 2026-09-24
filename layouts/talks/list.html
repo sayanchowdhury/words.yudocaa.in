@@ -1,0 +1,43 @@
+{{- define "main" }}
+{{- $byYear := dict }}
+{{- range hugo.Data.speaking }}{{ $byYear = merge $byYear (dict (string .year) .talks) }}{{ end }}
+{{- $events := .RegularPages }}
+{{- $years := slice }}
+{{- range $k, $_ := $byYear }}{{ $years = $years | append $k }}{{ end }}
+{{- range $events }}{{ $years = $years | append (.Date.Format "2006") }}{{ end }}
+{{- $years = sort ($years | uniq) "value" "desc" }}
+<article class="collection">
+  <header class="collection__head">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}<p class="collection__desc">{{ . | markdownify }}</p>{{ end }}
+  </header>
+  {{- range $years }}
+  {{- $y := . }}
+  {{- $given := index $byYear $y }}
+  {{- $notes := where $events ".Date.Year" (int $y) }}
+  <section class="year-group">
+    <h2 class="year-group__year">{{ $y }}</h2>
+    {{- with $given }}
+    <ul class="ledger ledger--talks">
+      {{- range . }}
+      <li><div class="ledger__row">
+        <span class="ledger__title">{{ .title }}<span class="ledger__sub">{{ .event }}{{ with .location }} · {{ . }}{{ end }}</span>
+          {{- with .links }}<span class="ledger__links">{{ range $i, $l := . }}{{ if $i }} · {{ end }}<a href="{{ $l.url }}">{{ $l.label }}</a>{{ end }}</span>{{ end }}
+        </span>
+        <span class="ledger__meta">{{ .date | default "" }}</span>
+      </div></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+    {{- with $notes }}
+    <p class="year-group__sub">Event notes</p>
+    <ul class="ledger ledger--quiet">
+      {{- range . }}
+      <li><a href="{{ .RelPermalink }}"><span class="ledger__title">{{ .Title }}</span><span class="ledger__meta">{{ .Date.Format "Jan 2" }}</span></a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+  </section>
+  {{- end }}
+</article>
+{{- end }}

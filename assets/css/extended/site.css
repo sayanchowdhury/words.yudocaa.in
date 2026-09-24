@@ -1,0 +1,742 @@
+/* Homepage and collection pages (writing, notes, talks, books).
+   A quiet serif page: hairline-ruled lists and one interactive panel per
+   page. The topic explorer sits beside the bio on wide screens. */
+
+:root {
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --surface: color-mix(in oklch, var(--accent) 4%, var(--theme));
+    --shelf: oklch(0.55 0.04 60);
+
+    --spine-0: oklch(0.42 0.07 200);
+    --spine-1: oklch(0.42 0.11 25);
+    --spine-2: oklch(0.72 0.11 80);
+    --spine-3: oklch(0.45 0.08 260);
+    --spine-4: oklch(0.58 0.07 130);
+    --spine-5: oklch(0.3 0.01 260);
+}
+
+:root[data-theme="dark"] {
+    --surface: color-mix(in oklch, var(--accent) 6%, var(--theme));
+    --shelf: oklch(0.42 0.03 60);
+}
+
+/* PaperMod's display rules would otherwise override the hidden attribute. */
+:is(.home, .collection) [hidden] {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+/* Header: the home link is a single slash, in the same voice as the nav. */
+.logo a {
+    font-size: 26px;
+    font-weight: 500;
+    padding-inline: 4px;
+}
+
+/* White pages for home and collections; PaperMod greys list pages. */
+body:has(.home, .collection) {
+    background: var(--theme);
+}
+
+.main:has(> .home) {
+    max-width: calc(var(--nav-width) + var(--gap) * 2);
+}
+
+/* Shared: section headings, "more" links, ledgers ------------------------- */
+
+.home__label {
+    margin: 0 0 14px;
+    font-family: var(--prose-font);
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.home__more {
+    display: inline-block;
+    margin-top: 14px;
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.home__more::after {
+    content: " →";
+}
+
+.home__more:hover {
+    color: var(--accent);
+}
+
+.ledger {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid var(--border);
+}
+
+.ledger li {
+    border-bottom: 1px solid var(--border);
+}
+
+.ledger li > a,
+.ledger__row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 12px 0;
+    color: var(--primary);
+}
+
+.ledger__title {
+    font-family: var(--prose-font);
+    font-size: 17px;
+    line-height: 1.4;
+    text-wrap: pretty;
+}
+
+.ledger li > a:hover .ledger__title {
+    color: var(--accent);
+}
+
+.ledger__sub,
+.ledger__links {
+    display: block;
+    margin-top: 3px;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.ledger__links a {
+    color: var(--secondary);
+    text-decoration: underline;
+    text-decoration-color: var(--tertiary);
+    text-underline-offset: 3px;
+}
+
+.ledger__links a:hover {
+    color: var(--accent);
+    text-decoration-color: currentColor;
+}
+
+.ledger__meta {
+    flex: none;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--secondary);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.ledger--quiet .ledger__title {
+    font-size: 16px;
+    color: var(--content);
+}
+
+/* Home -------------------------------------------------------------------- */
+
+.home {
+    display: grid;
+    grid-template-columns: minmax(0, 600px) minmax(0, 1fr);
+    grid-template-areas:
+        "intro aside"
+        "bio   aside"
+        "rest  aside";
+    grid-template-rows: auto auto 1fr;
+    column-gap: clamp(48px, 8vw, 112px);
+    padding-top: 24px;
+    font-family: var(--prose-font);
+    color: var(--content);
+}
+
+.home__intro { grid-area: intro; }
+.home__bio { grid-area: bio; }
+.home__aside { grid-area: aside; }
+.home__rest { grid-area: rest; }
+
+.home__name {
+    margin: 0;
+    font-family: var(--prose-font);
+    font-size: clamp(36px, 5vw, 48px);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--primary);
+}
+
+.home__tagline {
+    margin: 10px 0 0;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--secondary);
+}
+
+.home__bio {
+    margin: 40px 0 0;
+}
+
+.home__bio-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.home__bio-head .home__label {
+    margin: 0;
+}
+
+.home__bio .tabs__panel {
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+.home__bio .tabs__panel p {
+    margin: 0 0 14px;
+}
+
+.home__bio .tabs__panel a,
+.home__social a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--tertiary);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.home__bio .tabs__panel a:hover,
+.home__social a:hover {
+    color: var(--accent);
+    text-decoration-color: currentColor;
+}
+
+.home__social {
+    margin: 4px 0 0;
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+/* Human / C-3PO: a two-way switch rather than tabs with underlines. */
+.tabs--bio .tabs__list {
+    display: inline-flex;
+    gap: 0;
+    padding: 3px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    overflow: visible;
+}
+
+.tabs--bio .tabs__list[hidden] {
+    display: none;
+}
+
+.tabs--bio .tabs__list [role="tab"] {
+    margin: 0;
+    padding: 4px 14px;
+    border: 0;
+    border-radius: 999px;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.tabs--bio .tabs__list [role="tab"][aria-selected="true"] {
+    background: var(--primary);
+    color: var(--theme);
+}
+
+.home__rest {
+    padding-top: 8px;
+}
+
+.home__section {
+    margin-top: 56px;
+}
+
+.home__hint {
+    margin: -6px 0 14px;
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+/* Topic explorer ---------------------------------------------------------- */
+
+.home__aside {
+    align-self: start;
+    position: sticky;
+    top: calc(var(--header-height) + 24px);
+    margin-top: 8px;
+}
+
+.explorer {
+    margin: 0;
+    padding: 28px 28px 24px;
+    border-radius: 14px;
+    background: var(--surface);
+    border: 1px solid color-mix(in oklch, var(--accent) 12%, var(--border));
+}
+
+.explorer .tabs__list {
+    display: grid;
+    gap: 2px;
+    margin: 0 0 20px;
+    border: 0;
+    overflow: visible;
+}
+
+.explorer .tabs__list[hidden] {
+    display: none;
+}
+
+.explorer .tabs__list [role="tab"] {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 8px;
+    font-family: var(--prose-font);
+    font-size: 19px;
+    font-weight: 500;
+    text-align: start;
+    color: var(--secondary);
+}
+
+.explorer .tabs__list [role="tab"]:hover {
+    color: var(--primary);
+}
+
+.explorer .tabs__list [role="tab"][aria-selected="true"] {
+    color: var(--primary);
+    background: color-mix(in oklch, var(--accent) 10%, var(--theme));
+}
+
+.explorer__count {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+    color: var(--secondary);
+}
+
+[aria-selected="true"] .explorer__count {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.explorer__panel {
+    padding: 0;
+}
+
+.explorer__desc {
+    margin: 0 0 14px;
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--content);
+}
+
+.explorer__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.explorer__items a {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 12px;
+    align-items: baseline;
+    padding: 8px 0;
+    border-top: 1px solid var(--border);
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--primary);
+}
+
+.explorer__items a:hover {
+    color: var(--accent);
+}
+
+.explorer__kind {
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--secondary);
+}
+
+.explorer__empty {
+    margin: 0;
+    padding: 12px 0 4px;
+    border-top: 1px solid var(--border);
+    font-size: 16px;
+    font-style: italic;
+    color: var(--secondary);
+}
+
+.explorer .home__more {
+    margin-top: 12px;
+}
+
+/* Book spines --------------------------------------------------------------- */
+
+.shelf {
+    margin: 0 0 40px;
+}
+
+.shelf__count {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+.shelf__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 3px;
+    min-height: 60px;
+    position: relative;
+    padding: 0 12px 8px;
+}
+
+/* The shelf board the spines stand on. */
+.shelf__row::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 8px;
+    border-radius: 2px;
+    background: var(--shelf);
+}
+
+.spine {
+    --tone: var(--spine-0);
+    --ink: rgb(255 255 255 / 0.92);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--w);
+    height: var(--h);
+    padding: 12px 0 10px;
+    border-radius: 3px 3px 0 0;
+    background:
+        linear-gradient(90deg, rgb(0 0 0 / 0.18), transparent 18%, transparent 82%, rgb(0 0 0 / 0.14)),
+        var(--tone);
+    color: var(--ink);
+    writing-mode: vertical-rl;
+    overflow: hidden;
+    transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.spine--1 { --tone: var(--spine-1); }
+.spine--2 { --tone: var(--spine-2); --ink: rgb(30 24 10 / 0.9); }
+.spine--3 { --tone: var(--spine-3); }
+.spine--4 { --tone: var(--spine-4); --ink: rgb(20 28 12 / 0.9); }
+.spine--5 { --tone: var(--spine-5); }
+
+.spine__title {
+    font-family: var(--prose-font);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: calc(var(--h) - 70px);
+}
+
+.spine__author {
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+    white-space: nowrap;
+}
+
+.spine:hover {
+    transform: translateY(-6px);
+}
+
+.spine.is-out {
+    transform: translateY(-16px);
+}
+
+.spine:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.shelf--mini .spine {
+    width: calc(var(--w) * 0.8);
+    height: calc(var(--h) * 0.72);
+}
+
+.shelf--mini .spine__title {
+    font-size: 12px;
+    max-height: calc(var(--h) * 0.72 - 56px);
+}
+
+/* Collection pages -------------------------------------------------------- */
+
+.collection {
+    font-family: var(--prose-font);
+}
+
+.collection__head {
+    margin: 24px 0 36px;
+}
+
+.collection__head h1 {
+    margin: 0;
+    font-family: var(--prose-font);
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--primary);
+}
+
+.collection__desc {
+    margin: 10px 0 0;
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--secondary);
+}
+
+.collection__desc a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--tertiary);
+    text-underline-offset: 3px;
+}
+
+.year-group {
+    margin-bottom: 36px;
+}
+
+.year-group__year {
+    margin: 0 0 8px;
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--secondary);
+    font-variant-numeric: tabular-nums;
+}
+
+.year-group__sub {
+    margin: 18px 0 6px;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.filters {
+    display: grid;
+    gap: 10px;
+    margin: -12px 0 36px;
+}
+
+.filters[hidden] {
+    display: none;
+}
+
+.filters__group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.filters__group button {
+    padding: 5px 13px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: none;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--secondary);
+    cursor: pointer;
+    transition: border-color 120ms ease-out, color 120ms ease-out;
+}
+
+.filters__group button:hover {
+    color: var(--primary);
+    border-color: var(--tertiary);
+}
+
+.filters__group button[aria-pressed="true"] {
+    border-color: var(--primary);
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.filters__empty {
+    font-style: italic;
+    color: var(--secondary);
+}
+
+/* Notes: growth stages and garden links ----------------------------------- */
+
+.stage {
+    display: inline-flex;
+    vertical-align: -2px;
+    margin-inline-end: 8px;
+    color: var(--tip);
+}
+
+.stage--seedling { color: color-mix(in oklch, var(--tip) 70%, var(--secondary)); }
+
+.stage-key {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    margin: 16px 0 0;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.stage-key .stage {
+    margin-inline-end: 4px;
+}
+
+.note-status {
+    margin: 10px 0 0;
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.garden-links {
+    margin: 48px 0 0;
+    padding: 20px 0 0;
+    border-top: 1px solid var(--border);
+}
+
+.garden-links ul {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.garden-links li {
+    padding: 4px 0;
+}
+
+.garden-links a {
+    font-family: var(--prose-font);
+    font-size: 17px;
+    color: var(--primary);
+}
+
+.garden-links a:hover {
+    color: var(--accent);
+}
+
+/* Bookshelf page ---------------------------------------------------------- */
+
+.bookshelf .shelf__row {
+    min-height: 120px;
+}
+
+.book-cards {
+    margin-top: 12px;
+}
+
+.book-card {
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+    scroll-margin-top: calc(var(--header-height) + 24px);
+}
+
+.bookshelf.is-live .book-card {
+    border-top: 0;
+    padding-top: 4px;
+}
+
+.book-card__title {
+    margin: 0;
+    font-family: var(--prose-font);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.book-card__title span {
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+.book-card__meta {
+    margin: 6px 0 0;
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.book-card__take {
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.book-card__take p {
+    margin: 0;
+}
+
+/* Small screens ----------------------------------------------------------- */
+
+@media (max-width: 900px) {
+    .home {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas: "intro" "bio" "aside" "rest";
+        grid-template-rows: none;
+    }
+
+    .home__aside {
+        position: static;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .explorer {
+        padding: 20px 16px;
+    }
+
+    .explorer__items a {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .ledger li > a,
+    .ledger__row {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .collection__head h1 {
+        font-size: 34px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .spine,
+    .filters__group button {
+        transition: none;
+    }
+}

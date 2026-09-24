@@ -1,7 +1,23 @@
 ---
-hero:
-  heading: Intellectual Web
-  maxWidthPX: "652"
+title: Sayan Chowdhury
+tagline: Human Being on outside. C-3PO on inside.
+# The homepage bio has two modes, switched by the Human / C-3PO toggle.
+bio:
+  human: |
+    I'm Sayan. I grew up in Jamshedpur and have lived in Bangalore since 2013,
+    working remotely from a small, cozy room. I've wandered across desktop apps,
+    the web and infrastructure, and landed in the kernel and OS land.
+
+    Away from the keyboard: bouldering, trekking, coffee, photography,
+    Rubik's cubes and board games. This site is where I write things down.
+  c3po: |
+    Senior Software Engineer at **Microsoft Azure**. Maintainer and Release
+    Manager of [Flatcar Container Linux](https://www.flatcar.org/), a CNCF
+    Incubating project, and a shadow on **Kubernetes SIG Release**.
+
+    Ten-plus years of release engineering, starting in Fedora. Fellow of the
+    Python Software Foundation. I write about container internals, immutable
+    Linux, Kubernetes releases and the AI/ML infrastructure I'm learning.
 # New posts set `topics:` in their own front matter. These entries only
 # tag older posts without editing them.
 cascade:

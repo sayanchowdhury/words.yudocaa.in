@@ -178,7 +178,9 @@ function tabs() {
     list.addEventListener("keydown", (e) => {
       const i = buttons.indexOf(document.activeElement);
       if (i < 0) return;
-      const next = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: buttons.length - 1 }[e.key];
+      const next = {
+        ArrowRight: i + 1, ArrowDown: i + 1, ArrowLeft: i - 1, ArrowUp: i - 1, Home: 0, End: buttons.length - 1,
+      }[e.key];
       if (next === undefined) return;
       e.preventDefault();
       const b = buttons[(next + buttons.length) % buttons.length];
@@ -271,6 +273,70 @@ function widgets() {
   }
 }
 
+/* Filter chips (the writings page) ------------------------------------------ */
+
+function filters() {
+  for (const bar of document.querySelectorAll(".filters[data-filter-target]")) {
+    const scope = document.querySelector(bar.dataset.filterTarget);
+    if (!scope) continue;
+    const state = {};
+    const apply = () => {
+      let shown = 0;
+      for (const li of scope.querySelectorAll("li[data-kind]")) {
+        const ok = (!state.kind || li.dataset.kind === state.kind) &&
+          (!state.topic || li.dataset.topic.split(" ").includes(state.topic));
+        li.hidden = !ok;
+        if (ok) shown += 1;
+      }
+      for (const group of scope.querySelectorAll(".year-group")) {
+        group.hidden = !group.querySelector("li[data-kind]:not([hidden])");
+      }
+      scope.querySelector(".filters__empty").hidden = shown > 0;
+    };
+    bar.addEventListener("click", (e) => {
+      const b = e.target.closest("button[data-value]");
+      if (!b) return;
+      const group = b.closest("[data-filter]");
+      for (const other of group.querySelectorAll("button")) other.setAttribute("aria-pressed", String(other === b));
+      state[group.dataset.filter] = b.dataset.value;
+      apply();
+    });
+    bar.hidden = false;
+  }
+}
+
+/* Bookshelf: pick a spine to pull its card out -------------------------------- */
+
+function bookshelf() {
+  const shelf = document.querySelector(".bookshelf");
+  if (!shelf) return;
+  const cards = [...shelf.querySelectorAll(".book-card")];
+  const spines = [...shelf.querySelectorAll(".spine")];
+  shelf.classList.add("is-live");
+
+  const open = (id, { scroll = false } = {}) => {
+    const card = cards.find((c) => c.id === id) || cards[0];
+    if (!card) return;
+    for (const c of cards) c.hidden = c !== card;
+    for (const s of spines) {
+      const on = s.dataset.book === card.id;
+      s.classList.toggle("is-out", on);
+      if (on) s.setAttribute("aria-current", "true");
+      else s.removeAttribute("aria-current");
+    }
+    if (scroll) card.scrollIntoView({ block: "nearest", behavior: reducedMotion.matches ? "auto" : "smooth" });
+  };
+
+  for (const s of spines) {
+    s.addEventListener("click", (e) => {
+      e.preventDefault();
+      history.replaceState(null, "", `#${s.dataset.book}`);
+      open(s.dataset.book, { scroll: true });
+    });
+  }
+  open(decodeURIComponent(location.hash.slice(1)));
+}
+
 function init() {
   readingProgress();
   tableOfContents();
@@ -278,6 +344,8 @@ function init() {
   diagrams();
   terminalCasts();
   widgets();
+  filters();
+  bookshelf();
 }
 
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

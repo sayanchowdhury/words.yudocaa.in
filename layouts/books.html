@@ -1,0 +1,33 @@
+{{- define "main" }}
+{{- $books := hugo.Data.books | default slice }}
+{{- $shelves := slice (dict "key" "reading" "name" "Reading now") (dict "key" "read" "name" "Read") (dict "key" "want" "name" "Antilibrary" "hint" "Books I want to read.") }}
+<article class="collection bookshelf">
+  <header class="collection__head">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}<p class="collection__desc">{{ . | markdownify }}</p>{{ end }}
+  </header>
+
+  {{- range $shelf := $shelves }}
+  {{- $on := where $books "status" $shelf.key }}
+  {{- with $shelf }}{{ if $on }}
+  <section class="shelf" aria-labelledby="shelf-{{ $.Page.File.BaseFileName }}-{{ .key }}">
+    <h2 class="home__label" id="shelf-{{ $.Page.File.BaseFileName }}-{{ .key }}">{{ .name }} <span class="shelf__count">{{ len $on }}</span></h2>
+    <div class="shelf__row">
+      {{- range $on }}{{ partial "site/spine.html" (dict "book" . "href" (printf "#%s" (.title | urlize))) }}{{ end }}
+    </div>
+  </section>
+  {{- end }}{{ end }}
+  {{- end }}
+
+  <div class="book-cards">
+    {{- range $books }}
+    <article class="book-card" id="{{ .title | urlize }}">
+      <h3 class="book-card__title">{{ .title }}{{ with .subtitle }}<span>, {{ . }}</span>{{ end }}</h3>
+      <p class="book-card__meta">{{ .author }}{{ with .year }} · {{ . }}{{ end }} · {{ index (dict "reading" "Reading now" "read" "Read" "want" "Want to read") .status }}{{ with .rating }} · {{ . }}/5{{ end }}</p>
+      {{- with .take }}<div class="book-card__take">{{ . | markdownify }}</div>{{ end }}
+      {{- with .notes }}<a class="home__more" href="{{ . | relURL }}">My notes on it</a>{{ end }}
+    </article>
+    {{- end }}
+  </div>
+</article>
+{{- end }}
