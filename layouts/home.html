@@ -1,8 +1,9 @@
 {{- define "main" }}
 {{- $p := .Params }}
-{{- $books := hugo.Data.books | default slice }}
-{{- $talks := slice }}
-{{- range hugo.Data.speaking }}{{ $y := .year }}{{ range .talks }}{{ $talks = $talks | append (merge . (dict "year" $y)) }}{{ end }}{{ end }}
+{{- $reading := slice }}
+{{- with site.GetPage "/books" }}{{ range .RegularPages }}{{ if eq .Params.book.status "reading" }}{{ $reading = $reading | append . }}{{ end }}{{ end }}{{ end }}
+{{- $paths := slice }}
+{{- with site.GetPage "/paths" }}{{ $paths = .Pages.ByWeight }}{{ end }}
 {{- $writing := where (where site.RegularPages "Section" "in" site.Params.mainSections) "Draft" false }}
 {{- $notes := (where site.RegularPages "Section" "notes").ByLastmod.Reverse }}
 
@@ -33,45 +34,29 @@
     </section>
     {{- end }}
 
-  <aside class="home__aside" aria-label="The wall">
-    {{ partial "site/moonboard.html" (dict "writing" $writing "notes" $notes "talks" $talks "books" $books) }}
+  {{- with $paths }}
+  <aside class="home__aside" aria-label="Learning paths">
+    {{ partial "site/moonboard.html" (dict "paths" . "mode" "feature") }}
   </aside>
+  {{- end }}
 
   <div class="home__rest">
-    <section class="home__section" aria-labelledby="h-writing">
+    <section class="home__section home__section--lead" aria-labelledby="h-writing">
       <h2 class="home__label" id="h-writing">Writing</h2>
-      <ul class="ledger">
-        {{- range first 6 $writing }}
+      <ul class="ledger ledger--lead">
+        {{- range first 8 $writing }}
         <li><a href="{{ .RelPermalink }}"><span class="ledger__title">{{ .Title }}</span><span class="ledger__meta">{{ if eq .Section "tutorials" }}Tutorial · {{ end }}{{ .Date.Format "Jan 2006" }}</span></a></li>
         {{- end }}
       </ul>
       <a class="home__more" href="{{ "writings/" | relURL }}">All {{ len $writing }} pieces of writing</a>
     </section>
 
-    {{- with $talks }}
-    <section class="home__section" aria-labelledby="h-talks">
-      <h2 class="home__label" id="h-talks">Talks</h2>
-      <ul class="ledger">
-        {{- range first 4 . }}
-        {{- $href := "" }}{{ with .links }}{{ $href = (index . 0).url }}{{ end }}
-        <li>
-          {{- if $href }}<a href="{{ $href }}">{{ else }}<span class="ledger__row">{{ end -}}
-          <span class="ledger__title">{{ .title }}<span class="ledger__sub">{{ .event }}</span></span>
-          <span class="ledger__meta">{{ .year }}</span>
-          {{- if $href }}</a>{{ else }}</span>{{ end -}}
-        </li>
-        {{- end }}
-      </ul>
-      <a class="home__more" href="{{ "talks/" | relURL }}">All {{ len . }} talks and event notes</a>
-    </section>
-    {{- end }}
-
     {{- with $notes }}
-    <section class="home__section" aria-labelledby="h-notes">
+    <section class="home__section home__section--lead" aria-labelledby="h-notes">
       <h2 class="home__label" id="h-notes">Notes</h2>
       <p class="home__hint">Short, always-unfinished notes. Some grow into writing.</p>
-      <ul class="ledger">
-        {{- range first 5 . }}
+      <ul class="ledger ledger--lead">
+        {{- range first 6 . }}
         <li><a href="{{ .RelPermalink }}"><span class="ledger__title">{{ partial "site/stage.html" . }}{{ .Title }}</span><span class="ledger__meta">{{ .Lastmod.Format "Jan 2006" }}</span></a></li>
         {{- end }}
       </ul>
@@ -79,16 +64,28 @@
     </section>
     {{- end }}
 
-    {{- with $books }}
-    <section class="home__section" aria-labelledby="h-shelf">
-      <h2 class="home__label" id="h-shelf">On the shelf</h2>
-      <div class="shelf shelf--mini">
-        <div class="shelf__row">
-          {{- range first 12 . }}
-          {{ partial "site/spine.html" (dict "book" . "href" (printf "%s#%s" ("books/" | relURL) (.title | urlize))) }}
-          {{- end }}
-        </div>
-      </div>
+    {{- with $paths }}
+    <section class="home__section home__paths-compact" aria-labelledby="h-paths">
+      <h2 class="home__label" id="h-paths">Learning paths</h2>
+      <ul class="ledger">
+        {{- range . }}
+        <li><a href="{{ .RelPermalink }}"><span class="ledger__title">{{ .Title }}<span class="ledger__sub">{{ .Params.summary }}</span></span><span class="ledger__meta">{{ .Params.grade }}</span></a></li>
+        {{- end }}
+      </ul>
+    </section>
+    {{- end }}
+
+    {{- with $reading }}
+    <section class="home__section" aria-labelledby="h-reading">
+      <h2 class="home__label" id="h-reading">Reading now</h2>
+      <ul class="reading-now">
+        {{- range . }}
+        <li><a href="{{ .RelPermalink }}">
+          {{ partial "site/book_cover.html" (dict "book" .Params.book "width" 72) }}
+          <span><span class="reading-now__title">{{ .Title }}</span><span class="reading-now__author">{{ .Params.book.author }}</span></span>
+        </a></li>
+        {{- end }}
+      </ul>
       <a class="home__more" href="{{ "books/" | relURL }}">The bookshelf</a>
     </section>
     {{- end }}

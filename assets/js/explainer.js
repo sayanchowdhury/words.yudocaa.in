@@ -305,48 +305,30 @@ function filters() {
   }
 }
 
-/* Bookshelf: pick a spine to pull its card out -------------------------------- */
-
-function bookshelf() {
-  const shelf = document.querySelector(".bookshelf");
-  if (!shelf) return;
-  const cards = [...shelf.querySelectorAll(".book-card")];
-  const spines = [...shelf.querySelectorAll(".spine")];
-  shelf.classList.add("is-live");
-
-  const open = (id, { scroll = false } = {}) => {
-    const card = cards.find((c) => c.id === id) || cards[0];
-    if (!card) return;
-    for (const c of cards) c.hidden = c !== card;
-    for (const s of spines) {
-      const on = s.dataset.book === card.id;
-      s.classList.toggle("is-out", on);
-      if (on) s.setAttribute("aria-current", "true");
-      else s.removeAttribute("aria-current");
-    }
-    if (scroll) card.scrollIntoView({ block: "nearest", behavior: reducedMotion.matches ? "auto" : "smooth" });
-  };
-
-  for (const s of spines) {
-    s.addEventListener("click", (e) => {
-      e.preventDefault();
-      history.replaceState(null, "", `#${s.dataset.book}`);
-      open(s.dataset.book, { scroll: true });
-    });
-  }
-  open(decodeURIComponent(location.hash.slice(1)));
-}
-
-/* MoonBoard wall (homepage) --------------------------------------------------- */
+/* MoonBoard wall of learning paths --------------------------------------------------- */
 
 const COLS = "ABCDEFGHIJK";
 const ROWS = 18;
 const CELL = 40;
 const PAD = { l: 28, r: 14, t: 26, b: 26 };
-const GRADES = [
-  ["5+", "V1"], ["6A", "V2"], ["6A+", "V3"], ["6B", "V4"], ["6B+", "V4"], ["6C", "V5"],
-  ["6C+", "V5"], ["7A", "V6"], ["7A+", "V7"], ["7B", "V8"], ["7B+", "V8"], ["7C", "V9"],
-];
+// Font grade -> V grade, for showing both like the MoonBoard app.
+const V_GRADE = {
+  "5": "V1", "5+": "V2", "6A": "V3", "6A+": "V3", "6B": "V4", "6B+": "V4", "6C": "V5",
+  "6C+": "V5", "7A": "V6", "7A+": "V7", "7B": "V8", "7B+": "V8", "7C": "V9", "7C+": "V10",
+};
+
+// Pages this visitor has opened, so paths can tick the steps already read.
+const READ_KEY = "iw:read";
+const readPages = () => {
+  try { return new Set(JSON.parse(store.get(READ_KEY) || "[]")); } catch { return new Set(); }
+};
+function recordVisit() {
+  try {
+    const seen = [...readPages()].filter((p) => p !== location.pathname);
+    seen.unshift(location.pathname);
+    store.set(READ_KEY, JSON.stringify(seen.slice(0, 500)));
+  } catch { /* storage unavailable or corrupt */ }
+}
 
 // Small deterministic PRNG so the wall is identical on every visit.
 function seeded(seed) {
@@ -377,6 +359,8 @@ const SHAPES = {
   chip: '<circle r="6"/>',
 };
 const SHAPE_KEYS = ["jug", "jug", "crimp", "crimp", "sloper", "pinch", "chip"];
+// On a route, a hold's shape says what kind of step it is.
+const KIND_SHAPE = { Essay: "jug", Tutorial: "jug", Note: "crimp", Talk: "sloper", Book: "pinch" };
 const SETS = ["set-a", "set-b", "set-c", "set-d"];
 
 const cellXY = (col, row) => ({
@@ -407,25 +391,30 @@ function buildWall(problems) {
     }
   }
 
-  // A route per problem: start low, one move per item, finish on row 18.
+  // A route per problem: start low, one move per step, finish on row 18.
+  const claim = (hold, kind) => {
+    if (!hold.claimed) {
+      hold.claimed = true;
+      hold.shape = KIND_SHAPE[kind] || (kind ? "chip" : hold.shape);
+    }
+    return hold;
+  };
   const routes = problems.map((p) => {
     const r = seeded(hashString(p.name));
     const moves = p.items.length;
     let col = 2 + Math.floor(r() * 7);
-    const startRow = 2 + Math.floor(r() * 3);
-    const start = [place(col, startRow, r)];
-    if (r() < 0.6) start.push(place(Math.min(10, col + 1 + Math.floor(r() * 2)), startRow, r));
-    const top = 17;
-    const step = (top - startRow) / (moves + 1);
+    const startRow = 2 + Math.floor(r() * 2);
+    const start = [claim(place(col, startRow, r))];
+    if (r() < 0.6) start.push(claim(place(Math.min(10, col + 2), startRow, r)));
+    const step = (17 - startRow) / (moves + 1);
     const hands = p.items.map((item, i) => {
       col = Math.max(0, Math.min(10, col + Math.round((r() - 0.5) * 6)));
       const row = Math.round(startRow + step * (i + 1));
-      return { hold: place(col, row, r), item };
+      return { hold: claim(place(col, row, r), item.kind), item };
     });
     col = Math.max(0, Math.min(10, col + Math.round((r() - 0.5) * 4)));
-    const finish = place(col, ROWS, r);
-    const n = Math.min(GRADES.length - 1, Math.round(Math.log2(p.count + 1) * 1.6));
-    return { problem: p, start, hands, finish, grade: GRADES[n] };
+    const finish = claim(place(col, ROWS, r), p.top && p.top.kind);
+    return { problem: p, start, hands, finish };
   });
   return { holds: [...holds.values()], routes };
 }
@@ -494,44 +483,56 @@ function moonboard() {
   const caption = root.querySelector(".moon__caption");
   caption.hidden = false;
   const rows = [...root.querySelectorAll("[data-problem]")];
+  const read = readPages();
 
-  wall.routes.forEach((route, i) => {
-    const grade = rows[i] && rows[i].querySelector("[data-grade]");
-    if (grade) grade.textContent = `${route.grade[0]} / ${route.grade[1]}`;
-  });
+  for (const row of rows) {
+    const grade = row.querySelector(".moon__grade");
+    if (grade && V_GRADE[grade.textContent]) grade.textContent += ` / ${V_GRADE[grade.textContent]}`;
+  }
 
-  const ring = (hold, kind, delay, link) => {
+  const tick = '<path class="led-tick" d="M-5 0l3.5 3.5L5-4"/>';
+  const ring = (hold, kind, delay, step) => {
     const { x, y } = cellXY(hold.col, hold.row);
     const r = 17 * Math.max(1, hold.scale);
-    const inner = `<circle class="led-glow" cx="${x}" cy="${y}" r="${r}"/><circle class="led-ring" cx="${x}" cy="${y}" r="${r}"/>`;
+    const done = step && step.href && read.has(new URL(step.href, location.href).pathname);
+    const todo = step && step.todo;
+    const cls = `led led--${kind}${todo ? " is-todo" : ""}${done ? " is-done" : ""}`;
+    const inner = `<circle class="led-glow" cx="${x}" cy="${y}" r="${r}"/><circle class="led-ring" cx="${x}" cy="${y}" r="${r}"/>` +
+      (done ? `<g transform="translate(${x + r * 0.72} ${y - r * 0.72})"><circle class="led-badge" r="7"/>${tick}</g>` : "");
     const style = `style="--delay:${delay}ms"`;
-    if (!link) return `<g class="led led--${kind}" ${style} aria-hidden="true">${inner}</g>`;
-    return `<a class="led led--${kind}" ${style} href="${esc(link.href)}" aria-label="${esc(link.label)}" data-caption="${esc(link.caption)}">${inner}<circle class="led-hit" cx="${x}" cy="${y}" r="${r + 4}"/></a>`;
+    if (!step || !step.href || todo) {
+      const label = step ? `data-caption="${esc(step.caption)}"` : "";
+      return `<g class="${cls}" ${style} ${label} aria-hidden="true">${inner}</g>`;
+    }
+    return `<a class="${cls}" ${style} href="${esc(step.href)}" aria-label="${esc(step.label)}" data-caption="${esc(step.caption)}">${inner}<circle class="led-hit" cx="${x}" cy="${y}" r="${r + 4}"/></a>`;
+  };
+
+  const describe = (hold, item, prefix = "") => {
+    const where = coord(hold.col, hold.row);
+    if (item.todo) return { ...item, caption: `${where} · Coming soon · ${item.title}`, label: "" };
+    const text = `${prefix}${item.kind ? `${item.kind} · ` : ""}${item.title}`;
+    return { ...item, caption: `${where} · ${text}`, label: `${where}: ${text}` };
   };
 
   let current = -1;
   const summary = (route) => {
     const s = route.start[0];
-    return `${route.problem.name} · ${route.grade[0]} · start ${coord(s.col, s.row)}, top out ${coord(route.finish.col, route.finish.row)}`;
+    const p = route.problem;
+    return `${p.name} · ${p.grade} · start ${coord(s.col, s.row)}${p.start ? ` · ${p.start}` : ""}`;
   };
 
   const select = (i) => {
     if (i === current) return;
     current = i;
     const route = wall.routes[i];
-    const step = reducedMotion.matches ? 0 : 70;
+    const stepMs = reducedMotion.matches ? 0 : 70;
     let t = 0;
-    let out = route.start.map((h) => ring(h, "start", (t += step))).join("");
-    out += route.hands.map(({ hold, item }) => ring(hold, "hand", (t += step), {
-      href: item.href,
-      label: `${coord(hold.col, hold.row)}: ${item.kind}, ${item.title}`,
-      caption: `${coord(hold.col, hold.row)} · ${item.kind} · ${item.title}`,
-    })).join("");
-    out += ring(route.finish, "finish", (t += step), {
-      href: route.problem.href,
-      label: `Top out: all of ${route.problem.name}`,
-      caption: `${coord(route.finish.col, route.finish.row)} · Top out · all of ${route.problem.name}`,
-    });
+    let out = route.start.map((h) => ring(h, "start", (t += stepMs))).join("");
+    out += route.hands.map(({ hold, item }) => ring(hold, "hand", (t += stepMs), describe(hold, item))).join("");
+    const top = route.problem.top && route.problem.top.title
+      ? describe(route.finish, route.problem.top, "Top out · ")
+      : describe(route.finish, { title: `the whole of ${route.problem.name}`, href: route.problem.href }, "Top out · ");
+    out += ring(route.finish, "finish", (t += stepMs), top);
     leds.innerHTML = out;
     requestAnimationFrame(() => leds.querySelectorAll(".led").forEach((l) => l.classList.add("is-on")));
     caption.textContent = summary(route);
@@ -544,13 +545,24 @@ function moonboard() {
     row.addEventListener("focus", () => select(i));
   }
   const showCaption = (e) => {
-    const a = e.target.closest && e.target.closest("a.led");
-    if (a) caption.textContent = a.dataset.caption;
+    const g = e.target.closest && e.target.closest(".led[data-caption]");
+    if (g) caption.textContent = g.dataset.caption;
   };
   leds.addEventListener("mouseover", showCaption);
   leds.addEventListener("focusin", showCaption);
   leds.addEventListener("mouseleave", () => { if (current >= 0) caption.textContent = summary(wall.routes[current]); });
   select(0);
+}
+
+/* Path pages: tick the steps this visitor has already opened. -------------- */
+
+function pathTicks() {
+  const list = document.querySelector(".route-steps");
+  if (!list) return;
+  const read = readPages();
+  for (const li of list.querySelectorAll("li[data-href]")) {
+    if (read.has(new URL(li.dataset.href, location.href).pathname)) li.classList.add("is-done");
+  }
 }
 
 function init() {
@@ -561,8 +573,9 @@ function init() {
   terminalCasts();
   widgets();
   filters();
-  bookshelf();
   moonboard();
+  pathTicks();
+  recordVisit();
 }
 
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);

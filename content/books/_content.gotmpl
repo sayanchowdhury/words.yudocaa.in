@@ -1,0 +1,13 @@
+{{- /* One page per book in data/books.yaml. */ -}}
+{{- range hugo.Data.books }}
+  {{- $content := dict "mediaType" "text/markdown" "value" (.summary | default "") }}
+  {{- $dates := dict }}
+  {{- with .finished }}{{ $dates = dict "date" (time.AsTime .) }}{{ else }}{{ with .started }}{{ $dates = dict "date" (time.AsTime .) }}{{ end }}{{ end }}
+  {{- $.AddPage (merge $dates (dict
+      "path" (.slug | default (.title | urlize))
+      "title" .title
+      "kind" "page"
+      "content" $content
+      "params" (dict "book" . "topics" (.topics | default slice))
+  )) }}
+{{- end }}

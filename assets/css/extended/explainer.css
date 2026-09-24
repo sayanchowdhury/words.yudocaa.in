@@ -4,7 +4,8 @@
 
 :root {
     --accent: oklch(0.49 0.13 258);
-    --prose-font: "STIX Two Text", "Iowan Old Style", Georgia, serif;
+    --prose-font: "Literata", "Iowan Old Style", Georgia, serif;
+    --display-font: "Fraunces", "Literata", Georgia, serif;
     --code-font: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
     --rail-width: min(260px, calc(50vw - (var(--main-width) / 2) - var(--gap) * 3));
 
@@ -25,8 +26,9 @@
 
 .post-content {
     font-family: var(--prose-font);
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     line-height: 1.7;
+    font-optical-sizing: auto;
     font-variant-numeric: oldstyle-nums proportional-nums;
     hanging-punctuation: first;
 }

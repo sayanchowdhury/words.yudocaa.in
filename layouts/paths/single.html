@@ -1,0 +1,32 @@
+{{- define "main" }}
+{{- $r := partial "site/path_steps.html" . }}
+<article class="collection path">
+  <header class="collection__head">
+    <p class="path__crumb"><a href="{{ "paths/" | relURL }}">Learning paths</a></p>
+    <h1>{{ .Title }}</h1>
+    {{- with .Params.summary }}<p class="collection__desc">{{ . | markdownify }}</p>{{ end }}
+    <p class="path__meta">
+      {{- with .Params.grade }}<span class="path__grade">{{ . }}</span>{{ end }}
+      <span>{{ len $r.steps }} moves</span>
+      {{- with .GetTerms "topics" }}<span>{{ range $i, $t := . }}{{ if $i }}, {{ end }}<a href="{{ $t.RelPermalink }}">{{ $t.LinkTitle }}</a>{{ end }}</span>{{ end }}
+    </p>
+  </header>
+
+  {{- with .Content }}<div class="post-content md-content">{{ . }}</div>{{ end }}
+
+  <ol class="route-steps">
+    {{- with .Params.start }}
+    <li class="route-step route-step--start">
+      <span class="route-step__hold" aria-hidden="true"></span>
+      <div><p class="route-step__kind">Start</p><p class="route-step__title">{{ . | markdownify }}</p></div>
+    </li>
+    {{- end }}
+    {{- range $i, $s := $r.steps }}
+    {{ partial "site/route_step.html" (dict "step" $s "n" (add $i 1) "class" "hand") }}
+    {{- end }}
+    {{- with $r.top }}{{ if .title }}
+    {{ partial "site/route_step.html" (dict "step" . "n" "Top" "class" "finish") }}
+    {{- end }}{{ end }}
+  </ol>
+</article>
+{{- end }}

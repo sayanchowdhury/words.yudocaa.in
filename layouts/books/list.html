@@ -1,0 +1,30 @@
+{{- define "main" }}
+{{- $shelves := slice (dict "key" "reading" "name" "Reading now") (dict "key" "read" "name" "Read") (dict "key" "want" "name" "Antilibrary" "hint" "Books I want to read.") }}
+<article class="collection bookshelf">
+  <header class="collection__head">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}<p class="collection__desc">{{ . | markdownify }}</p>{{ end }}
+  </header>
+  {{- range $shelf := $shelves }}
+  {{- $on := slice }}
+  {{- range $.RegularPages }}{{ if eq .Params.book.status $shelf.key }}{{ $on = $on | append . }}{{ end }}{{ end }}
+  {{- if $on }}
+  <section class="shelf" aria-labelledby="shelf-{{ $shelf.key }}">
+    <h2 class="home__label" id="shelf-{{ $shelf.key }}">{{ $shelf.name }} <span class="shelf__count">{{ len $on }}</span></h2>
+    {{- with $shelf.hint }}<p class="shelf__hint">{{ . }}</p>{{ end }}
+    <ul class="shelf__row">
+      {{- range $on }}
+      <li class="shelf__book">
+        <a href="{{ .RelPermalink }}">
+          {{ partial "site/book_cover.html" (dict "book" .Params.book "width" 150) }}
+          <span class="shelf__title">{{ .Title }}</span>
+          <span class="shelf__author">{{ index (split .Params.book.author ",") 0 }}</span>
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+  {{- end }}
+</article>
+{{- end }}

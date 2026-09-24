@@ -1,0 +1,25 @@
+{{- /*
+  A book cover. Context: (dict "book" . "width" 300).
+  Uses `cover` (an assets/ image) or the Open Library cover for `isbn`,
+  fetched and resized at build time; otherwise a plain cloth binding.
+*/ -}}
+{{- $b := .book -}}
+{{- $w := .width | default 300 -}}
+{{- $img := false -}}
+{{- with $b.cover }}{{ $img = resources.Get . }}{{ end -}}
+{{- if and (not $img) $b.isbn -}}
+  {{- $u := printf "https://covers.openlibrary.org/b/isbn/%s-L.jpg?default=false" $b.isbn -}}
+  {{- with try (resources.GetRemote $u) -}}
+    {{- with .Err }}{{ warnf "cover for %q: %s" $b.title . }}{{ else with .Value }}{{ $img = . }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- if $img -}}
+  {{- $r := $img.Resize (printf "%dx webp q82" (mul $w 2)) -}}
+  <span class="book-frame"><img class="book__cover" src="{{ $r.RelPermalink }}" width="{{ $w }}" height="{{ div (mul $r.Height $w) $r.Width }}" alt="Cover of {{ $b.title }}" loading="lazy" decoding="async"></span>
+{{- else -}}
+  {{- $tone := mod (hash.FNV32a $b.title) 5 -}}
+  <span class="book-frame"><span class="book__cover book__cover--cloth cloth--{{ $tone }}" style="--w: {{ $w }}px" role="img" aria-label="{{ $b.title }}">
+    <span class="cloth__title">{{ $b.title }}</span>
+    <span class="cloth__author">{{ index (split $b.author ",") 0 }}</span>
+  </span></span>
+{{- end -}}

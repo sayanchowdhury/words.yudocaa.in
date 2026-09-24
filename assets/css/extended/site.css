@@ -7,17 +7,15 @@
     --surface: color-mix(in oklch, var(--accent) 4%, var(--theme));
     --shelf: oklch(0.55 0.04 60);
 
-    --spine-0: oklch(0.42 0.07 200);
-    --spine-1: oklch(0.42 0.11 25);
-    --spine-2: oklch(0.72 0.11 80);
-    --spine-3: oklch(0.45 0.08 260);
-    --spine-4: oklch(0.58 0.07 130);
-    --spine-5: oklch(0.3 0.01 260);
+    --ledge-top: oklch(0.9 0.012 75);
+    --ledge-front: oklch(0.8 0.018 70);
 }
 
 :root[data-theme="dark"] {
     --surface: color-mix(in oklch, var(--accent) 6%, var(--theme));
     --shelf: oklch(0.42 0.03 60);
+    --ledge-top: oklch(0.36 0.01 70);
+    --ledge-front: oklch(0.28 0.01 70);
 }
 
 /* PaperMod's display rules would otherwise override the hidden attribute. */
@@ -54,9 +52,7 @@ body:has(.home, .collection) {
 
 .home__label {
     margin: 0 0 20px;
-    font-family: var(--prose-font);
-    font-size: 21px;
-    font-weight: 600;
+    font-size: 22px;
     color: var(--primary);
 }
 
@@ -143,6 +139,42 @@ body:has(.home, .collection) {
     color: var(--content);
 }
 
+/* Display type: Fraunces for titles and section heads ---------------------- */
+
+.home__name,
+.collection__head h1,
+.post-title,
+.home__label,
+.moon__name {
+    font-family: var(--display-font);
+    font-optical-sizing: auto;
+    font-variation-settings: "SOFT" 60;
+}
+
+.home__name {
+    font-weight: 600;
+    letter-spacing: -0.025em;
+}
+
+.home__label {
+    font-weight: 560;
+    letter-spacing: -0.005em;
+}
+
+/* Writing and notes lead the homepage, so they get larger type. */
+.ledger--lead li > a {
+    padding: 15px 0;
+}
+
+.ledger--lead .ledger__title {
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+.home__section--lead .home__label {
+    font-size: 26px;
+}
+
 /* Home -------------------------------------------------------------------- */
 
 .home {
@@ -166,8 +198,7 @@ body:has(.home, .collection) {
 
 .home__name {
     margin: 0;
-    font-family: var(--prose-font);
-    font-size: clamp(36px, 5vw, 48px);
+    font-size: clamp(40px, 6vw, 60px);
     font-weight: 600;
     line-height: 1.1;
     letter-spacing: -0.02em;
@@ -458,8 +489,7 @@ body:has(.home, .collection) {
 }
 
 .moon__name {
-    font-family: var(--prose-font);
-    font-size: 18px;
+    font-size: 19px;
     color: var(--primary);
 }
 
@@ -484,108 +514,6 @@ body:has(.home, .collection) {
     background: linear-gradient(90deg, color-mix(in oklch, var(--accent) 8%, transparent), transparent);
 }
 
-/* Book spines --------------------------------------------------------------- */
-
-.shelf {
-    margin: 0 0 40px;
-}
-
-.shelf__count {
-    font-family: var(--sans);
-    font-size: 13px;
-    font-weight: 400;
-    color: var(--secondary);
-}
-
-.shelf__row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    gap: 3px;
-    min-height: 60px;
-    position: relative;
-    padding: 0 12px 8px;
-}
-
-/* The shelf board the spines stand on. */
-.shelf__row::after {
-    content: "";
-    position: absolute;
-    inset: auto 0 0;
-    height: 8px;
-    border-radius: 2px;
-    background: var(--shelf);
-}
-
-.spine {
-    --tone: var(--spine-0);
-    --ink: rgb(255 255 255 / 0.92);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: var(--w);
-    height: var(--h);
-    padding: 12px 0 10px;
-    border-radius: 3px 3px 0 0;
-    background:
-        linear-gradient(90deg, rgb(0 0 0 / 0.18), transparent 18%, transparent 82%, rgb(0 0 0 / 0.14)),
-        var(--tone);
-    color: var(--ink);
-    writing-mode: vertical-rl;
-    overflow: hidden;
-    transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.spine--1 { --tone: var(--spine-1); }
-.spine--2 { --tone: var(--spine-2); --ink: rgb(30 24 10 / 0.9); }
-.spine--3 { --tone: var(--spine-3); }
-.spine--4 { --tone: var(--spine-4); --ink: rgb(20 28 12 / 0.9); }
-.spine--5 { --tone: var(--spine-5); }
-
-.spine__title {
-    font-family: var(--prose-font);
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.1;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: calc(var(--h) - 70px);
-}
-
-.spine__author {
-    font-family: var(--sans);
-    font-size: 10px;
-    letter-spacing: 0.04em;
-    opacity: 0.8;
-    white-space: nowrap;
-}
-
-.spine:hover {
-    transform: translateY(-6px);
-}
-
-.spine.is-out {
-    transform: translateY(-16px);
-}
-
-.spine:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
-}
-
-.shelf--mini .spine {
-    width: calc(var(--w) * 0.8);
-    height: calc(var(--h) * 0.72);
-}
-
-.shelf--mini .spine__title {
-    font-size: 12px;
-    max-height: calc(var(--h) * 0.72 - 56px);
-}
-
 /* Collection pages -------------------------------------------------------- */
 
 .collection {
@@ -598,8 +526,7 @@ body:has(.home, .collection) {
 
 .collection__head h1 {
     margin: 0;
-    font-family: var(--prose-font);
-    font-size: 40px;
+    font-size: 44px;
     font-weight: 600;
     letter-spacing: -0.02em;
     color: var(--primary);
@@ -741,55 +668,515 @@ body:has(.home, .collection) {
     color: var(--accent);
 }
 
-/* Bookshelf page ---------------------------------------------------------- */
+/* Books: covers standing on a shelf ledge ---------------------------------- */
 
-.bookshelf .shelf__row {
-    min-height: 120px;
+.book__cover {
+    display: block;
+    height: auto;
+    border-radius: 2px 4px 4px 2px;
+    /* Contact shadow, then a soft ambient one: the book stands off the wall. */
+    box-shadow:
+        0 1px 1px rgb(0 0 0 / 0.18),
+        0 6px 10px -2px rgb(0 0 0 / 0.18),
+        0 18px 28px -12px rgb(0 0 0 / 0.3);
 }
 
-.book-cards {
-    margin-top: 12px;
+/* The binding: a crease near the spine and a little sheen on the board. */
+.book-frame {
+    position: relative;
+    display: inline-block;
 }
 
-.book-card {
-    padding: 20px 0;
-    border-top: 1px solid var(--border);
-    scroll-margin-top: calc(var(--header-height) + 24px);
+.book-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 2px 4px 4px 2px;
+    pointer-events: none;
+    background: linear-gradient(90deg,
+        rgb(0 0 0 / 0.22) 0,
+        rgb(255 255 255 / 0.18) 1.2%,
+        rgb(0 0 0 / 0.12) 3%,
+        transparent 6%,
+        transparent 92%,
+        rgb(0 0 0 / 0.06) 100%);
 }
 
-.bookshelf.is-live .book-card {
-    border-top: 0;
-    padding-top: 4px;
+.book__cover--cloth {
+    --cloth: oklch(0.36 0.06 250);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: var(--w);
+    aspect-ratio: 2 / 3;
+    padding: 14% 12% 10%;
+    background:
+        repeating-linear-gradient(0deg, rgb(255 255 255 / 0.03) 0 1px, transparent 1px 3px),
+        repeating-linear-gradient(90deg, rgb(0 0 0 / 0.04) 0 1px, transparent 1px 3px),
+        var(--cloth);
+    color: oklch(0.88 0.06 85);
+    text-align: center;
 }
 
-.book-card__title {
-    margin: 0;
-    font-family: var(--prose-font);
-    font-size: 24px;
+.cloth--1 { --cloth: oklch(0.34 0.08 25); }
+.cloth--2 { --cloth: oklch(0.38 0.05 150); }
+.cloth--3 { --cloth: oklch(0.3 0.02 60); }
+.cloth--4 { --cloth: oklch(0.42 0.07 70); }
+
+.cloth__title {
+    font-family: var(--display-font);
+    font-size: calc(var(--w) * 0.11);
     font-weight: 600;
-    color: var(--primary);
+    line-height: 1.15;
 }
 
-.book-card__title span {
+.cloth__author {
+    font-family: var(--prose-font);
+    font-size: calc(var(--w) * 0.065);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.shelf {
+    margin: 0 0 56px;
+}
+
+.shelf__count,
+.shelf__hint {
+    font-family: var(--sans);
+    font-size: 13px;
     font-weight: 400;
     color: var(--secondary);
 }
 
-.book-card__meta {
+.shelf__hint {
+    margin: -12px 0 16px;
+}
+
+.shelf__row {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 28px 32px;
+    margin: 0;
+    padding: 24px 28px 0;
+    list-style: none;
+}
+
+/* The ledge: a lit top face and a darker front edge, with its own shadow. */
+.shelf__row::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -18px;
+    height: 18px;
+    background: linear-gradient(180deg, var(--ledge-top) 0 7px, var(--ledge-front) 7px 100%);
+    border-radius: 1px;
+    box-shadow: 0 10px 14px -8px rgb(0 0 0 / 0.3);
+}
+
+.shelf__book {
+    position: relative;
+    z-index: 1;
+    width: 150px;
+    margin-bottom: 2px;
+}
+
+.shelf__book a {
+    display: block;
+    color: var(--primary);
+}
+
+.shelf__book .book__cover {
+    width: 150px;
+    transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 240ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shelf__book a:hover .book__cover,
+.shelf__book a:focus-visible .book__cover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 1px 1px rgb(0 0 0 / 0.15),
+        0 12px 18px -4px rgb(0 0 0 / 0.22),
+        0 28px 36px -14px rgb(0 0 0 / 0.32);
+}
+
+/* Titles sit below the ledge, like labels on a library shelf. */
+.shelf__title,
+.shelf__author {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    font-family: var(--sans);
+    line-height: 1.35;
+}
+
+.shelf__title {
+    top: calc(100% + 30px);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.shelf__author {
+    top: calc(100% + 50px);
+    font-size: 12px;
+    color: var(--secondary);
+}
+
+.shelf__row {
+    margin-bottom: 96px;
+}
+
+/* A book's page */
+
+.book {
+    font-family: var(--prose-font);
+}
+
+.book__layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 48px;
+    align-items: end;
+    margin: 12px 0 56px;
+}
+
+.book__title {
+    margin: 0;
+    font-family: var(--display-font);
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+    color: var(--primary);
+}
+
+.book__subtitle {
     margin: 6px 0 0;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--secondary);
+}
+
+.book__author {
+    margin: 14px 0 0;
+    font-size: 17px;
+    color: var(--content);
+}
+
+.book__facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 36px;
+    margin: 24px 0 0;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    font-family: var(--sans);
+    font-size: 14px;
+}
+
+.book__facts dt {
+    font-size: 12px;
+    color: var(--secondary);
+}
+
+.book__facts dd {
+    margin: 2px 0 0;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.book__section {
+    margin-top: 48px;
+}
+
+.book__summary {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.book__empty {
+    margin: 0;
+    font-style: italic;
+    color: var(--secondary);
+}
+
+/* Home: reading now */
+
+.reading-now {
+    display: grid;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.reading-now a {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: var(--primary);
+}
+
+.reading-now .book__cover {
+    width: 72px;
+    flex: none;
+}
+
+.reading-now__title {
+    display: block;
+    font-family: var(--display-font);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.reading-now__author {
+    display: block;
+    margin-top: 2px;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.reading-now a:hover .reading-now__title {
+    color: var(--accent);
+}
+
+/* Learning paths ------------------------------------------------------------ */
+
+.collection--wide {
+    max-width: none;
+}
+
+.main:has(> .collection--wide) {
+    max-width: calc(var(--nav-width) + var(--gap) * 2);
+}
+
+.paths-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 480px) minmax(0, 1fr);
+    gap: 64px;
+    align-items: start;
+}
+
+.paths-key {
+    position: sticky;
+    top: calc(var(--header-height) + 24px);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--content);
+}
+
+.paths-key dl {
+    display: grid;
+    gap: 12px;
+    margin: 0 0 20px;
+}
+
+.paths-key dt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.paths-key dd {
+    margin: 2px 0 0 28px;
+}
+
+.key-led {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid var(--led, var(--secondary));
+}
+
+.key-led--start { --led: oklch(0.74 0.2 145); }
+.key-led--hand { --led: oklch(0.64 0.18 255); }
+.key-led--finish { --led: oklch(0.63 0.22 27); }
+.key-led--todo { border-style: dashed; border-width: 2px; }
+
+.path__crumb {
+    margin: 0 0 10px;
+    font-family: var(--sans);
+    font-size: 14px;
+}
+
+.path__crumb a {
+    color: var(--secondary);
+}
+
+.path__crumb a:hover {
+    color: var(--accent);
+}
+
+.path__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    margin: 16px 0 0;
     font-family: var(--sans);
     font-size: 14px;
     color: var(--secondary);
 }
 
-.book-card__take {
-    margin-top: 12px;
-    font-size: 18px;
-    line-height: 1.6;
+.path__meta a {
+    color: var(--accent);
 }
 
-.book-card__take p {
+.path__grade {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.route-steps {
+    --rail: var(--border);
+    position: relative;
+    margin: 40px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.route-step {
+    position: relative;
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 20px;
+    padding-bottom: 32px;
+}
+
+/* The route line between holds. */
+.route-step:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 17px;
+    top: 36px;
+    bottom: 0;
+    width: 1px;
+    background: var(--rail);
+}
+
+.route-step__hold {
+    --led: oklch(0.64 0.18 255);
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 3px solid var(--led);
+    background: var(--theme);
+}
+
+.route-step--start .route-step__hold { --led: oklch(0.74 0.2 145); }
+.route-step--finish .route-step__hold { --led: oklch(0.63 0.22 27); }
+.route-step.is-todo .route-step__hold { border-style: dashed; border-width: 2px; opacity: 0.7; }
+
+.route-step__tick {
+    display: none;
+    fill: none;
+    stroke: var(--led);
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.route-step.is-done .route-step__tick { display: block; }
+
+.route-step__read { display: none; }
+.route-step.is-done .route-step__read { display: inline; }
+
+.route-step__kind {
+    margin: 2px 0 4px;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.route-step__title {
     margin: 0;
+    font-family: var(--display-font);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--primary);
+}
+
+.route-step__title a {
+    color: inherit;
+}
+
+.route-step__title a:hover {
+    color: var(--accent);
+}
+
+.route-step.is-todo .route-step__title {
+    color: var(--secondary);
+}
+
+.route-step--start .route-step__title {
+    font-family: var(--prose-font);
+    font-size: 18px;
+}
+
+.route-step__title p {
+    margin: 0;
+}
+
+.route-step__beta {
+    margin: 8px 0 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--content);
+}
+
+/* Wall states used by paths */
+
+.moon__svg .led.is-todo .led-ring {
+    stroke-dasharray: 5 5;
+    opacity: 0.8;
+}
+
+.moon__svg .led.is-todo .led-glow {
+    display: none;
+}
+
+.moon__svg .led-badge {
+    fill: var(--led-hand);
+}
+
+.moon__svg .led-tick {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.moon__feature {
+    margin: 0;
+}
+
+.moon__feature-link {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: baseline;
+    gap: 16px;
+    padding: 12px 0;
+    border-block: 1px solid var(--border);
+    color: var(--secondary);
+}
+
+.moon__feature-link:hover .moon__name {
+    color: var(--accent);
+}
+
+.home__paths-compact {
+    display: none;
 }
 
 /* Small screens ----------------------------------------------------------- */
@@ -797,18 +1184,53 @@ body:has(.home, .collection) {
 @media (max-width: 900px) {
     .home {
         grid-template-columns: minmax(0, 1fr);
-        grid-template-areas: "intro" "bio" "aside" "rest";
+        grid-template-areas: "intro" "bio" "rest";
         grid-template-rows: none;
     }
 
+    /* The wall is a desktop picture; small screens get the plain list. */
     .home__aside {
+        display: none;
+    }
+
+    .home__paths-compact {
+        display: block;
+    }
+
+    .paths-layout,
+    .book__layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .paths-key {
         position: static;
-        margin-top: 72px;
-        max-width: 480px;
+    }
+
+    .book__layout {
+        gap: 28px;
+        align-items: start;
+    }
+
+    .book__art .book__cover {
+        width: 180px;
     }
 }
 
 @media (max-width: 600px) {
+    .shelf__row {
+        gap: 24px 20px;
+        padding: 16px 12px 0;
+    }
+
+    .shelf__book,
+    .shelf__book .book__cover {
+        width: 104px;
+    }
+
+    .book__title {
+        font-size: 34px;
+    }
+
     .ledger li > a,
     .ledger__row {
         flex-direction: column;
