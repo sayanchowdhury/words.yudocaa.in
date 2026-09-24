@@ -32,20 +32,14 @@ languages:
                 - name: /about
                   url: /about/
                   weight: 2
-                - name: /container-linux
-                  url: /pillars/container-linux-immutable-os/
-                  weight: 3
-                - name: /career
-                  url: /pillars/open-source-release-eng-career/
-                  weight: 4
                 - name: /archive
                   url: /archives/
                   weight: 5
-                - name: /talks
-                  url: /talks/
-                  weight: 6
                 - name: /search
                   url: /search/
+                  weight: 10
+                - name: /tags
+                  url: /tags/
                   weight: 10
                 #- name: Categories
                   #url: /categories/
@@ -160,7 +154,6 @@ taxonomies:
     category: categories
     tag: tags
     series: series
-    pillar: pillars
 
 markup:
     goldmark:
