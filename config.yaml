@@ -17,7 +17,10 @@ minify:
     minifyOutput: true
 
 permalinks:
-  posts: "/:year/:month/:day/:slug/"
+  page:
+    posts: "/:year/:month/:day/:slug/"
+    # Talk write-ups moved out of /blog/ keep their original URLs.
+    talks: "/blog/:slugorcontentbasename/"
 
 languages:
     en:
@@ -26,20 +29,23 @@ languages:
         weight: 1
         menu:
             main:
-                - name: /home
-                  url: /
+                - name: /tutorials
+                  url: /tutorials/
                   weight: 1
-                - name: /about
-                  url: /about/
+                - name: /talks
+                  url: /talks/
                   weight: 2
+                - name: /topics
+                  url: /topics/
+                  weight: 3
                 - name: /archive
                   url: /archives/
+                  weight: 4
+                - name: /about
+                  url: /about/
                   weight: 5
                 - name: /search
                   url: /search/
-                  weight: 10
-                - name: /tags
-                  url: /tags/
                   weight: 10
                 #- name: Categories
                   #url: /categories/
@@ -54,6 +60,10 @@ outputs:
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     description: "Container internals, immutable Linux (Flatcar) and Kubernetes release engineering: notes from Sayan Chowdhury."
+    mainSections:
+      - blog
+      - tutorials
+      - cheatsheets
     rssExcludeSections:
       - fitness
       - hope
@@ -154,6 +164,7 @@ taxonomies:
     category: categories
     tag: tags
     series: series
+    topic: topics
 
 markup:
     goldmark:
