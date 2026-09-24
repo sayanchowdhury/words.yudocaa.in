@@ -1,0 +1,5 @@
+{{- with .GetTerms "topics" }}
+<p class="post-topics">
+  {{- range $i, $t := . }}{{ if $i }} · {{ end }}<a href="{{ $t.RelPermalink }}">{{ $t.LinkTitle }}</a>{{ end -}}
+</p>
+{{- end }}

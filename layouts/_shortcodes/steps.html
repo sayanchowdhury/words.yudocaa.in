@@ -1,0 +1,15 @@
+{{- /*
+  Use with % delimiters so headings reach the TOC:
+  {{% steps %}}
+  ### Download the image
+  ...
+  ### Boot it
+  ...
+  {{% /steps %}}
+  Each ### heading becomes a numbered step.
+*/ -}}
+<div class="steps">
+
+{{ .Inner }}
+
+</div>

@@ -1,0 +1,23 @@
+{{- /*
+  {{< tabs group="os" >}}
+  {{< tab "Flatcar" >}} Markdown {{< /tab >}}
+  {{< tab "Ubuntu" >}} Markdown {{< /tab >}}
+  {{< /tabs >}}
+  Tab groups sharing a `group` switch together, and the choice is remembered.
+*/ -}}
+{{- $noop := .Inner -}}
+{{- $id := printf "tabs-%d" .Ordinal -}}
+{{- $tabs := .Store.Get "tabs" | default slice -}}
+<div class="tabs" id="{{ $id }}"{{ with .Get "group" }} data-group="{{ . }}"{{ end }}>
+  <div class="tabs__list" role="tablist" hidden>
+    {{- range $i, $t := $tabs }}
+    <button type="button" role="tab" id="{{ $id }}-tab-{{ $i }}" aria-controls="{{ $id }}-panel-{{ $i }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}" tabindex="{{ if eq $i 0 }}0{{ else }}-1{{ end }}" data-label="{{ $t.name }}">{{ $t.name }}</button>
+    {{- end }}
+  </div>
+  {{- range $i, $t := $tabs }}
+  <section class="tabs__panel" role="tabpanel" id="{{ $id }}-panel-{{ $i }}" aria-labelledby="{{ $id }}-tab-{{ $i }}" tabindex="0">
+    <p class="tabs__fallback-label">{{ $t.name }}</p>
+    {{ $t.content }}
+  </section>
+  {{- end }}
+</div>

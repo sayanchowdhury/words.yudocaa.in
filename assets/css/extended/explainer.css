@@ -1,0 +1,665 @@
+/* Explainer and tutorial layer on top of PaperMod.
+   PaperMod stays monochrome; one ink-blue accent marks where the reader is
+   (progress, TOC position, the selected tab, step numbers) and nothing else. */
+
+:root {
+    --accent: oklch(0.49 0.13 258);
+    --prose-font: "STIX Two Text", "Iowan Old Style", Georgia, serif;
+    --code-font: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    --rail-width: min(260px, calc(50vw - (var(--main-width) / 2) - var(--gap) * 3));
+
+    --note: var(--accent);
+    --tip: oklch(0.47 0.1 155);
+    --warning: oklch(0.52 0.12 70);
+    --danger: oklch(0.5 0.17 27);
+}
+
+:root[data-theme="dark"] {
+    --accent: oklch(0.78 0.1 258);
+    --tip: oklch(0.78 0.11 155);
+    --warning: oklch(0.82 0.12 80);
+    --danger: oklch(0.74 0.14 25);
+}
+
+/* Prose --------------------------------------------------------------------- */
+
+.post-content {
+    font-family: var(--prose-font);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-variant-numeric: oldstyle-nums proportional-nums;
+    hanging-punctuation: first;
+}
+
+/* Headings, UI and tables stay in the site's sans for scannability. */
+.post-content :is(h1, h2, h3, h4, h5, h6, table, figcaption, .tabs__list, .callout__title, .tutorial-meta) {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-variant-numeric: normal;
+}
+
+.post-content :is(h2, h3) {
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+    scroll-margin-top: calc(var(--header-height) + 16px);
+}
+
+.post-content :is(h1, h2, h3, h4, h5, h6) {
+    line-height: 1.25;
+}
+
+.post-content h2 {
+    margin-top: 56px;
+}
+
+.post-content h3 {
+    margin-top: 40px;
+}
+
+.post-content p,
+.post-content li {
+    text-wrap: pretty;
+}
+
+.post-content code,
+.post-content pre {
+    font-family: var(--code-font);
+    font-variant-numeric: normal;
+}
+
+.post-content :focus-visible,
+.post-single :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* Header additions ---------------------------------------------------------- */
+
+.post-topics {
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.post-topics a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.post-topics a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+}
+
+/* Reading progress ---------------------------------------------------------- */
+
+.reading-progress {
+    position: fixed;
+    inset: 0 0 auto;
+    height: 3px;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.reading-progress span {
+    display: block;
+    height: 100%;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+}
+
+/* Table of contents rail ---------------------------------------------------- */
+
+details.toc a.is-active {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+@media (min-width: 1280px) {
+    details.toc.toc--rail {
+        position: fixed;
+        top: calc(var(--header-height) + 40px);
+        left: calc(50% + var(--main-width) / 2 + var(--gap) * 2);
+        width: var(--rail-width);
+        max-height: calc(100vh - var(--header-height) - 80px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        margin: 0;
+        background: none;
+        border: 0;
+        border-radius: 0;
+        font-size: 14px;
+        line-height: 1.45;
+        scrollbar-width: thin;
+    }
+
+    details.toc.toc--rail summary {
+        pointer-events: none;
+        list-style: none;
+        padding: 0 0 10px;
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--secondary);
+    }
+
+    details.toc.toc--rail summary::-webkit-details-marker {
+        display: none;
+    }
+
+    details.toc.toc--rail .title {
+        margin: 0;
+        font-weight: 600;
+    }
+
+    details.toc.toc--rail .inner {
+        margin: 0;
+        padding: 0;
+    }
+
+    details.toc.toc--rail ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    details.toc.toc--rail li ul {
+        margin-inline-start: 12px;
+    }
+
+    details.toc.toc--rail li {
+        margin: 0;
+    }
+
+    details.toc.toc--rail a {
+        display: block;
+        padding: 5px 0 5px 12px;
+        margin-left: -1px;
+        border-left: 1px solid var(--border);
+        color: var(--secondary);
+        text-decoration: none;
+        transition: color 120ms ease-out, border-color 120ms ease-out;
+    }
+
+    details.toc.toc--rail a:hover {
+        color: var(--primary);
+    }
+
+    details.toc.toc--rail a.is-active {
+        color: var(--accent);
+        border-left-color: var(--accent);
+        font-weight: 600;
+    }
+}
+
+/* Tutorial metadata --------------------------------------------------------- */
+
+.tutorial-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 40px;
+    margin: 28px 0 0;
+    padding: 18px 0;
+    border-block: 1px solid var(--border);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.tutorial-meta dt {
+    margin-bottom: 4px;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+
+.tutorial-meta dd {
+    margin: 0;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.tutorial-meta__prereqs {
+    flex: 1 1 260px;
+}
+
+.tutorial-meta__prereqs ul {
+    margin: 0;
+    padding-inline-start: 1.1em;
+    font-weight: 400;
+}
+
+.tutorial-meta__prereqs li + li {
+    margin-top: 2px;
+}
+
+.tutorial-meta code {
+    font-size: 0.9em;
+    padding: 1px 4px;
+    border-radius: 4px;
+    background: var(--code-bg);
+}
+
+/* Series -------------------------------------------------------------------- */
+
+details.series {
+    margin: 24px 0 12px;
+    padding: 14px 18px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 15px;
+}
+
+details.series summary {
+    color: var(--secondary);
+}
+
+details.series strong {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+details.series ol {
+    margin: 12px 0 2px;
+    padding-inline-start: 1.6em;
+}
+
+details.series li {
+    padding: 3px 0;
+}
+
+details.series a {
+    color: var(--secondary);
+}
+
+details.series a:hover {
+    color: var(--primary);
+}
+
+details.series [aria-current] {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.series-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 48px 0 8px;
+}
+
+.series-nav a {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px 18px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--primary);
+    font-weight: 500;
+    line-height: 1.35;
+    transition: border-color 150ms ease-out;
+}
+
+.series-nav a:hover {
+    border-color: var(--accent);
+}
+
+.series-nav span {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+.series-nav__next {
+    grid-column: 2;
+    text-align: end;
+}
+
+/* Callouts ------------------------------------------------------------------ */
+
+.callout {
+    --c: var(--note);
+    margin: 28px 0;
+    padding: 16px 20px;
+    border: 1px solid color-mix(in oklch, var(--c) 30%, var(--border));
+    border-radius: var(--radius);
+    background: color-mix(in oklch, var(--c) 6%, var(--theme));
+}
+
+.callout--tip { --c: var(--tip); }
+.callout--warning { --c: var(--warning); }
+.callout--danger { --c: var(--danger); }
+
+.callout__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 6px !important;
+    color: var(--c);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.callout__title .icon {
+    flex: none;
+}
+
+.callout__body {
+    padding-inline-start: 30px;
+    font-size: 0.95em;
+}
+
+.callout__body > :first-child { margin-top: 0; }
+.callout__body > :last-child { margin-bottom: 0; }
+
+/* Steps --------------------------------------------------------------------- */
+
+.post-content .steps {
+    counter-reset: step;
+    position: relative;
+    margin: 32px 0;
+    padding-inline-start: 52px;
+}
+
+.post-content .steps::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    bottom: 12px;
+    left: 15px;
+    width: 1px;
+    background: var(--border);
+}
+
+.post-content .steps h3 {
+    position: relative;
+    margin: 36px 0 12px;
+    font-size: 20px;
+    counter-increment: step;
+}
+
+.post-content .steps h3:first-child {
+    margin-top: 0;
+}
+
+.post-content .steps h3::before {
+    content: counter(step);
+    position: absolute;
+    left: -52px;
+    top: -2px;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--theme);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-size: 15px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Tabs ---------------------------------------------------------------------- */
+
+.tabs {
+    margin: 28px 0;
+}
+
+.tabs__list {
+    display: flex;
+    gap: 4px;
+    border-bottom: 1px solid var(--border);
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.tabs__list [role="tab"] {
+    flex: none;
+    margin-bottom: -1px;
+    padding: 8px 14px;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: none;
+    color: var(--secondary);
+    font: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 120ms ease-out, border-color 120ms ease-out;
+}
+
+.tabs__list [role="tab"]:hover {
+    color: var(--primary);
+}
+
+.tabs__list [role="tab"][aria-selected="true"] {
+    color: var(--primary);
+    border-bottom-color: var(--accent);
+}
+
+.tabs__panel {
+    padding-top: 16px;
+}
+
+.tabs__panel[hidden] {
+    display: none !important;
+}
+
+.tabs__panel > :first-child,
+.tabs__panel > .tabs__fallback-label + * { margin-top: 0; }
+.tabs__panel > :last-child { margin-bottom: 0; }
+
+/* Without JavaScript every panel shows, each under its own label. */
+.tabs__fallback-label {
+    margin: 0 0 8px !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.tabs.is-ready .tabs__fallback-label {
+    display: none;
+}
+
+/* Code blocks with a filename ---------------------------------------------- */
+
+.post-content .code-file {
+    margin: 24px 0;
+}
+
+.post-content .code-file figcaption.code-file__name {
+    padding: 8px 16px;
+    border-radius: var(--radius) var(--radius) 0 0;
+    background: var(--code-block-bg);
+    border-bottom: 1px solid rgb(255 255 255 / 0.08);
+    color: rgb(255 255 255 / 0.7);
+    font-family: var(--code-font);
+    font-size: 13px;
+    font-weight: 400;
+    text-align: start;
+    margin: 0;
+}
+
+.post-content .code-file .highlight:not(table),
+.post-content .code-file .highlight pre {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* Diagrams ------------------------------------------------------------------ */
+
+.post-content .diagram {
+    margin: 32px 0;
+}
+
+.post-content pre.mermaid {
+    margin: 0;
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--theme);
+    color: var(--secondary);
+    font-size: 13px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+.post-content pre.mermaid.is-rendered {
+    display: flex;
+    justify-content: center;
+    white-space: normal;
+}
+
+.post-content pre.mermaid svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.post-content :is(.diagram, .terminal-cast, .widget) figcaption {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary);
+    text-align: center;
+}
+
+/* Terminal recordings ------------------------------------------------------- */
+
+.post-content .terminal-cast {
+    margin: 32px 0;
+}
+
+.post-content .terminal-cast__player {
+    min-height: 120px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--code-block-bg);
+}
+
+.post-content .terminal-cast__fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    color: rgb(255 255 255 / 0.75);
+    font-family: var(--code-font);
+    font-size: 14px;
+}
+
+/* Live widgets -------------------------------------------------------------- */
+
+.post-content .widget {
+    margin: 36px 0;
+}
+
+.post-content .widget__root {
+    padding: 24px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--entry);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    font-variant-numeric: normal;
+}
+
+/* Widgets own their layout; undo prose list and paragraph spacing. */
+.post-content .widget__root :is(ul, ol) {
+    padding: 0;
+    margin: 0;
+}
+
+.post-content .widget__root li {
+    margin: 0;
+}
+
+@media (min-width: 900px) {
+    .post-content .widget.widget--wide {
+        margin-inline: -64px;
+    }
+}
+
+/* Home: topics row ---------------------------------------------------------- */
+
+.home-topics ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0 4px;
+    padding: 0;
+    list-style: none;
+}
+
+.home-topics a {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 500;
+    transition: border-color 150ms ease-out, color 150ms ease-out;
+}
+
+.home-topics a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.home-topics__count {
+    color: var(--secondary);
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Small screens ------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+    .post-content {
+        font-size: 1.05rem;
+    }
+
+    .post-content .steps {
+        padding-inline-start: 44px;
+    }
+
+    .post-content .steps::before {
+        left: 13px;
+    }
+
+    .post-content .steps h3::before {
+        left: -44px;
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .callout__body {
+        padding-inline-start: 0;
+    }
+
+    .series-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .series-nav__next {
+        grid-column: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tabs__list [role="tab"],
+    .series-nav a,
+    .home-topics a,
+    details.toc.toc--rail a {
+        transition: none;
+    }
+}

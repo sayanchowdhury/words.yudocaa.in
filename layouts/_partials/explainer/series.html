@@ -1,0 +1,29 @@
+{{- /* Called with (dict "page" . "where" "top"|"bottom"). Parts are ordered by weight, then date. */ -}}
+{{- $page := .page -}}
+{{- with $page.GetTerms "series" }}
+{{- $term := index . 0 }}
+{{- $parts := $term.Pages.ByWeight }}
+{{- if not (index $parts 0).Weight }}{{ $parts = $term.Pages.ByDate }}{{ end }}
+{{- $n := len $parts }}
+{{- $idx := 0 }}
+{{- range $i, $p := $parts }}{{ if eq $p $page }}{{ $idx = $i }}{{ end }}{{ end }}
+{{- if eq $.where "top" }}
+<details class="series">
+  <summary>Part {{ add $idx 1 }} of {{ $n }} in <strong>{{ $term.LinkTitle }}</strong></summary>
+  <ol>
+    {{- range $parts }}
+    <li>{{ if eq . $page }}<span aria-current="page">{{ .LinkTitle }}</span>{{ else }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</li>
+    {{- end }}
+  </ol>
+</details>
+{{- else if gt $n 1 }}
+<nav class="series-nav" aria-label="{{ $term.LinkTitle }} series">
+  {{- if gt $idx 0 }}{{ with index $parts (sub $idx 1) }}
+  <a class="series-nav__prev" href="{{ .RelPermalink }}"><span>Previous part</span>{{ .LinkTitle }}</a>
+  {{- end }}{{ end }}
+  {{- if lt (add $idx 1) $n }}{{ with index $parts (add $idx 1) }}
+  <a class="series-nav__next" href="{{ .RelPermalink }}"><span>Next part</span>{{ .LinkTitle }}</a>
+  {{- end }}{{ end }}
+</nav>
+{{- end }}
+{{- end }}

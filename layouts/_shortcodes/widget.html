@@ -1,0 +1,15 @@
+{{- /*
+  {{< widget name="flatcar-ab-update" caption="Optional caption" wide="true" >}}
+  Markdown shown when JavaScript is off.
+  {{< /widget >}}
+  Loads static/widgets/<name>.js, an ES module whose default export is
+  `mount(rootElement, { reducedMotion })`.
+*/ -}}
+{{- $name := .Get "name" | default (.Get 0) -}}
+{{- if not $name }}{{ errorf "widget: missing name in %s" .Position }}{{ end -}}
+<figure class="widget{{ if eq (.Get "wide") "true" }} widget--wide{{ end }}" data-widget="{{ printf "widgets/%s.js" $name | relURL }}">
+  <div class="widget__root">
+    {{- with .Inner }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end -}}
+  </div>
+  {{- with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+</figure>

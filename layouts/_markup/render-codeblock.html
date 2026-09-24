@@ -1,0 +1,10 @@
+{{- /* Adds an optional filename header: ```sh {filename="install.sh"} */ -}}
+{{- $result := transform.HighlightCodeBlock . -}}
+{{- with .Attributes.filename -}}
+<figure class="code-file">
+  <figcaption class="code-file__name">{{ . }}</figcaption>
+  {{ $result.Wrapped }}
+</figure>
+{{- else -}}
+{{ $result.Wrapped }}
+{{- end -}}

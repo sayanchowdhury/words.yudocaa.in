@@ -1,0 +1,17 @@
+{{- /*
+  {{< asciinema src="/casts/demo.cast" title="Upgrading a node" cols="100" rows="24" start="0" >}}
+  The player (asciinema-player v3) loads only when the recording scrolls into view.
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- if not $src }}{{ errorf "asciinema: missing src in %s" .Position }}{{ end -}}
+<figure class="terminal-cast">
+  <div class="terminal-cast__player"
+    data-cast="{{ $src | relURL }}"
+    data-cols="{{ .Get "cols" | default "100" }}"
+    data-rows="{{ .Get "rows" | default "24" }}"
+    data-start="{{ .Get "start" | default "0" }}"
+    {{- with .Get "idle" }} data-idle="{{ . }}"{{ end }}>
+    <a class="terminal-cast__fallback" href="{{ $src | relURL }}">Download the terminal recording{{ with .Get "title" }}: {{ . }}{{ end }}</a>
+  </div>
+  {{- with .Get "title" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+</figure>

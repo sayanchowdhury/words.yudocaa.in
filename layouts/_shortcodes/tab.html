@@ -1,0 +1,4 @@
+{{- /* Child of the tabs shortcode. */ -}}
+{{- $name := .Get 0 | default (.Get "name") | default (printf "Tab %d" (add .Ordinal 1)) -}}
+{{- $content := .Inner | .Page.RenderString (dict "display" "block") -}}
+{{- .Parent.Store.Add "tabs" (slice (dict "name" $name "content" $content)) -}}
