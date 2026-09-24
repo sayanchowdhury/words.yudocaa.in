@@ -1,5 +1,5 @@
 ---
-title: Sayan Chowdhury
+title: Intellectual Web
 tagline: Human Being on outside. C-3PO on inside.
 # The homepage bio has two modes, switched by the Human / C-3PO toggle.
 bio:
@@ -11,7 +11,7 @@ bio:
     Away from the keyboard: bouldering, trekking, coffee, photography,
     Rubik's cubes and board games. This site is where I write things down.
   c3po: |
-    Senior Software Engineer at **Microsoft Azure**. Maintainer and Release
+    Sayan Chowdhury, Senior Software Engineer at **Microsoft Azure**. Maintainer and Release
     Manager of [Flatcar Container Linux](https://www.flatcar.org/), a CNCF
     Incubating project, and a shadow on **Kubernetes SIG Release**.
 

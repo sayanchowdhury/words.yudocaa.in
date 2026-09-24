@@ -29,14 +29,12 @@
         <p class="tabs__fallback-label">C-3PO</p>
         {{ .c3po | markdownify }}
       </div>
-      <p class="home__social">
-        {{- range $i, $s := site.Params.socialIcons }}{{ if $i }}<span aria-hidden="true"> · </span>{{ end }}<a href="{{ $s.url | absURL }}"{{ if hasPrefix $s.url "http" }} rel="me"{{ end }}>{{ $s.name | lower }}</a>{{ end -}}
-      </p>
+      <div class="home__social">{{ partial "social_icons.html" (dict) }}</div>
     </section>
     {{- end }}
 
-  <aside class="home__aside" aria-label="Explore by topic">
-    {{ partial "site/topic_explorer.html" (dict "books" $books) }}
+  <aside class="home__aside" aria-label="The wall">
+    {{ partial "site/moonboard.html" (dict "writing" $writing "notes" $notes "talks" $talks "books" $books) }}
   </aside>
 
   <div class="home__rest">

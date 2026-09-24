@@ -1,0 +1,42 @@
+{{- /*
+  The homepage wall: a MoonBoard-style 11 x 18 board where each collection is
+  a "problem". Hovering a problem lights its route (green start, blue moves,
+  red finish); every blue hold is a real item and the finish opens the
+  collection. Drawn by assets/js/explainer.js from the JSON below; without
+  JavaScript the problem list is a plain list of links.
+  Context: (dict "writing" pages "notes" pages "talks" slice "books" slice)
+*/ -}}
+{{- $problems := slice }}
+{{- $items := slice }}
+{{- range first 6 .writing }}{{ $items = $items | append (dict "title" .Title "href" .RelPermalink "kind" (partial "site/kind.html" .)) }}{{ end }}
+{{- $problems = $problems | append (dict "name" "Writing" "href" ("writings/" | relURL) "count" (len .writing) "items" $items) }}
+{{- $items = slice }}
+{{- range first 6 .notes }}{{ $items = $items | append (dict "title" .Title "href" .RelPermalink "kind" "Note") }}{{ end }}
+{{- $problems = $problems | append (dict "name" "Notes" "href" ("notes/" | relURL) "count" (len .notes) "items" $items) }}
+{{- $items = slice }}
+{{- range first 6 .talks }}{{ $href := "talks/" | relURL }}{{ with .links }}{{ $href = (index . 0).url }}{{ end }}{{ $items = $items | append (dict "title" .title "href" $href "kind" (printf "Talk %v" .year)) }}{{ end }}
+{{- $problems = $problems | append (dict "name" "Talks" "href" ("talks/" | relURL) "count" (len .talks) "items" $items) }}
+{{- $items = slice }}
+{{- range first 6 .books }}{{ $items = $items | append (dict "title" .title "href" (printf "%s#%s" ("books/" | relURL) (.title | urlize)) "kind" "Book") }}{{ end }}
+{{- $problems = $problems | append (dict "name" "Bookshelf" "href" ("books/" | relURL) "count" (len .books) "items" $items) }}
+
+<section class="moonwall" aria-labelledby="moon-h">
+  <div class="moon__head">
+    <h2 class="home__label" id="moon-h">The wall</h2>
+    <p class="moon__hint">Pick a problem. Every lit hold is something to read.</p>
+  </div>
+  <div class="moon__board" data-moonboard hidden></div>
+  <p class="moon__caption" aria-live="polite" hidden></p>
+  <ol class="moon__problems">
+    {{- range $i, $p := $problems }}
+    <li>
+      <a href="{{ $p.href }}" data-problem="{{ $i }}">
+        <span class="moon__name">{{ $p.name }}</span>
+        <span class="moon__grade" data-grade></span>
+        <span class="moon__repeats">{{ $p.count }} {{ if eq $p.count 1 }}ascent{{ else }}ascents{{ end }}</span>
+      </a>
+    </li>
+    {{- end }}
+  </ol>
+  <script type="application/json" data-moonboard-problems>{{ $problems | jsonify | safeJS }}</script>
+</section>

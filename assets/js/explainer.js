@@ -337,6 +337,222 @@ function bookshelf() {
   open(decodeURIComponent(location.hash.slice(1)));
 }
 
+/* MoonBoard wall (homepage) --------------------------------------------------- */
+
+const COLS = "ABCDEFGHIJK";
+const ROWS = 18;
+const CELL = 40;
+const PAD = { l: 28, r: 14, t: 26, b: 26 };
+const GRADES = [
+  ["5+", "V1"], ["6A", "V2"], ["6A+", "V3"], ["6B", "V4"], ["6B+", "V4"], ["6C", "V5"],
+  ["6C+", "V5"], ["7A", "V6"], ["7A+", "V7"], ["7B", "V8"], ["7B+", "V8"], ["7C", "V9"],
+];
+
+// Small deterministic PRNG so the wall is identical on every visit.
+function seeded(seed) {
+  let a = seed >>> 0;
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = a;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function hashString(str) {
+  let h = 2166136261;
+  for (const ch of str) h = Math.imul(h ^ ch.codePointAt(0), 16777619);
+  return h >>> 0;
+}
+
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+
+// Hold shapes, drawn around (0, 0) at roughly 30px across.
+const SHAPES = {
+  jug: '<path d="M-14 5C-15-7-7-13 0-13S15-7 14 5C9 9-9 9-14 5Z"/><path class="lip" d="M-8 2C-6-3 6-3 8 2"/>',
+  crimp: '<path d="M-13 -2C-13 -6 13 -6 13 -2L12 3C4 6-4 6-12 3Z"/>',
+  sloper: '<ellipse rx="16" ry="12"/><ellipse class="shine" cx="-4" cy="-4" rx="7" ry="4"/>',
+  pinch: '<path d="M0-15C6-15 7-5 6 3S4 15 0 15-6 11-6 3-6-15 0-15Z"/>',
+  chip: '<circle r="6"/>',
+};
+const SHAPE_KEYS = ["jug", "jug", "crimp", "crimp", "sloper", "pinch", "chip"];
+const SETS = ["set-a", "set-b", "set-c", "set-d"];
+
+const cellXY = (col, row) => ({
+  x: PAD.l + col * CELL + CELL / 2,
+  y: PAD.t + (ROWS - row) * CELL + CELL / 2,
+});
+const coord = (col, row) => `${COLS[col]}${row}`;
+
+function buildWall(problems) {
+  const rand = seeded(20090);
+  const holds = new Map();
+  const place = (col, row, r = rand) => {
+    const key = `${col}:${row}`;
+    if (!holds.has(key)) {
+      holds.set(key, {
+        col, row,
+        shape: SHAPE_KEYS[Math.floor(r() * SHAPE_KEYS.length)],
+        set: SETS[Math.floor(r() * SETS.length)],
+        rot: Math.round(r() * 360),
+        scale: 1 + r() * 0.4,
+      });
+    }
+    return holds.get(key);
+  };
+  for (let row = 1; row <= ROWS; row++) {
+    for (let col = 0; col < COLS.length; col++) {
+      if (rand() < (row < 5 ? 0.3 : 0.4)) place(col, row);
+    }
+  }
+
+  // A route per problem: start low, one move per item, finish on row 18.
+  const routes = problems.map((p) => {
+    const r = seeded(hashString(p.name));
+    const moves = p.items.length;
+    let col = 2 + Math.floor(r() * 7);
+    const startRow = 2 + Math.floor(r() * 3);
+    const start = [place(col, startRow, r)];
+    if (r() < 0.6) start.push(place(Math.min(10, col + 1 + Math.floor(r() * 2)), startRow, r));
+    const top = 17;
+    const step = (top - startRow) / (moves + 1);
+    const hands = p.items.map((item, i) => {
+      col = Math.max(0, Math.min(10, col + Math.round((r() - 0.5) * 6)));
+      const row = Math.round(startRow + step * (i + 1));
+      return { hold: place(col, row, r), item };
+    });
+    col = Math.max(0, Math.min(10, col + Math.round((r() - 0.5) * 4)));
+    const finish = place(col, ROWS, r);
+    const n = Math.min(GRADES.length - 1, Math.round(Math.log2(p.count + 1) * 1.6));
+    return { problem: p, start, hands, finish, grade: GRADES[n] };
+  });
+  return { holds: [...holds.values()], routes };
+}
+
+function renderWall({ holds }) {
+  const w = PAD.l + COLS.length * CELL + PAD.r;
+  const h = PAD.t + ROWS * CELL + PAD.b;
+  const rand = seeded(7);
+  let grain = "";
+  for (let i = 0; i < 26; i++) {
+    const y = rand() * h;
+    grain += `<path d="M0 ${y.toFixed(1)}C${w * 0.3} ${(y + (rand() - 0.5) * 30).toFixed(1)} ${w * 0.7} ${(y + (rand() - 0.5) * 30).toFixed(1)} ${w} ${(y + (rand() - 0.5) * 12).toFixed(1)}"/>`;
+  }
+  let nuts = "";
+  for (let row = 1; row <= ROWS; row++) {
+    for (let col = 0; col < COLS.length; col++) {
+      const { x, y } = cellXY(col, row);
+      nuts += `<circle cx="${x}" cy="${y}" r="2.2"/>`;
+    }
+  }
+  const labels = [...COLS].map((c, col) => {
+    const { x } = cellXY(col, 1);
+    return `<text x="${x}" y="${PAD.t - 9}">${c}</text><text x="${x}" y="${h - 8}">${c}</text>`;
+  }).join("") + Array.from({ length: ROWS }, (_, i) => {
+    const { y } = cellXY(0, i + 1);
+    return `<text x="${PAD.l / 2}" y="${y + 4}">${i + 1}</text>`;
+  }).join("");
+  const holdSvg = holds.map((hd) => {
+    const { x, y } = cellXY(hd.col, hd.row);
+    return `<g class="hold ${hd.set}" data-cell="${hd.col}:${hd.row}" transform="translate(${x} ${y}) rotate(${hd.rot}) scale(${hd.scale.toFixed(2)})">${SHAPES[hd.shape]}<circle class="bolt" r="1.8"/></g>`;
+  }).join("");
+
+  return `<svg class="moon__svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="A climbing training board, 11 columns by 18 rows">
+    <defs>
+      <linearGradient id="moon-wood" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="var(--board-1)"/><stop offset="1" stop-color="var(--board-2)"/>
+      </linearGradient>
+      <filter id="moon-shadow" x="-40%" y="-40%" width="180%" height="180%">
+        <feDropShadow dx="1.5" dy="2.5" stdDeviation="1.6" flood-color="#000" flood-opacity="0.35"/>
+      </filter>
+      <filter id="moon-glow" x="-100%" y="-100%" width="300%" height="300%">
+        <feGaussianBlur stdDeviation="4"/>
+      </filter>
+    </defs>
+    <rect class="board" width="${w}" height="${h}" rx="6" fill="url(#moon-wood)"/>
+    <g class="grain">${grain}</g>
+    <g class="nuts">${nuts}</g>
+    <g class="labels" aria-hidden="true">${labels}</g>
+    <g class="holds" filter="url(#moon-shadow)" aria-hidden="true">${holdSvg}</g>
+    <g class="leds"></g>
+  </svg>`;
+}
+
+function moonboard() {
+  const root = document.querySelector(".moonwall");
+  const mount = root && root.querySelector("[data-moonboard]");
+  const json = root && root.querySelector("[data-moonboard-problems]");
+  if (!mount || !json) return;
+  let problems;
+  try { problems = JSON.parse(json.textContent); } catch { return; }
+
+  const wall = buildWall(problems);
+  mount.innerHTML = renderWall(wall);
+  mount.hidden = false;
+  const leds = mount.querySelector(".leds");
+  const caption = root.querySelector(".moon__caption");
+  caption.hidden = false;
+  const rows = [...root.querySelectorAll("[data-problem]")];
+
+  wall.routes.forEach((route, i) => {
+    const grade = rows[i] && rows[i].querySelector("[data-grade]");
+    if (grade) grade.textContent = `${route.grade[0]} / ${route.grade[1]}`;
+  });
+
+  const ring = (hold, kind, delay, link) => {
+    const { x, y } = cellXY(hold.col, hold.row);
+    const r = 17 * Math.max(1, hold.scale);
+    const inner = `<circle class="led-glow" cx="${x}" cy="${y}" r="${r}"/><circle class="led-ring" cx="${x}" cy="${y}" r="${r}"/>`;
+    const style = `style="--delay:${delay}ms"`;
+    if (!link) return `<g class="led led--${kind}" ${style} aria-hidden="true">${inner}</g>`;
+    return `<a class="led led--${kind}" ${style} href="${esc(link.href)}" aria-label="${esc(link.label)}" data-caption="${esc(link.caption)}">${inner}<circle class="led-hit" cx="${x}" cy="${y}" r="${r + 4}"/></a>`;
+  };
+
+  let current = -1;
+  const summary = (route) => {
+    const s = route.start[0];
+    return `${route.problem.name} · ${route.grade[0]} · start ${coord(s.col, s.row)}, top out ${coord(route.finish.col, route.finish.row)}`;
+  };
+
+  const select = (i) => {
+    if (i === current) return;
+    current = i;
+    const route = wall.routes[i];
+    const step = reducedMotion.matches ? 0 : 70;
+    let t = 0;
+    let out = route.start.map((h) => ring(h, "start", (t += step))).join("");
+    out += route.hands.map(({ hold, item }) => ring(hold, "hand", (t += step), {
+      href: item.href,
+      label: `${coord(hold.col, hold.row)}: ${item.kind}, ${item.title}`,
+      caption: `${coord(hold.col, hold.row)} · ${item.kind} · ${item.title}`,
+    })).join("");
+    out += ring(route.finish, "finish", (t += step), {
+      href: route.problem.href,
+      label: `Top out: all of ${route.problem.name}`,
+      caption: `${coord(route.finish.col, route.finish.row)} · Top out · all of ${route.problem.name}`,
+    });
+    leds.innerHTML = out;
+    requestAnimationFrame(() => leds.querySelectorAll(".led").forEach((l) => l.classList.add("is-on")));
+    caption.textContent = summary(route);
+    rows.forEach((row, j) => row.classList.toggle("is-selected", j === i));
+  };
+
+  for (const row of rows) {
+    const i = Number(row.dataset.problem);
+    row.addEventListener("mouseenter", () => select(i));
+    row.addEventListener("focus", () => select(i));
+  }
+  const showCaption = (e) => {
+    const a = e.target.closest && e.target.closest("a.led");
+    if (a) caption.textContent = a.dataset.caption;
+  };
+  leds.addEventListener("mouseover", showCaption);
+  leds.addEventListener("focusin", showCaption);
+  leds.addEventListener("mouseleave", () => { if (current >= 0) caption.textContent = summary(wall.routes[current]); });
+  select(0);
+}
+
 function init() {
   readingProgress();
   tableOfContents();
@@ -346,6 +562,7 @@ function init() {
   widgets();
   filters();
   bookshelf();
+  moonboard();
 }
 
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
