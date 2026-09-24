@@ -21,8 +21,8 @@ permalinks:
 
 languages:
     en:
-        languageName: "English"
-        languageCode: "en-US"
+        label: "English"
+        locale: "en-US"
         weight: 1
         menu:
             main:
