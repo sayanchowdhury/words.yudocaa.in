@@ -4,7 +4,7 @@ date = 2018-05-24T18:30:00Z
 excerpt = ""
 hero = "/images/c0ee2b4be7bb68c869c5ee8fbbe1fd6c.jpg"
 timeToRead = 2
-title = "Fedora AMIs gets ENA support"
+title = "Fedora AMIs get ENA support"
 
 +++
 It’s been a while that Amazon introduced Elastic Network Adapter (ENA) Support to their cloud. Amazon EC2 provides enhanced networking capabilities to C5, C5 with instance storage, F1, G3, H1, I3, m4.16xlarge, M5, P2, P3, R4, and X1 instances through the Elastic Network Adapter (ENA).

@@ -1,5 +1,5 @@
 +++
-title = "Redesigning fedimg (Part 2): Communication with AWS"
+title = "Redesigning fedimg, part 2: talking to AWS"
 slug = "redesigning-fedimg-part-ii"
 date = "2017-02-04T12:00:00+05:30"
 tags = ["fedora", "fedimg", "python", "cloud", "atomic", "libcloud", "planet"]

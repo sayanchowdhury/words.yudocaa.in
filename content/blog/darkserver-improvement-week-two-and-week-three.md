@@ -3,7 +3,7 @@ link = "http://sayanchowdhury.dgplug.org/blog/darkserver-improvement-two-three.h
 description = ""
 tags = ["gsoc", "fedora", "darkserver"]
 date = "2013-07-10T12:00:00+05:30"
-title = "Darkserver Improvement: Week Two and Week Three"
+title = "Darkserver improvement: weeks two and three"
 slug = "darkserver-improvement-week-two-and-week-three"
 +++
 

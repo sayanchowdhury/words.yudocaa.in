@@ -4,7 +4,7 @@ date = 2019-02-03T18:30:00Z
 excerpt = ""
 hero = "/images/joao-silas-I_LgQ8JZFGE-unsplash.jpg"
 timeToRead = 17
-title = "Editing Git commits from history"
+title = "Editing an older commit in a pull request"
 
 +++
 Let's say you've raised a Pull Request on GitHub with 3 commits as shown below.

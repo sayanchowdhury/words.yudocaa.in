@@ -4,7 +4,8 @@ date = 2018-09-08T18:30:00Z
 excerpt = ""
 hero = "/images/66b8df8628496d9afab042ca67aa1322.jpg"
 timeToRead = 1
-title = "Exit Vim in between Git operation"
+title = "Abort a Git commit or rebase from Vim with :cq"
+aliases = ["/blog/exit-vim-in-between-git-operation/"]
 
 +++
 Long I have been procrastinating over this. Whenever I had to quit out of the Vim while doing git-rebase interactively I would be going over to a new terminal window, and perform `git rebase --abort` and then close the other window too.

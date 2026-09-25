@@ -3,7 +3,7 @@ link    = "http://sayanchowdhury.dgplug.org/2013/darkserver-improvement-getting-
 description = ""
 tags    = ["gsoc", "fedora"]
 date    = "2013-06-22T12:00:00+05:30"
-title   = "Darkserver Improvement: Getting Prepared"
+title = "Darkserver improvement: getting prepared"
 slug    = "darkserver-improvement-getting-prepared"
 timeToRead = 6
 +++

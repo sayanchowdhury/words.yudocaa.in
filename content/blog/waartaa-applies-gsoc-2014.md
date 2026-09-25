@@ -7,7 +7,7 @@ link = "https://sayanchowdhury.dgplug.org/waartaa-applies-gsoc-2014"
 slug = "waartaa-applies-gsoc-2014"
 tags = ["gsoc", "irc", "waartaa", "fedora", "meteorjs", "planet"]
 timeToRead = 5
-title = "Waartaa applies GSoC 2014"
+title = "Waartaa applies for GSoC 2014"
 
 +++
 We are elated to inform you that [Waartaa](https://www.waartaa.com/) has been accepted as a [project idea](https://fedoraproject.org/wiki/Summer_coding_ideas_for_2014#Waartaa) for [GSoC](https://www.google-melange.com/gsoc/homepage/google/gsoc2014) under [Fedora](https://fedoraproject.org/)'s umbrella.

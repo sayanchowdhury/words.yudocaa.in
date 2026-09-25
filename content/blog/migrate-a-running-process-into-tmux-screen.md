@@ -3,7 +3,7 @@ link = "http://sayanchowdhury.dgplug.org/migrate-a-running-process-into-tmux.htm
 description = ""
 tags = ["bookmark", "fedora", "tmux", "planet", "screen", "reptyr"]
 date = "2014-12-27T12:00:00+05:30"
-title = "Migrate a running process into tmux"
+title = "Move a running process into tmux with reptyr"
 slug = "migrate-a-running-process-into-tmux"
 +++
 

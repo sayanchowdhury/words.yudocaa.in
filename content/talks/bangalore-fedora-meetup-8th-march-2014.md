@@ -1,5 +1,5 @@
 +++
-title   = "Bangalore Fedora Meetup, 8th March 2014"
+title = "Fedora Meetup Bangalore, March 2014"
 slug    = "bangalore-fedora-meetup-8th-march-2014"
 date    = "2014-03-08T22:18:06+05:30"
 tags    = ["planet", "meetup", "fedora"]

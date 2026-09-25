@@ -3,7 +3,8 @@ link = "http://sayanchowdhury.dgplug.org/2014/git-password-caching.html"
 description = ""
 tags = ["git", "github", "2014"]
 date = "2014-06-10T12:00:00+05:30"
-title = "Git Password Caching"
+title = "Caching Git passwords with the credential helper"
+aliases = ["/blog/git-password-caching/"]
 slug = "git-password-caching"
 +++
 

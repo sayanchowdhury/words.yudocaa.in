@@ -1,5 +1,5 @@
 +++
-title = "Autocloud: What's new?"
+title = "What's new in Autocloud"
 slug = "autocloud-whats-new"
 date = "2016-08-24T17:28:00+05:30"
 tags = ["autocloud", "fedora", "planet", "infra"]

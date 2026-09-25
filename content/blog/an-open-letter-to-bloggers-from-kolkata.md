@@ -1,5 +1,5 @@
 +++
-title   = "An open letter to Bloggers from Kolkata."
+title = "An open letter to bloggers from Kolkata"
 slug    = "an-open-letter-to-bloggers-from-kolkata"
 date    = "2014-03-05T00:31:43+05:30"
 tags    = ["kolkata", "bloggers"]

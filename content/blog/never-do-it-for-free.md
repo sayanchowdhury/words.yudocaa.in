@@ -3,7 +3,7 @@ link = "http://sayanchowdhury.dgplug.org/2013/never-do-it-for-free.txt"
 description = ""
 tags = ["quote"]
 date = "2013-06-08T12:00:00+05:30"
-title = "Never Do it for Free"
+title = "Never do it for free"
 slug = "never-do-it-for-free"
 +++
 

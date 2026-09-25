@@ -1,5 +1,5 @@
 +++
-title = "FOSSASIA 2016 - Day 1"
+title = "FOSSASIA 2016, day 1"
 slug = "fossasia-2016-day-1"
 date = "2016-03-23T17:01:00+05:30"
 tags = ["fossasia", "fedora", "2016", "python", "planet"]

@@ -4,7 +4,7 @@ date = 2018-11-22T18:30:00Z
 excerpt = ""
 hero = "/images/fedora29-816x345.jpg"
 timeToRead = 3
-title = "Fedora 29 Bangalore Release Party"
+title = "Fedora 29 Release Party, Bangalore"
 
 +++
 **23rd November 2018**
