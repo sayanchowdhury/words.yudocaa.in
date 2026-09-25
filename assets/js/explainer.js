@@ -360,7 +360,7 @@ const SHAPES = {
 };
 const SHAPE_KEYS = ["jug", "jug", "crimp", "crimp", "sloper", "pinch", "chip"];
 // On a route, a hold's shape says what kind of step it is.
-const KIND_SHAPE = { Essay: "jug", Tutorial: "jug", Note: "crimp", Talk: "sloper", Book: "pinch" };
+const KIND_SHAPE = { Post: "jug", Tutorial: "jug", Note: "crimp", Talk: "sloper", Book: "pinch" };
 const SETS = ["set-a", "set-b", "set-c", "set-d"];
 
 const cellXY = (col, row) => ({

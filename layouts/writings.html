@@ -12,10 +12,13 @@
   </header>
 
   <div class="filters" data-filter-target="#writing-list" hidden>
+    {{- /* Only worth a filter once there is more than one kind of writing. */}}
+    {{- if gt (len $kinds) 1 }}
     <div class="filters__group" role="group" aria-label="Format" data-filter="kind">
       <button type="button" aria-pressed="true" data-value="">All</button>
       {{- range $kinds }}<button type="button" aria-pressed="false" data-value="{{ . | urlize }}">{{ . }}s</button>{{ end }}
     </div>
+    {{- end }}
     {{- with site.GetPage "/topics" }}
     <div class="filters__group" role="group" aria-label="Topic" data-filter="topic">
       <button type="button" aria-pressed="true" data-value="">Any topic</button>
