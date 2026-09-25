@@ -1,6 +1,5 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-{{- /* Literata (body, drawn for long-form screen reading) and Fraunces (display). */}}
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=Literata:ital,opsz,wght@0,7..72,300..700;1,7..72,300..700&display=swap" rel="stylesheet">
+{{- /* Fonts are self-hosted (assets/css/extended/fonts.css); preload the two every page uses. */}}
+<link rel="preload" href="{{ "fonts/literata-normal-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "fonts/fraunces-normal-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 
 {{- partial "explainer/head.html" . }}
