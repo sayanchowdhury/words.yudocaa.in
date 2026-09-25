@@ -4,6 +4,7 @@ description = ""
 tags = ["gsoc", "fedora", "darkserver"]
 date = "2013-07-10T12:00:00+05:30"
 title = "Darkserver improvement: weeks two and three"
+series = ["Darkserver, GSoC 2013"]
 slug = "darkserver-improvement-week-two-and-week-three"
 +++
 

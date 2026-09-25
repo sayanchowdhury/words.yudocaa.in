@@ -193,3 +193,15 @@ services:
         disableInlineCSS: true
     x:
         disableInlineCSS: true
+
+# Also expose static/images as assets, so post images can be resized and
+# served as WebP by the image render hook. The files and their /images/
+# URLs are unchanged.
+module:
+    mounts:
+        - source: static
+          target: static
+        - source: assets
+          target: assets
+        - source: static/images
+          target: assets/images

@@ -33,15 +33,27 @@
     hanging-punctuation: first;
 }
 
-/* Headings, UI and tables stay in the site's sans for scannability. */
-.post-content :is(h1, h2, h3, h4, h5, h6, table, figcaption, .tabs__list, .callout__title, .tutorial-meta) {
+/* Headings share the site's display face; tables and UI stay in the sans. */
+.post-content :is(h1, h2, h3, h4) {
+    font-family: var(--display-font);
+    font-optical-sizing: auto;
+    font-variation-settings: "SOFT" 60;
+    font-variant-numeric: normal;
+    color: var(--primary);
+}
+
+.post-content h2 { font-size: 30px; font-weight: 600; }
+.post-content h3 { font-size: 23px; font-weight: 560; }
+.post-content h4 { font-size: 19px; font-weight: 560; }
+
+.post-content :is(h5, h6, table, figcaption, .tabs__list, .callout__title, .tutorial-meta) {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-variant-numeric: normal;
 }
 
 .post-content :is(h2, h3) {
     text-wrap: balance;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.012em;
     scroll-margin-top: calc(var(--header-height) + 16px);
 }
 
@@ -50,11 +62,101 @@
 }
 
 .post-content h2 {
-    margin-top: 56px;
+    margin: 64px 0 20px;
 }
 
 .post-content h3 {
-    margin-top: 40px;
+    margin: 44px 0 14px;
+}
+
+.post-content h4 {
+    margin: 32px 0 10px;
+}
+
+/* Images: rounded to match code blocks; figure captions quiet and centred. */
+.post-content img {
+    max-width: 100%;
+    height: auto; /* keep the aspect ratio now that images carry width/height */
+    border-radius: 6px;
+}
+
+.post-content img.align-center {
+    display: block;
+    margin-inline: auto;
+}
+
+.post-content figure {
+    margin: 36px 0;
+}
+
+.post-content figure figcaption,
+.post-content figure figcaption p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--secondary);
+    text-align: center;
+}
+
+/* Old-post notice */
+.age-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 24px 0 0;
+    padding: 12px 16px;
+    border-radius: var(--radius);
+    background: var(--code-bg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--secondary);
+}
+
+.age-note svg {
+    flex: none;
+    margin-top: 2px;
+}
+
+/* Margin notes: hidden until there is room in the left margin. */
+.sidenote {
+    display: none;
+}
+
+@media (min-width: 1280px) {
+    .post-content.has-sidenotes .sidenote {
+        display: block;
+        float: left;
+        clear: left;
+        width: min(220px, calc(50vw - var(--main-width) / 2 - var(--gap) * 3));
+        margin: 4px 0 16px calc(-1 * (min(220px, calc(50vw - var(--main-width) / 2 - var(--gap) * 3)) + var(--gap) * 1.5));
+        font-size: 14px;
+        line-height: 1.55;
+        color: var(--secondary);
+    }
+
+    .sidenote p {
+        display: inline;
+        margin: 0;
+    }
+
+    .sidenote__num {
+        margin-inline-end: 6px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--accent);
+    }
+
+    /* Visually hidden, but still read by screen readers (the margin copies are aria-hidden). */
+    .post-content.has-sidenotes .footnotes {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
 }
 
 .post-content p,

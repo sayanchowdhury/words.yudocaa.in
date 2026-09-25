@@ -565,6 +565,26 @@ function pathTicks() {
   }
 }
 
+/* Margin notes: footnotes beside their paragraph on wide screens ------------ */
+
+function marginNotes() {
+  const content = document.querySelector(".post-content");
+  if (!content) return;
+  for (const ref of content.querySelectorAll('a.footnote-ref[href^="#fn"]')) {
+    const note = document.getElementById(decodeURIComponent(ref.hash.slice(1)));
+    const block = ref.closest("p, li, blockquote");
+    if (!note || !block || block.closest(".footnotes")) continue;
+    const aside = document.createElement("aside");
+    aside.className = "sidenote";
+    aside.setAttribute("aria-hidden", "true"); // the real footnote stays for assistive tech
+    const body = note.cloneNode(true);
+    body.querySelectorAll(".footnote-backref").forEach((a) => a.remove());
+    aside.innerHTML = `<span class="sidenote__num">${ref.textContent}</span>${body.innerHTML}`;
+    (block.closest("li") ? block.closest("ul, ol") : block).before(aside);
+  }
+  if (content.querySelector(".sidenote")) content.classList.add("has-sidenotes");
+}
+
 /* "Copy link" at the end of posts ------------------------------------------ */
 
 function copyLinks() {
@@ -597,6 +617,7 @@ function init() {
   moonboard();
   pathTicks();
   copyLinks();
+  marginNotes();
   recordVisit();
 }
 

@@ -1,0 +1,10 @@
+{{- /* A quiet notice on technical posts and notes more than three years old. */ -}}
+{{- if in (slice "blog" "notes" "tutorials" "cheatsheets") .Section -}}
+{{- $when := cond (eq .Section "notes") .Lastmod .Date -}}
+{{- if and (not $when.IsZero) (lt $when (now.AddDate -3 0 0)) -}}
+<p class="age-note">
+  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg>
+  <span>{{ if eq .Section "notes" }}Last tended{{ else }}Written{{ end }} in {{ $when.Format "January 2006" }}. Commands, links and details may have changed since.</span>
+</p>
+{{- end -}}
+{{- end -}}

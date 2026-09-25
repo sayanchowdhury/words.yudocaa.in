@@ -1,0 +1,27 @@
+{{- /* PaperMod's figure shortcode, with the image optimised by site/picture.html. */ -}}
+<figure{{ if or (.Get "class") (eq (.Get "align") "center") }} class="
+           {{- if eq (.Get "align") "center" }}align-center {{ end }}
+           {{- with .Get "class" }}{{ . }}{{- end }}"
+{{- end -}}>
+    {{- if .Get "link" -}}
+        <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
+    {{- end }}
+    {{- $alt := .Get "alt" | default (.Get "caption" | markdownify | plainify) }}
+    {{- partial "site/picture.html" (dict "src" (.Get "src") "alt" $alt "page" .Page "class" (cond (eq (.Get "align") "center") "align-center" "")) }}
+    {{- if .Get "link" }}</a>{{ end -}}
+    {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
+        <figcaption>
+            {{ with (.Get "title") -}}
+                {{ . }}
+            {{- end -}}
+            {{- if or (.Get "caption") (.Get "attr") -}}<p>
+                {{- .Get "caption" | markdownify -}}
+                {{- with .Get "attrlink" }}
+                    <a href="{{ . }}">
+                {{- end -}}
+                {{- .Get "attr" | markdownify -}}
+                {{- if .Get "attrlink" }}</a>{{ end }}</p>
+            {{- end }}
+        </figcaption>
+    {{- end }}
+</figure>

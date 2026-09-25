@@ -23,6 +23,14 @@ shortcode, a render hook or front matter. There is no custom HTML in the post.
 the bottom. `topics` takes one or two of: `containers-linux`, `kubernetes`,
 `ai-infra`, `open-source`.
 
+## Margin notes
+
+Plain Markdown footnotes become margin notes on wide screens.[^margin] On
+narrower screens they stay at the bottom of the page as usual.[^second]
+
+[^margin]: Like this one. It sits in the left margin, level with the paragraph that refers to it.
+[^second]: Several notes on one paragraph stack instead of overlapping.
+
 ## Callouts
 
 {{< callout >}}
