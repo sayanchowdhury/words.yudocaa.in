@@ -1179,6 +1179,56 @@ body:has(.home, .collection) {
     display: none;
 }
 
+/* End-of-post actions ---------------------------------------------------- */
+
+.post-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px 24px;
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-family: var(--sans);
+    font-size: 14px;
+}
+
+.post-actions__copy {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 14px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: none;
+    color: var(--primary);
+    font: inherit;
+    cursor: pointer;
+    transition: border-color 150ms ease-out, color 150ms ease-out;
+}
+
+.post-actions__copy:hover {
+    border-color: var(--tertiary);
+}
+
+.post-actions__copy.is-copied {
+    border-color: var(--tip);
+    color: var(--tip);
+}
+
+.post-actions__edit {
+    color: var(--secondary);
+    text-decoration: underline;
+    text-decoration-color: var(--tertiary);
+    text-underline-offset: 3px;
+}
+
+.post-actions__edit:hover {
+    color: var(--accent);
+    text-decoration-color: currentColor;
+}
+
 /* Small screens ----------------------------------------------------------- */
 
 @media (max-width: 900px) {

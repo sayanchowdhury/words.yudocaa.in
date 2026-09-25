@@ -1,0 +1,14 @@
+{{- /* End-of-post actions: copy the link, and suggest a change on GitHub. */ -}}
+<div class="post-actions">
+  {{- if ne .Params.disableShare true }}
+  <button type="button" class="post-actions__copy" data-copy="{{ .Permalink }}">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+    <span data-copy-label>Copy link</span>
+  </button>
+  {{- end }}
+  {{- if and .File (.Param "editPost.URL") (not (.Param "editPost.disabled")) }}
+  {{- $url := .Param "editPost.URL" }}
+  {{- if .Param "editPost.appendFilePath" }}{{ $url = printf "%s/%s" $url (path.Join .File.Path) }}{{ end }}
+  <a class="post-actions__edit" href="{{ $url }}" rel="noopener noreferrer edit">Suggest a change on GitHub</a>
+  {{- end }}
+</div>

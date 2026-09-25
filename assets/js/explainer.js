@@ -565,6 +565,27 @@ function pathTicks() {
   }
 }
 
+/* "Copy link" at the end of posts ------------------------------------------ */
+
+function copyLinks() {
+  for (const button of document.querySelectorAll("[data-copy]")) {
+    const label = button.querySelector("[data-copy-label]");
+    const idle = label.textContent;
+    let timer;
+    button.addEventListener("click", async () => {
+      let ok = false;
+      try {
+        await navigator.clipboard.writeText(button.dataset.copy);
+        ok = true;
+      } catch { /* clipboard blocked: fall back to showing the URL */ }
+      label.textContent = ok ? "Link copied" : button.dataset.copy;
+      button.classList.toggle("is-copied", ok);
+      clearTimeout(timer);
+      timer = setTimeout(() => { label.textContent = idle; button.classList.remove("is-copied"); }, 2000);
+    });
+  }
+}
+
 function init() {
   readingProgress();
   tableOfContents();
@@ -575,6 +596,7 @@ function init() {
   filters();
   moonboard();
   pathTicks();
+  copyLinks();
   recordVisit();
 }
 
