@@ -552,6 +552,7 @@ body:has(.home, .collection) {
 
 .year-group__year {
     margin: 0 0 8px;
+    scroll-margin-top: calc(var(--header-height) + 16px);
     font-family: var(--sans);
     font-size: 13px;
     font-weight: 600;
@@ -566,43 +567,121 @@ body:has(.home, .collection) {
     color: var(--secondary);
 }
 
+/* Writing: an archive index -------------------------------------------------- */
+
+.writings-summary {
+    margin: -20px 0 14px;
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.year-index {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.year-index a {
+    font-family: var(--display-font);
+    font-size: 20px;
+    font-weight: 500;
+    font-variant-numeric: lining-nums tabular-nums;
+    color: var(--primary);
+}
+
+.year-index a:hover {
+    color: var(--accent);
+}
+
+.year-index sup,
+.filters__group sup {
+    margin-inline-start: 2px;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
 .filters {
     display: grid;
-    gap: 10px;
-    margin: -12px 0 36px;
+    gap: 8px;
+    margin: -16px 0 40px;
 }
 
 .filters[hidden] {
     display: none;
 }
 
+/* Filters read as a sentence: "About  any topic · Container Linux · …" */
 .filters__group {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    align-items: baseline;
+    gap: 4px 16px;
 }
 
-.filters__group button {
-    padding: 5px 13px;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    background: none;
+.filters__label {
+    min-width: 52px;
     font-family: var(--sans);
     font-size: 13px;
     color: var(--secondary);
+}
+
+.filters__group button {
+    padding: 2px 0;
+    border: 0;
+    border-bottom: 1px solid transparent;
+    background: none;
+    font-family: var(--prose-font);
+    font-size: 17px;
+    color: var(--secondary);
     cursor: pointer;
-    transition: border-color 120ms ease-out, color 120ms ease-out;
+    transition: color 120ms ease-out, border-color 120ms ease-out;
 }
 
 .filters__group button:hover {
     color: var(--primary);
-    border-color: var(--tertiary);
 }
 
 .filters__group button[aria-pressed="true"] {
-    border-color: var(--primary);
     color: var(--primary);
-    font-weight: 500;
+    border-bottom-color: var(--accent);
+}
+
+/* Years sit in a left column beside their list, and stay put while you read it. */
+@media (min-width: 720px) {
+    .year-group--index {
+        display: grid;
+        grid-template-columns: 112px minmax(0, 1fr);
+        gap: 0 24px;
+        align-items: start;
+        margin-bottom: 44px;
+        scroll-margin-top: calc(var(--header-height) + 16px);
+    }
+
+    .year-group--index .year-group__year {
+        position: sticky;
+        top: calc(var(--header-height) + 16px);
+        margin: 6px 0 0;
+        font-family: var(--display-font);
+        font-size: 34px;
+        font-weight: 500;
+        font-variant-numeric: lining-nums;
+        letter-spacing: -0.01em;
+        color: var(--tertiary);
+    }
+
+    .year-group--index .ledger {
+        border-top: 0;
+    }
+
+    .year-group--index .ledger li:first-child > a {
+        padding-top: 8px;
+    }
 }
 
 .filters__empty {

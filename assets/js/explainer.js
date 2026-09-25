@@ -278,7 +278,7 @@ function widgets() {
 function filters() {
   for (const bar of document.querySelectorAll(".filters[data-filter-target]")) {
     const scope = document.querySelector(bar.dataset.filterTarget);
-    if (!scope) continue;
+    if (!scope || !bar.querySelector("[data-filter]")) continue;
     const state = {};
     const apply = () => {
       let shown = 0;
