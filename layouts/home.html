@@ -30,7 +30,10 @@
         <p class="tabs__fallback-label">C-3PO</p>
         {{ .c3po | markdownify }}
       </div>
-      <div class="home__social">{{ partial "social_icons.html" (dict) }}</div>
+      <div class="home__social">
+        {{ partial "social_icons.html" (dict) }}
+        <a class="home__more home__about" href="{{ "about/" | relURL }}">More about me</a>
+      </div>
     </section>
     {{- end }}
 

@@ -1179,6 +1179,63 @@ body:has(.home, .collection) {
     display: none;
 }
 
+/* Header: search icon on small screens --------------------------------------- */
+
+.menu-icon {
+    display: none;
+    vertical-align: -3px;
+}
+
+@media (max-width: 600px) {
+    /* About is linked from the bio; search becomes an icon, so the rest fit. */
+    #menu li:has(> a[href$="/about/"]) {
+        display: none;
+    }
+
+    #menu a[href$="/search/"] span {
+        font-size: 0;
+    }
+
+    #menu a[href$="/search/"] .menu-icon {
+        display: inline-block;
+    }
+
+    #menu {
+        gap: 0;
+    }
+
+    #menu li + li {
+        margin-inline-start: 14px;
+    }
+}
+
+/* Home: the About link sits with the social icons. */
+.home__social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 20px;
+}
+
+.home__about {
+    margin-top: 0;
+}
+
+/* 404 */
+
+.not-found-page__code {
+    margin: 0 0 4px;
+    font-family: var(--display-font);
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--tertiary);
+}
+
+.not-found-page .collection__desc code {
+    font-size: 0.85em;
+}
+
 /* End-of-post actions ---------------------------------------------------- */
 
 .post-actions {
