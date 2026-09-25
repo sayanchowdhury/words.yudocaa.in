@@ -44,6 +44,4 @@ install of the package and everything was working properly.:)
 
 And, with that Google Summer of Code came to an End.
 
-.. image:: ../galleries/the-end.jpg
-    :width: 90%
-    :align: center
+!["The End" title card](/images/darkserver-the-end.jpg)

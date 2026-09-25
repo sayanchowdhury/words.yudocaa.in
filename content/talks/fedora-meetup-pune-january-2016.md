@@ -27,7 +27,7 @@ first-timers, Kushal and Siddesh started talking on how to start contributing
 to FOSS from a programmer's perspective.
 
 Then, I started off with introduction of
-[Bugyou](https://sayanchowdhury.dgplug.org/introducing-bugyou/). I explained
+[Bugyou](/blog/introducing-bugyou/). I explained
 the architecture, working and the future plans for Bugyou. Next, Kushal
 explained the automatic testing of the Cloud/Atomic images in Fedora and also
 gave a small hands-on demo of the [Tunir](https://github.com/kushaldas/tunir)

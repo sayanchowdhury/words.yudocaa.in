@@ -21,23 +21,23 @@ queues for different secondary architectures.
 
 According to the Darkserver wiki, the steps for starting the darkproducer is:
 
-.. code::
-
-    $ darkproducer start KOJI_BUILD_ID
+```console
+$ darkproducer start KOJI_BUILD_ID
+```
 
 Now, after removing the hardlinks and making it accesible through config
 files, the steps to start the darkproducer is:
 
-.. code::
-
-    $ darkproducer start KOJI_BUILD_ID —config=/path/to/config/file
+```console
+$ darkproducer start KOJI_BUILD_ID --config=/path/to/config/file
+```
 
 The configuration file for koji should be in form of:
 
-.. code::
-
-    [darkserver]
-    url = ‘http://koji.fedoraproject.org/kojihub/’
+```ini
+[darkserver]
+url = 'http://koji.fedoraproject.org/kojihub/'
+```
 
 In case of violation, the config option defaults to
 /etc/darkserver/darkserverurl-koji.conf

@@ -78,7 +78,7 @@ that day we hacked on our projects with some of the students messing
 with the IRC bot. In the evening, at the lightening talk session I
 showed the students how contribute to various Open Source organization.
 It was kind of a demo version of this [blog
-post](http://sayanchowdhury.dgplug.org/posts/how-to-get-started-with-open-source.html).
+post](/blog/how-to-get-started-with-open-source/).
 I showed the attendees the various websites to start contributing.
 
 Thanks to the complete Mukti team specially Anish, Vivek and Sayantan,

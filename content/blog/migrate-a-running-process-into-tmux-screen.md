@@ -18,7 +18,7 @@ the ssh session and head on home.
 
 The package available in Fedora/Ubuntu repositories.
 
-``` {.sourceCode .}
+```sh
 % sudo yum install -y reptyr        # For Fedora users
 % sudo apt-get install -y reptyr    # For Ubuntu users
 ```
@@ -29,7 +29,7 @@ The steps to migrate a process is
 -   List all the background jobs using **jobs -l**. This will get you
     the PID
 
-``` {.sourceCode .}
+```sh
 % jobs -l
 [1]  + 16189 suspended  vim foobar.rst
 ```
@@ -38,26 +38,26 @@ Here the PID is 16189
 
 -   Start a new tmux or screen session. I will be using tmux
 
-``` {.sourceCode .}
+```sh
 % tmux
 ```
 
 -   Reattach the background process using
 
-``` {.sourceCode .}
+```sh
 % reptyr 16189
 ```
 
 If this error appears
 
-``` {.sourceCode .}
+```sh
 Unable to attach to pid 16189: Operation not permitted
 The kernel denied permission while attaching
 ```
 
 Then type in the following command as root.
 
-``` {.sourceCode .}
+```sh
 % echo 0 > /proc/sys/kernel/yama/ptrace_scope
 ```
 

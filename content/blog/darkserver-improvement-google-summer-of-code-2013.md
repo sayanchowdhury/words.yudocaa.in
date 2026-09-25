@@ -9,9 +9,6 @@ slug = "darkserver-improvement-google-summer-of-code-2013"
 timeToRead = 1
 +++
 
-.. image:: ../galleries/gsoc.jpg
-    :align: center
-
 It’s better later than never. It’s been two week since the Google Summer of
 Code 2013 results were announced and I am glad to say that I got selected
 this year.

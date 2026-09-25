@@ -13,6 +13,3 @@ compete workflow of Darkserver. I got the idea to try out this stuff from
 Vivek’s blogpost. Though, I could not get hold of a board but A4 did the job
 for me and it is really proving out to be helpful.
 
-.. slides:
-    ../galleries/random_scribblings.JPG
-    ../galleries/random_scribblings2.JPG

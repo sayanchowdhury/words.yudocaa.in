@@ -40,12 +40,4 @@ distributed among the attendees.
 Thanks to all the organizers for organizing an awesome Fedora 21 release party.
 Looking forward to be part of other Fedora events in future.
 
-.. raw:: html
-
-    <div style='position: relative; padding-bottom: 76%; height: 0; overflow:
-    hidden;'><iframe id='iframe'
-    src='http://flickrit.com/slideshowholder.php?height=75&size=big&setId=72157650217576451&thumbnails=0&transition=0&layoutType=responsive&sort=0'
-    scrolling='no' frameborder='0'style='width:100%; height:100%; position:
-    absolute; top:0; left:0;' ></iframe></div>
-
-
+[See the photos from the release party on Flickr](https://www.flickr.com/photos/sayanchowdhury/albums/72157650217576451).

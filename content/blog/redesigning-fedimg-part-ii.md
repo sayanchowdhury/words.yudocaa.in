@@ -8,7 +8,7 @@ link = "https://sayanchowdhury.dgplug.org/posts/redesigning-fedimg-part-ii"
 description = ""
 +++
 
-In the previous [post](https://sayanchowdhury.dgplug.org/redesigning-fedimg-part-i/), I discussed what is fedimg and how it works currently.
+In the previous [post](/blog/redesigning-fedimg-part-i/), I discussed what is fedimg and how it works currently.
 In this post, I plan to explain the issue in the current uploading process of
 the AMIs and how we plan to fix it.
 

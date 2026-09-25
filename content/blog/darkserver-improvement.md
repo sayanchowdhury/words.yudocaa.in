@@ -10,10 +10,10 @@ slug = "darkserver-improvement"
 
 I am currently doing some manual testing of my code, and it proved to be vital. It helped me figure out a lot of bugs. One of seemed weird to me in the beginning: The get [here](https://github.com/sayanchowdhury/darkserver/blob/config/darkimporter/libimporter.py#L310) returned an error.
 
-.. code::
-
-    Method Not Allowed This is an XML-RPC server. Only POST requests are
-    accepted.
+```text
+Method Not Allowed This is an XML-RPC server. Only POST requests are
+accepted.
+```
 
 The project required a heavy amount of download, so my mentor gave me a dev
 instance to test out my code, all seemed to be fine, with the code properly
