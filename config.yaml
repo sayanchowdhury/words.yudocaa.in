@@ -86,7 +86,7 @@ params:
     ShowCodeCopyButtons: true
     ShowToc: true
     ShowFullTextinRSS: true
-    comments: true
+    comments: false # giscus is not set up yet (needs Discussions + the giscus app)
     images:
     - /images/2021-12-24-man-at-the-library.jpg
 
