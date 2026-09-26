@@ -1,42 +1,71 @@
 {{- define "main" }}
+{{- /*
+  Talks come from data/speaking.yaml. A page in this section is an event
+  write-up; `events: [...]` in its front matter names the events it covers, and
+  every talk at one of those events links to it. Pages with no `events` are
+  listed on their own, as event notes.
+*/}}
 {{- $byYear := dict }}
 {{- range hugo.Data.speaking }}{{ $byYear = merge $byYear (dict (string .year) .talks) }}{{ end }}
-{{- $events := .RegularPages }}
+{{- $writeups := dict }}
+{{- $notes := slice }}
+{{- range .RegularPages }}
+  {{- $p := . }}
+  {{- with .Params.events }}{{ range . }}{{ $writeups = merge $writeups (dict (lower .) $p) }}{{ end }}{{ else }}{{ $notes = $notes | append . }}{{ end }}
+{{- end }}
+{{- $count := 0 }}
 {{- $years := slice }}
-{{- range $k, $_ := $byYear }}{{ $years = $years | append $k }}{{ end }}
-{{- range $events }}{{ $years = $years | append (.Date.Format "2006") }}{{ end }}
+{{- range $k, $v := $byYear }}{{ $years = $years | append $k }}{{ $count = add $count (len $v) }}{{ end }}
+{{- range $notes }}{{ $years = $years | append (.Date.Format "2006") }}{{ end }}
 {{- $years = sort ($years | uniq) "value" "desc" }}
 <article class="collection">
   <header class="collection__head">
     <h1>{{ .Title }}</h1>
     {{- with .Description }}<p class="collection__desc">{{ . | markdownify }}</p>{{ end }}
   </header>
+
+  <p class="writings-summary">{{ $count }} talks and {{ len $notes }} event notes, {{ index $years (sub (len $years) 1) }}–{{ index $years 0 }}</p>
+  <nav class="year-index" aria-label="Jump to a year">
+    {{- range $years }}{{ $n := add (len (index $byYear . | default slice)) (len (where $notes ".Date.Year" (int .))) }}<a href="#y{{ . }}">{{ . }}{{ with $n }}<sup>{{ . }}</sup>{{ end }}</a>{{ end }}
+  </nav>
+
   {{- range $years }}
   {{- $y := . }}
   {{- $given := index $byYear $y }}
-  {{- $notes := where $events ".Date.Year" (int $y) }}
-  <section class="year-group">
+  {{- $yearNotes := where $notes ".Date.Year" (int $y) }}
+  <section class="year-group year-group--index" id="y{{ $y }}">
     <h2 class="year-group__year">{{ $y }}</h2>
-    {{- with $given }}
-    <ul class="ledger ledger--talks">
-      {{- range . }}
-      <li><div class="ledger__row">
-        <span class="ledger__title">{{ .title }}<span class="ledger__sub">{{ .event }}{{ with .location }} · {{ . }}{{ end }}</span>
-          {{- with .links }}<span class="ledger__links">{{ range $i, $l := . }}{{ if $i }} · {{ end }}<a href="{{ $l.url }}">{{ $l.label }}</a>{{ end }}</span>{{ end }}
-        </span>
-        <span class="ledger__meta">{{ .date | default "" }}</span>
-      </div></li>
+    <div>
+      {{- with $given }}
+      {{- if $yearNotes }}<p class="year-group__sub">Talks</p>{{ end }}
+      <ul class="ledger ledger--talks">
+        {{- range . }}
+        {{- /* Schedule, recording and write-up first, then anything else. */}}
+        {{- $raw := .links | default slice }}
+        {{- $first := slice "Schedule" "Recording" }}
+        {{- $links := slice }}
+        {{- range $first }}{{ range where $raw "label" . }}{{ $links = $links | append . }}{{ end }}{{ end }}
+        {{- with index $writeups (lower .event) }}{{ $links = $links | append (dict "label" "Write-up" "url" .RelPermalink) }}{{ end }}
+        {{- range $raw }}{{ if not (in $first .label) }}{{ $links = $links | append . }}{{ end }}{{ end }}
+        {{- $d := string (.date | default "") }}
+        <li><div class="ledger__row">
+          <span class="ledger__title">{{ .title }}<span class="ledger__sub">{{ .event }}{{ with .location }} · {{ . }}{{ end }}</span>
+            {{- with $links }}<span class="ledger__links">{{ range $i, $l := . }}{{ if $i }} · {{ end }}<a href="{{ $l.url }}">{{ $l.label }}</a>{{ end }}</span>{{ end }}
+          </span>
+          <span class="ledger__meta">{{ with findRE `^[A-Z][a-z]{2}` $d 1 }}{{ index . 0 }} {{ end }}{{ index (findRE `\d{4}` $d 1) 0 }}</span>
+        </div></li>
+        {{- end }}
+      </ul>
       {{- end }}
-    </ul>
-    {{- end }}
-    {{- with $notes }}
-    <p class="year-group__sub">Event notes</p>
-    <ul class="ledger ledger--quiet">
-      {{- range . }}
-      <li><a href="{{ .RelPermalink }}"><span class="ledger__title">{{ .Title }}</span><span class="ledger__meta">{{ .Date.Format "Jan 2" }}</span></a></li>
+      {{- with $yearNotes }}
+      <p class="year-group__sub">Event notes</p>
+      <ul class="ledger">
+        {{- range . }}
+        <li><a href="{{ .RelPermalink }}"><span class="ledger__title">{{ .Title }}</span><span class="ledger__meta">{{ .Date.Format "Jan 2006" }}</span></a></li>
+        {{- end }}
+      </ul>
       {{- end }}
-    </ul>
-    {{- end }}
+    </div>
   </section>
   {{- end }}
 </article>

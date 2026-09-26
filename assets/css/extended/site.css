@@ -134,11 +134,6 @@ body:has(.home, .collection) {
     white-space: nowrap;
 }
 
-.ledger--quiet .ledger__title {
-    font-size: 16px;
-    color: var(--content);
-}
-
 /* Display type: Fraunces for titles and section heads ---------------------- */
 
 .home__name,
@@ -560,11 +555,19 @@ body:has(.home, .collection) {
     font-variant-numeric: tabular-nums;
 }
 
+/* Labels a year's lists apart when it has more than one, e.g. talks and event notes. */
 .year-group__sub {
-    margin: 18px 0 6px;
+    margin: 32px 0 8px;
     font-family: var(--sans);
-    font-size: 13px;
-    color: var(--secondary);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.year-group__sub:first-child {
+    margin-top: 0;
 }
 
 /* Writing: an archive index -------------------------------------------------- */
@@ -679,7 +682,8 @@ body:has(.home, .collection) {
         border-top: 0;
     }
 
-    .year-group--index .ledger li:first-child > a {
+    .year-group--index .ledger li:first-child > a,
+    .year-group--index .ledger li:first-child > .ledger__row {
         padding-top: 8px;
     }
 }

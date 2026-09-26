@@ -27,6 +27,9 @@ tags:
 - report
 - kubernetes
 title: KubeCon + CloudNativeCon India 2024
+events:
+  - KubeCon + CloudNativeCon India 2024
+  - CNCF Maintainers Summit · KubeCon India 2024
 ---
 
 {{< figure src="/images/kubeconindia2024-india-head.jpg" alt="Banner with KubeCon and Cloud Native Con India logos" position="center" >}}

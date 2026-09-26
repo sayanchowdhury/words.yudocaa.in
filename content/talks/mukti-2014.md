@@ -1,5 +1,6 @@
 +++
 title = "Mukti 2014"
+events = ["Mukti 2014"]
 slug = "mukti-2014"
 date = "2014-03-07T01:45:03+05:30"
 tags = ["mukti", "nit", "nitdgplug", "dgplug", "planet", "fedora", "flask", "open source"]

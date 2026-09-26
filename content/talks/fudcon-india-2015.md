@@ -1,5 +1,6 @@
 +++
 title = "FUDCon India 2015"
+events = ["FUDCon India 2015"]
 slug = "fudcon-india-2015"
 date = "2015-07-09T16:29:00+05:30"
 tags = ["fudcon", "india", "pune", "fedora", "planet"]

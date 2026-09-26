@@ -1,5 +1,6 @@
 +++
 title = "Flock 2016"
+events = ["Flock 2016"]
 slug = "flock-2016"
 date = "2016-08-14T16:30:00+05:30"
 tags = ["flocktofedora", "fedora", "planet", "poland", "krakow", "flock"]

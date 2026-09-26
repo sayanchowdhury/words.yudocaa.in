@@ -1,3 +1,15 @@
+- year: 2025
+  talks:
+    - title: "Minimal OS, Maximum Impact: Journey To a Flatcar Maintainer"
+      date: "Aug 7, 2025"
+      event: "KubeCon + CloudNativeCon India 2025"
+      location: "Hyderabad, India"
+      links:
+        - label: Schedule
+          url: "https://kccncind2025.sched.com/event/23Ev3"
+        - label: Recording
+          url: "https://www.youtube.com/watch?v=M0NrFngZ_L4"
+
 - year: 2024
   talks:
     - title: "Tutorial: Flatcar Container Linux Deep Dive: Deploying, Managing, and Automating Workloads Securely"
@@ -8,17 +20,23 @@
         - label: Schedule
           url: "https://kccncind2024.sched.com/event/1mVSE"
         - label: Recording
-          url: "https://www.classcentral.com/course/youtube-tutorial-flatcar-container-linux-deep-dive-deploying-managing-and-automating-sayan-chowdhury-416865"
+          url: "https://www.youtube.com/watch?v=ta-xOOJaqDY"
 
     - title: "Effortless Clustering: Rethinking ClusterAPI with Systemd-Sysext"
       date: "Dec 11, 2024"
       event: "KubeCon + CloudNativeCon India 2024"
       location: "Delhi, India"
+      links:
+        - label: Recording
+          url: "https://www.youtube.com/watch?v=TAOMgIx1-AM"
 
     - title: "A Maintainer's Odyssey: Time, Technology and Transformation"
       date: "Dec 10, 2024"
       event: "CNCF Maintainers Summit · KubeCon India 2024"
       location: "Delhi, India"
+      links:
+        - label: Recording
+          url: "https://www.youtube.com/watch?v=yZoev6NvkB0"
 
     - title: "Deploy & Forget: Mastering Flatcar Container Linux"
       date: "Nov 23, 2024"
@@ -32,6 +50,9 @@
       date: "Apr 2024"
       event: "FOSSASIA Summit 2024"
       location: "Hanoi, Vietnam"
+      links:
+        - label: Recording
+          url: "https://www.youtube.com/watch?v=vGIEqLVRo-k"
 
     - title: "Releasing a Linux based OS: an overview of Flatcar release cycle"
       date: "Feb 4, 2024"
@@ -68,6 +89,8 @@
       links:
         - label: Event Page
           url: "https://www.conf42.com/devsecops2021"
+        - label: Recording
+          url: "https://www.youtube.com/watch?v=v-RHlHe8h_8"
 
 - year: 2019
   talks:
@@ -80,6 +103,9 @@
       date: "Mar 2019"
       event: "FOSSASIA Summit 2019"
       location: "Singapore"
+      links:
+        - label: Recording
+          url: "https://www.youtube.com/watch?v=glW5T0UMc5I"
 
 - year: 2017
   talks:
@@ -104,6 +130,27 @@
       date: "Aug 2016"
       event: "Flock 2016"
       location: "Krakow, Poland"
+      links:
+        - label: Recording
+          url: "https://www.youtube.com/watch?v=DNQ4eih2c1E"
+
+    - title: "Bugyou: Report bugs automatically from fedmsg"
+      date: "Aug 2016"
+      event: "Flock 2016"
+      location: "Krakow, Poland"
+      links:
+        - label: Schedule
+          url: "https://flock2016.sched.com/event/76no/bugyou-report-bugs-automatically-from-fedmsg"
+        - label: Recording
+          url: "https://www.youtube.com/watch?v=egXGruU5gLc"
+
+    - title: "ircb - IRC Bouncer as a service for humans"
+      date: "Mar 2016"
+      event: "FOSSASIA Summit 2016"
+      location: "Singapore"
+      links:
+        - label: Recording
+          url: "https://www.youtube.com/watch?v=t6aqtlxeeSE"
 
 - year: 2015
   talks:
@@ -114,6 +161,8 @@
       links:
         - label: Proposal
           url: "https://in.pycon.org/cfp/pycon-india-2015/proposals/fedmsg-the-message-bus-of-fedora-infrastructure~dBLJa/"
+        - label: Recording
+          url: "https://www.youtube.com/watch?v=eymAVMG5bHQ"
 
     - title: "Flask 101: Getting started with Fedora Infra"
       date: "Jun 2015"
@@ -147,6 +196,13 @@
       event: "BangPypers Meetup"
       location: "Bangalore, India"
 
+    - title: "Waartaa: a web-based IRC client (demo)"
+      date: "Jan 2014"
+      event: "Hasgeek New Year Hacknight 2014"
+      links:
+        - label: Recording
+          url: "https://www.youtube.com/watch?v=qn_u5meekXM"
+
 - year: 2013
   talks:
     - title: "Python 101"
@@ -158,6 +214,11 @@
       date: "Aug 2013"
       event: "Reva Institute of Technology & BNM Institute of Technology"
       location: "Bangalore, India"
+
+    - title: "HTML5 and Webmaker Workshop"
+      date: "Feb 2013"
+      event: "Dr. B.C. Roy Engineering College"
+      location: "Durgapur, India"
 
 - year: 2012
   talks:

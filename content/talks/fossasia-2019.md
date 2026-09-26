@@ -5,6 +5,7 @@ excerpt = ""
 hero = "/images/33515884798_e9124d822a_c.jpg"
 timeToRead = 12
 title = "FOSSASIA 2019"
+events = ["FOSSASIA Summit 2019"]
 
 +++
 {{<figure src="/images/33515884798_e9124d822a_c.jpg">}}
