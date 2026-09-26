@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/2013/darkserver-improvement-random-scribblings.html"
-description = ""
+description = "Sketching the whole Darkserver workflow on paper to make sense of it during Google Summer of Code 2013."
 tags = ["fedora", "gsoc", "darkserver"]
 date = "2013-06-23T12:00:00+05:30"
 title = "Darkserver improvement: random scribblings"

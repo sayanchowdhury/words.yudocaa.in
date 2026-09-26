@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/dgplug-summer-training-2013.txt"
-description = ""
+description = "The dgplug summer training returns for 2013: an online program where upstream developers teach students how to contribute to open source."
 tags = ["dgplug"]
 date = "2013-04-24T12:00:00+05:30"
 title = "dgplug Summer Training 2013"

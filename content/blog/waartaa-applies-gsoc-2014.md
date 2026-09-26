@@ -1,7 +1,7 @@
 +++
 authors = ["Sayan Chowdhury"]
 date = 2014-03-07T07:20:23Z
-description = ""
+description = "Waartaa, an open-source IRC client as a service with centralized logging and notifications, is a GSoC 2014 project idea under Fedora."
 hero = "/images/Google summer of code.webp"
 link = "https://sayanchowdhury.dgplug.org/waartaa-applies-gsoc-2014"
 slug = "waartaa-applies-gsoc-2014"

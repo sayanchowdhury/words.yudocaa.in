@@ -5,7 +5,7 @@ date    = "2014-03-05T00:31:43+05:30"
 tags    = ["kolkata", "bloggers"]
 link    = "http://sayanchowdhury/posts/an-open-letter-bloggers-from-kolkata"
 timeToRead = 7
-description = ""
+description = "Kolkata's blogging scene was loud in 2009 and near silent by 2014. A call to bring the city's bloggers back together for a meetup."
 journal = ["journal"]
 +++
 

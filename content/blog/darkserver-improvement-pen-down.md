@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/2013/darkserver-improvement-pen-down.html"
-description = ""
+description = "Wrapping up GSoC 2013: writing my first setup.py and RPM package to deploy the Darkserver work to staging."
 tags = ["gsoc", "fedora", "darkserver"]
 date = "2013-09-25T12:00:00+05:30"
 title = "Darkserver improvement: pen down"

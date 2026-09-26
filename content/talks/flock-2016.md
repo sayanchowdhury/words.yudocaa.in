@@ -5,7 +5,7 @@ slug = "flock-2016"
 date = "2016-08-14T16:30:00+05:30"
 tags = ["flocktofedora", "fedora", "planet", "poland", "krakow", "flock"]
 link = "https://sayanchowdhury.dgplug.org/posts/flock-2016"
-description = ""
+description = "Day-by-day notes from Flock 2016, Fedora's contributor conference in Krakow, Poland."
 +++
 
 {{<figure src="/images/flock2016.jpg" >}}

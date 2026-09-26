@@ -4,7 +4,7 @@ slug = "fedora-meetup-2015"
 date = "2015-07-09T22:48:00+05:30"
 tags = ["fedora", "meetup", "july", "planet"]
 link = "https://sayanchowdhury.dgplug.org/fedora-meetup-2015"
-description = ""
+description = "The July 2015 Fedora meetup at HasGeek, Bangalore: Fedora 22, reproducing bugs with Vagrant, RPM packaging and Fedora Hubs."
 +++
 
 Fedora July Meetup 2015 happened at Hasgeek office, Indiranagar on July 04, 2015 at 06:30 PM.

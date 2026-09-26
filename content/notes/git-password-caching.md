@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/2014/git-password-caching.html"
-description = ""
+description = "Have Git remember your HTTPS password in memory with the credential cache helper, and change how long it keeps it."
 tags = ["git", "github", "2014"]
 date = "2014-06-10T12:00:00+05:30"
 title = "Caching Git passwords with the credential helper"

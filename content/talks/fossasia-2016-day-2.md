@@ -5,7 +5,7 @@ slug = "fossasia-2016-day-2"
 date = "2016-03-23T17:22:00+05:30"
 tags = ["fossasia", "fedora", "2016", "python", "planet"]
 link = "https://sayanchowdhury.dgplug.org/fossasia-2016-day-2"
-description = ""
+description = "Day two of FOSSASIA 2016: GSoC and Google Code-in, and hosting the Python track in Singapore."
 +++
 
 I left early for the venue as haseeb had the first talk of the day and I was

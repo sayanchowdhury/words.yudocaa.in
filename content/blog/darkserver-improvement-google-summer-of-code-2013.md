@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/2013/darkserver-improvement-google-summer-of-code-2013.html"
-description = ""
+description = "I was selected for Google Summer of Code 2013 to improve Darkserver for Fedora, mentored by Kushal Das."
 tags = ["fedora", "gsoc"]
 date = "2013-06-18T12:00:00+05:30"
 title = "Darkserver improvement: Google Summer of Code 2013"

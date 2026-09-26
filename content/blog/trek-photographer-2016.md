@@ -1,7 +1,7 @@
 +++
 authors = ["Sayan Chowdhury"]
 date = 2017-01-30T11:00:00Z
-description = ""
+description = "I was nominated for Trek Photographer of the Month, December 2016."
 excerpt = "Indiahikes selects photograph for Trek Photgrapher of the month"
 hero = "/images/45d8506394fcec71c7d80a0595d112a2.jpg"
 link = "https://sayanchowdhury.dgplug.org/posts/trek-photographer-dec-2016"

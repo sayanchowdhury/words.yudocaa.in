@@ -5,6 +5,7 @@ excerpt = ""
 hero = "/images/66b8df8628496d9afab042ca67aa1322.jpg"
 timeToRead = 1
 title = "Abort a Git commit or rebase from Vim with :cq"
+description = "Quit Vim with :cq during a git commit or interactive rebase, and Git aborts the whole operation."
 aliases = ["/blog/exit-vim-in-between-git-operation/"]
 
 +++

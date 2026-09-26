@@ -4,7 +4,7 @@ slug = "taskwarrior"
 date = "2016-05-13T16:30:00+05:30"
 tags = ["taskwarrior", "notes"]
 link = "https://sayanchowdhury.dgplug.org/notes/taskwarrior"
-description = ""
+description = "My working notes on Getting Things Done with Taskwarrior: adding, tagging, prioritising and reviewing tasks from the command line."
 aliases = ["/post/notes/taskwarrior/", "/blog/taskwarrior/"]
 +++
 > The posts tagged with notes are stuffs that I learned over

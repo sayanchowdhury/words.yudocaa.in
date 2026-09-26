@@ -1,5 +1,6 @@
 +++
 title = "Force git to use git:// instead of https://"
+description = "Keep cloning over SSH even when you paste an https:// URL, using git's url.<base>.insteadOf setting."
 authors = ["Sayan Chowdhury"]
 date = 2019-07-28T18:30:00Z
 excerpt = ""

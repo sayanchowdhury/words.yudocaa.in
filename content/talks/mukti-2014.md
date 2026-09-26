@@ -5,7 +5,7 @@ slug = "mukti-2014"
 date = "2014-03-07T01:45:03+05:30"
 tags = ["mukti", "nit", "nitdgplug", "dgplug", "planet", "fedora", "flask", "open source"]
 link =  "http://sayanchowdhury.dgplug.org/mukti-2014.html"
-description = ""
+description = "Mukti 2014 at NIT Durgapur, the free software symposium I first attended as a student and came back to as a guest speaker."
 +++
 
 [Mukti 2014](http://mkti.in/) is the annual national level technical

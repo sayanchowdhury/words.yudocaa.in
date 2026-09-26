@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/fedimg-course-of-action.html"
-description = ""
+description = "The plan for fedimg, the service that publishes Fedora Cloud images to AWS: cleaning up old AMIs to cut costs, and supporting more cloud providers."
 tags = ["planet", "fedora", "fedimg"]
 date = "2016-01-23T11:48:00+05:30"
 title = "Fedimg: course of action"

@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/2013/how-to-get-started-with-open-source.html"
-description = ""
+description = "Answers to the questions students ask me after GSoC: how to start contributing to open source, which project to pick and how to find a bug."
 tags = ["planet", "fedora", "open source", "kde", "mozilla", "mediawiki", "openstack", "python", "django"]
 date = "2014-03-04T00:30:00+05:30"
 title = "How to get started with open source"

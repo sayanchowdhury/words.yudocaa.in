@@ -4,7 +4,7 @@ slug    = "introducing-bugyou"
 date    = "2016-01-07T14:09:43+05:30"
 tags    = ["bugyou", "fedora", "planet"]
 link    = "http://sayanchowdhury.dgplug.org/posts/introducing-bugyou"
-description = ""
+description = "Bugyou listens to Autocloud's fedmsg messages, files issues for Fedora images that fail their tests, and closes them once the tests pass."
 +++
 
 We developed [Autocloud](https://kushaldas.in/posts/introducing-autocloud.html)

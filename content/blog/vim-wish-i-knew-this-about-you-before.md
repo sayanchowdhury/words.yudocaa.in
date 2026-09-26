@@ -5,6 +5,7 @@ excerpt = ""
 hero = "/images/Screenshot 2020-02-11 at 5.40.17 PM.png"
 timeToRead = 9
 title = "Vim features I wish I'd known sooner"
+description = "After years of Vim and a switch to Neovim, the feature I wish I'd learned sooner: jump lists."
 
 +++
 Almost all my life since I have started working around open source projects I have been a Vim user. That does not mean that I did not look into other options. I've tried my hands on Emacs, Sublime Text, Visual Studio Code, Atom, et cetera. But, none of them pleased me like vim.

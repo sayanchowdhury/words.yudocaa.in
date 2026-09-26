@@ -4,7 +4,7 @@ slug    = "four-weeks-in-Fedora"
 date    = "2015-11-24T08:24:43+05:30"
 tags    = ["autocloud", "bugyou", "fedora", "planet"]
 link    = "http://sayanchowdhury/posts/four-weeks-in-fedora"
-description = ""
+description = "Four weeks after joining Red Hat's Fedora Engineering Team: from askbot and Autocloud contributions to working on Fedora full time."
 +++
 
 26th of October 2015, I joined [**Red Hat**](http://www.redhat.com/) as a part of the [**Fedora Engineering

@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/migrate-a-running-process-into-tmux.html"
-description = ""
+description = "Started a long job over SSH outside tmux? reptyr moves a running process into a tmux or screen session so you can safely disconnect."
 tags = ["bookmark", "fedora", "tmux", "planet", "screen", "reptyr"]
 date = "2014-12-27T12:00:00+05:30"
 title = "Move a running process into tmux with reptyr"

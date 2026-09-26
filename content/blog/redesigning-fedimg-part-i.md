@@ -5,7 +5,7 @@ slug = "redesigning-fedimg-part-i"
 date = "2017-01-30T20:00:00+05:30"
 tags = ["fedora", "fedimg", "python", "cloud", "atomic", "libcloud", "planet"]
 link = "https://sayanchowdhury.dgplug.org/posts/redesigning-fedimg-part-i"
-description = ""
+description = "How fedimg turns Fedora composes into AWS AMIs today: from fedmsg messages and fedfind metadata to the EC2 upload steps."
 +++
 
 # What is fedimg?

@@ -4,7 +4,7 @@ slug    = "fedora-meetup-pune-january-2016"
 date    = "2016-01-17T20:28:43+05:30"
 tags    = ["fedora", "meetup", "pune", "january", "2016", "planet"]
 link    = "http://sayanchowdhury.dgplug.org/fedora-meetup-pune-january-2016/"
-description = ""
+description = "The first Fedora meetup in Pune, January 2016: 18 people and four Fedora Ambassadors in my apartment."
 +++
 
 On 15th January 2016, we had our first [Fedora

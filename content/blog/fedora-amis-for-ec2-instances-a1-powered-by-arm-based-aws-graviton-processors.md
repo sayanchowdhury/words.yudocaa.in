@@ -5,6 +5,7 @@ excerpt = ""
 hero = "/images/013287f6780b3fad4f885d5b6026a3f5.jpg"
 timeToRead = 4
 title = "Fedora AMIs for Arm-Based EC2 Instances (A1)"
+description = "Fedora now publishes arm64 AMIs for AWS's Graviton-powered A1 instances, thanks to fedimg 2.4.0. What changed, and the known issues."
 
 +++
 [AWS recently announced their new fleet of A1 EC2 instances which is powered by ARM at AWS re:Invent.](https://aws.amazon.com/blogs/aws/new-ec2-instances-a1-powered-by-arm-based-aws-graviton-processors/)

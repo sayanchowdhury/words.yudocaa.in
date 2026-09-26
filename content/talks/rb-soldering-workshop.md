@@ -4,7 +4,7 @@ slug = "soldering-workshop-at-rb"
 date = "2017-02-01T15:00:00+05:30"
 tags = ["soldering", "workshop", "reserved-bit", "hackerspace", "planet"]
 link = "https://sayanchowdhury.dgplug.org/posts/soldering-workshop-at-rb"
-description = ""
+description = "A three-hour beginners' soldering workshop at reserved-bit, Pune, in February 2017, after my own failed attempts to learn."
 +++
 
 This weekend there will be a [soldering

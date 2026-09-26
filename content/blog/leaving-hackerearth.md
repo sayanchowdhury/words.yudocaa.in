@@ -4,7 +4,7 @@ slug    = "leaving-hackerearth"
 date    = "2015-10-12T08:24:43+05:30"
 tags    = ["hackerearth", "fedora", "planet"]
 link    = "http://sayanchowdhury/posts/leaving-hackerearth"
-description = ""
+description = "From a remote internship in 2013 to leaving: looking back on my years building HackerEarth."
 +++
 
 It's very hard to write but I am leaving HackerEarth.
