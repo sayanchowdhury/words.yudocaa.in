@@ -10,7 +10,6 @@ buildDrafts: false
 buildFuture: true
 buildExpired: false
 enableEmoji: true
-googleAnalytics:
 
 minify:
     disableXML: true
@@ -139,9 +138,11 @@ params:
     label:
          text: "/"
 
-    # analytics:
-    #     google:
-    #         SiteVerificationTag: "XYZabc"
+    analytics:
+        # Cookie-free page views (partials/analytics.html). Get the token from
+        # Cloudflare dashboard > Web Analytics > Add a site > words.yudocaa.in.
+        cloudflare:
+            token: "fafcddbe3d1941bc81c1b56d96972556"
 
     assets:
         favicon: "favicon.svg"

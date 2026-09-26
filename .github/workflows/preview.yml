@@ -59,6 +59,8 @@ jobs:
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
+          # Keeps preview visits out of the analytics (partials/analytics.html).
+          HUGO_PARAMS_PREVIEW: "true"
         # Links and assets must point at the preview, not words.yudocaa.in.
         run: hugo --gc --minify --baseURL "$URL/"
       - name: Deploy to Cloudflare Pages
