@@ -33,3 +33,15 @@
   links:
     - title: 30 Days of Read, my daily reading log
       url: /hope/30-days-of-read-i/
+- title: Inference Engineering
+  author: Philip Kiely
+  isbn: "9789368089827"
+  cover: books/inference-engineering.png
+  year: 2026
+  pages: 260
+  status: reading
+  started: 2026-09-26
+  topics: [ai-infra]
+  links:
+    - title: Read online at Baseten
+      url: https://www.baseten.co/inference-engineering/book/
