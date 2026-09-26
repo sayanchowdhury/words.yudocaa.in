@@ -2,4 +2,7 @@
 <link rel="preload" href="{{ "fonts/literata-normal-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ "fonts/fraunces-normal-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 
+{{- /* Apply the remembered side of the bio flip (human or machine) to the wallpaper before first paint. */}}
+<script>try{var s=localStorage.getItem("iw:side")||(localStorage.getItem("tabs:bio")==="C-3PO"?"machine":"");if(s==="machine")document.documentElement.dataset.wall="machine"}catch(e){}</script>
+
 {{- partial "explainer/head.html" . }}

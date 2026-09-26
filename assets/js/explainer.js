@@ -585,6 +585,147 @@ function marginNotes() {
   if (content.querySelector(".sidenote")) content.classList.add("has-sidenotes");
 }
 
+/* Bio flip: toss the coin; the bio scrambles and resolves as the other side */
+
+const SIDE_KEY = "iw:side";
+const NOISE = { machine: "01<>/{}[]=+*#$%&", human: "abcdefghijklmnopqrstuvwxyz" };
+const SCRAMBLE_OUT = 320; // ms: the current bio breaks up
+const SCRAMBLE_IN = 720; // ms: the new bio resolves out of the noise
+const TOSS = 950; // ms: the coin's flight
+
+function textNodesOf(el) {
+  const out = [];
+  const walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, {
+    acceptNode: (n) => (n.nodeValue.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT),
+  });
+  while (walk.nextNode()) out.push(walk.currentNode);
+  return out;
+}
+
+// Each letter or digit gets its own moment to flip; spaces and punctuation
+// never change, so words keep their length and lines barely reflow.
+function scrambler(el, charset) {
+  const nodes = textNodesOf(el).map((node) => {
+    const text = node.nodeValue;
+    const chars = [...text].map((ch) => ({ ch, live: /[\p{L}\p{N}]/u.test(ch), at: 0 }));
+    return { node, text, chars };
+  });
+  const total = nodes.reduce((n, x) => n + x.chars.length, 0) || 1;
+  let k = 0;
+  for (const n of nodes) for (const c of n.chars) c.pos = k++ / total;
+  const noise = () => charset[Math.floor(Math.random() * charset.length)];
+  return {
+    // shown(c) decides whether a character shows its real self at this moment.
+    render(shown) {
+      for (const n of nodes) n.node.nodeValue = n.chars.map((c) => (!c.live || shown(c) ? c.ch : noise())).join("");
+    },
+    restore() {
+      for (const n of nodes) n.node.nodeValue = n.text;
+    },
+    chars: nodes.flatMap((n) => n.chars),
+  };
+}
+
+function animateFor(duration, frame) {
+  return new Promise((resolve) => {
+    const start = performance.now();
+    let last = 0;
+    const tick = (now) => {
+      const t = Math.min(1, (now - start) / duration);
+      if (now - last > 45 || t === 1) { frame(t); last = now; } // ~20 fps of noise reads as flicker, not blur
+      if (t < 1) requestAnimationFrame(tick); else resolve();
+    };
+    requestAnimationFrame(tick);
+  });
+}
+
+function bioFlip() {
+  const root = document.querySelector(".bio-flip");
+  const coin = root && root.querySelector(".flip-coin");
+  if (!coin) return;
+  const inner = coin.querySelector(".flip-coin__inner");
+  const faces = {
+    human: root.querySelector(".bio-card__face--human"),
+    machine: root.querySelector(".bio-card__face--machine"),
+  };
+  let busy = false;
+
+  const settle = (side, { save = true } = {}) => {
+    root.dataset.side = side;
+    const other = side === "human" ? "machine" : "human";
+    faces[side].inert = false;
+    faces[side].removeAttribute("aria-hidden");
+    faces[other].inert = true;
+    faces[other].setAttribute("aria-hidden", "true");
+    coin.setAttribute("aria-pressed", String(side === "machine"));
+    coin.setAttribute("aria-label", `Flip to the ${other} side`);
+    if (save) store.set(SIDE_KEY, side);
+  };
+
+  const toss = (from, to) => {
+    if (!inner.animate) return Promise.resolve();
+    const a = from === "machine" ? 180 : 0;
+    const spin = a + 900; // two and a half turns lands on the other face
+    const flight = inner.animate([
+      { transform: `translateY(0) rotateX(${a}deg)`, easing: "cubic-bezier(0.2, 0.7, 0.4, 1)" },
+      { transform: `translateY(-30px) rotateX(${a + 450}deg)`, offset: 0.45, easing: "cubic-bezier(0.55, 0, 0.8, 0.4)" },
+      { transform: `translateY(0) rotateX(${spin}deg)`, offset: 0.88 },
+      { transform: `translateY(-3px) rotateX(${spin}deg)`, offset: 0.94 },
+      { transform: `translateY(0) rotateX(${spin}deg)` },
+    ], { duration: TOSS });
+    coin.animate([
+      { "--coin-shadow": 1 }, { "--coin-shadow": 0.35, offset: 0.45 }, { "--coin-shadow": 1, offset: 0.88 }, { "--coin-shadow": 1 },
+    ], { duration: TOSS });
+    return flight.finished.catch(() => {});
+  };
+
+  const flip = async () => {
+    if (busy) return;
+    const from = root.dataset.side;
+    const to = from === "human" ? "machine" : "human";
+    document.documentElement.dataset.wall = to;
+    if (reducedMotion.matches) { settle(to); return; }
+
+    busy = true;
+    root.classList.add("is-flipping");
+    const tossing = toss(from, to);
+
+    // The current bio breaks up into noise...
+    const out = scrambler(faces[from], NOISE[to]);
+    for (const c of out.chars) c.at = Math.random();
+    await animateFor(SCRAMBLE_OUT, (t) => out.render((c) => c.at > t));
+
+    // ...then the other side resolves out of it, roughly left to right.
+    const incoming = scrambler(faces[to], NOISE[to]);
+    for (const c of incoming.chars) c.at = c.pos * 0.6 + Math.random() * 0.4;
+    incoming.render(() => false);
+    out.restore();
+    settle(to);
+    await animateFor(SCRAMBLE_IN, (t) => incoming.render((c) => c.at <= t));
+    incoming.restore();
+
+    await tossing;
+    root.classList.remove("is-flipping");
+    busy = false;
+  };
+
+  const legacy = store.get("tabs:bio") === "C-3PO" ? "machine" : null;
+  settle(store.get(SIDE_KEY) || legacy || "human", { save: false });
+  root.classList.add("is-ready");
+  coin.hidden = false;
+  coin.addEventListener("click", flip);
+
+  // First visit: a small hop and wobble so the coin reads as something to toss.
+  if (!store.get("iw:flip-hinted") && !reducedMotion.matches && inner.animate) {
+    store.set("iw:flip-hinted", "1");
+    const a = root.dataset.side === "machine" ? 180 : 0;
+    inner.animate(
+      [{ transform: `rotateX(${a}deg)` }, { transform: `translateY(-8px) rotateX(${a - 40}deg)` }, { transform: `rotateX(${a + 12}deg)` }, { transform: `rotateX(${a}deg)` }],
+      { duration: 1000, delay: 900, easing: "cubic-bezier(0.16, 1, 0.3, 1)" },
+    );
+  }
+}
+
 /* "Copy link" at the end of posts ------------------------------------------ */
 
 function copyLinks() {
@@ -617,6 +758,7 @@ function init() {
   moonboard();
   pathTicks();
   copyLinks();
+  bioFlip();
   marginNotes();
   recordVisit();
 }

@@ -32,6 +32,93 @@
     white-space: nowrap;
 }
 
+/* Wallpaper: Alpona (the human side) and its circuit twin (the machine side) --
+   Tone-on-tone line art at full strength in the margins, easing smoothly to a
+   faint trace behind the content. Flipping the bio to its machine side crossfades
+   the two (html[data-wall], set before first paint in extend_head). */
+
+:root {
+    --wall-ink: oklch(0.52 0.05 65 / 0.10);
+    --wall-ink-machine: oklch(0.5 0.04 235 / 0.10);
+    --wall-size: 208px;
+    --wall-core: 0.2; /* strength behind the content, relative to the margins */
+}
+
+:root[data-theme="dark"] {
+    --wall-ink: oklch(0.92 0.03 80 / 0.05);
+    --wall-ink-machine: oklch(0.9 0.03 230 / 0.05);
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: var(--wall-ink);
+    /* A long, eased ramp from the margins into the centre: no visible edge. */
+    --wall-fade: linear-gradient(90deg,
+        #000 0,
+        #000 calc(50% - 760px),
+        rgb(0 0 0 / 0.72) calc(50% - 640px),
+        rgb(0 0 0 / 0.42) calc(50% - 540px),
+        rgb(0 0 0 / var(--wall-core)) calc(50% - 440px),
+        rgb(0 0 0 / var(--wall-core)) calc(50% + 440px),
+        rgb(0 0 0 / 0.42) calc(50% + 540px),
+        rgb(0 0 0 / 0.72) calc(50% + 640px),
+        #000 calc(50% + 760px),
+        #000 100%);
+    -webkit-mask: url("/wallpaper/alpona.svg") 0 0 / var(--wall-size) repeat, var(--wall-fade);
+    -webkit-mask-composite: source-in;
+    mask: url("/wallpaper/alpona.svg") 0 0 / var(--wall-size) repeat, var(--wall-fade);
+    mask-composite: intersect;
+    transition: opacity 900ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body::after {
+    background: var(--wall-ink-machine);
+    -webkit-mask-image: url("/wallpaper/circuit.svg"), var(--wall-fade);
+    mask-image: url("/wallpaper/circuit.svg"), var(--wall-fade);
+    opacity: 0;
+}
+
+:root[data-wall="machine"] body::before { opacity: 0; }
+:root[data-wall="machine"] body::after { opacity: 1; }
+
+/* Posts: the same ramp, but fully clear behind the text for long reads. */
+body:has(.post-single) {
+    --wall-core: 0;
+}
+
+/* Small screens have no margins: a faint all-over texture, and on posts just
+   a band behind the header. */
+@media (max-width: 1100px) {
+    body::before,
+    body::after {
+        --wall-fade: linear-gradient(rgb(0 0 0 / 0.55), rgb(0 0 0 / 0.55));
+    }
+
+    body:has(.post-single)::before,
+    body:has(.post-single)::after {
+        --wall-fade: linear-gradient(180deg, #000 0, #000 60px, transparent 170px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body::before,
+    body::after {
+        transition: none;
+    }
+}
+
+@media print {
+    body::before,
+    body::after {
+        display: none;
+    }
+}
+
 /* Header: the home link is a single slash, in the same voice as the nav. */
 .logo a {
     font-size: 26px;
@@ -223,29 +310,6 @@ body:has(.home, .collection) {
     margin: 0;
 }
 
-.home__bio .tabs__panel {
-    padding: 0;
-    font-size: 18px;
-    line-height: 1.65;
-}
-
-.home__bio .tabs__panel p {
-    margin: 0 0 14px;
-}
-
-.home__bio .tabs__panel a {
-    color: inherit;
-    text-decoration: underline;
-    text-decoration-color: var(--tertiary);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-}
-
-.home__bio .tabs__panel a:hover {
-    color: var(--accent);
-    text-decoration-color: currentColor;
-}
-
 .home__social {
     margin: 8px 0 0;
 }
@@ -273,33 +337,238 @@ body:has(.home, .collection) {
     height: 22px;
 }
 
-/* Human / C-3PO: a two-way switch rather than tabs with underlines. */
-.tabs--bio .tabs__list {
-    display: inline-flex;
-    gap: 0;
-    padding: 3px;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    overflow: visible;
+/* Bio flip: a coin beside the heading turns the bio card over. -------------- */
+
+.home__bio-head {
+    justify-content: flex-start;
 }
 
-.tabs--bio .tabs__list[hidden] {
+@property --coin-shadow {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 1;
+}
+
+.flip-coin {
+    position: relative;
+    margin-inline-start: auto;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    perspective: 500px;
+}
+
+/* The coin's shadow on the table: it shrinks and fades while the coin is up. */
+.flip-coin::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: -7px;
+    height: 6px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgb(0 0 0 / 0.28), transparent);
+    transform: scale(var(--coin-shadow));
+    opacity: calc(0.25 + var(--coin-shadow) * 0.75);
+    pointer-events: none;
+}
+
+.flip-coin[hidden] {
     display: none;
 }
 
-.tabs--bio .tabs__list [role="tab"] {
-    margin: 0;
-    padding: 4px 14px;
-    border: 0;
-    border-radius: 999px;
-    font-family: var(--sans);
-    font-size: 13px;
+.flip-coin__inner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.flip-coin__face {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    border: 1px solid var(--tertiary);
+    border-radius: 50%;
+    background: var(--theme);
+    backface-visibility: hidden;
+    fill: none;
+    stroke: var(--primary);
+    stroke-width: 0.9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    /* A struck-coin rim: an inner ring and a soft drop shadow. */
+    box-shadow: inset 0 0 0 3px var(--theme), inset 0 0 0 4px var(--border), 0 1px 2px rgb(0 0 0 / 0.08), 0 6px 12px -6px rgb(0 0 0 / 0.25);
+}
+
+/* The machine side is the reverse of the coin: light line on dark ink. */
+.flip-coin__face--machine {
+    transform: rotateX(180deg);
+    background: var(--primary);
+    border-color: var(--primary);
+    stroke: var(--theme);
+    box-shadow: inset 0 0 0 3px var(--primary), inset 0 0 0 4px color-mix(in oklch, var(--theme) 35%, var(--primary)), 0 1px 2px rgb(0 0 0 / 0.08), 0 6px 12px -6px rgb(0 0 0 / 0.3);
+}
+
+.flip-coin__face .fill {
+    fill: currentColor;
+    stroke: none;
+}
+
+.flip-coin__face--machine .fill {
+    fill: var(--theme);
+}
+
+.flip-coin:hover .flip-coin__face {
+    border-color: var(--secondary);
+}
+
+.flip-coin:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.bio-flip[data-side="machine"] .flip-coin__inner {
+    transform: rotateX(180deg);
+}
+
+/* "$ whoami_" in place of a "Bio" heading. */
+.whoami {
+    font-family: var(--code-font);
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 0;
+    font-variation-settings: normal;
+}
+
+.whoami__prompt {
     color: var(--secondary);
 }
 
-.tabs--bio .tabs__list [role="tab"][aria-selected="true"] {
-    background: var(--primary);
-    color: var(--theme);
+.whoami__cursor {
+    color: var(--accent);
+    animation: whoami-blink 1.1s steps(1) infinite;
+}
+
+@keyframes whoami-blink {
+    50% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .whoami__cursor {
+        animation: none;
+    }
+}
+
+/* The card: both faces share one grid cell, so it is as tall as the longer
+   one and nothing below jumps when the bio changes. */
+.bio-card__face {
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+.bio-card__face p {
+    margin: 0 0 14px;
+}
+
+.bio-card__face a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--tertiary);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.bio-card__face a:hover {
+    color: var(--accent);
+    text-decoration-color: currentColor;
+}
+
+.bio-flip.is-ready .bio-card__inner {
+    display: grid;
+}
+
+.bio-flip.is-ready .bio-card__face {
+    grid-area: 1 / 1;
+}
+
+.bio-flip.is-ready .bio-card__face[aria-hidden="true"] {
+    visibility: hidden;
+}
+
+/* While scrambling, the noise reads as the machine at work, not as broken text. */
+.bio-flip.is-flipping .bio-card__face {
+    font-variant-numeric: tabular-nums;
+}
+
+
+
+.home__rest { grid-area: rest; }
+
+.home__name {
+    margin: 0;
+    font-size: clamp(40px, 6vw, 60px);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--primary);
+}
+
+.home__tagline {
+    margin: 10px 0 0;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--secondary);
+}
+
+.home__bio {
+    margin: 64px 0 0;
+}
+
+.home__bio-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.home__bio-head .home__label {
+    margin: 0;
+}
+
+.home__social {
+    margin: 8px 0 0;
+}
+
+.home__social .social-icons {
+    display: flex;
+    gap: 6px;
+    margin-inline-start: -8px;
+}
+
+.home__social .social-icons a {
+    padding: 8px;
+    border-radius: 8px;
+    color: var(--secondary);
+    transition: color 150ms ease-out, background-color 150ms ease-out;
+}
+
+.home__social .social-icons a:hover {
+    color: var(--primary);
+    background: var(--code-bg);
+}
+
+.home__social .social-icons svg {
+    width: 22px;
+    height: 22px;
 }
 
 .home__rest {
