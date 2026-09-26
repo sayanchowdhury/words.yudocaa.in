@@ -1,5 +1,6 @@
 +++
-title = "Redesigning the fedimg AMI creation process - Part 1"
+title = "Redesigning fedimg, part 1: the AMI creation process"
+series = ["fedimg"]
 slug = "redesigning-fedimg-part-i"
 date = "2017-01-30T20:00:00+05:30"
 tags = ["fedora", "fedimg", "python", "cloud", "atomic", "libcloud", "planet"]
@@ -46,5 +47,5 @@ the AMIs fails the `_clean_up` method is fired. The
 cleans up the utility instance, test instance and the volumes which were
 created.
 
-The next blog [post](https://sayanchowdhury.dgplug.org/redesigning-fedimg-part-ii/) will discuss the issues related to the current
+The next blog [post](/blog/redesigning-fedimg-part-ii/) will discuss the issues related to the current
 architecture and about the new architecture.

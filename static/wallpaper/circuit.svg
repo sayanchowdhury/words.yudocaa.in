@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+<g fill="none" stroke="#000" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+<rect x="98.0" y="98.0" width="44" height="44" rx="4"/><circle cx="107.0" cy="107.0" r="2.2" fill="#000"/>
+<g transform="rotate(0 120 120)"><path d="M109.0 98.0V87.0"/><circle cx="109.0" cy="84.0" r="2.4"/><path d="M120.0 98.0V87.0"/><circle cx="120.0" cy="84.0" r="2.4"/><path d="M131.0 98.0V87.0"/><circle cx="131.0" cy="84.0" r="2.4"/></g>
+<g transform="rotate(90 120 120)"><path d="M109.0 98.0V87.0"/><circle cx="109.0" cy="84.0" r="2.4"/><path d="M120.0 98.0V87.0"/><circle cx="120.0" cy="84.0" r="2.4"/><path d="M131.0 98.0V87.0"/><circle cx="131.0" cy="84.0" r="2.4"/></g>
+<g transform="rotate(180 120 120)"><path d="M109.0 98.0V87.0"/><circle cx="109.0" cy="84.0" r="2.4"/><path d="M120.0 98.0V87.0"/><circle cx="120.0" cy="84.0" r="2.4"/><path d="M131.0 98.0V87.0"/><circle cx="131.0" cy="84.0" r="2.4"/></g>
+<g transform="rotate(270 120 120)"><path d="M109.0 98.0V87.0"/><circle cx="109.0" cy="84.0" r="2.4"/><path d="M120.0 98.0V87.0"/><circle cx="120.0" cy="84.0" r="2.4"/><path d="M131.0 98.0V87.0"/><circle cx="131.0" cy="84.0" r="2.4"/></g>
+<rect x="176.0" y="133.5" width="4" height="4" fill="#000" stroke="none"/>
+<rect x="160.4" y="160.4" width="4" height="4" fill="#000" stroke="none"/>
+<rect x="133.5" y="176.0" width="4" height="4" fill="#000" stroke="none"/>
+<rect x="102.5" y="176.0" width="4" height="4" fill="#000" stroke="none"/>
+<rect x="75.6" y="160.4" width="4" height="4" fill="#000" stroke="none"/>
+<rect x="60.0" y="133.5" width="4" height="4" fill="#000" stroke="none"/>
+<rect x="60.0" y="102.5" width="4" height="4" fill="#000" stroke="none"/>
+<rect x="75.6" y="75.6" width="4" height="4" fill="#000" stroke="none"/>
+<rect x="102.5" y="60.0" width="4" height="4" fill="#000" stroke="none"/>
+<rect x="133.5" y="60.0" width="4" height="4" fill="#000" stroke="none"/>
+<rect x="160.4" y="75.6" width="4" height="4" fill="#000" stroke="none"/>
+<rect x="176.0" y="102.5" width="4" height="4" fill="#000" stroke="none"/>
+<g transform="rotate(0 120 120)"><path d="M142.0 98.0 L160.0 80.0 H176.0 L190.0 66.0 V38.0 L233.0 7.0"/><circle cx="176.0" cy="80.0" r="3"/><circle cx="190.0" cy="38.0" r="3"/><path d="M190.0 54.0 H206.0"/><circle cx="209.0" cy="54.0" r="2.2"/></g>
+<g transform="rotate(90 120 120)"><path d="M142.0 98.0 L160.0 80.0 H176.0 L190.0 66.0 V38.0 L233.0 7.0"/><circle cx="176.0" cy="80.0" r="3"/><circle cx="190.0" cy="38.0" r="3"/><path d="M190.0 54.0 H206.0"/><circle cx="209.0" cy="54.0" r="2.2"/></g>
+<g transform="rotate(180 120 120)"><path d="M142.0 98.0 L160.0 80.0 H176.0 L190.0 66.0 V38.0 L233.0 7.0"/><circle cx="176.0" cy="80.0" r="3"/><circle cx="190.0" cy="38.0" r="3"/><path d="M190.0 54.0 H206.0"/><circle cx="209.0" cy="54.0" r="2.2"/></g>
+<g transform="rotate(270 120 120)"><path d="M142.0 98.0 L160.0 80.0 H176.0 L190.0 66.0 V38.0 L233.0 7.0"/><circle cx="176.0" cy="80.0" r="3"/><circle cx="190.0" cy="38.0" r="3"/><path d="M190.0 54.0 H206.0"/><circle cx="209.0" cy="54.0" r="2.2"/></g>
+<circle cx="0" cy="0" r="9"/><circle cx="0" cy="0" r="4"/>
+<circle cx="240" cy="0" r="9"/><circle cx="240" cy="0" r="4"/>
+<circle cx="0" cy="240" r="9"/><circle cx="0" cy="240" r="4"/>
+<circle cx="240" cy="240" r="9"/><circle cx="240" cy="240" r="4"/>
+<path d="M120.0 0V78.0 M120.0 162.0V240 M0 120.0H78.0 M162.0 120.0H240" stroke-dasharray="10 6"/>
+</g>
+</svg>

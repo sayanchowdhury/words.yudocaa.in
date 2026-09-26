@@ -1,5 +1,5 @@
 +++
-title   = "An open letter to Bloggers from Kolkata."
+title = "An open letter to bloggers from Kolkata"
 slug    = "an-open-letter-to-bloggers-from-kolkata"
 date    = "2014-03-05T00:31:43+05:30"
 tags    = ["kolkata", "bloggers"]
@@ -31,8 +31,7 @@ On February 23, 2014 at 4:43pm, Anirban Saha made a
 
  Check this screenshot of [indiblogger](http://www.indiblogger.in/), how big is Kolkata?
 
-.. image:: ../galleries/kolkata_bloggers.jpg
-    :align: center
+![IndiBlogger's city list: Kolkata in small type next to much larger Bangalore, Chennai, Delhi and Mumbai](/images/kolkata-bloggers.jpg)
 
 
 This screenshot makes me really curious to know on what happened to the Kolkata
@@ -76,7 +75,7 @@ Kolkata](https://www.dropbox.com/s/9zs3ac7g7vpzn8b/An%20open%20letter%20to%20Blo
 
  **How to join Kolkata Bloggers?**
 
- This is the link to the page: `https://www.facebook.com/KolkataBloggers  <https://www.facebook.com/KolkataBloggers>`_
+ This is the link to the page: [facebook.com/KolkataBloggers](https://www.facebook.com/KolkataBloggers)
 
  Message us your Name, Blog URL, Twitter URL, Facebook URL, Google+ URL,
  email address (very required), Phone number. There is “Kolkata Bloggers badge”
@@ -84,5 +83,5 @@ Kolkata](https://www.dropbox.com/s/9zs3ac7g7vpzn8b/An%20open%20letter%20to%20Blo
  are done. We will add the RSS feed of your blog to our page. Stay connected.
  If you require any help, drop a message to the page. We’ll get back to you.
 
- | Best Regards,
- | Kolkata Bloggers team.
+ Best Regards,\
+ Kolkata Bloggers team.

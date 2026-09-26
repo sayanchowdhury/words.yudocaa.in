@@ -1,0 +1,26 @@
+{{- /*
+  Links between notes and writing. A writing lists its source notes in front matter:
+    notes: [/notes/taskwarrior]
+  The writing shows "Grew from", and each note shows "Grew into".
+*/ -}}
+{{- $from := slice -}}
+{{- range .Params.notes }}{{ with site.GetPage . }}{{ $from = $from | append . }}{{ end }}{{ end -}}
+{{- $into := slice -}}
+{{- if eq .Section "notes" }}
+  {{- $self := . }}
+  {{- range $p := site.RegularPages }}
+    {{- range $p.Params.notes }}{{ if eq (site.GetPage .) $self }}{{ $into = $into | append $p }}{{ end }}{{ end }}
+  {{- end }}
+{{- end -}}
+{{- if or $from $into }}
+<aside class="garden-links">
+  {{- with $from }}
+  <h2 class="home__label">Grew from these notes</h2>
+  <ul>{{ range . }}<li><a href="{{ .RelPermalink }}">{{ partial "site/stage.html" . }}{{ .Title }}</a></li>{{ end }}</ul>
+  {{- end }}
+  {{- with $into }}
+  <h2 class="home__label">Grew into</h2>
+  <ul>{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
+  {{- end }}
+</aside>
+{{- end }}

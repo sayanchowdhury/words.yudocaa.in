@@ -1,0 +1,22 @@
+{{- /*
+  Share images for a page: its own images (the `images` param, or a
+  feature, cover or thumbnail image resource) when it has them, otherwise a
+  generated card (site/og_card.html). Used by both the Open Graph and the
+  Twitter templates, which each look up get-page-images.
+*/ -}}
+{{- $imgs := slice }}
+{{- $resources := .Resources.ByType "image" }}
+{{- range .Params.images }}
+  {{- $u := urls.Parse . }}
+  {{- $res := $resources.GetMatch . }}
+  {{- if $u.Scheme }}{{ $imgs = $imgs | append (dict "RelPermalink" . "Permalink" .) }}
+  {{- else if $res }}{{ $imgs = $imgs | append (dict "Image" $res "RelPermalink" $res.RelPermalink "Permalink" $res.Permalink) }}
+  {{- else }}{{ $imgs = $imgs | append (dict "RelPermalink" (relURL .) "Permalink" (absURL .)) }}{{ end }}
+{{- end }}
+{{- if not $imgs }}
+  {{- with $resources.GetMatch "{*feature*,*cover*,*thumbnail*}" }}{{ $imgs = $imgs | append (dict "Image" . "RelPermalink" .RelPermalink "Permalink" .Permalink) }}{{ end }}
+{{- end }}
+{{- if not $imgs }}
+  {{- with partial "site/og_card.html" . }}{{ $imgs = $imgs | append (dict "Image" . "RelPermalink" .RelPermalink "Permalink" .Permalink) }}{{ end }}
+{{- end }}
+{{- return $imgs }}

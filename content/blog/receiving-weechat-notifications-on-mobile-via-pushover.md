@@ -1,5 +1,5 @@
 +++
-title = "Receiving Weechat Notifications on mobile via Pushover"
+title = "WeeChat notifications on your phone with Pushover"
 slug = "receiving-weechat-notifications-on-mobile-via-pushover"
 date = "2016-04-11T11:44:00+05:30"
 tags = ["weechat", "fedora", "irc", "pushover", "notification", "planet"]

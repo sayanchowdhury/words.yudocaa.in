@@ -3,7 +3,8 @@ link = "http://sayanchowdhury.dgplug.org/fedimg-course-of-action.html"
 description = ""
 tags = ["planet", "fedora", "fedimg"]
 date = "2016-01-23T11:48:00+05:30"
-title = "Fedimg: Course of Action"
+title = "Fedimg: course of action"
+series = ["fedimg"]
 slug = "fedimg-course-of-action"
 +++
 

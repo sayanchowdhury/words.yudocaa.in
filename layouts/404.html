@@ -1,0 +1,16 @@
+{{- define "main" }}
+<article class="collection not-found-page">
+  <header class="collection__head">
+    <p class="not-found-page__code">404</p>
+    <h1>Nothing lives at this address</h1>
+    <p class="collection__desc">The page may have moved when this site was reorganised. If you followed an old link from <code>sayanchowdhury.dgplug.org</code>, the post is most likely still here under a new address.</p>
+  </header>
+  <ul class="ledger">
+    <li><a href="{{ "search/" | relURL }}"><span class="ledger__title">Search the site</span><span class="ledger__meta">/search</span></a></li>
+    <li><a href="{{ "writings/" | relURL }}"><span class="ledger__title">Everything I've written, by year</span><span class="ledger__meta">/writings</span></a></li>
+    <li><a href="{{ "paths/" | relURL }}"><span class="ledger__title">Learning paths</span><span class="ledger__meta">/paths</span></a></li>
+    <li><a href="{{ "notes/" | relURL }}"><span class="ledger__title">Notes</span><span class="ledger__meta">/notes</span></a></li>
+    <li><a href="{{ "" | relURL }}"><span class="ledger__title">The front page</span><span class="ledger__meta">/</span></a></li>
+  </ul>
+</article>
+{{- end }}

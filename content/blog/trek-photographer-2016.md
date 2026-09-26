@@ -8,7 +8,7 @@ link = "https://sayanchowdhury.dgplug.org/posts/trek-photographer-dec-2016"
 slug = "trek-photographer-dec-2016"
 tags = ["hiking", "indiahikes", "planet", "himalaya", "2016"]
 timeToRead = 1
-title = "Vote for me in Trek Photographer of the month"
+title = "Trek Photographer of the Month, December 2016"
 
 +++
 I have been nominated for the [Trek Photographer of the Month](https://indiahikes.com/december-2016-photo-contest-nominations/). I am grateful to

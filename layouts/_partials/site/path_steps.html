@@ -1,0 +1,42 @@
+{{- /*
+  Resolves a path's steps into plain dicts:
+    { title, href, kind, beta, todo }
+  Context: the path page. Returns (dict "steps" slice "top" dict).
+*/ -}}
+{{- $talks := slice -}}
+{{- range hugo.Data.speaking }}{{ $y := .year }}{{ range .talks }}{{ $talks = $talks | append (merge . (dict "year" $y)) }}{{ end }}{{ end -}}
+{{- $books := hugo.Data.books | default slice -}}
+{{- $out := slice -}}
+{{- $all := .Params.steps | default slice -}}
+{{- with .Params.top }}{{ $all = $all | append . }}{{ end -}}
+{{- range $i, $s := $all -}}
+  {{- $step := dict "title" "" "href" "" "kind" "" "beta" ($s.beta | default "") "todo" false -}}
+  {{- if $s.page -}}
+    {{- with site.GetPage $s.page -}}
+      {{- $step = merge $step (dict "title" .Title "href" .RelPermalink "kind" (partial "site/kind.html" .)) -}}
+    {{- else -}}
+      {{- warnf "path %q: no page %q" $.Title $s.page -}}
+      {{- $step = merge $step (dict "title" $s.page "todo" true) -}}
+    {{- end -}}
+  {{- else if $s.talk -}}
+    {{- $t := index (where $talks "title" $s.talk) 0 -}}
+    {{- if $t -}}
+      {{- $href := "talks/" | relURL }}{{ with $t.links }}{{ $href = (index . 0).url }}{{ end -}}
+      {{- $step = merge $step (dict "title" $t.title "href" $href "kind" "Talk" "meta" (printf "%s, %v" $t.event $t.year)) -}}
+    {{- else -}}
+      {{- warnf "path %q: no talk %q in data/speaking.yaml" $.Title $s.talk -}}
+      {{- $step = merge $step (dict "title" $s.talk "kind" "Talk" "todo" true) -}}
+    {{- end -}}
+  {{- else if $s.book -}}
+    {{- $step = merge $step (dict "title" $s.book "href" (printf "/books/%s/" (urlize $s.book) | relURL) "kind" "Book") -}}
+  {{- else if $s.url -}}
+    {{- $step = merge $step (dict "title" ($s.title | default $s.url) "href" $s.url "kind" "Link") -}}
+  {{- else if $s.todo -}}
+    {{- $step = merge $step (dict "title" $s.todo "kind" "Coming" "todo" true) -}}
+  {{- end -}}
+  {{- with $s.kind }}{{ $step = merge $step (dict "kind" .) }}{{ end -}}
+  {{- $out = $out | append $step -}}
+{{- end -}}
+{{- $top := dict -}}
+{{- if .Params.top }}{{ $top = index $out (sub (len $out) 1) }}{{ $out = first (sub (len $out) 1) $out }}{{ end -}}
+{{- return (dict "steps" $out "top" $top) -}}

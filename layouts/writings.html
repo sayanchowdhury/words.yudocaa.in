@@ -1,0 +1,63 @@
+{{- define "main" }}
+{{- $pages := where (where site.RegularPages "Section" "in" site.Params.mainSections) "Draft" false }}
+{{- $kinds := slice }}
+{{- range $pages }}{{ $kinds = $kinds | append (partial "site/kind.html" .) }}{{ end }}
+{{- $kinds = $kinds | uniq }}
+{{- $used := slice }}
+{{- range $pages }}{{ range .GetTerms "topics" }}{{ $used = $used | append .RelPermalink }}{{ end }}{{ end }}
+<article class="collection">
+  <header class="collection__head">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}<p class="collection__desc">{{ . | markdownify }}</p>{{ end }}
+  </header>
+
+  {{- $years := $pages.GroupByDate "2006" }}
+  {{- $first := index $years (sub (len $years) 1) }}
+  <p class="writings-summary">{{ len $pages }} {{ if eq (len $pages) 1 }}piece{{ else }}pieces{{ end }}, {{ $first.Key }}–{{ (index $years 0).Key }}</p>
+  <nav class="year-index" aria-label="Jump to a year">
+    {{- range $years }}<a href="#y{{ .Key }}">{{ .Key }}<sup>{{ len .Pages }}</sup></a>{{ end }}
+  </nav>
+
+  {{- /* The topic filter appears once a topic has enough writing to be worth filtering by. */}}
+  {{- $topics := slice }}
+  {{- with site.GetPage "/topics" }}{{ range .Pages.ByWeight }}{{ $t := . }}
+    {{- $n := 0 }}{{ range $pages }}{{ range .GetTerms "topics" }}{{ if eq .RelPermalink $t.RelPermalink }}{{ $n = add $n 1 }}{{ end }}{{ end }}{{ end }}
+    {{- if ge $n 3 }}{{ $topics = $topics | append (dict "slug" (path.Base $t.RelPermalink) "title" $t.Title "n" $n) }}{{ end }}
+  {{- end }}{{ end }}
+  {{- if or $topics (gt (len $kinds) 1) }}
+  <div class="filters" data-filter-target="#writing-list" hidden>
+    {{- if gt (len $kinds) 1 }}
+    <div class="filters__group" role="group" aria-label="Format" data-filter="kind">
+      <span class="filters__label">Show</span>
+      <button type="button" aria-pressed="true" data-value="">everything</button>
+      {{- range $kinds }}<button type="button" aria-pressed="false" data-value="{{ . | urlize }}">{{ . | lower }}s</button>{{ end }}
+    </div>
+    {{- end }}
+    {{- with $topics }}
+    <div class="filters__group" role="group" aria-label="Topic" data-filter="topic">
+      <span class="filters__label">About</span>
+      <button type="button" aria-pressed="true" data-value="">any topic</button>
+      {{- range . }}<button type="button" aria-pressed="false" data-value="{{ .slug }}">{{ .title }} <sup>{{ .n }}</sup></button>{{ end }}
+    </div>
+    {{- end }}
+  </div>
+  {{- end }}
+
+  <div id="writing-list">
+    {{- range $pages.GroupByDate "2006" }}
+    <section class="year-group year-group--index" id="y{{ .Key }}">
+      <h2 class="year-group__year">{{ .Key }}</h2>
+      <ul class="ledger">
+        {{- range .Pages }}
+        {{- $topics := slice }}{{ range .GetTerms "topics" }}{{ $topics = $topics | append (path.Base .RelPermalink) }}{{ end }}
+        <li data-kind="{{ partial "site/kind.html" . | urlize }}" data-topic="{{ delimit $topics " " }}">
+          <a href="{{ .RelPermalink }}"><span class="ledger__title">{{ .Title }}</span><span class="ledger__meta">{{ if ne .Section "blog" }}{{ partial "site/kind.html" . }} · {{ end }}{{ .Date.Format "Jan 2" }}</span></a>
+        </li>
+        {{- end }}
+      </ul>
+    </section>
+    {{- end }}
+    <p class="filters__empty" hidden>Nothing matches those filters yet.</p>
+  </div>
+</article>
+{{- end }}

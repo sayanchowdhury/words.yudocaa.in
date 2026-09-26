@@ -1,0 +1,48 @@
+{{- define "main" }}
+{{- $b := .Params.book }}
+{{- $status := index (dict "reading" "Reading now" "read" "Read" "want" "Want to read") $b.status }}
+{{- $notes := where (where site.RegularPages "Section" "notes") "Params.book" "in" (slice $b.title (path.Base .RelPermalink)) }}
+<article class="book">
+  <p class="path__crumb"><a href="{{ "books/" | relURL }}">Bookshelf</a></p>
+  <div class="book__layout">
+    <div class="book__art">{{ partial "site/book_cover.html" (dict "book" $b "width" 260) }}</div>
+    <header class="book__head">
+      <h1 class="book__title">{{ .Title }}</h1>
+      {{- with $b.subtitle }}<p class="book__subtitle">{{ . }}</p>{{ end }}
+      <p class="book__author">{{ $b.author }}{{ with $b.year }} · {{ . }}{{ end }}{{ with $b.pages }} · {{ . }} pages{{ end }}</p>
+      <dl class="book__facts">
+        <div><dt>Status</dt><dd>{{ $status }}</dd></div>
+        {{- with $b.started }}<div><dt>Started</dt><dd>{{ (time.AsTime .).Format "January 2006" }}</dd></div>{{ end }}
+        {{- with $b.finished }}<div><dt>Finished</dt><dd>{{ (time.AsTime .).Format "January 2006" }}</dd></div>{{ end }}
+        {{- with $b.rating }}<div><dt>Rating</dt><dd>{{ . }} / 5</dd></div>{{ end }}
+      </dl>
+    </header>
+  </div>
+
+  <section class="book__section">
+    <h2 class="home__label">In a paragraph</h2>
+    {{- with .Content }}
+    <div class="book__summary">{{ . }}</div>
+    {{- else }}
+    <p class="book__empty">{{ if eq $b.status "read" }}Summary still to write.{{ else }}I'll sum it up here once I've finished it.{{ end }}</p>
+    {{- end }}
+  </section>
+
+  {{- if or $notes $b.pdfs $b.links }}
+  <section class="book__section">
+    <h2 class="home__label">Notes</h2>
+    <ul class="ledger">
+      {{- range $notes.ByDate }}
+      <li><a href="{{ .RelPermalink }}"><span class="ledger__title">{{ partial "site/stage.html" . }}{{ .Title }}</span><span class="ledger__meta">Note · {{ .Date.Format "Jan 2006" }}</span></a></li>
+      {{- end }}
+      {{- range $b.pdfs }}
+      <li><a href="{{ .file | relURL }}"><span class="ledger__title">{{ .title }}</span><span class="ledger__meta">PDF</span></a></li>
+      {{- end }}
+      {{- range $b.links }}
+      <li><a href="{{ .url | relURL }}"><span class="ledger__title">{{ .title }}</span><span class="ledger__meta">Link</span></a></li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+</article>
+{{- end }}

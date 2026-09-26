@@ -1,0 +1,18 @@
+{{- define "main" }}
+<article class="collection">
+  <header class="collection__head">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}<p class="collection__desc">{{ . | markdownify }}</p>{{ end }}
+    <p class="stage-key">
+      <span>{{ partial "site/stage.html" (dict "Params" (dict "stage" "seedling")) }} Seedling: a rough idea</span>
+      <span>{{ partial "site/stage.html" (dict "Params" (dict "stage" "budding")) }} Budding: taking shape</span>
+      <span>{{ partial "site/stage.html" (dict "Params" (dict "stage" "evergreen")) }} Evergreen: settled</span>
+    </p>
+  </header>
+  <ul class="ledger">
+    {{- range .RegularPages.ByLastmod.Reverse }}
+    <li><a href="{{ .RelPermalink }}"><span class="ledger__title">{{ partial "site/stage.html" . }}{{ .Title }}</span><span class="ledger__meta">tended {{ .Lastmod.Format "Jan 2006" }}</span></a></li>
+    {{- end }}
+  </ul>
+</article>
+{{- end }}

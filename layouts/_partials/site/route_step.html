@@ -1,0 +1,9 @@
+{{- $s := .step -}}
+<li class="route-step route-step--{{ .class }}{{ if $s.todo }} is-todo{{ end }}"{{ with $s.href }}{{ if not $s.todo }} data-href="{{ . }}"{{ end }}{{ end }}>
+  <span class="route-step__hold" aria-hidden="true"><svg class="route-step__tick" viewBox="-8 -8 16 16" width="14" height="14"><path d="M-5 0l3.5 3.5L5-4"/></svg></span>
+  <div>
+    <p class="route-step__kind">{{ if eq .n "Top" }}Top out{{ else }}Move {{ .n }}{{ end }} · {{ if $s.todo }}Coming soon{{ else }}{{ $s.kind }}{{ end }}{{ with $s.meta }} · {{ . }}{{ end }}<span class="route-step__read"> · read</span></p>
+    <p class="route-step__title">{{ if and $s.href (not $s.todo) }}<a href="{{ $s.href }}">{{ $s.title }}</a>{{ else }}{{ $s.title }}{{ end }}</p>
+    {{- with $s.beta }}<p class="route-step__beta">{{ . | markdownify }}</p>{{ end }}
+  </div>
+</li>

@@ -1,5 +1,5 @@
 +++
-title = "git config"
+title = "Managing Git configuration with git config"
 slug = "git-config"
 authors = ["Sayan Chowdhury"]
 date = 2020-05-02T18:30:00Z

@@ -3,7 +3,8 @@ link = "http://sayanchowdhury.dgplug.org/2013/darkserver-improvement-pen-down.ht
 description = ""
 tags = ["gsoc", "fedora", "darkserver"]
 date = "2013-09-25T12:00:00+05:30"
-title = "Darkserver Improvement: Pen Down"
+title = "Darkserver improvement: pen down"
+series = ["Darkserver, GSoC 2013"]
 slug = "darkserver-improvement-pen-down"
 timeToRead = 3
 +++
@@ -43,6 +44,4 @@ install of the package and everything was working properly.:)
 
 And, with that Google Summer of Code came to an End.
 
-.. image:: ../galleries/the-end.jpg
-    :width: 90%
-    :align: center
+!["The End" title card](/images/darkserver-the-end.jpg)

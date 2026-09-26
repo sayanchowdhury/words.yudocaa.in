@@ -1,5 +1,5 @@
 baseURL: "https://words.yudocaa.in"
-title: ""
+title: "Intellectual Web"
 pagination:
   pagerSize: 5
 theme: PaperMod
@@ -17,33 +17,41 @@ minify:
     minifyOutput: true
 
 permalinks:
-  posts: "/:year/:month/:day/:slug/"
+  page:
+    posts: "/:year/:month/:day/:slug/"
+    # Talk write-ups moved out of /blog/ keep their original URLs.
+    talks: "/blog/:slugorcontentbasename/"
 
 languages:
     en:
-        languageName: "English"
-        languageCode: "en-US"
+        label: "English"
+        locale: "en-US"
         weight: 1
         menu:
             main:
-                - name: /home
-                  url: /
+                - name: /paths
+                  url: /paths/
                   weight: 1
+                - name: /writings
+                  url: /writings/
+                  weight: 2
+                - name: /notes
+                  url: /notes/
+                  weight: 3
+                - name: /talks
+                  url: /talks/
+                  weight: 4
+                - name: /books
+                  url: /books/
+                  weight: 5
                 - name: /about
                   url: /about/
-                  weight: 2
-                - name: /archive
-                  url: /archives/
-                  weight: 5
+                  weight: 6
                 - name: /search
                   url: /search/
                   weight: 10
-                - name: /tags
-                  url: /tags/
-                  weight: 10
-                #- name: Categories
-                  #url: /categories/
-                  #weight: 10
+                  # The icon stands in for the label on small screens (site.css).
+                  pre: '<svg class="menu-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>' 
 
 outputs:
     home:
@@ -53,7 +61,11 @@ outputs:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "Scribbles of a Computer Programmer"
+    description: "Container internals, immutable Linux (Flatcar) and Kubernetes release engineering: notes from Sayan Chowdhury."
+    mainSections:
+      - blog
+      - tutorials
+      - cheatsheets
     rssExcludeSections:
       - fitness
       - hope
@@ -63,11 +75,11 @@ params:
     author:
     - Sayan Chowdhury
     # author: ["Me", "You"] # multiple authors
-    DateFormat: "2006-01-02"
+    DateFormat: "2 January 2006"
 
     defaultTheme: auto
     disableThemeToggle: false
-    ShowShareButtons: true
+    ShowShareButtons: false # replaced by the "Copy link" button at the end of posts
     ShowReadingTime: true
     disableSpecial1stPost: false
     displayFullLangName: true
@@ -76,9 +88,7 @@ params:
     ShowCodeCopyButtons: true
     ShowToc: true
     ShowFullTextinRSS: true
-    comments: true
-    images:
-    - /images/2021-12-24-man-at-the-library.jpg
+    comments: false # giscus is not set up yet (needs Discussions + the giscus app)
 
     profileMode:
         enabled: false
@@ -92,11 +102,6 @@ params:
               url: archives
             - name: Tags
               url: tags
-
-    homeInfoParams:
-        Title: "Intellectual Web"
-        Content: >
-          Human Being on outside. C-3PO on inside.
 
     socialIcons:
         #- name: KoFi
@@ -132,20 +137,18 @@ params:
         appendFilePath: true # to append file path to Edit link
 
     label:
-         text: "Home"
-         icon: icon.png
-         iconHeight: 35
+         text: "/"
 
     # analytics:
     #     google:
     #         SiteVerificationTag: "XYZabc"
 
-    # assets:
-    #     favicon: "<link / abs url>"
-    #     favicon16x16: "<link / abs url>"
-    #     favicon32x32: "<link / abs url>"
-    #     apple_touch_icon: "<link / abs url>"
-    #     safari_pinned_tab: "<link / abs url>"
+    assets:
+        favicon: "favicon.svg"
+        favicon16x16: "favicon-16x16.png"
+        favicon32x32: "favicon-32x32.png"
+        apple_touch_icon: "apple-touch-icon.png"
+        safari_pinned_tab: "safari-pinned-tab.svg"
 
 
 
@@ -153,6 +156,7 @@ taxonomies:
     category: categories
     tag: tags
     series: series
+    topic: topics
 
 markup:
     goldmark:
@@ -189,3 +193,15 @@ services:
         disableInlineCSS: true
     x:
         disableInlineCSS: true
+
+# Also expose static/images as assets, so post images can be resized and
+# served as WebP by the image render hook. The files and their /images/
+# URLs are unchanged.
+module:
+    mounts:
+        - source: static
+          target: static
+        - source: assets
+          target: assets
+        - source: static/images
+          target: assets/images

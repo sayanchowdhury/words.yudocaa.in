@@ -1,0 +1,49 @@
+{{- /*
+  MoonBoard-style wall of learning paths. Each path is a problem: green start
+  (prerequisites), blue moves (steps, bottom to top), red top-out. Drawn by
+  assets/js/explainer.js from the JSON below.
+  Context: (dict "paths" pages "mode" "interactive"|"feature")
+    interactive: problem list; hovering or focusing a problem lights its route.
+    feature:     one route lit (the first path), with a link to start it.
+*/ -}}
+{{- $problems := slice }}
+{{- range .paths }}
+  {{- $r := partial "site/path_steps.html" . }}
+  {{- $problems = $problems | append (dict
+      "name" .Title "href" .RelPermalink "grade" (.Params.grade | default "")
+      "summary" (.Params.summary | default "") "start" (.Params.start | default "" | markdownify | plainify | htmlUnescape)
+      "items" $r.steps "top" $r.top) }}
+{{- end }}
+{{- $mode := .mode | default "interactive" }}
+{{- with $problems }}
+<section class="moonwall moonwall--{{ $mode }}" data-mode="{{ $mode }}"{{ if eq $mode "feature" }} aria-labelledby="wall-h"{{ end }}>
+  {{- if eq $mode "feature" }}
+  <div class="moon__head">
+    <h2 class="home__label" id="wall-h">Learning paths</h2>
+    <p class="moon__hint">Routes through what I've written, in the order I'd learn it.</p>
+  </div>
+  {{- end }}
+  <div class="moon__board" data-moonboard hidden></div>
+  <p class="moon__caption" aria-live="polite" hidden></p>
+  {{- if eq $mode "feature" }}
+  {{- $p := index . 0 }}
+  <p class="moon__feature">
+    <a class="moon__feature-link" href="{{ $p.href }}"><span class="moon__name">{{ $p.name }}</span><span class="moon__grade">{{ $p.grade }}</span><span class="moon__repeats">{{ len $p.items }} moves</span></a>
+  </p>
+  <a class="home__more" href="{{ "paths/" | relURL }}">All {{ len . }} learning paths</a>
+  {{- else }}
+  <ol class="moon__problems">
+    {{- range $i, $p := . }}
+    <li>
+      <a href="{{ $p.href }}" data-problem="{{ $i }}">
+        <span class="moon__name">{{ $p.name }}</span>
+        <span class="moon__grade">{{ $p.grade }}</span>
+        <span class="moon__repeats">{{ len $p.items }} moves</span>
+      </a>
+    </li>
+    {{- end }}
+  </ol>
+  {{- end }}
+  <script type="application/json" data-moonboard-problems>{{ . | jsonify | safeJS }}</script>
+</section>
+{{- end }}

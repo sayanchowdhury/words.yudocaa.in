@@ -1,0 +1,47 @@
+# The bookshelf. Each entry becomes a page at /books/<slug>/ (see
+# content/books/_content.gotmpl) and a cover on the shelf at /books/.
+#
+# Edit by hand, or import from a Goodreads export:
+#   python3 scripts/goodreads_import.py ~/Downloads/goodreads_library_export.csv
+# The import only updates Goodreads-owned fields and keeps everything else here.
+#
+# title, author        required
+# status               reading | read | want
+# isbn                 fetches the cover from Open Library at build time
+# cover                optional image path (under assets/) to use instead
+# started, finished    YYYY-MM-DD
+# rating               1-5
+# topics               topics taxonomy slugs
+# summary              Markdown, shown on the book's page (write it when done)
+# pdfs                 [{title, file}] files under static/
+# links                [{title, url}] anything else, e.g. a reading log
+#
+# Notes: any page under content/notes with `book: <title>` in its front matter
+# is listed on the book's page, so Obsidian notes with that property show up.
+- title: Linux Device Drivers
+  subtitle: 3rd edition
+  author: Jonathan Corbet, Alessandro Rubini, Greg Kroah-Hartman
+  isbn: "9780596005900"
+  year: 2005
+  pages: 640
+  status: reading
+  started: 2021-11-16
+  topics: [containers-linux]
+  pdfs:
+    - title: Notes, 16 November 2021
+      file: /notes/ldd3-nov16.pdf
+  links:
+    - title: 30 Days of Read, my daily reading log
+      url: /hope/30-days-of-read-i/
+- title: Inference Engineering
+  author: Philip Kiely
+  isbn: "9789368089827"
+  cover: books/inference-engineering.png
+  year: 2026
+  pages: 260
+  status: reading
+  started: 2026-09-26
+  topics: [ai-infra]
+  links:
+    - title: Read online at Baseten
+      url: https://www.baseten.co/inference-engineering/book/

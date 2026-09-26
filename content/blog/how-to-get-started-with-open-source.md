@@ -3,7 +3,7 @@ link = "http://sayanchowdhury.dgplug.org/2013/how-to-get-started-with-open-sourc
 description = ""
 tags = ["planet", "fedora", "open source", "kde", "mozilla", "mediawiki", "openstack", "python", "django"]
 date = "2014-03-04T00:30:00+05:30"
-title = "How to get started with Open Source"
+title = "How to get started with open source"
 slug = "how-to-get-started-with-open-source"
 aliases = [
     '/posts/how-to-get-started-with-open-source.html'

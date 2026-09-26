@@ -1,0 +1,3 @@
+{{- /* Human label for a page's format. */ -}}
+{{- $labels := dict "blog" "Post" "tutorials" "Tutorial" "cheatsheets" "Cheatsheet" "notes" "Note" "talks" "Event" -}}
+{{- return (index $labels .Section | default "Page") -}}

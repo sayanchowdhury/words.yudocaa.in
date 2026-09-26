@@ -1,0 +1,10 @@
+{{- /* Garden stage mark for a note: front matter `stage: seedling | budding | evergreen`. Renders nothing when unset. */ -}}
+{{- $stage := .Params.stage | default "" -}}
+{{- $paths := dict
+  "seedling" `<path d="M12 20v-7"/><path d="M12 13c0-3-2-5-6-5 0 3 2 5 6 5z"/><path d="M12 13c0-3 2-5 6-5 0 3-2 5-6 5z"/>`
+  "budding" `<path d="M12 21V9"/><path d="M12 9c-3 0-5-2-5-5 3 0 5 2 5 5z"/><path d="M12 9c3 0 5-2 5-5-3 0-5 2-5 5z"/><path d="M12 15c-2.5 0-4.5-1.5-4.5-4 2.5 0 4.5 1.5 4.5 4z"/><path d="M12 15c2.5 0 4.5-1.5 4.5-4-2.5 0-4.5 1.5-4.5 4z"/>`
+  "evergreen" `<path d="M12 22v-4"/><path d="M5 18h14l-4-5h2l-3-4h1.5L12 3 8.5 9H10l-3 4h2z"/>`
+-}}
+{{- with index $paths $stage -}}
+<span class="stage stage--{{ $stage }}" title="{{ $stage | humanize }}"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ . | safeHTML }}</svg><span class="visually-hidden">{{ $stage | humanize }}: </span></span>
+{{- end -}}

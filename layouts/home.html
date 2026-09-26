@@ -1,0 +1,103 @@
+{{- define "main" }}
+{{- $p := .Params }}
+{{- $reading := slice }}
+{{- with site.GetPage "/books" }}{{ range .RegularPages }}{{ if eq .Params.book.status "reading" }}{{ $reading = $reading | append . }}{{ end }}{{ end }}{{ end }}
+{{- $paths := slice }}
+{{- with site.GetPage "/paths" }}{{ $paths = .Pages.ByWeight }}{{ end }}
+{{- $writing := where (where site.RegularPages "Section" "in" site.Params.mainSections) "Draft" false }}
+{{- $notes := (where site.RegularPages "Section" "notes").ByLastmod.Reverse }}
+
+<div class="home">
+    <header class="home__intro">
+      <h1 class="home__name">{{ .Title }}</h1>
+      <p class="home__tagline">{{ $p.tagline }}</p>
+    </header>
+
+    {{- with $p.bio }}
+    <section class="home__bio bio-flip" aria-labelledby="bio-h" data-side="human">
+      <div class="home__bio-head">
+        <h2 class="home__label whoami" id="bio-h"><span aria-hidden="true"><span class="whoami__prompt">$</span> whoami<span class="whoami__cursor">_</span></span><span class="visually-hidden">Bio</span></h2>
+        <button type="button" class="flip-coin" aria-pressed="false" aria-label="Flip to the machine side" title="Flip" hidden>
+          <span class="flip-coin__inner">
+            {{- /* Human side: the Alpona lotus from the wallpaper. */}}
+            <svg class="flip-coin__face flip-coin__face--human" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.00 9.80Q14.30 5.66 12.00 2.80Q9.70 5.66 12.00 9.80Z M13.56 10.44Q18.11 9.14 18.51 5.49Q14.86 5.89 13.56 10.44Z M14.20 12.00Q18.34 14.30 21.20 12.00Q18.34 9.70 14.20 12.00Z M13.56 13.56Q14.86 18.11 18.51 18.51Q18.11 14.86 13.56 13.56Z M12.00 14.20Q9.70 18.34 12.00 21.20Q14.30 18.34 12.00 14.20Z M10.44 13.56Q5.89 14.86 5.49 18.51Q9.14 18.11 10.44 13.56Z M9.80 12.00Q5.66 9.70 2.80 12.00Q5.66 14.30 9.80 12.00Z M10.44 10.44Q9.14 5.89 5.49 5.49Q5.89 9.14 10.44 10.44Z M12.69 10.34Q14.95 8.54 14.14 6.83Q12.36 7.47 12.69 10.34Z M13.66 11.31Q16.53 11.64 17.17 9.86Q15.46 9.05 13.66 11.31Z M13.66 12.69Q15.46 14.95 17.17 14.14Q16.53 12.36 13.66 12.69Z M12.69 13.66Q12.36 16.53 14.14 17.17Q14.95 15.46 12.69 13.66Z M11.31 13.66Q9.05 15.46 9.86 17.17Q11.64 16.53 11.31 13.66Z M10.34 12.69Q7.47 12.36 6.83 14.14Q8.54 14.95 10.34 12.69Z M10.34 11.31Q8.54 9.05 6.83 9.86Q7.47 11.64 10.34 11.31Z M11.31 10.34Q11.64 7.47 9.86 6.83Q9.05 8.54 11.31 10.34Z"/><circle cx="12" cy="12" r="1.4"/></svg>
+            {{- /* Machine side: the chip from its circuit twin. */}}
+            <svg class="flip-coin__face flip-coin__face--machine" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="8" height="8" rx="1"/><path d="M10.2 8V5.6M13.8 8V5.6M10.2 16v2.4M13.8 16v2.4M8 10.2H5.6M8 13.8H5.6M16 10.2h2.4M16 13.8h2.4"/><circle cx="10.2" cy="4.8" r=".8"/><circle cx="13.8" cy="4.8" r=".8"/><circle cx="10.2" cy="19.2" r=".8"/><circle cx="13.8" cy="19.2" r=".8"/><circle cx="4.8" cy="10.2" r=".8"/><circle cx="4.8" cy="13.8" r=".8"/><circle cx="19.2" cy="10.2" r=".8"/><circle cx="19.2" cy="13.8" r=".8"/><circle cx="10" cy="10" r=".6" class="fill"/></svg>
+          </span>
+        </button>
+      </div>
+      <div class="bio-card">
+        <div class="bio-card__inner">
+          <div class="bio-card__face bio-card__face--human">
+            {{ .human | markdownify | emojify }}
+          </div>
+          <div class="bio-card__face bio-card__face--machine">
+            {{ .machine | markdownify }}
+          </div>
+        </div>
+      </div>
+      <div class="home__social">
+        {{ partial "social_icons.html" (dict) }}
+        <a class="home__more home__about" href="{{ "about/" | relURL }}">More about me</a>
+      </div>
+    </section>
+    {{- end }}
+
+  {{- with $paths }}
+  <aside class="home__aside" aria-label="Learning paths">
+    {{ partial "site/moonboard.html" (dict "paths" . "mode" "feature") }}
+  </aside>
+  {{- end }}
+
+  <div class="home__rest">
+    <section class="home__section home__section--lead" aria-labelledby="h-writing">
+      <h2 class="home__label" id="h-writing">Writing</h2>
+      <ul class="ledger ledger--lead">
+        {{- range first 8 $writing }}
+        <li><a href="{{ .RelPermalink }}"><span class="ledger__title">{{ .Title }}</span><span class="ledger__meta">{{ if eq .Section "tutorials" }}Tutorial · {{ end }}{{ .Date.Format "Jan 2006" }}</span></a></li>
+        {{- end }}
+      </ul>
+      <a class="home__more" href="{{ "writings/" | relURL }}">All {{ len $writing }} pieces of writing</a>
+    </section>
+
+    {{- with $notes }}
+    <section class="home__section home__section--lead" aria-labelledby="h-notes">
+      <h2 class="home__label" id="h-notes">Notes</h2>
+      <p class="home__hint">Short, always-unfinished notes. Some grow into writing.</p>
+      <ul class="ledger ledger--lead">
+        {{- range first 6 . }}
+        <li><a href="{{ .RelPermalink }}"><span class="ledger__title">{{ partial "site/stage.html" . }}{{ .Title }}</span><span class="ledger__meta">{{ .Lastmod.Format "Jan 2006" }}</span></a></li>
+        {{- end }}
+      </ul>
+      <a class="home__more" href="{{ "notes/" | relURL }}">All notes</a>
+    </section>
+    {{- end }}
+
+    {{- with $paths }}
+    <section class="home__section home__paths-compact" aria-labelledby="h-paths">
+      <h2 class="home__label" id="h-paths">Learning paths</h2>
+      <ul class="ledger">
+        {{- range . }}
+        <li><a href="{{ .RelPermalink }}"><span class="ledger__title">{{ .Title }}<span class="ledger__sub">{{ .Params.summary }}</span></span><span class="ledger__meta">{{ .Params.grade }}</span></a></li>
+        {{- end }}
+      </ul>
+    </section>
+    {{- end }}
+
+    {{- with $reading }}
+    <section class="home__section" aria-labelledby="h-reading">
+      <h2 class="home__label" id="h-reading">Reading now</h2>
+      <ul class="reading-now">
+        {{- range . }}
+        <li><a href="{{ .RelPermalink }}">
+          {{ partial "site/book_cover.html" (dict "book" .Params.book "width" 72) }}
+          <span><span class="reading-now__title">{{ .Title }}</span><span class="reading-now__author">{{ .Params.book.author }}</span></span>
+        </a></li>
+        {{- end }}
+      </ul>
+      <a class="home__more" href="{{ "books/" | relURL }}">The bookshelf</a>
+    </section>
+    {{- end }}
+  </div>
+</div>
+{{- end }}

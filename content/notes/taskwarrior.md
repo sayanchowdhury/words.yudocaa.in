@@ -1,11 +1,11 @@
 +++
-title = "Notes: GTD and Taskwarrior"
+title = "GTD with Taskwarrior"
 slug = "taskwarrior"
 date = "2016-05-13T16:30:00+05:30"
 tags = ["taskwarrior", "notes"]
 link = "https://sayanchowdhury.dgplug.org/notes/taskwarrior"
 description = ""
-aliases = ["/post/notes/taskwarrior/"]
+aliases = ["/post/notes/taskwarrior/", "/blog/taskwarrior/"]
 +++
 > The posts tagged with notes are stuffs that I learned over
 > time from blogs, articles, trying out on my own. The posts will be updated

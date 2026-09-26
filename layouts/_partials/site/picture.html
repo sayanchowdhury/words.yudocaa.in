@@ -1,0 +1,31 @@
+{{- /*
+  An optimised <img>. Context: (dict "src" "…" "alt" "…" "title" "…" "class" "…").
+  Local raster images (under assets/, including /images/ from static) get a
+  WebP srcset, explicit width and height (no layout shift), and lazy loading.
+  Everything else (remote URLs, SVG, GIF) is passed through with lazy loading.
+*/ -}}
+{{- $src := .src -}}
+{{- $img := false -}}
+{{- $u := urls.Parse $src -}}
+{{- if not $u.IsAbs -}}
+  {{- $path := strings.TrimPrefix "/" (strings.TrimPrefix "./" $u.Path) -}}
+  {{- with .page }}{{ with .Resources.Get $path }}{{ $img = . }}{{ end }}{{ end -}}
+  {{- if not $img }}{{ with resources.Get $path }}{{ $img = . }}{{ end }}{{ end -}}
+{{- end -}}
+{{- if and $img (in (slice "image/jpeg" "image/png" "image/webp") $img.MediaType.Type) -}}
+  {{- $widths := slice -}}
+  {{- range slice 480 800 1200 1600 }}{{ if lt . $img.Width }}{{ $widths = $widths | append . }}{{ end }}{{ end -}}
+  {{- $widths = $widths | append (math.Min $img.Width 1600 | int) | uniq -}}
+  {{- $set := slice -}}
+  {{- $largest := false -}}
+  {{- range $widths -}}
+    {{- $r := $img.Resize (printf "%dx webp q80" .) -}}
+    {{- $set = $set | append (printf "%s %dw" $r.RelPermalink $r.Width) -}}
+    {{- $largest = $r -}}
+  {{- end -}}
+  <img src="{{ $largest.RelPermalink }}" srcset="{{ delimit $set ", " }}" sizes="(min-width: 800px) 720px, calc(100vw - 32px)"
+    width="{{ $largest.Width }}" height="{{ $largest.Height }}" alt="{{ .alt }}"
+    {{- with .title }} title="{{ . }}"{{ end }}{{ with .class }} class="{{ . }}"{{ end }} loading="lazy" decoding="async">
+{{- else -}}
+  <img src="{{ $src }}" alt="{{ .alt }}"{{ with .title }} title="{{ . }}"{{ end }}{{ with .class }} class="{{ . }}"{{ end }} loading="lazy" decoding="async">
+{{- end -}}

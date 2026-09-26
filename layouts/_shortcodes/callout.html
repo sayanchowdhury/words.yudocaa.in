@@ -1,0 +1,16 @@
+{{- /*
+  {{< callout type="tip" title="Optional title" >}} Markdown {{< /callout >}}
+  type: note (default) | tip | warning | danger
+*/ -}}
+{{- $type := .Get "type" | default "note" -}}
+{{- $labels := dict "note" "Note" "tip" "Tip" "warning" "Warning" "danger" "Danger" -}}
+{{- $title := .Get "title" | default (index $labels $type) | default "Note" -}}
+<aside class="callout callout--{{ $type }}" role="note">
+  <p class="callout__title">
+    {{- partial "explainer/icon.html" $type -}}
+    <span>{{ $title | markdownify }}</span>
+  </p>
+  <div class="callout__body">
+    {{ .Inner | .Page.RenderString (dict "display" "block") }}
+  </div>
+</aside>

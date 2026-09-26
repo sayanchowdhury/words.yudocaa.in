@@ -1,0 +1,35 @@
+{{- /*
+  A 1200x630 share card: the page title set in Fraunces on the ink base
+  (assets/og/base.png), with a small line above it naming the kind of page.
+  Returns an image resource. Hugo's text filter doesn't wrap to a margin,
+  so titles are wrapped here by a rough character budget.
+*/ -}}
+{{- $title := .Title | default site.Title | plainify | htmlUnescape -}}
+{{- $size := 76 }}{{ $budget := 25 -}}
+{{- if gt (len $title) 36 }}{{ $size = 62 }}{{ $budget = 31 }}{{ end -}}
+{{- if gt (len $title) 72 }}{{ $size = 52 }}{{ $budget = 37 }}{{ end -}}
+{{- $lines := slice }}{{ $line := "" -}}
+{{- range split $title " " -}}
+  {{- if and $line (gt (add (len $line) (len .) 1) $budget) }}{{ $lines = $lines | append $line }}{{ $line = . }}
+  {{- else }}{{ $line = cond (eq $line "") . (printf "%s %s" $line .) }}{{ end -}}
+{{- end -}}
+{{- $lines = $lines | append $line -}}
+{{- if gt (len $lines) 4 }}{{ $lines = first 4 $lines }}{{ $lines = $lines | append "…" }}{{ end -}}
+{{- $kind := "" -}}
+{{- if .IsHome }}{{ $kind = .Params.tagline | default site.Params.description -}}
+{{- else if eq .Kind "page" -}}
+  {{- $kind = partial "site/kind.html" . -}}
+  {{- if eq .Section "paths" }}{{ $kind = printf "Learning path · %s" (.Params.grade | default "") }}{{ end -}}
+  {{- if eq .Section "books" }}{{ $kind = printf "Book · %s" (.Params.book.author | default "") }}{{ end -}}
+  {{- with .GetTerms "topics" }}{{ $kind = printf "%s · %s" $kind (index . 0).LinkTitle }}{{ end -}}
+{{- else }}{{ $kind = "Collection" }}{{ end -}}
+{{- $bold := resources.Get "og/Fraunces72ptSoft-SemiBold.ttf" -}}
+{{- $reg := resources.Get "og/Fraunces72ptSoft-Regular.ttf" -}}
+{{- $filters := slice (images.Text $kind (dict "color" "#b9b3aa" "size" 28 "x" 96 "y" 84 "font" $reg)) -}}
+{{- $lh := int (mul $size 1.16) -}}
+{{- range $i, $l := $lines -}}
+  {{- $filters = $filters | append (images.Text $l (dict "color" "#f3eee4" "size" $size "x" 96 "y" (add 138 (mul $i $lh)) "font" $bold)) -}}
+{{- end -}}
+{{- $key := .RelPermalink | strings.TrimSuffix "/" | strings.TrimPrefix "/" | default "home" | replaceRE "[^a-zA-Z0-9-]+" "-" -}}
+{{- $card := (resources.Get "og/base.png").Filter $filters -}}
+{{- return ($card.Process "jpg q84" | resources.Copy (printf "og/%s.jpg" $key)) -}}
