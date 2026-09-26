@@ -5,6 +5,7 @@ excerpt = ""
 hero = "/images/33515884798_e9124d822a_c.jpg"
 timeToRead = 12
 title = "FOSSASIA 2019"
+description = "Back at FOSSASIA for its tenth year in 2019: the talks, the people and the conversations in Singapore."
 events = ["FOSSASIA Summit 2019"]
 
 +++

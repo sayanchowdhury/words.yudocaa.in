@@ -4,7 +4,7 @@ slug    = "fedora-24-release-event"
 date    = "2016-07-12T14:09:43+05:30"
 tags    = ["24", "pune", "fedora"]
 link    = "http://sayanchowdhury.dgplug.org/posts/fedora-24-release-event"
-description = ""
+description = "The Fedora 24 release party in Pune, July 2016: new features, glibc project ideas and how Autocloud works."
 +++
 
 On 9th July 2016, we had our [Fedora 24 release party](https://fedoraproject.org/wiki/Release_Party_F24_Pune) in Pune. The release party

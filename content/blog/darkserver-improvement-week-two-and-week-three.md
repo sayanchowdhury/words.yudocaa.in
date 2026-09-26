@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/blog/darkserver-improvement-two-three.html"
-description = ""
+description = "GSoC 2013, weeks two and three: illness, an injured wrist and a move to Bengaluru, then starting secondary architecture support in Darkserver."
 tags = ["gsoc", "fedora", "darkserver"]
 date = "2013-07-10T12:00:00+05:30"
 title = "Darkserver improvement: weeks two and three"

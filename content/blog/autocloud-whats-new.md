@@ -5,7 +5,7 @@ date = "2016-08-24T17:28:00+05:30"
 tags = ["autocloud", "fedora", "planet", "infra"]
 link = "https://sayanchowdhury.dgplug.org/posts/autocloud-whats-new"
 timeToRead = 3
-description = ""
+description = "How Autocloud, Fedora's automated cloud image tester, changed in the Fedora 24 cycle after composes moved away from Koji build messages."
 +++
 [Autocloud](https://apps.fedoraproject.org/autocloud/) was released during the Fedora 23 cycle as a part of the [Two Week
 Atomic Process](https://fedoraproject.org/wiki/Changes/Two_Week_Atomic).

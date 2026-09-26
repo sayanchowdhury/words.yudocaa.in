@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/2013/darkserver-improvement-web-dashboard.html"
-description = ""
+description = "GSoC 2013 update: secondary architecture support in Darkserver's command-line dashboard, and chasing a daemon that wouldn't start on the dev instance."
 tags = ["gsoc", "fedora", "darkserver"]
 date = "2013-09-09T12:00:00+05:30"
 title = "Darkserver improvement: web dashboard"

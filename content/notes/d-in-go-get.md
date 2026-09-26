@@ -5,6 +5,7 @@ excerpt = ""
 hero = "/images/square-gopher.png"
 timeToRead = 1
 title = "What go get -d does"
+description = "The -d flag tells go get to download packages without installing them."
 aliases = ["/blog/d-in-go-get/"]
 
 +++

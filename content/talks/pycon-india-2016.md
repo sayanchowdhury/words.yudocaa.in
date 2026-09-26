@@ -4,7 +4,7 @@ slug = "pycon-india-2016"
 date = "2016-11-26T15:10:00+05:30"
 tags = ["pycon", "india", "event", "python", "india", "planet"]
 link = "https://sayanchowdhury.dgplug.org/posts/pycon-india-2016"
-description = ""
+description = "PyCon India 2016 in New Delhi: dev sprints on Fedora Infrastructure and Pagure, and the Red Hat booth."
 +++
 
 {{<figure src="/images/pycon-india-2016.jpg" >}}

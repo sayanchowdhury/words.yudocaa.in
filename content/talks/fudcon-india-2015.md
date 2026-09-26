@@ -5,7 +5,7 @@ slug = "fudcon-india-2015"
 date = "2015-07-09T16:29:00+05:30"
 tags = ["fudcon", "india", "pune", "fedora", "planet"]
 link = "https://sayanchowdhury.dgplug.org/fudcon-india-2015"
-description = ""
+description = "FUDCon India 2015 in Pune, my first FUDCon: giving a fedmsg talk and a Flask 101 workshop."
 +++
 
 I spent the last weekend of June at FUDCon India. FUDCon is the Fedora

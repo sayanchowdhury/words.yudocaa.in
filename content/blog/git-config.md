@@ -1,5 +1,6 @@
 +++
 title = "Managing Git configuration with git config"
+description = "How git config's local, global and system levels work, and how to set values at each level and see where they come from."
 slug = "git-config"
 authors = ["Sayan Chowdhury"]
 date = 2020-05-02T18:30:00Z

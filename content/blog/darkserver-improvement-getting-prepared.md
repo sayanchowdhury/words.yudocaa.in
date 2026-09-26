@@ -1,6 +1,6 @@
 +++
 link    = "http://sayanchowdhury.dgplug.org/2013/darkserver-improvement-getting-prepared.html"
-description = ""
+description = "Week zero of my Google Summer of Code 2013 project: reading through Darkserver, retask and Redis before writing any code."
 tags    = ["gsoc", "fedora"]
 date    = "2013-06-22T12:00:00+05:30"
 title = "Darkserver improvement: getting prepared"

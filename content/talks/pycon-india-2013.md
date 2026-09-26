@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/2013/pycon-india.html"
-description = ""
+description = "Volunteering at PyCon India 2013, including Python Month visits that taught Python in colleges across India."
 tags = ["pycon", "india", "2013"]
 date = "2013-09-10T12:00:00+05:30"
 title = "PyCon India 2013"

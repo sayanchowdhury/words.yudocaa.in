@@ -4,7 +4,7 @@ slug = "pyladies-pune-meetup-feb-2017"
 date = "2017-02-06T20:30:00+05:30"
 tags = ["planet", "python", "pyladies", "pune", "meetup", "2016"]
 link = "https://sayanchowdhury.dgplug.org/posts/pyladies-pune-meetup-feb-2016"
-description = ""
+description = "PyLadies Pune, February 2017: an introduction to MicroPython on BBC micro:bit boards at reserved-bit."
 +++
 
 

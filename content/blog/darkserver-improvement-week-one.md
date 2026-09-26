@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/2013/darkserver-improvement-week-one.html"
-description = ""
+description = "First week of GSoC 2013 coding on Darkserver: replacing hard-coded links in libimporter with config files to allow multiple job queues."
 tags = ["fedora", "gsoc", "darkserver"]
 date = "2013-06-24T12:00:00+05:30"
 title = "Darkserver improvement: week one"

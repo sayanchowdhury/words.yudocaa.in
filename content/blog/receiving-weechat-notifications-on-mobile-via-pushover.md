@@ -4,7 +4,7 @@ slug = "receiving-weechat-notifications-on-mobile-via-pushover"
 date = "2016-04-11T11:44:00+05:30"
 tags = ["weechat", "fedora", "irc", "pushover", "notification", "planet"]
 link = "https://sayanchowdhury.dgplug.org/receiving-weechat-notifications-on-mobile-via-pushover"
-description = ""
+description = "Running WeeChat in tmux on a remote box? Get its IRC notifications on your phone with Pushover."
 +++
 
 I recently switched to use Weechat as my primary IRC client from X-Chat. I did

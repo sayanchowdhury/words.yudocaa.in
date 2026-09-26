@@ -6,6 +6,7 @@ hero = "/images/1*-swzvRF6SY2wHJQnv7ghVg.jpeg"
 heroCredits = "Photo by [Cameron Venti](https://unsplash.com/photos/QtETdXXR7gs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/collections/3457050/cloud-containers-kubernetes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 timeToRead = 8
 title = "Kubernetes Day India 2019, Bangalore"
+description = "Kubernetes Day India 2019 in Bangalore: seeing Liz Rice speak and meeting the city's growing Kubernetes community."
 
 +++
 I returned to another conference with the jetlag of another conference, FOSSASIA but this conference was something I was very eagerly waiting to attend. Why? Well there are a couple of reasons, but the main reason for which I bought the ticket was to listen to Liz Rice in person.

@@ -5,6 +5,7 @@ excerpt = ""
 hero = "/images/fedora29-816x345.jpg"
 timeToRead = 3
 title = "Fedora 29 Release Party, Bangalore"
+description = "The Fedora 29 release party at Red Hat Bangalore, November 2018: what's coming next in Fedora, plus talks and demos from the community."
 
 +++
 **23rd November 2018**

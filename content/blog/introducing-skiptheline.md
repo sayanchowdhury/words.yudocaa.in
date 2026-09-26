@@ -5,6 +5,7 @@ excerpt = ""
 hero = "/images/photo-1529835889331-75eb5a597453.jpg"
 timeToRead = 8
 title = "Introducing SkipTheLine"
+description = "Finding a good job is still hard five years after I graduated. A friend's new effort, SkipTheLine, sets out to fix that."
 
 +++
 ## 2013

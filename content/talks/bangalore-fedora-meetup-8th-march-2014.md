@@ -5,7 +5,7 @@ date    = "2014-03-08T22:18:06+05:30"
 tags    = ["planet", "meetup", "fedora"]
 link    = "http://sayanchowdhury.dgplug.org/bangalore-fedora-meetup-8th-march-2014"
 timeToRead = 4
-description = ""
+description = "Notes from the March 2014 Fedora meetup at Red Hat Bangalore: monthly meetups and a Fedora Activity Day."
 +++
 
 After a long time, we had a Bangalore Fedora meetup(March 8, 2014) at Red Hat, Bangalore.

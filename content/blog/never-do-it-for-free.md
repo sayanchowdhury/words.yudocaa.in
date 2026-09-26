@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/2013/never-do-it-for-free.txt"
-description = ""
+description = "The Joker's line from The Dark Knight turns out to be right more often than I expected."
 tags = ["quote"]
 date = "2013-06-08T12:00:00+05:30"
 title = "Never do it for free"

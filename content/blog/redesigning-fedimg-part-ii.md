@@ -5,7 +5,7 @@ slug = "redesigning-fedimg-part-ii"
 date = "2017-02-04T12:00:00+05:30"
 tags = ["fedora", "fedimg", "python", "cloud", "atomic", "libcloud", "planet"]
 link = "https://sayanchowdhury.dgplug.org/posts/redesigning-fedimg-part-ii"
-description = ""
+description = "Why fedimg's utility-instance design makes adding AWS regions painful, and how importing the image as a volume removes it."
 +++
 
 In the previous [post](/blog/redesigning-fedimg-part-i/), I discussed what is fedimg and how it works currently.

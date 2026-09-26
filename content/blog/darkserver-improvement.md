@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/2013/darkserver-improvement.html"
-description = ""
+description = "Manual testing of my Darkserver changes turned up bugs the local setup hid, including an XML-RPC server rejecting GET requests."
 tags = ["fedora", "gsoc"]
 date = "2013-07-26T12:00:00+05:30"
 title = "Darkserver improvement: testing by hand"

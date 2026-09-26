@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/blog/mozilla-summit-2013.html"
-description = ""
+description = "My first trip abroad: attending Mozilla Summit 2013 in Santa Clara, California."
 tags = ["mozsummit", "mozilla", "summit", "2013"]
 date = "2013-11-02T12:00:00+05:30"
 title = "Mozilla Summit 2013"

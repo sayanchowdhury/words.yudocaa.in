@@ -5,6 +5,7 @@ excerpt = ""
 hero = "/images/joao-silas-I_LgQ8JZFGE-unsplash.jpg"
 timeToRead = 17
 title = "Editing an older commit in a pull request"
+description = "Reviewers asked for changes to an older commit in your pull request. How to fix that commit in place with fixup commits and an interactive rebase."
 
 +++
 Let's say you've raised a Pull Request on GitHub with 3 commits as shown below.

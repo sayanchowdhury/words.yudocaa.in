@@ -4,7 +4,7 @@ slug = "fedora-meetup-august-2016"
 date = "2016-08-20T21:52:00+05:30"
 tags = ["fedora", "meetup", "planet", "2016"]
 link = "https://sayanchowdhury.dgplug.org/posts/fedora-meetup-august-2016"
-description = ""
+description = "The August 2016 Fedora Pune meetup, spent rewriting the GNU C Library manual in reStructuredText and Sphinx."
 +++
 
 [Fedora Pune Meetup](https://fedoraproject.org/wiki/Fedora_Meetup_Pune_August_2016) for the month of August 2016 happened today at our usual

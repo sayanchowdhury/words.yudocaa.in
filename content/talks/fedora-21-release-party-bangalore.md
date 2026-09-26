@@ -1,6 +1,6 @@
 +++
 link = "http://sayanchowdhury.dgplug.org/fedora-21-release-party-bangalore.html"
-description = ""
+description = "Around 40 people, many of them students, came to Red Hat Bangalore to celebrate the Fedora 21 release in December 2014."
 tags = ["planet", "fedora", "21", "bangalore"]
 date = "2015-01-15T12:00:00+05:30"
 title = "Fedora 21 Release Party, Bangalore"
