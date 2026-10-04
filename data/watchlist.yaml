@@ -1,0 +1,470 @@
+# Films on my Letterboxd watchlist, shown on /films/ after the ratings.
+#
+# Synced by scripts/letterboxd_import.py in Letterboxd's order (newest first).
+# Films leave when they leave the watchlist; anything you add here is kept
+# while they stay on it.
+#
+# title, year          the film
+# url                  the film on Letterboxd
+# poster               image URL, fetched and resized at build time
+# why                  who recommended it, or why it's here; yours, never imported
+- title: Half Nelson
+  year: 2006
+  url: https://letterboxd.com/film/half-nelson/
+  poster: https://a.ltrbxd.com/resized/sm/upload/g4/1k/qd/py/eWkthzAl4NSEFlKHo3FU36O6NYk-0-600-0-900-crop.jpg?v=ba19ae0967
+- title: About Time
+  year: 2013
+  url: https://letterboxd.com/film/about-time/
+  poster: https://a.ltrbxd.com/resized/sm/upload/uo/th/yf/uz/zSuh8dGwqpsWR7ccvYbfxbSZ37o-0-600-0-900-crop.jpg?v=7276b6e978
+- title: Minari
+  year: 2020
+  url: https://letterboxd.com/film/minari/
+  poster: https://a.ltrbxd.com/resized/film-poster/5/4/2/4/4/9/542449-minari-0-600-0-900-crop.jpg?v=29fbd9f379
+- title: Manchester by the Sea
+  year: 2016
+  url: https://letterboxd.com/film/manchester-by-the-sea/
+  poster: https://a.ltrbxd.com/resized/sm/upload/i7/li/tp/62/i0t7F6b4R1wURRESAiw9VJNuVoV-0-600-0-900-crop.jpg?v=65942464ea
+- title: A Star Is Born
+  year: 2018
+  url: https://letterboxd.com/film/a-star-is-born-2018/
+  poster: https://a.ltrbxd.com/resized/film-poster/2/6/1/1/0/8/261108-a-star-is-born-0-600-0-900-crop.jpg?v=29d345083a
+- title: Rocketman
+  year: 2019
+  url: https://letterboxd.com/film/rocketman-2019/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/3/4/4/8/2/434482-rocketman-0-600-0-900-crop.jpg?v=a6f47feb2d
+- title: I'm Not There
+  year: 2007
+  url: https://letterboxd.com/film/im-not-there/
+  poster: https://a.ltrbxd.com/resized/sm/upload/up/rf/kd/9x/8Mfbl9bRQvsY9Lv8HwcQQ6ewrin-0-600-0-900-crop.jpg?v=35f676b5c6
+- title: Elvis
+  year: 2022
+  url: https://letterboxd.com/film/elvis-2022/
+  poster: https://a.ltrbxd.com/resized/film-poster/5/4/2/0/3/2/542032-elvis-0-600-0-900-crop.jpg?v=c8e56b86bc
+- title: A Complete Unknown
+  year: 2024
+  url: https://letterboxd.com/film/a-complete-unknown/
+  poster: https://a.ltrbxd.com/resized/film-poster/5/8/6/5/8/3/586583-a-complete-unknown-0-600-0-900-crop.jpg?v=f14ab6ecf6
+- title: The Iron Claw
+  year: 2023
+  url: https://letterboxd.com/film/the-iron-claw-2023/
+  poster: https://a.ltrbxd.com/resized/film-poster/7/6/4/8/9/0/764890-the-iron-claw-0-600-0-900-crop.jpg?v=321a07c4f2
+- title: A Real Pain
+  year: 2024
+  url: https://letterboxd.com/film/a-real-pain/
+  poster: https://a.ltrbxd.com/resized/film-poster/9/1/3/2/5/8/913258-a-real-pain-0-600-0-900-crop.jpg?v=893a943872
+- title: The Holdovers
+  year: 2023
+  url: https://letterboxd.com/film/the-holdovers/
+  poster: https://a.ltrbxd.com/resized/film-poster/7/5/5/5/6/4/755564-the-holdovers-0-600-0-900-crop.jpg?v=99bbdd8955
+- title: Superman
+  year: 2025
+  url: https://letterboxd.com/film/superman-2025/
+  poster: https://a.ltrbxd.com/resized/film-poster/9/5/7/0/5/0/957050-superman-2025-0-600-0-900-crop.jpg?v=54e41a55ff
+- title: 'Dune: Part Two'
+  year: 2024
+  url: https://letterboxd.com/film/dune-part-two/
+  poster: https://a.ltrbxd.com/resized/film-poster/6/1/7/4/4/3/617443-dune-part-two-0-600-0-900-crop.jpg?v=cc533700f8
+- title: Marty Supreme
+  year: 2025
+  url: https://letterboxd.com/film/marty-supreme/
+  poster: https://a.ltrbxd.com/resized/film-poster/1/1/9/7/4/9/9/1197499-marty-supreme-0-600-0-900-crop.jpg?v=b14a26bb43
+- title: Fantastic Mr. Fox
+  year: 2009
+  url: https://letterboxd.com/film/fantastic-mr-fox/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/6/3/4/4/46344-fantastic-mr-fox-0-600-0-900-crop.jpg?v=3a2a858065
+- title: Modha Rathri
+  year: 2026
+  url: https://letterboxd.com/film/modha-rathri/
+  poster: https://a.ltrbxd.com/resized/film-poster/1/5/4/9/1/6/1/1549161-modha-rathri-0-600-0-900-crop.jpg?v=960b109662
+- title: Ballerina
+  year: 2016
+  url: https://letterboxd.com/film/ballerina-2016/
+  poster: https://a.ltrbxd.com/resized/film-poster/2/7/1/8/7/1/271871-ballerina-0-600-0-900-crop.jpg?v=78b6166adb
+- title: Come and See
+  year: 1985
+  url: https://letterboxd.com/film/come-and-see/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/6/1/9/2/36192-come-and-see-0-600-0-900-crop.jpg?v=741b0269bb
+- title: People We Meet on Vacation
+  year: 2026
+  url: https://letterboxd.com/film/people-we-meet-on-vacation/
+  poster: https://a.ltrbxd.com/resized/film-poster/9/3/2/8/5/6/932856-people-we-meet-on-vacation-0-600-0-900-crop.jpg?v=c98853a2fc
+- title: The Secret Agent
+  year: 2025
+  url: https://letterboxd.com/film/the-secret-agent-2025/
+  poster: https://a.ltrbxd.com/resized/film-poster/1/1/0/4/3/4/8/1104348-the-secret-agent-2025-0-600-0-900-crop.jpg?v=3bcd2a3e02
+- title: Sing Street
+  year: 2016
+  url: https://letterboxd.com/film/sing-street/
+  poster: https://a.ltrbxd.com/resized/sm/upload/ks/uk/z5/up/s0C78plmx3dFcO3WMnoXCz56FiN-0-600-0-900-crop.jpg?v=af7d03d32b
+- title: Perfect Days
+  year: 2023
+  url: https://letterboxd.com/film/perfect-days-2023/
+  poster: https://a.ltrbxd.com/resized/film-poster/8/7/9/2/2/9/879229-perfect-days-0-600-0-900-crop.jpg?v=4ea80661fd
+- title: Ikiru
+  year: 1952
+  url: https://letterboxd.com/film/ikiru/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/9/5/9/5/49595-ikiru-0-600-0-900-crop.jpg?v=3b6666bd18
+- title: Aachar & Co
+  year: 2023
+  url: https://letterboxd.com/film/aachar-co/
+  poster: https://a.ltrbxd.com/resized/film-poster/1/0/3/5/6/7/1/1035671-aachar-co-0-600-0-900-crop.jpg?v=bdafbd72df
+- title: Last Film Show
+  year: 2021
+  url: https://letterboxd.com/film/last-film-show/
+  poster: https://a.ltrbxd.com/resized/film-poster/7/3/7/6/0/5/737605-last-film-show-0-600-0-900-crop.jpg?v=7be5b3f34d
+- title: The Peanut Butter Falcon
+  year: 2019
+  url: https://letterboxd.com/film/the-peanut-butter-falcon/
+  poster: https://a.ltrbxd.com/resized/sm/upload/oq/hs/fz/xj/qyQcRGvdW3VtxHR4fSDgPOePEip-0-600-0-900-crop.jpg?v=286844cae3
+- title: Across the Universe
+  year: 2007
+  url: https://letterboxd.com/film/across-the-universe/
+  poster: https://a.ltrbxd.com/resized/sm/upload/q8/nn/ii/wc/uMgjKSNZlcYtChVfdF2zhoFxilC-0-600-0-900-crop.jpg?v=c820683a9a
+- title: The Spectacular Now
+  year: 2013
+  url: https://letterboxd.com/film/the-spectacular-now/
+  poster: https://a.ltrbxd.com/resized/sm/upload/9o/06/4d/er/p8XfqaxYgopBMhpka6W8WP7hulU-0-600-0-900-crop.jpg?v=af31c9caad
+- title: Chungking Express
+  year: 1994
+  url: https://letterboxd.com/film/chungking-express/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/5/6/0/2/45602-chungking-express-0-600-0-900-crop.jpg?v=9475abb05b
+- title: Short Term 12
+  year: 2013
+  url: https://letterboxd.com/film/short-term-12-2013/
+  poster: https://a.ltrbxd.com/resized/sm/upload/0k/gq/x9/2w/wYkiNNMM1O5c2yEcj8Lf9UbaB1a-0-600-0-900-crop.jpg?v=5dda66ba4c
+- title: Carol
+  year: 2015
+  url: https://letterboxd.com/film/carol-2015/
+  poster: https://a.ltrbxd.com/resized/film-poster/1/8/2/1/4/2/182142-carol-0-600-0-900-crop.jpg?v=41ac88b68e
+- title: Atonement
+  year: 2007
+  url: https://letterboxd.com/film/atonement/
+  poster: https://a.ltrbxd.com/resized/sm/upload/44/vx/ah/pc/quaWuwYZd8IbZMCOhW3CZEvyCWJ-0-600-0-900-crop.jpg?v=690eaa9389
+- title: Pride
+  year: 2014
+  url: https://letterboxd.com/film/pride-2014/
+  poster: https://a.ltrbxd.com/resized/sm/upload/9v/kq/3h/os/i99RyDuRDhZEqgCEeZ5eKZ41bMh-0-600-0-900-crop.jpg?v=6633629edd
+- title: Still Alice
+  year: 2014
+  url: https://letterboxd.com/film/still-alice/
+  poster: https://a.ltrbxd.com/resized/film-poster/2/0/9/6/0/6/209606-still-alice-0-600-0-900-crop.jpg?v=32a621bdc9
+- title: When Harry Met Sally...
+  year: 1989
+  url: https://letterboxd.com/film/when-harry-met-sally/
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/4/8/5/51485-when-harry-met-sally--0-600-0-900-crop.jpg?v=2f277e2fe7
+- title: Dead Poets Society
+  year: 1989
+  url: https://letterboxd.com/film/dead-poets-society/
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/8/4/6/51846-dead-poets-society-0-600-0-900-crop.jpg?v=9273e8acf7
+- title: The Edge of Seventeen
+  year: 2016
+  url: https://letterboxd.com/film/the-edge-of-seventeen/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/1/1/8/9/4/311894-the-edge-of-seventeen-0-600-0-900-crop.jpg?v=2bd20dc1af
+- title: Little Miss Sunshine
+  year: 2006
+  url: https://letterboxd.com/film/little-miss-sunshine/
+  poster: https://a.ltrbxd.com/resized/sm/upload/h6/xm/om/q7/dOeM4R55TsAFBXCPNIDDMiJkePr-0-600-0-900-crop.jpg?v=09383296c6
+- title: My Life as a Zucchini
+  year: 2016
+  url: https://letterboxd.com/film/my-life-as-a-zucchini/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/2/7/9/0/9/327909-my-life-as-a-zucchini-0-600-0-900-crop.jpg?v=bd9c2b849c
+- title: The Breakfast Club
+  year: 1985
+  url: https://letterboxd.com/film/the-breakfast-club/
+  poster: https://a.ltrbxd.com/resized/film-poster/5/0/5/1/8/50518-the-breakfast-club-0-600-0-900-crop.jpg?v=cce37bedf1
+- title: 20th Century Women
+  year: 2016
+  url: https://letterboxd.com/film/20th-century-women/
+  poster: https://a.ltrbxd.com/resized/sm/upload/k1/lp/gd/60/mfmOHQRAiypRJQ8uSO7r2ZBVtur-0-600-0-900-crop.jpg?v=cbe8c1bbe4
+- title: Parasite
+  year: 2019
+  url: https://letterboxd.com/film/parasite-2019/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/2/6/4/0/6/426406-parasite-0-600-0-900-crop.jpg?v=8f5653f710
+- title: Raya and the Last Dragon
+  year: 2021
+  url: https://letterboxd.com/film/raya-and-the-last-dragon/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/5/7/1/8/0/457180-raya-and-the-last-dragon-0-600-0-900-crop.jpg?v=98f8b76caf
+- title: Loki
+  year: 2021
+  url: https://letterboxd.com/film/loki-2021/
+  poster: https://a.ltrbxd.com/resized/film-poster/6/7/1/8/1/5/671815-loki-0-600-0-900-crop.jpg?v=f9c17cfc8d
+- title: 'The Conjuring: The Devil Made Me Do It'
+  year: 2021
+  url: https://letterboxd.com/film/the-conjuring-the-devil-made-me-do-it/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/5/6/7/2/3/356723-the-conjuring-the-devil-made-me-do-it-0-600-0-900-crop.jpg?v=baf20ea2fd
+- title: In the Heights
+  year: 2021
+  url: https://letterboxd.com/film/in-the-heights/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/9/9/5/0/0/399500-in-the-heights-0-600-0-900-crop.jpg?v=f626d78385
+- title: 'Bo Burnham: Inside'
+  year: 2021
+  url: https://letterboxd.com/film/bo-burnham-inside/
+  poster: https://a.ltrbxd.com/resized/film-poster/7/3/9/7/7/5/739775-bo-burnham-inside-0-600-0-900-crop.jpg?v=3f06d60271
+- title: Love Is Strange
+  year: 2014
+  url: https://letterboxd.com/film/love-is-strange/
+  poster: https://a.ltrbxd.com/resized/sm/upload/lh/az/dm/tu/nU6Cs1pozL4LqRKSUgBGc7cluwi-0-600-0-900-crop.jpg?v=02462cc915
+- title: A Room with a View
+  year: 1986
+  url: https://letterboxd.com/film/a-room-with-a-view/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/5/4/5/6/45456-a-room-with-a-view-0-600-0-900-crop.jpg?v=3c64c6d8f1
+- title: Ready or Not
+  year: 2019
+  url: https://letterboxd.com/film/ready-or-not-2019/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/9/5/9/6/9/495969-ready-or-not-0-600-0-900-crop.jpg?v=13279f6ca8
+- title: Doctor Sleep
+  year: 2019
+  url: https://letterboxd.com/film/doctor-sleep/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/3/1/1/0/9/431109-doctor-sleep-0-600-0-900-crop.jpg?v=b0696b92c8
+- title: Frozen
+  year: 2010
+  url: https://letterboxd.com/film/frozen-2010/
+  poster: https://a.ltrbxd.com/resized/sm/upload/6a/ss/9f/oi/ljRIArqxsD3E0MnavozMSEdPODy-0-600-0-900-crop.jpg?v=af38c564f4
+- title: Animal Kingdom
+  year: 2010
+  url: https://letterboxd.com/film/animal-kingdom/
+  poster: https://a.ltrbxd.com/resized/film-poster/2/0/5/6/0/20560-animal-kingdom-0-600-0-900-crop.jpg?v=361c9c084d
+- title: A Nightmare on Elm Street
+  year: 2010
+  url: https://letterboxd.com/film/a-nightmare-on-elm-street-2010/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/7/3/6/9/37369-a-nightmare-on-elm-street-0-600-0-900-crop.jpg?v=ce27b2e7d5
+- title: Somewhere
+  year: 2010
+  url: https://letterboxd.com/film/somewhere/
+  poster: https://a.ltrbxd.com/resized/film-poster/2/5/4/5/4/25454-somewhere-0-600-0-900-crop.jpg?v=78f7d29002
+- title: 'Percy Jackson & the Olympians: The Lightning Thief'
+  year: 2010
+  url: https://letterboxd.com/film/percy-jackson-the-olympians-the-lightning-thief/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/0/2/6/4/30264-percy-jackson-the-olympians-the-lightning-thief-0-600-0-900-crop.jpg?v=a87204f8e1
+- title: Never Let Me Go
+  year: 2010
+  url: https://letterboxd.com/film/never-let-me-go-2010/
+  poster: https://a.ltrbxd.com/resized/sm/upload/k8/3o/rn/jw/i5sE6EINofvT7Xq0rpZz9jRbRMS-0-600-0-900-crop.jpg?v=39edfb5e19
+- title: Predators
+  year: 2010
+  url: https://letterboxd.com/film/predators/
+  poster: https://a.ltrbxd.com/resized/film-poster/2/8/8/8/8/28888-predators-0-600-0-900-crop.jpg?v=cc5bee87d7
+- title: Certified Copy
+  year: 2010
+  url: https://letterboxd.com/film/certified-copy/
+  poster: https://a.ltrbxd.com/resized/sm/upload/1s/rv/yf/4q/8f4gSxVxDk8A2UE0qOEjLAWljlb-0-600-0-900-crop.jpg?v=6702be2472
+- title: Winter's Bone
+  year: 2010
+  url: https://letterboxd.com/film/winters-bone/
+  poster: https://a.ltrbxd.com/resized/film-poster/2/5/6/2/9/25629-winter-s-bone-0-600-0-900-crop.jpg?v=afab4d2680
+- title: The Last Airbender
+  year: 2010
+  url: https://letterboxd.com/film/the-last-airbender/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/6/4/5/5/46455-the-last-airbender-0-600-0-900-crop.jpg?v=fbb4ff717f
+- title: 'The Twilight Saga: Eclipse'
+  year: 2010
+  url: https://letterboxd.com/film/the-twilight-saga-eclipse/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/7/0/8/8/37088-the-twilight-saga-eclipse-0-600-0-900-crop.jpg?v=b7981ac336
+- title: The Fighter
+  year: 2010
+  url: https://letterboxd.com/film/the-fighter-2010/
+  poster: https://a.ltrbxd.com/resized/sm/upload/am/i6/d4/hr/f81GIoNQJQX92YCaTs8wjbT0h7b-0-600-0-900-crop.jpg?v=801b3eff55
+- title: 'TRON: Legacy'
+  year: 2010
+  url: https://letterboxd.com/film/tron-legacy/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/8/9/5/7/38957-tron-legacy-0-600-0-900-crop.jpg?v=9452aea970
+- title: Insidious
+  year: 2010
+  url: https://letterboxd.com/film/insidious/
+  poster: https://a.ltrbxd.com/resized/sm/upload/te/ew/lb/gd/urAaOffVaxQzRJ8X5Z0oDqOWAjl-0-600-0-900-crop.jpg?v=7016f25e4f
+- title: Submarine
+  year: 2010
+  url: https://letterboxd.com/film/submarine/
+  poster: https://a.ltrbxd.com/resized/sm/upload/vp/ip/de/v2/mqunaysed9wv8OJsrZAlOF3j0Sr-0-600-0-900-crop.jpg?v=7f69e9b7e5
+- title: 127 Hours
+  year: 2010
+  url: https://letterboxd.com/film/127-hours/
+  poster: https://a.ltrbxd.com/resized/film-poster/2/1/0/5/0/21050-127-hours-0-600-0-900-crop.jpg?v=00379b4446
+- title: Blue Valentine
+  year: 2010
+  url: https://letterboxd.com/film/blue-valentine/
+  poster: https://a.ltrbxd.com/resized/sm/upload/dn/ni/2p/7i/r8l15gDSQMupjKXEyXkOMkRpcsn-0-600-0-900-crop.jpg?v=6c93540868
+- title: Alice in Wonderland
+  year: 2010
+  url: https://letterboxd.com/film/alice-in-wonderland-2010/
+  poster: https://a.ltrbxd.com/resized/sm/upload/qp/te/tw/3j/alice-in-wonderland-original-0-600-0-900-crop.jpg?v=aeea07bfc9
+- title: True Grit
+  year: 2010
+  url: https://letterboxd.com/film/true-grit-2010/
+  poster: https://a.ltrbxd.com/resized/film-poster/2/0/9/0/8/20908-true-grit-2010-0-600-0-900-crop.jpg?v=819ddd0d51
+- title: Easy A
+  year: 2010
+  url: https://letterboxd.com/film/easy-a/
+  poster: https://a.ltrbxd.com/resized/film-poster/2/6/7/7/0/26770-easy-a-0-600-0-900-crop.jpg?v=61986c3654
+- title: Kick-Ass
+  year: 2010
+  url: https://letterboxd.com/film/kick-ass/
+  poster: https://a.ltrbxd.com/resized/sm/upload/qp/bw/k2/ia/jP8kukObEty5liW76QxJ1o5qlFL-0-600-0-900-crop.jpg?v=d066c2ed48
+- title: The King's Speech
+  year: 2010
+  url: https://letterboxd.com/film/the-kings-speech/
+  poster: https://a.ltrbxd.com/resized/film-poster/5/3/6/3/5363-the-king-s-speech-0-600-0-900-crop.jpg?v=334f06fd89
+- title: A Quiet Place
+  year: 2018
+  url: https://letterboxd.com/film/a-quiet-place-2018/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/7/9/6/8/7/379687-a-quiet-place-0-600-0-900-crop.jpg?v=895e756ae7
+- title: Sorry to Bother You
+  year: 2018
+  url: https://letterboxd.com/film/sorry-to-bother-you/
+  poster: https://a.ltrbxd.com/resized/sm/upload/pi/8d/sk/jg/wdiJKxlyg3bzqZgRsNcIfoaQs1O-0-600-0-900-crop.jpg?v=f85a9cc2f4
+- title: Split
+  year: 2016
+  url: https://letterboxd.com/film/split-2016/
+  poster: https://a.ltrbxd.com/resized/sm/upload/5e/pw/vs/km/8CHJcVc5IGXS1sC5DyjeMwTDEQH-0-600-0-900-crop.jpg?v=ab64d75800
+- title: The Hateful Eight
+  year: 2015
+  url: https://letterboxd.com/film/the-hateful-eight/
+  poster: https://a.ltrbxd.com/resized/film-poster/1/9/7/0/1/2/197012-the-hateful-eight-0-600-0-900-crop.jpg?v=0428be5b84
+- title: Train to Busan
+  year: 2016
+  url: https://letterboxd.com/film/train-to-busan/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/3/0/9/1/2/330912-train-to-busan-0-600-0-900-crop.jpg?v=c85e151cfe
+- title: Good Time
+  year: 2017
+  url: https://letterboxd.com/film/good-time/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/6/2/3/6/2/362362-good-time-0-600-0-900-crop.jpg?v=f7b17715d2
+- title: The Irishman
+  year: 2019
+  url: https://letterboxd.com/film/the-irishman-2019/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/3/3/2/0/3/333203-the-irishman-0-600-0-900-crop.jpg?v=44b0138d78
+- title: The Lobster
+  year: 2015
+  url: https://letterboxd.com/film/the-lobster/
+  poster: https://a.ltrbxd.com/resized/film-poster/1/7/8/1/2/3/178123-the-lobster-0-600-0-900-crop.jpg?v=1de42bb7a6
+- title: Three Billboards Outside Ebbing, Missouri
+  year: 2017
+  url: https://letterboxd.com/film/three-billboards-outside-ebbing-missouri/
+  poster: https://a.ltrbxd.com/resized/film-poster/2/9/1/6/1/0/291610-three-billboards-outside-ebbing-missouri-0-600-0-900-crop.jpg?v=26123017e3
+- title: The Shape of Water
+  year: 2017
+  url: https://letterboxd.com/film/the-shape-of-water/
+  poster: https://a.ltrbxd.com/resized/sm/upload/f0/2f/4e/am/bxVvUHI1A9PWoVfEBZko6FZPv5A-0-600-0-900-crop.jpg?v=b150ad168f
+- title: BlacKkKlansman
+  year: 2018
+  url: https://letterboxd.com/film/blackkklansman/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/1/8/1/3/5/418135-blackkklansman-0-600-0-900-crop.jpg?v=632af7bfd9
+- title: The Handmaiden
+  year: 2016
+  url: https://letterboxd.com/film/the-handmaiden/
+  poster: https://a.ltrbxd.com/resized/sm/upload/pc/n6/pz/mi/wvzfK5QR6dGLwND8MCzWjsQWG4Q-0-600-0-900-crop.jpg?v=bcfcc8f8f6
+- title: The Favourite
+  year: 2018
+  url: https://letterboxd.com/film/the-favourite/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/1/0/7/0/5/310705-the-favourite-0-600-0-900-crop.jpg?v=c5488e37ef
+- title: Isle of Dogs
+  year: 2018
+  url: https://letterboxd.com/film/isle-of-dogs-2018/
+  poster: https://a.ltrbxd.com/resized/sm/upload/z2/5l/zn/to/uMcbu3qVseJGH24xUAyIVzmcQV4-0-600-0-900-crop.jpg?v=8bc488a9ff
+- title: Booksmart
+  year: 2019
+  url: https://letterboxd.com/film/booksmart/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/3/5/4/5/0/435450-booksmart-0-600-0-900-crop.jpg?v=5930d440be
+- title: The Perks of Being a Wallflower
+  year: 2012
+  url: https://letterboxd.com/film/the-perks-of-being-a-wallflower/
+  poster: https://a.ltrbxd.com/resized/film-poster/7/1/3/3/8/71338-the-perks-of-being-a-wallflower-0-600-0-900-crop.jpg?v=f2235860f7
+- title: Us
+  year: 2019
+  url: https://letterboxd.com/film/us-2019/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/9/0/5/2/0/390520-us-0-600-0-900-crop.jpg?v=968884c876
+- title: Blade Runner 2049
+  year: 2017
+  url: https://letterboxd.com/film/blade-runner-2049/
+  poster: https://a.ltrbxd.com/resized/film-poster/2/6/5/4/3/9/265439-blade-runner-2049-0-600-0-900-crop.jpg?v=86735e0bb8
+- title: Marriage Story
+  year: 2019
+  url: https://letterboxd.com/film/marriage-story-2019/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/2/2/6/8/2/422682-marriage-story-0-600-0-900-crop.jpg?v=a312d638d9
+- title: Coco
+  year: 2017
+  url: https://letterboxd.com/film/coco-2017/
+  poster: https://a.ltrbxd.com/resized/sm/upload/3p/mh/wq/v9/6Ryitt95xrO8KXuqRGm1fUuNwqF-0-600-0-900-crop.jpg?v=2a90bd6512
+- title: 'Mad Max: Fury Road'
+  year: 2015
+  url: https://letterboxd.com/film/mad-max-fury-road/
+  poster: https://a.ltrbxd.com/resized/film-poster/6/2/7/8/0/62780-mad-max-fury-road-0-600-0-900-crop.jpg?v=37c5424b1f
+- title: Hereditary
+  year: 2018
+  url: https://letterboxd.com/film/hereditary/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/2/4/3/4/8/424348-hereditary-0-600-0-900-crop.jpg?v=470e48b681
+- title: Black Swan
+  year: 2010
+  url: https://letterboxd.com/film/black-swan/
+  poster: https://a.ltrbxd.com/resized/sm/upload/yt/ae/iz/kj/bIjkE9Og0nulRycj144sCcQcsZ6-0-600-0-900-crop.jpg?v=a571e4c644
+- title: Call Me by Your Name
+  year: 2017
+  url: https://letterboxd.com/film/call-me-by-your-name/
+  poster: https://a.ltrbxd.com/resized/sm/upload/g9/9t/cc/7u/tcNniniS4rfqrLH0oORikJfnIwY-0-600-0-900-crop.jpg?v=f0c073f2b4
+- title: Moonlight
+  year: 2016
+  url: https://letterboxd.com/film/moonlight-2016/
+  poster: https://a.ltrbxd.com/resized/sm/upload/90/gn/c7/9k/qAwFbszz0kRyTuXmMeKQZCX3Q2O-0-600-0-900-crop.jpg?v=192bde15c6
+- title: Little Women
+  year: 2019
+  url: https://letterboxd.com/film/little-women-2019/
+  poster: https://a.ltrbxd.com/resized/sm/upload/r4/np/q5/te/mSmiB8XjUnR1GSIljuCPGsk0cwX-0-600-0-900-crop.jpg?v=b3f603929c
+- title: Uncut Gems
+  year: 2019
+  url: https://letterboxd.com/film/uncut-gems/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/0/4/2/6/6/404266-uncut-gems-0-600-0-900-crop.jpg?v=670cb7034d
+- title: The Lighthouse
+  year: 2019
+  url: https://letterboxd.com/film/the-lighthouse-2019/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/3/3/8/6/3/433863-the-lighthouse-0-600-0-900-crop.jpg?v=ee97005537
+- title: Scott Pilgrim vs. the World
+  year: 2010
+  url: https://letterboxd.com/film/scott-pilgrim-vs-the-world/
+  poster: https://a.ltrbxd.com/resized/sm/upload/vs/75/02/fx/2B5zjs5E3xerqAyowpw3QcOCyLq-0-600-0-900-crop.jpg?v=3aef2095df
+- title: Django Unchained
+  year: 2012
+  url: https://letterboxd.com/film/django-unchained/
+  poster: https://a.ltrbxd.com/resized/film-poster/5/2/5/1/6/52516-django-unchained-0-600-0-900-crop.jpg?v=f02aed63a3
+- title: Portrait of a Lady on Fire
+  year: 2019
+  url: https://letterboxd.com/film/portrait-of-a-lady-on-fire/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/6/0/8/3/0/460830-portrait-of-a-lady-on-fire-0-600-0-900-crop.jpg?v=79b0f67aa9
+- title: Jojo Rabbit
+  year: 2019
+  url: https://letterboxd.com/film/jojo-rabbit/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/4/4/6/0/0/444600-jojo-rabbit-0-600-0-900-crop.jpg?v=a5ad083635
+- title: Saint Maud
+  year: 2019
+  url: https://letterboxd.com/film/saint-maud/
+  poster: https://a.ltrbxd.com/resized/sm/upload/8i/fl/ux/x4/uQjxpEYktu36ZiWKfn0t0FySmXl-0-600-0-900-crop.jpg?v=adf9e62e9b
+- title: Lady Bird
+  year: 2017
+  url: https://letterboxd.com/film/lady-bird/
+  poster: https://a.ltrbxd.com/resized/film-poster/3/2/6/2/7/9/326279-lady-bird-0-600-0-900-crop.jpg?v=754ff28eb4
+- title: American Psycho
+  year: 2000
+  url: https://letterboxd.com/film/american-psycho/
+  poster: https://a.ltrbxd.com/resized/sm/upload/5b/u9/av/il/ecoY7zJL6Ub3URP1oPhPfGflEjV-0-600-0-900-crop.jpg?v=8126850315
+- title: Tenet
+  year: 2020
+  url: https://letterboxd.com/film/tenet/
+  poster: https://a.ltrbxd.com/resized/sm/upload/pq/9f/sr/vt/aCIFMriQh8rvhxpN1IWGgvH0Tlg-0-600-0-900-crop.jpg?v=f3165fe17f
+- title: 'To All the Boys: Always and Forever'
+  year: 2021
+  url: https://letterboxd.com/film/to-all-the-boys-always-and-forever/
+  poster: https://a.ltrbxd.com/resized/film-poster/5/4/1/2/4/5/541245-to-all-the-boys-always-and-forever-0-600-0-900-crop.jpg?v=cd7169b388
+- title: Pulp Fiction
+  year: 1994
+  url: https://letterboxd.com/film/pulp-fiction/
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/4/4/4/51444-pulp-fiction-0-600-0-900-crop.jpg?v=dee19a8077
+- title: Soul
+  year: 2020
+  url: https://letterboxd.com/film/soul-2020/
+  poster: https://a.ltrbxd.com/resized/film-poster/4/3/8/5/1/1/438511-soul-0-600-0-900-crop.jpg?v=8d0b74f9a8
+- title: Judas and the Black Messiah
+  year: 2021
+  url: https://letterboxd.com/film/judas-and-the-black-messiah/
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/1/3/4/2/511342-judas-and-the-black-messiah-0-600-0-900-crop.jpg?v=e21573b175
+- title: I Care a Lot
+  year: 2020
+  url: https://letterboxd.com/film/i-care-a-lot/
+  poster: https://a.ltrbxd.com/resized/film-poster/5/2/9/2/0/3/529203-i-care-a-lot-0-600-0-900-crop.jpg?v=56598113a5

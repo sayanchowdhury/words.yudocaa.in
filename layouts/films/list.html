@@ -1,0 +1,88 @@
+{{- define "main" }}
+{{- /* Bands read as advice, so the page answers "should I recommend it?" */}}
+{{- $bands := slice
+  (dict "key" "must" "min" 4.5 "name" "Watch it tonight")
+  (dict "key" "easy" "min" 4.0 "name" "Easy to recommend")
+  (dict "key" "depends" "min" 3.0 "name" "Depends who's asking")
+  (dict "key" "maybe" "min" 2.0 "name" "Only with a caveat")
+  (dict "key" "skip" "min" 0.5 "name" "Skip it")
+  (dict "key" "unrated" "min" 0 "name" "Unrated") }}
+{{- $films := hugo.Data.films | default slice }}
+{{- $watchlist := hugo.Data.watchlist | default slice }}
+{{- $placed := slice }}
+<article class="collection films">
+  <header class="collection__head">
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}<p class="collection__desc">{{ . | markdownify }}</p>{{ end }}
+    <p class="films__count">{{ len $films }} rated{{ with $watchlist }} · <a href="#watchlist">{{ len . }} on the watchlist</a>{{ end }}</p>
+  </header>
+  {{- range $band := $bands }}
+  {{- $in := slice }}
+  {{- range $films }}
+    {{- $r := float (.rating | default 0) }}
+    {{- if and (ge $r $band.min) (not (in $placed .title)) }}{{ $in = $in | append . }}{{ $placed = $placed | append .title }}{{ end }}
+  {{- end }}
+  {{- if $in }}
+  {{- /* Posters of the same colour sit together within a band. */}}
+  {{- $sorted := slice }}
+  {{- range $in }}{{ $sorted = $sorted | append (merge . (dict "_sort" (partialCached "site/poster_tone.html" . .poster))) }}{{ end }}
+  <section class="films__band" aria-labelledby="band-{{ $band.key }}">
+    <h2 class="home__label" id="band-{{ $band.key }}">{{ $band.name }} <span class="shelf__count">{{ len $in }}</span></h2>
+    <ul class="films__grid">
+      {{- range sort $sorted "_sort" }}
+      {{- $id := printf "film-%s-%v" (.title | urlize) .year }}
+      {{- $stars := "" }}
+      {{- with .rating }}{{ $r := float . }}{{ $stars = printf "%s%s" (strings.Repeat (int (math.Floor $r)) "★") (cond (ne $r (math.Floor $r)) "½" "") }}{{ end }}
+      <li class="films__item">
+        <button class="films__open" type="button" popovertarget="{{ $id }}">
+          {{ partial "site/film_poster.html" (dict "film" . "width" 140) }}
+          <span class="films__stars">{{ $stars }}{{ if .liked }} <span class="film__liked">♥</span>{{ end }}</span>
+          <span class="visually-hidden">{{ .title }}, {{ .rating }} out of 5. Show review.</span>
+        </button>
+        <div class="film-card" id="{{ $id }}" popover>
+          <button class="film-card__close" type="button" popovertarget="{{ $id }}" popovertargetaction="hide" aria-label="Close">×</button>
+          <div class="film-card__art">{{ partial "site/film_poster.html" (dict "film" . "width" 180) }}</div>
+          <div class="film-card__body">
+            <h3 class="film__title">{{ .title }} <span class="film__year">{{ .year }}</span></h3>
+            <p class="film__meta">
+              {{- with $stars }}<span class="film__stars">{{ . }}</span>{{ end }}
+              {{- if .liked }}<span class="film__liked" aria-label="Liked">♥</span>{{ end }}
+              {{- with .watched }}<span>Watched {{ (time.AsTime .).Format "Jan 2006" }}</span>{{ end }}
+            </p>
+            {{- with .pitch }}<p class="film__pitch">{{ . | markdownify }}</p>{{ end }}
+            {{- if and .review .spoilers }}
+            <details class="film__review"><summary>Review (spoilers)</summary>{{ .review | $.Page.RenderString (dict "display" "block") }}</details>
+            {{- else if .review }}
+            <div class="film__review">{{ .review | $.Page.RenderString (dict "display" "block") }}</div>
+            {{- else }}
+            <p class="film__review film__review--empty">No review, just the rating.</p>
+            {{- end }}
+            {{- with .url }}<p class="film-card__link"><a href="{{ . }}">On Letterboxd →</a></p>{{ end }}
+          </div>
+        </div>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+  {{- end }}
+
+  {{- with $watchlist }}
+  <section class="films__band" aria-labelledby="watchlist">
+    <h2 class="home__label" id="watchlist">Watchlist <span class="shelf__count">{{ len . }}</span></h2>
+    <p class="shelf__hint">Films I plan to watch.</p>
+    <ul class="films__grid films__grid--watchlist">
+      {{- $sorted := slice }}
+      {{- range . }}{{ $sorted = $sorted | append (merge . (dict "_sort" (partialCached "site/poster_tone.html" . .poster))) }}{{ end }}
+      {{- range sort $sorted "_sort" }}
+      <li class="films__item">
+        <a class="films__open" href="{{ .url }}" title="{{ .title }}{{ with .year }} ({{ . }}){{ end }}{{ with .why }}: {{ . }}{{ end }}">
+          {{ partial "site/film_poster.html" (dict "film" . "width" 104) }}
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+</article>
+{{- end }}

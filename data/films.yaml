@@ -1,0 +1,763 @@
+# Films I've rated on Letterboxd, ranked on /films/ by rating.
+#
+# Refresh with:
+#   python3 scripts/letterboxd_import.py [letterboxd-export.zip]
+# The import only updates Letterboxd-owned fields and keeps everything else.
+#
+# title, year          the film
+# rating               0.5-5 in halves
+# liked                the heart on Letterboxd
+# watched              YYYY-MM-DD, the latest diary entry
+# review               Markdown or inline HTML
+# spoilers             true hides the review behind a click
+# poster               image URL, fetched and resized at build time
+# url                  my review (or the film) on Letterboxd
+# pitch                one line on who to recommend it to; yours, never imported
+- title: '1917'
+  year: 2019
+  url: https://boxd.it/jj4y
+  rating: 5.0
+  poster: https://a.ltrbxd.com/resized/film-poster/4/6/0/1/5/5/460155-1917-0-600-0-900-crop.jpg?v=9eb1d95df5
+- title: Good Will Hunting
+  year: 1997
+  url: https://boxd.it/2ahY
+  rating: 5.0
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/6/2/1/51621-good-will-hunting-0-600-0-900-crop.jpg?v=acb4766abd
+- title: Ratatouille
+  year: 2007
+  url: https://boxd.it/27ww
+  rating: 5.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/n8/rl/pc/se/jEiEU8viSb8CIIHcfprVr2V6XDz-0-600-0-900-crop.jpg?v=25e13045f0
+- title: Schindler's List
+  year: 1993
+  url: https://boxd.it/2aq2
+  rating: 5.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/bz/1x/em/jr/yPisjyLweCl1tbgwgtzBCNCBle-0-600-0-900-crop.jpg?v=ca5215c5a9
+- title: Senna
+  year: 2010
+  url: https://boxd.it/kfE
+  rating: 5.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/8u/d6/31/8h/wnC4TllSy7SY16wzPH42mczz97w-0-600-0-900-crop.jpg?v=417366e017
+- title: 'The Lord of the Rings: The Return of the King'
+  year: 2003
+  url: https://boxd.it/2b5u
+  rating: 5.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/zs/nt/u4/uz/xieWkPAgQrrk5wOyncayPd65hrp-0-600-0-900-crop.jpg?v=4c89d05285
+- title: 'The Lord of the Rings: The Two Towers'
+  year: 2002
+  url: https://boxd.it/2b5E
+  rating: 5.0
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/9/2/9/51929-the-lord-of-the-rings-the-two-towers-0-600-0-900-crop.jpg?v=9ef6c09783
+- title: The Secret Life of Walter Mitty
+  year: 2013
+  url: https://boxd.it/3SWy
+  rating: 5.0
+  poster: https://a.ltrbxd.com/resized/film-poster/9/2/6/1/9/92619-the-secret-life-of-walter-mitty-0-600-0-900-crop.jpg?v=990770ac1c
+- title: The Silence of the Lambs
+  year: 1991
+  url: https://boxd.it/2aHW
+  rating: 5.0
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/7/8/2/51782-the-silence-of-the-lambs-0-600-0-900-crop.jpg?v=18d88bdff4
+- title: Anand
+  year: 1971
+  url: https://boxd.it/1uhM
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/3/5/4/7/5/35475-anand-0-600-0-900-crop.jpg?v=9cdf144a3c
+- title: Bohemian Rhapsody
+  year: 2018
+  url: https://boxd.it/f1TK
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/3/5/8/2/2/2/358222-bohemian-rhapsody-0-600-0-900-crop.jpg?v=e24822a0b4
+- title: Drive
+  year: 2011
+  url: https://boxd.it/IG
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/6d/6l/r3/e9/nu7XIa67cXc2t7frXCE5voXUJcN.jpg-0-600-0-900-crop.jpg?v=58a476ae28
+- title: Dunkirk
+  year: 2017
+  url: https://boxd.it/d0Y6
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/md/nb/pu/3i/bOXBV303Fgkzn2K4FeKDc0O31q4-0-600-0-900-crop.jpg?v=7307b1ff5b
+- title: I Spit on Your Grave
+  year: 2010
+  url: https://boxd.it/Tbs
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/2/1/2/1/3/21213-i-spit-on-your-grave-0-600-0-900-crop.jpg?v=2cfd94dbe0
+- title: Inside Out
+  year: 2015
+  url: https://boxd.it/4KHC
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/1/1/3/2/8/4/113284-inside-out-0-600-0-900-crop.jpg?v=de03b9b6ef
+- title: Joker
+  year: 2019
+  url: https://boxd.it/h4cS
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/4/0/6/7/7/5/406775-joker-0-600-0-900-crop.jpg?v=e4ea7f98cc
+- title: Kung Fu Hustle
+  year: 2004
+  url: https://boxd.it/1YBi
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/4/7/1/2/8/47128-kung-fu-hustle-0-600-0-900-crop.jpg?v=501b38b95f
+- title: Loving Vincent
+  year: 2017
+  url: https://boxd.it/biIQ
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/2/6/9/3/5/8/269358-loving-vincent-0-600-0-900-crop.jpg?v=a66298b3b4
+- title: Moonrise Kingdom
+  year: 2012
+  url: https://boxd.it/2Wng
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/v5/7f/mn/y8/ysTohGF7NY9Z6MYz9vLNYiyzh0r-0-600-0-900-crop.jpg?v=689b2b9ee8
+- title: My Neighbor Totoro
+  year: 1988
+  url: https://boxd.it/20eA
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/4/7/7/5/6/47756-my-neighbor-totoro-0-600-0-900-crop.jpg?v=749abe71ad
+- title: Nightcrawler
+  year: 2014
+  url: https://boxd.it/780m
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/g7/2e/vi/vy/A9ANrAWlmIovxzjAIiOgseSLNc9-0-600-0-900-crop.jpg?v=6bcb14c88c
+- title: October Sky
+  year: 1999
+  url: https://boxd.it/1Q7u
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/4/3/8/6/8/43868-october-sky-0-600-0-900-crop.jpg?v=7d94f13221
+- title: Searching
+  year: 2018
+  url: https://boxd.it/hDPg
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/4/2/0/4/6/7/420467-searching-0-600-0-900-crop.jpg?v=1485a93a9f
+- title: Shutter Island
+  year: 2010
+  url: https://boxd.it/1U82
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/4/5/4/0/9/45409-shutter-island-0-600-0-900-crop.jpg?v=85dd4c38e3
+- title: The Dark Knight Rises
+  year: 2012
+  url: https://boxd.it/H3m
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/1/6/5/5/0/16550-the-dark-knight-rises-0-600-0-900-crop.jpg?v=a7db2d4314
+- title: The Green Mile
+  year: 1999
+  url: https://boxd.it/2agG
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/6/1/3/51613-the-green-mile-0-600-0-900-crop.jpg?v=fff3d0bd1f
+- title: The Pursuit of Happyness
+  year: 2006
+  url: https://boxd.it/28PE
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/0/6/1/51061-the-pursuit-of-happyness-0-600-0-900-crop.jpg?v=40e1747df3
+- title: The Shining
+  year: 1980
+  url: https://boxd.it/29Nu
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/7s/m2/bw/d0/caoYMcjUamGoBVy65i1AHJBvdzw-0-600-0-900-crop.jpg?v=88d9d6cce4
+- title: The Terminal
+  year: 2004
+  url: https://boxd.it/2a2O
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/5/2/7/51527-the-terminal-0-600-0-900-crop.jpg?v=7517ea94ce
+- title: The Truman Show
+  year: 1998
+  url: https://boxd.it/18U8
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/xx/io/jp/45/the-truman-show-0-600-0-900-crop.jpg?v=704ba393f7
+- title: WALL·E
+  year: 2008
+  url: https://boxd.it/1VEo
+  rating: 4.5
+  poster: https://a.ltrbxd.com/resized/film-poster/4/5/9/9/4/45994-walle-0-600-0-900-crop.jpg?v=ad27f0ceac
+- title: A Man Called Otto
+  year: 2022
+  url: https://boxd.it/zl06
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/8/4/2/2/2/1/842221-a-man-called-otto-0-600-0-900-crop.jpg?v=30a264925c
+- title: 'A Silent Voice: The Movie'
+  year: 2016
+  url: https://boxd.it/d99c
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/4u/io/br/dp/drlyoSKDOPnxzJFrRWGqzDsyJvR-0-600-0-900-crop.jpg?v=acbeccd915
+- title: American Beauty
+  year: 1999
+  url: https://boxd.it/71Y
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/2/7/0/3/2703-american-beauty-0-600-0-900-crop.jpg?v=30329dd752
+- title: Before Sunrise
+  year: 1995
+  url: https://boxd.it/2bcU
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/9/7/4/51974-before-sunrise-0-600-0-900-crop.jpg?v=006e8fedea
+- title: Birdman or (The Unexpected Virtue of Ignorance)
+  year: 2014
+  url: https://boxd.it/5RFA
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/1/3/9/7/9/5/139795-birdman-0-600-0-900-crop.jpg?v=345680513e
+- title: Boyhood
+  year: 2014
+  url: https://boxd.it/3178
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/xi/gm/ev/iu/eKi4e5zXhQKs0De4xu5AAMvu376-0-600-0-900-crop.jpg?v=550c14e234
+- title: Charlie and the Chocolate Factory
+  year: 2005
+  url: https://boxd.it/2b68
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/9/3/2/51932-charlie-and-the-chocolate-factory-0-600-0-900-crop.jpg?v=cf68e10228
+- title: Chef
+  year: 2014
+  url: https://boxd.it/6lCG
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/1/5/1/3/0/9/151309-chef-0-600-0-900-crop.jpg?v=e8ec38c88e
+- title: Citizenfour
+  year: 2014
+  url: https://boxd.it/9eSe
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/2/2/0/2/1/3/220213-citizenfour-0-600-0-900-crop.jpg?v=1ed82f90fc
+- title: Deadpool
+  year: 2016
+  url: https://boxd.it/9fOC
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/2/2/0/5/7/5/220575-deadpool-0-600-0-900-crop.jpg?v=2f726ea9b3
+- title: Despicable Me
+  year: 2010
+  url: https://boxd.it/1DD8
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/3/9/0/6/7/39067-despicable-me-0-600-0-900-crop.jpg?v=a50cb28a31
+- title: Doctor Strange
+  year: 2016
+  url: https://boxd.it/8MH8
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/2/0/9/3/8/1/209381-doctor-strange-0-600-0-900-crop.jpg?v=1466da225d
+- title: English Vinglish
+  year: 2012
+  url: https://boxd.it/3Weq
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/9/3/8/8/3/93883-english-vinglish-0-600-0-900-crop.jpg?v=d58d07299c
+- title: Ex Machina
+  year: 2015
+  url: https://boxd.it/7T2k
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/1/8/7/9/8/6/187986-ex-machina-0-600-0-900-crop.jpg?v=2b4212d498
+- title: Gifted
+  year: 2017
+  url: https://boxd.it/e5dG
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/qr/og/nn/p2/2l1rACWEktbcxKGMPqvP5d905qC-0-600-0-900-crop.jpg?v=34855f96a1
+- title: Green Book
+  year: 2018
+  url: https://boxd.it/hErk
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/4/2/0/7/0/3/420703-green-book-0-600-0-900-crop.jpg?v=9919fcce4c
+- title: Guardians of the Galaxy
+  year: 2014
+  url: https://boxd.it/3VH2
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/9/3/6/7/6/93676-guardians-of-the-galaxy-0-600-0-900-crop.jpg?v=3cc8cb967f
+- title: Guardians of the Galaxy Vol. 2
+  year: 2017
+  url: https://boxd.it/8MxC
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/1g/4f/6e/5b/prvWMj8cBFgVn5MLlsjlvH2hiIh-0-600-0-900-crop.jpg?v=edbe39cfb9
+- title: Her
+  year: 2013
+  url: https://boxd.it/4O24
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/au/nb/i6/lq/fsoTLnUXEUTNuVCBxAJMY0HPPd-0-600-0-900-crop.jpg?v=16789732be
+- title: How to Train Your Dragon
+  year: 2010
+  url: https://boxd.it/1WRy
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/0r/r7/c6/7e/hIXX3IRFy0InUOmYeWjvhCAgQNj-0-600-0-900-crop.jpg?v=d158027eb4
+- title: Inception
+  year: 2010
+  url: https://boxd.it/1skk
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/sv/95/s9/4j/inception-0-600-0-900-crop.jpg?v=30d7224316
+- title: Interstellar
+  year: 2014
+  url: https://boxd.it/4VZ8
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/1/1/7/6/2/1/117621-interstellar-0-600-0-900-crop.jpg?v=7ad89e6666
+- title: Jagga Jasoos
+  year: 2017
+  rating: 4.0
+  liked: true
+  watched: '2024-01-01'
+  review: 'This movie is soooo colorful - that whole world now feels gray to me.
+
+    I''ve always loved Ranbirs choice of movies, and this is one which I will surely put on
+    the top.
+
+
+    This movie has so many references to what a Bengali child grew up with - it really makes
+    you think about how much of our imagination as kids was shaped by the stories we grew
+    up with.'
+  spoilers: false
+  poster: https://a.ltrbxd.com/resized/film-poster/3/3/5/9/2/6/335926-jagga-jasoos-0-600-0-900-crop.jpg?v=aa905f69c4
+  url: https://letterboxd.com/pissedavocado/film/jagga-jasoos/
+  tmdb: 401285
+- title: 'John Wick: Chapter 3 – Parabellum'
+  year: 2019
+  url: https://boxd.it/gmFw
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/3/9/0/0/3/9/390039-john-wick-chapter-3-parabellum-0-600-0-900-crop.jpg?v=589aeaad00
+- title: Kai Po Che!
+  year: 2013
+  url: https://boxd.it/5cWU
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/1/2/4/1/4/2/124142-kai-po-che--0-600-0-900-crop.jpg?v=306d5c49c5
+- title: Kung Fu Panda
+  year: 2008
+  url: https://boxd.it/1Yws
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/wn/0t/9w/2v/mk3UyyaLyXhgIhmLji25OUPXvGR-0-600-0-900-crop.jpg?v=ad94029f2c
+- title: Life of Pi
+  year: 2012
+  url: https://boxd.it/37pC
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/7/4/3/4/8/74348-life-of-pi-0-600-0-900-crop.jpg?v=5b5f120090
+- title: Love & Other Drugs
+  year: 2010
+  url: https://boxd.it/UIi
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/2/1/8/0/1/21801-love-other-drugs-0-600-0-900-crop.jpg?v=08511b998f
+- title: Michael
+  year: 2026
+  url: https://boxd.it/zi5M
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/8/4/1/1/0/3/841103-michael-2026-0-600-0-900-crop.jpg?v=1e8e478e40
+- title: Newton
+  year: 2017
+  url: https://boxd.it/fBbO
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/3/7/1/7/8/8/371788-newton-0-600-0-900-crop.jpg?v=16c8d34cb8
+- title: Prisoners
+  year: 2013
+  url: https://boxd.it/4E5i
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/iw/eg/4g/nm/3w79tTsv6tmlT8Jww6snyPrgVok-0-600-0-900-crop.jpg?v=778c7ae8b8
+- title: School of Rock
+  year: 2003
+  url: https://boxd.it/28xK
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/5/0/9/5/0/50950-school-of-rock-0-600-0-900-crop.jpg?v=1d462b4ca3
+- title: Sing
+  year: 2016
+  url: https://boxd.it/b5EQ
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/mn/7p/6m/zn/lW0kUtXTOVlHTVhDO2VzNBACAHX-0-600-0-900-crop.jpg?v=b75340fe68
+- title: 'Spider-Man: Into the Spider-Verse'
+  year: 2018
+  url: https://boxd.it/azpY
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/2/5/1/9/4/3/251943-spider-man-into-the-spider-verse-0-600-0-900-crop.jpg?v=538fe0ada6
+- title: Spirited Away
+  year: 2001
+  url: https://boxd.it/2b4m
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/9/2/1/51921-spirited-away-0-600-0-900-crop.jpg?v=a3ad463c55
+- title: Superboys of Malegaon
+  year: 2024
+  url: https://boxd.it/KyOU
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/1/1/0/9/6/9/4/1109694-superboys-of-malegaon-0-600-0-900-crop.jpg?v=912aeffd2a
+- title: The Dark Knight
+  year: 2008
+  url: https://boxd.it/2b0k
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/78/y5/zg/ej/oefdD26aey8GPdx7Rm45PNncJdU-0-600-0-900-crop.jpg?v=2d0ce4be25
+- title: The Departed
+  year: 2006
+  url: https://boxd.it/28MA
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/jr/th/pu/pb/laefkgrfa3oKwvBtWTBtf2suiI4-0-600-0-900-crop.jpg?v=f5d8231026
+- title: The Devil Wears Prada
+  year: 2006
+  rating: 4.0
+  liked: false
+  review: into my rewatchables!
+  spoilers: false
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/7/1/2/51712-the-devil-wears-prada-0-600-0-900-crop.jpg?v=65a9cdb330
+  url: https://letterboxd.com/pissedavocado/film/the-devil-wears-prada/
+  tmdb: 350
+- title: The Florida Project
+  year: 2017
+  url: https://boxd.it/dMG0
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/3/2/8/5/3/8/328538-the-florida-project-0-600-0-900-crop.jpg?v=60e095aa65
+- title: The Grand Budapest Hotel
+  year: 2014
+  url: https://boxd.it/3ZqO
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/9/5/1/1/3/95113-the-grand-budapest-hotel-0-600-0-900-crop.jpg?v=6ac71cf4ba
+- title: The Intern
+  year: 2015
+  url: https://boxd.it/7AOE
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/1/8/0/9/8/2/180982-the-intern-0-600-0-900-crop.jpg?v=305de9a810
+- title: The Last Airbender
+  year: 2010
+  url: https://boxd.it/1WQK
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/4/6/4/5/5/46455-the-last-airbender-0-600-0-900-crop.jpg?v=fbb4ff717f
+- title: The Lion King
+  year: 1994
+  url: https://boxd.it/201Q
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/4/7/6/7/7/47677-the-lion-king-0-600-0-900-crop.jpg?v=01b591f966
+- title: The Lunchbox
+  year: 2013
+  url: https://boxd.it/5MOs
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/1/3/7/9/2/8/137928-the-lunchbox-0-600-0-900-crop.jpg?v=58d65c21c2
+- title: The Martian
+  year: 2015
+  url: https://boxd.it/8SeG
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/2/1/1/5/1/1/211511-the-martian-0-600-0-900-crop.jpg?v=71ca0c832e
+- title: The Tourist
+  year: 2010
+  url: https://boxd.it/17Hs
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/2/6/7/9/3/26793-the-tourist-0-600-0-900-crop.jpg?v=50bb86c97e
+- title: The Walk
+  year: 2015
+  url: https://boxd.it/8Rao
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/2/1/1/1/0/0/211100-the-walk-0-600-0-900-crop.jpg?v=a79d0073af
+- title: The White Tiger
+  year: 2021
+  url: https://boxd.it/nhg6
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/5/5/4/7/8/9/554789-the-white-tiger-0-600-0-900-crop.jpg?v=1606bbc360
+- title: The Wolf of Wall Street
+  year: 2013
+  url: https://boxd.it/3C1m
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/8/6/1/1/4/86114-the-wolf-of-wall-street-0-600-0-900-crop.jpg?v=a2b958b6f1
+- title: Titanic
+  year: 1997
+  url: https://boxd.it/2a2k
+  rating: 4.0
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/5/2/4/51524-titanic-0-600-0-900-crop.jpg?v=7517ea94ce
+- title: Ant-Man
+  year: 2015
+  url: https://boxd.it/3vmW
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/8/3/5/5/7/83557-ant-man-0-600-0-900-crop.jpg?v=17265166a5
+- title: Arrival
+  year: 2016
+  url: https://boxd.it/aNGk
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/3u/dy/qd/qd/4Iu5f2nv7huqvuYkmZvSPOtbFjs-0-600-0-900-crop.jpg?v=0fc28fdf2c
+- title: 'Avengers: Age of Ultron'
+  year: 2015
+  url: https://boxd.it/3qi6
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/8/1/6/0/5/81605-avengers-age-of-ultron-0-600-0-900-crop.jpg?v=d315efaff1
+- title: 'Avengers: Endgame'
+  year: 2019
+  url: https://boxd.it/9vE4
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/2/2/6/6/6/0/226660-avengers-endgame-0-600-0-900-crop.jpg?v=d4006bfd5e
+- title: Baby Driver
+  year: 2017
+  url: https://boxd.it/bhF2
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/2/6/8/9/5/0/268950-baby-driver-0-600-0-900-crop.jpg?v=61304ddfc8
+- title: Barbie
+  year: 2023
+  url: https://boxd.it/bCLK
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/2/7/7/0/6/4/277064-barbie-0-600-0-900-crop.jpg?v=1b83dc7a71
+- title: Black Panther
+  year: 2018
+  url: https://boxd.it/8MHs
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/2/0/9/3/8/3/209383-black-panther-0-600-0-900-crop.jpg?v=d6e7e2c7a4
+- title: Brooklyn
+  year: 2015
+  url: https://boxd.it/5bdk
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/0t/9m/7m/ti/5R4sbomuxa8wlH1T3WeSUTRZo4z-0-600-0-900-crop.jpg?v=b6e716a28f
+- title: 'Captain America: The First Avenger'
+  year: 2011
+  url: https://boxd.it/28b0
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/5/0/8/0/9/50809-captain-america-the-first-avenger-0-600-0-900-crop.jpg?v=5a0d520040
+- title: Chillar Party
+  year: 2011
+  url: https://boxd.it/2uQa
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/5/9/5/2/1/59521-chillar-party-0-600-0-900-crop.jpg?v=91f96a45ef
+- title: Cloudy with a Chance of Meatballs
+  year: 2009
+  url: https://boxd.it/1A40
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/3/7/6/9/6/37696-cloudy-with-a-chance-of-meatballs-0-600-0-900-crop.jpg?v=2352e21a4c
+- title: Coco
+  year: 2017
+  url: https://boxd.it/bYJQ
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/3p/mh/wq/v9/6Ryitt95xrO8KXuqRGm1fUuNwqF-0-600-0-900-crop.jpg?v=2a90bd6512
+- title: Diary of a Wimpy Kid
+  year: 2010
+  url: https://boxd.it/1fUa
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/2/9/9/4/7/29947-diary-of-a-wimpy-kid-0-600-0-900-crop.jpg?v=ac8c399cae
+- title: Fight Club
+  year: 1999
+  url: https://boxd.it/2a9q
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/5/1/5/6/8/51568-fight-club-0-600-0-900-crop.jpg?v=768b32dfa4
+- title: Gone Girl
+  year: 2014
+  url: https://boxd.it/6hQu
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/1/4/9/8/5/7/149857-gone-girl-0-600-0-900-crop.jpg?v=dfe3c8018b
+- title: Inglourious Basterds
+  year: 2009
+  url: https://boxd.it/1JzG
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/4/1/3/5/2/41352-inglourious-basterds-0-600-0-900-crop.jpg?v=0c74c673e0
+- title: Jerry Maguire
+  year: 1996
+  rating: 3.5
+  liked: false
+  review: It's a beautiful feel-good movie. I would not rate it the best out there, but it
+    definitely steals your heart away. A good ending to complete the movie. :)
+  spoilers: false
+  poster: https://a.ltrbxd.com/resized/film-poster/4/7/2/0/6/47206-jerry-maguire-0-600-0-900-crop.jpg?v=0f7ed523ed
+  url: https://letterboxd.com/pissedavocado/film/jerry-maguire/
+  tmdb: 9390
+- title: Knives Out
+  year: 2019
+  url: https://boxd.it/jWEA
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/4/7/5/3/7/0/475370-knives-out-0-600-0-900-crop.jpg?v=7da76d742c
+- title: La La Land
+  year: 2016
+  url: https://boxd.it/a5fa
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/2/4/0/3/4/4/240344-la-la-land-0-600-0-900-crop.jpg?v=053670ff84
+- title: Logan
+  year: 2017
+  url: https://boxd.it/7Piy
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/f3/ub/fq/f5/gGBu0hKw9BGddG8RkRAMX7B6NDB-0-600-0-900-crop.jpg?v=523ca1f161
+- title: Megamind
+  year: 2010
+  url: https://boxd.it/16Sk
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/2/6/4/7/6/26476-megamind-0-600-0-900-crop.jpg?v=d1296fb9f9
+- title: 'Pirates of the Caribbean: The Curse of the Black Pearl'
+  year: 2003
+  url: https://boxd.it/70G
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/2/6/9/5/2695-pirates-of-the-caribbean-the-curse-of-the-black-pearl-0-600-0-900-crop.jpg?v=272b36c0d8
+- title: Raajneeti
+  year: 2010
+  rating: 3.5
+  liked: false
+  watched: '2026-08-17'
+  review: Surely entertaining, but the movie really has a meh ending. I mean after the second
+    half the movie just gets more and more predictable.
+  spoilers: false
+  poster: https://a.ltrbxd.com/resized/film-poster/2/6/5/7/0/26570-raajneeti-0-600-0-900-crop.jpg?v=df3511f7d1
+  url: https://letterboxd.com/pissedavocado/film/raajneeti/
+  tmdb: 37951
+- title: Ram Singh Charlie
+  year: 2020
+  url: https://boxd.it/rA8S
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/6/5/7/3/7/9/657379-ram-singh-charlie-0-600-0-900-crop.jpg?v=776262f46f
+- title: Ranna Baati
+  year: 2025
+  url: https://boxd.it/Slze
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/1/2/9/5/2/6/2/1295262-ranna-baati-0-600-0-900-crop.jpg?v=d655bf91b9
+- title: Roma
+  year: 2018
+  url: https://boxd.it/f69M
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/3/5/9/8/5/9/359859-roma-0-600-0-900-crop.jpg?v=ad94ce0f7d
+- title: Sherni
+  year: 2021
+  url: https://boxd.it/vkOm
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/7/4/6/8/1/7/746817-sherni-0-600-0-900-crop.jpg?v=12a385f4bf
+- title: Sitaare Zameen Par
+  year: 2025
+  url: https://boxd.it/Ja4m
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/1/0/7/6/3/4/7/1076347-sitaare-zameen-par-0-600-0-900-crop.jpg?v=7ae93b2f0f
+- title: Snowden
+  year: 2016
+  url: https://boxd.it/9CWO
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/4m/zj/e1/ro/mWOotrG1MMKP9iCy2uPepbu27jk-0-600-0-900-crop.jpg?v=7f26b8a014
+- title: Spider-Man 2
+  year: 2004
+  url: https://boxd.it/2a88
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/pq/mi/kb/ck/7JtMVM58MnzxWeyubzLpXBiVnDC-0-600-0-900-crop.jpg?v=c5f2675b28
+- title: 'Spider-Man: Far From Home'
+  year: 2019
+  url: https://boxd.it/fegG
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/3/6/2/9/7/7/362977-spider-man-far-from-home-0-600-0-900-crop.jpg?v=d139fbf2ae
+- title: 'Spider-Man: Homecoming'
+  year: 2017
+  url: https://boxd.it/aboM
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/2/4/2/7/1/0/242710-spider-man-homecoming-0-600-0-900-crop.jpg?v=61e8c57229
+- title: 'Star Wars: The Force Awakens'
+  year: 2015
+  url: https://boxd.it/4vru
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/t1/n6/d1/k6/g2mqdMU3jaz6uEosF5aqJgbw7e9-0-600-0-900-crop.jpg?v=f105fa4be0
+- title: Tangled
+  year: 2010
+  url: https://boxd.it/15gO
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/2/5/8/5/9/25859-tangled-2010-0-600-0-900-crop.jpg?v=1c22f51536
+- title: The A-Team
+  year: 2010
+  url: https://boxd.it/1dHS
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/20/0p/fd/1u/eMwotYpkcE42lGlaoCpPFaolvst-0-600-0-900-crop.jpg?v=4f72faeb74
+- title: The Avengers
+  year: 2012
+  url: https://boxd.it/1xFW
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/3/6/7/7/8/36778-the-avengers-2012-0-600-0-900-crop.jpg?v=d0e2add158
+- title: The Devil Wears Prada 2
+  year: 2026
+  url: https://boxd.it/Oags
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/1/1/9/5/5/8/6/1195586-the-devil-wears-prada-2-0-600-0-900-crop.jpg?v=0d955add69
+- title: The Social Network
+  year: 2010
+  url: https://boxd.it/17ue
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/nw/cm/pa/ai/sGQv3ZMZBDBnl3z42Q0mEQ5uiDe-0-600-0-900-crop.jpg?v=54ee59f7cd
+- title: The Theory of Everything
+  year: 2014
+  url: https://boxd.it/7YtA
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/1/9/0/0/7/7/190077-the-theory-of-everything-0-600-0-900-crop.jpg?v=d1c034cf99
+- title: Thor
+  year: 2011
+  url: https://boxd.it/1WQU
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/4/6/4/5/6/46456-thor-0-600-0-900-crop.jpg?v=36c210ad0d
+- title: Unstoppable
+  year: 2010
+  url: https://boxd.it/SVO
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/film-poster/2/1/1/1/6/21116-unstoppable-0-600-0-900-crop.jpg?v=194aa7cb39
+- title: Whiplash
+  year: 2014
+  url: https://boxd.it/7bQA
+  rating: 3.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/cl/dn/kr/f1/4C9LHDxMsoYI0S3iMPZdm3Oevwo-0-600-0-900-crop.jpg?v=d13ea36528
+- title: 'Avengers: Infinity War'
+  year: 2018
+  url: https://boxd.it/9vEe
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/film-poster/2/2/6/6/6/1/226661-avengers-infinity-war-0-600-0-900-crop.jpg?v=8b35f60c0c
+- title: 'Captain America: Civil War'
+  year: 2016
+  url: https://boxd.it/89Ja
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/film-poster/1/9/4/4/0/2/194402-captain-america-civil-war-0-600-0-900-crop.jpg?v=06d3eb3f8a
+- title: 'Captain America: The Winter Soldier'
+  year: 2014
+  url: https://boxd.it/3r58
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/he/p6/cc/lg/zt6b493XEL2OQ1bCSKccZ7V0iRY-0-600-0-900-crop.jpg?v=6296209106
+- title: Captain Marvel
+  year: 2019
+  url: https://boxd.it/9vSA
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/film-poster/2/2/6/7/5/0/226750-captain-marvel-0-600-0-900-crop.jpg?v=4be3c0c011
+- title: Get Out
+  year: 2017
+  url: https://boxd.it/eOCm
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/film-poster/3/5/3/1/1/7/353117-get-out-0-600-0-900-crop.jpg?v=136acec030
+- title: 'Harry Potter and the Deathly Hallows: Part 1'
+  year: 2010
+  url: https://boxd.it/1RYu
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/u8/tj/88/3v/harry-potter-and-the-deathly-hallows-part-i-original-0-600-0-900-crop.jpg?v=a31050208d
+- title: Iron Man 2
+  year: 2010
+  url: https://boxd.it/1WZM
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/film-poster/4/6/5/1/1/46511-iron-man-2-0-600-0-900-crop.jpg?v=67e856ad63
+- title: Iron Man 3
+  year: 2013
+  url: https://boxd.it/2cBQ
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/5r/0i/96/db/7XiGqZE8meUv7L4720L0tIDd7gO-0-600-0-900-crop.jpg?v=25f900a8ee
+- title: Once Upon a Time... in Hollywood
+  year: 2019
+  url: https://boxd.it/gH0O
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/film-poster/3/9/7/8/5/9/397859-once-upon-a-time-in-hollywood-0-600-0-900-crop.jpg?v=f3e8612854
+- title: 'Prince of Persia: The Sands of Time'
+  year: 2010
+  url: https://boxd.it/1YpQ
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/sm/upload/13/2j/wg/nq/pop-sot-0-600-0-900-crop.jpg?v=e7cefb448c
+- title: The Expendables
+  year: 2010
+  url: https://boxd.it/1rtA
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/film-poster/3/4/3/9/5/34395-the-expendables-0-600-0-900-crop.jpg?v=af8a3ef1e8
+- title: The Karate Kid
+  year: 2010
+  url: https://boxd.it/15HA
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/film-poster/2/6/0/2/5/26025-the-karate-kid-0-600-0-900-crop.jpg?v=e1397c637d
+- title: 'Thor: Ragnarok'
+  year: 2017
+  url: https://boxd.it/8MHi
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/film-poster/2/0/9/3/8/2/209382-thor-ragnarok-0-600-0-900-crop.jpg?v=0369e00db5
+- title: Toy Story 3
+  year: 2010
+  url: https://boxd.it/1WRe
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/film-poster/4/6/4/5/8/46458-toy-story-3-0-600-0-900-crop.jpg?v=d46903002c
+- title: Yes Man
+  year: 2008
+  rating: 3.0
+  liked: false
+  watched: '2026-08-17'
+  review: Guessing the director forgot how to say 'no' too.
+  spoilers: false
+  poster: https://a.ltrbxd.com/resized/film-poster/4/6/4/5/0/46450-yes-man-0-600-0-900-crop.jpg?v=57249aaf75
+  url: https://letterboxd.com/pissedavocado/film/yes-man/
+  tmdb: 10201
+- title: Zindagi Na Milegi Dobara
+  year: 2011
+  url: https://boxd.it/efo
+  rating: 3.0
+  poster: https://a.ltrbxd.com/resized/film-poster/5/4/7/7/5477-zindagi-na-milegi-dobara-0-600-0-900-crop.jpg?v=500b6d43fa
+- title: Machete
+  year: 2010
+  url: https://boxd.it/1yXW
+  rating: 2.5
+  poster: https://a.ltrbxd.com/resized/sm/upload/aw/s9/0l/7z/vaECukaqRtChaScWwJr4viflw0W-0-600-0-900-crop.jpg?v=8e83f95e22
+- title: The Tinder Swindler
+  year: 2022
+  rating: 2.5
+  liked: false
+  watched: '2026-08-17'
+  review: Gripping but ...
+  spoilers: false
+  poster: https://a.ltrbxd.com/resized/film-poster/8/2/9/0/6/1/829061-the-tinder-swindler-0-600-0-900-crop.jpg?v=571be90dfd
+  url: https://letterboxd.com/pissedavocado/film/the-tinder-swindler/
+  tmdb: 923632

@@ -1708,3 +1708,267 @@ body:has(.home, .collection) {
         transition: none;
     }
 }
+
+/* Films: Letterboxd ratings as poster grids; a poster opens its review ---- */
+
+.films__count {
+    margin: 8px 0 0;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.films__count a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--tertiary);
+    text-underline-offset: 3px;
+}
+
+.films__band {
+    margin: 0 0 56px;
+}
+
+#watchlist {
+    scroll-margin-top: calc(var(--header-height) + 16px);
+}
+
+.films__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 28px 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.films__grid--watchlist {
+    grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+    gap: 16px 12px;
+}
+
+.films__open {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--secondary);
+    font: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+
+.films__open .film__poster {
+    width: 100%;
+    transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 240ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.films__open:hover .film__poster,
+.films__open:focus-visible .film__poster {
+    transform: translateY(-4px);
+    box-shadow:
+        0 1px 1px rgb(0 0 0 / 0.15),
+        0 12px 18px -4px rgb(0 0 0 / 0.22),
+        0 28px 36px -14px rgb(0 0 0 / 0.32);
+}
+
+.films__stars {
+    display: block;
+    margin-top: 10px;
+    font-family: var(--sans);
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+}
+
+.film__poster {
+    display: block;
+    width: 104px;
+    height: auto;
+    border-radius: 3px;
+    box-shadow:
+        0 1px 1px rgb(0 0 0 / 0.18),
+        0 6px 10px -2px rgb(0 0 0 / 0.18),
+        0 18px 28px -12px rgb(0 0 0 / 0.3);
+}
+
+.film__poster--card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--w);
+    aspect-ratio: 2 / 3;
+    padding: 10px;
+    background: var(--cloth, oklch(0.36 0.06 250));
+    color: oklch(0.88 0.06 85);
+    font-family: var(--display-font);
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* The review card: a popover, so it needs no script and Esc closes it. */
+.film-card {
+    width: min(640px, calc(100vw - 32px));
+    max-height: calc(100vh - 64px);
+    margin: auto;
+    padding: 28px;
+    overflow: auto;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--theme);
+    color: var(--primary);
+    font-family: var(--prose-font);
+    box-shadow: 0 24px 64px -16px rgb(0 0 0 / 0.45);
+}
+
+.film-card:popover-open {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 28px;
+    align-items: start;
+}
+
+.film-card::backdrop {
+    background: rgb(0 0 0 / 0.45);
+}
+
+.film-card__art .film__poster {
+    width: 180px;
+}
+
+.film-card__close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    padding: 4px 8px;
+    border: 0;
+    background: none;
+    color: var(--secondary);
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.film-card__close:hover {
+    color: var(--primary);
+}
+
+.film__title {
+    margin: 0;
+    padding-right: 24px;
+    font-family: var(--display-font);
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-wrap: balance;
+}
+
+.film__year {
+    font-family: var(--sans);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--secondary);
+    font-variant-numeric: tabular-nums;
+}
+
+.film__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 12px;
+    margin: 8px 0 0;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.film__stars {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+}
+
+.film__liked {
+    color: oklch(0.62 0.17 30);
+}
+
+.film__pitch {
+    margin: 14px 0 0;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.film__review {
+    margin-top: 14px;
+    font-size: 17px;
+    line-height: 1.6;
+    text-wrap: pretty;
+}
+
+.film__review p {
+    margin: 0 0 0.6em;
+}
+
+.film__review p:last-child {
+    margin-bottom: 0;
+}
+
+.film__review--empty {
+    color: var(--secondary);
+}
+
+details.film__review summary {
+    cursor: pointer;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--secondary);
+}
+
+.film-card__link {
+    margin: 18px 0 0;
+    font-family: var(--sans);
+    font-size: 14px;
+}
+
+.film-card__link a {
+    color: var(--accent);
+}
+
+@media (max-width: 600px) {
+    .films__grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px 14px;
+    }
+
+    .films__grid--watchlist {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 12px 10px;
+    }
+
+    .films__stars {
+        font-size: 12px;
+    }
+
+    .film__poster--card {
+        font-size: 11px;
+    }
+
+    .film-card {
+        padding: 20px;
+    }
+
+    .film-card:popover-open {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .film-card__art .film__poster {
+        width: 120px;
+    }
+
+    .film__title {
+        font-size: 22px;
+    }
+}

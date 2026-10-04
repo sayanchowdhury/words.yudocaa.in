@@ -1,0 +1,36 @@
+{{- /*
+  A sort key that puts posters of the same colour together. Context: a film.
+  Colourful posters sort by the hue of their most dominant vivid colour
+  (0-360, red through violet); grey and black ones follow, light to dark.
+*/ -}}
+{{- $key := 500 -}}
+{{- with .poster -}}
+  {{- with try (resources.GetRemote .) -}}
+    {{- with .Value -}}
+      {{- $neutral := false -}}
+      {{- range $i, $c := first 3 .Colors -}}
+        {{- $hex := strings.TrimPrefix "#" $c.ColorHex -}}
+        {{- $r := float (int (printf "0x%s" (substr $hex 0 2))) -}}
+        {{- $g := float (int (printf "0x%s" (substr $hex 2 2))) -}}
+        {{- $b := float (int (printf "0x%s" (substr $hex 4 2))) -}}
+        {{- $max := math.Max $r $g $b -}}
+        {{- $min := math.Min $r $g $b -}}
+        {{- $d := sub $max $min -}}
+        {{- $l := div (add $max $min) 510 -}}
+        {{- $s := 0.0 -}}
+        {{- if gt $d 0 }}{{ $s = div $d (sub 255 (math.Abs (sub (add $max $min) 255))) }}{{ end -}}
+        {{- if eq $i 0 }}{{ $neutral = add 400 (mul (sub 1 $l) 99) }}{{ end -}}
+        {{- if and (eq $key 500) (ge $s 0.3) (gt $l 0.12) (lt $l 0.92) -}}
+          {{- $h := 0.0 -}}
+          {{- if eq $max $r }}{{ $h = mul 60 (div (sub $g $b) $d) }}
+          {{- else if eq $max $g }}{{ $h = mul 60 (add (div (sub $b $r) $d) 2) }}
+          {{- else }}{{ $h = mul 60 (add (div (sub $r $g) $d) 4) }}{{ end -}}
+          {{- if lt $h 0 }}{{ $h = add $h 360 }}{{ end -}}
+          {{- $key = $h -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if and (eq $key 500) $neutral }}{{ $key = $neutral }}{{ end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $key -}}
