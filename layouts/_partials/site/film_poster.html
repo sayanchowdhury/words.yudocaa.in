@@ -1,0 +1,18 @@
+{{- /*
+  A film poster. Context: (dict "film" . "width" 120).
+  Fetches `poster` and resizes it at build time; otherwise a title card.
+*/ -}}
+{{- $f := .film -}}
+{{- $w := .width | default 120 -}}
+{{- $img := false -}}
+{{- with $f.poster -}}
+  {{- with try (resources.GetRemote .) -}}
+    {{- with .Err }}{{ warnf "poster for %q: %s" $f.title . }}{{ else with .Value }}{{ $img = . }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- if $img -}}
+  {{- $r := $img.Resize (printf "%dx webp q82" (mul $w 2)) -}}
+  <img class="film__poster" src="{{ $r.RelPermalink }}" width="{{ $w }}" height="{{ div (mul $r.Height $w) $r.Width }}" alt="Poster for {{ $f.title }}" loading="lazy" decoding="async">
+{{- else -}}
+  <span class="film__poster film__poster--card cloth--{{ mod (hash.FNV32a $f.title) 5 }}" style="--w: {{ $w }}px" role="img" aria-label="{{ $f.title }}">{{ $f.title }}</span>
+{{- end -}}

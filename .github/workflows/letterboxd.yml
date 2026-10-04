@@ -1,0 +1,58 @@
+# Pull my Letterboxd ratings, reviews and watchlist into data/ every night,
+# and redeploy the site when anything changed, so /films/ keeps itself current.
+name: Sync Letterboxd
+
+on:
+  schedule:
+    - cron: "30 2 * * *" # 08:00 IST
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: write # commit the data files
+  actions: write # start the deploy workflow
+
+concurrency:
+  group: letterboxd
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Import from Letterboxd
+        run: python3 scripts/letterboxd_import.py
+
+      - name: Commit changes
+        id: commit
+        run: |
+          git add data/films.yaml data/watchlist.yaml
+          if git diff --cached --quiet; then
+            echo "Nothing new on Letterboxd."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Sync films from Letterboxd"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Pushes made with GITHUB_TOKEN don't trigger the deploy's push
+      # event, so start it directly.
+      - name: Deploy
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run hugo.yaml --ref "$GITHUB_REF_NAME"
