@@ -228,6 +228,16 @@
   url: https://boxd.it/8MH8
   rating: 4.0
   poster: https://a.ltrbxd.com/resized/film-poster/2/0/9/3/8/1/209381-doctor-strange-0-600-0-900-crop.jpg?v=1466da225d
+- title: Drishyam
+  year: 2015
+  rating: 4.0
+  liked: false
+  review: "Gandhi ji taught us non-violence. \nVijay Salgaonkar taught us non-evidence.\n\
+    2nd October awards goes to Vijay!"
+  spoilers: false
+  poster: https://a.ltrbxd.com/resized/film-poster/2/8/2/2/5/1/282251-drishyam-0-600-0-900-crop.jpg?v=9711e3e569
+  url: https://letterboxd.com/pissedavocado/film/drishyam-2015/
+  tmdb: 352173
 - title: English Vinglish
   year: 2012
   url: https://boxd.it/3Weq
@@ -356,6 +366,15 @@
   url: https://boxd.it/2b4m
   rating: 4.0
   poster: https://a.ltrbxd.com/resized/film-poster/5/1/9/2/1/51921-spirited-away-0-600-0-900-crop.jpg?v=a3ad463c55
+- title: Split
+  year: 2016
+  rating: 4.0
+  liked: false
+  review: Can you believe that Mr. Tumnus can be so scary! As always loved you James McAvoy.
+  spoilers: false
+  poster: https://a.ltrbxd.com/resized/sm/upload/5e/pw/vs/km/8CHJcVc5IGXS1sC5DyjeMwTDEQH-0-600-0-900-crop.jpg?v=ab64d75800
+  url: https://letterboxd.com/pissedavocado/film/split-2016/
+  tmdb: 381288
 - title: Superboys of Malegaon
   year: 2024
   url: https://boxd.it/KyOU
@@ -666,6 +685,18 @@
   url: https://boxd.it/9vEe
   rating: 3.0
   poster: https://a.ltrbxd.com/resized/film-poster/2/2/6/6/6/1/226661-avengers-infinity-war-0-600-0-900-crop.jpg?v=8b35f60c0c
+- title: Babita Singh Reporting
+  year: 2026
+  rating: 3.0
+  liked: false
+  watched: '2026-10-04'
+  review: Ever seen a sine curve? This movie traces the same shape emotionally. I kept feeling
+    bored and excited, hooked and checked out, impressed and impatient. It feels like a problem
+    looking for a story. I'm not sure about the hype, but the ending was definitely meh.
+  spoilers: false
+  poster: https://a.ltrbxd.com/resized/film-poster/1/5/1/7/9/6/7/1517967-babita-singh-reporting-0-600-0-900-crop.jpg?v=173a626dac
+  url: https://letterboxd.com/pissedavocado/film/babita-singh-reporting/
+  tmdb: 1654516
 - title: 'Captain America: Civil War'
   year: 2016
   url: https://boxd.it/89Ja

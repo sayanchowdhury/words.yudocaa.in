@@ -8,6 +8,22 @@
 # url                  the film on Letterboxd
 # poster               image URL, fetched and resized at build time
 # why                  who recommended it, or why it's here; yours, never imported
+- title: The Nice Guys
+  year: 2016
+  url: https://letterboxd.com/film/the-nice-guys/
+  poster: https://a.ltrbxd.com/resized/film-poster/2/1/6/3/0/1/216301-the-nice-guys-0-600-0-900-crop.jpg?v=40616daa2c
+- title: The Drama
+  year: 2026
+  url: https://letterboxd.com/film/the-drama/
+  poster: https://a.ltrbxd.com/resized/film-poster/1/2/0/5/4/9/4/1205494-the-drama-0-600-0-900-crop.jpg?v=2320acafd5
+- title: A Time to Kill
+  year: 1996
+  url: https://letterboxd.com/film/a-time-to-kill-1996/
+  poster: https://a.ltrbxd.com/resized/sm/upload/ys/yi/qm/af/zcpbub5aKfcKux6WJdN61F3k0Jr-0-600-0-900-crop.jpg?v=be254a2ffe
+- title: Barber of the Gods
+  year: 2025
+  url: https://letterboxd.com/film/barber-of-the-gods/
+  poster: https://a.ltrbxd.com/resized/film-poster/1/4/3/7/6/8/1/1437681-barber-of-the-gods-0-600-0-900-crop.jpg?v=b6451d6417
 - title: Half Nelson
   year: 2006
   url: https://letterboxd.com/film/half-nelson/
@@ -312,10 +328,6 @@
   year: 2018
   url: https://letterboxd.com/film/sorry-to-bother-you/
   poster: https://a.ltrbxd.com/resized/sm/upload/pi/8d/sk/jg/wdiJKxlyg3bzqZgRsNcIfoaQs1O-0-600-0-900-crop.jpg?v=f85a9cc2f4
-- title: Split
-  year: 2016
-  url: https://letterboxd.com/film/split-2016/
-  poster: https://a.ltrbxd.com/resized/sm/upload/5e/pw/vs/km/8CHJcVc5IGXS1sC5DyjeMwTDEQH-0-600-0-900-crop.jpg?v=ab64d75800
 - title: The Hateful Eight
   year: 2015
   url: https://letterboxd.com/film/the-hateful-eight/
